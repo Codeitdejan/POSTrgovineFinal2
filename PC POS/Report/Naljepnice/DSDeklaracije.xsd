@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSDeklaracije" targetNamespace="http://tempuri.org/DSDeklaracije.xsd" xmlns:mstns="http://tempuri.org/DSDeklaracije.xsd" xmlns="http://tempuri.org/DSDeklaracije.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSDeklaracije" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSDeklaracije" msprop:Generator_UserDSName="DSDeklaracije">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DTRoba" msprop:Generator_TableClassName="DTRobaDataTable" msprop:Generator_TableVarName="tableDTRoba" msprop:Generator_TablePropName="DTRoba" msprop:Generator_RowDeletingName="DTRobaRowDeleting" msprop:Generator_RowChangingName="DTRobaRowChanging" msprop:Generator_RowEvHandlerName="DTRobaRowChangeEventHandler" msprop:Generator_RowDeletedName="DTRobaRowDeleted" msprop:Generator_UserTableName="DTRoba" msprop:Generator_RowChangedName="DTRobaRowChanged" msprop:Generator_RowEvArgName="DTRobaRowChangeEvent" msprop:Generator_RowClassName="DTRobaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sifra" msprop:Generator_ColumnVarNameInTable="columnsifra" msprop:Generator_ColumnPropNameInRow="sifra" msprop:Generator_ColumnPropNameInTable="sifraColumn" msprop:Generator_UserColumnName="sifra" type="xs:string" minOccurs="0" />
+              <xs:element name="naziv_robe" msprop:Generator_ColumnVarNameInTable="columnnaziv_robe" msprop:Generator_ColumnPropNameInRow="naziv_robe" msprop:Generator_ColumnPropNameInTable="naziv_robeColumn" msprop:Generator_UserColumnName="naziv_robe" type="xs:string" minOccurs="0" />
+              <xs:element name="proizvodac" msprop:Generator_ColumnVarNameInTable="columnproizvodac" msprop:Generator_ColumnPropNameInRow="proizvodac" msprop:Generator_ColumnPropNameInTable="proizvodacColumn" msprop:Generator_UserColumnName="proizvodac" type="xs:string" minOccurs="0" />
+              <xs:element name="izvoznik" msprop:Generator_ColumnVarNameInTable="columnizvoznik" msprop:Generator_ColumnPropNameInRow="izvoznik" msprop:Generator_ColumnPropNameInTable="izvoznikColumn" msprop:Generator_UserColumnName="izvoznik" type="xs:string" minOccurs="0" />
+              <xs:element name="uvoznik" msprop:Generator_ColumnVarNameInTable="columnuvoznik" msprop:Generator_ColumnPropNameInRow="uvoznik" msprop:Generator_ColumnPropNameInTable="uvoznikColumn" msprop:Generator_UserColumnName="uvoznik" type="xs:string" minOccurs="0" />
+              <xs:element name="zemlja_podrijetla" msprop:Generator_ColumnVarNameInTable="columnzemlja_podrijetla" msprop:Generator_ColumnPropNameInRow="zemlja_podrijetla" msprop:Generator_ColumnPropNameInTable="zemlja_podrijetlaColumn" msprop:Generator_UserColumnName="zemlja_podrijetla" type="xs:string" minOccurs="0" />
+              <xs:element name="ostalo" msprop:Generator_ColumnVarNameInTable="columnostalo" msprop:Generator_ColumnPropNameInRow="ostalo" msprop:Generator_ColumnPropNameInTable="ostaloColumn" msprop:Generator_UserColumnName="ostalo" type="xs:string" minOccurs="0" />
+              <xs:element name="sifra1" msprop:Generator_ColumnVarNameInTable="columnsifra1" msprop:Generator_ColumnPropNameInRow="sifra1" msprop:Generator_ColumnPropNameInTable="sifra1Column" msprop:Generator_UserColumnName="sifra1" type="xs:string" minOccurs="0" />
+              <xs:element name="naziv_robe1" msprop:Generator_ColumnVarNameInTable="columnnaziv_robe1" msprop:Generator_ColumnPropNameInRow="naziv_robe1" msprop:Generator_ColumnPropNameInTable="naziv_robe1Column" msprop:Generator_UserColumnName="naziv_robe1" type="xs:string" minOccurs="0" />
+              <xs:element name="proizvodac1" msprop:Generator_ColumnVarNameInTable="columnproizvodac1" msprop:Generator_ColumnPropNameInRow="proizvodac1" msprop:Generator_ColumnPropNameInTable="proizvodac1Column" msprop:Generator_UserColumnName="proizvodac1" type="xs:string" minOccurs="0" />
+              <xs:element name="izvoznik1" msprop:Generator_ColumnVarNameInTable="columnizvoznik1" msprop:Generator_ColumnPropNameInRow="izvoznik1" msprop:Generator_ColumnPropNameInTable="izvoznik1Column" msprop:Generator_UserColumnName="izvoznik1" type="xs:string" minOccurs="0" />
+              <xs:element name="uvoznik1" msprop:Generator_ColumnVarNameInTable="columnuvoznik1" msprop:Generator_ColumnPropNameInRow="uvoznik1" msprop:Generator_ColumnPropNameInTable="uvoznik1Column" msprop:Generator_UserColumnName="uvoznik1" type="xs:string" minOccurs="0" />
+              <xs:element name="zamlja_podrijetla1" msprop:Generator_ColumnVarNameInTable="columnzamlja_podrijetla1" msprop:Generator_ColumnPropNameInRow="zamlja_podrijetla1" msprop:Generator_ColumnPropNameInTable="zamlja_podrijetla1Column" msprop:Generator_UserColumnName="zamlja_podrijetla1" type="xs:string" minOccurs="0" />
+              <xs:element name="ostalo1" msprop:Generator_ColumnVarNameInTable="columnostalo1" msprop:Generator_ColumnPropNameInRow="ostalo1" msprop:Generator_ColumnPropNameInTable="ostalo1Column" msprop:Generator_UserColumnName="ostalo1" type="xs:string" minOccurs="0" />
+              <xs:element name="sifra2" msprop:Generator_ColumnVarNameInTable="columnsifra2" msprop:Generator_ColumnPropNameInRow="sifra2" msprop:Generator_ColumnPropNameInTable="sifra2Column" msprop:Generator_UserColumnName="sifra2" type="xs:string" minOccurs="0" />
+              <xs:element name="naziv_robe2" msprop:Generator_ColumnVarNameInTable="columnnaziv_robe2" msprop:Generator_ColumnPropNameInRow="naziv_robe2" msprop:Generator_ColumnPropNameInTable="naziv_robe2Column" msprop:Generator_UserColumnName="naziv_robe2" type="xs:string" minOccurs="0" />
+              <xs:element name="proizvodac2" msprop:Generator_ColumnVarNameInTable="columnproizvodac2" msprop:Generator_ColumnPropNameInRow="proizvodac2" msprop:Generator_ColumnPropNameInTable="proizvodac2Column" msprop:Generator_UserColumnName="proizvodac2" type="xs:string" minOccurs="0" />
+              <xs:element name="izvoznik2" msprop:Generator_ColumnVarNameInTable="columnizvoznik2" msprop:Generator_ColumnPropNameInRow="izvoznik2" msprop:Generator_ColumnPropNameInTable="izvoznik2Column" msprop:Generator_UserColumnName="izvoznik2" type="xs:string" minOccurs="0" />
+              <xs:element name="uvoznik2" msprop:Generator_ColumnVarNameInTable="columnuvoznik2" msprop:Generator_ColumnPropNameInRow="uvoznik2" msprop:Generator_ColumnPropNameInTable="uvoznik2Column" msprop:Generator_UserColumnName="uvoznik2" type="xs:string" minOccurs="0" />
+              <xs:element name="zamlja_podrijetla2" msprop:Generator_ColumnVarNameInTable="columnzamlja_podrijetla2" msprop:Generator_ColumnPropNameInRow="zamlja_podrijetla2" msprop:Generator_ColumnPropNameInTable="zamlja_podrijetla2Column" msprop:Generator_UserColumnName="zamlja_podrijetla2" type="xs:string" minOccurs="0" />
+              <xs:element name="ostalo2" msprop:Generator_ColumnVarNameInTable="columnostalo2" msprop:Generator_ColumnPropNameInRow="ostalo2" msprop:Generator_ColumnPropNameInTable="ostalo2Column" msprop:Generator_UserColumnName="ostalo2" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
