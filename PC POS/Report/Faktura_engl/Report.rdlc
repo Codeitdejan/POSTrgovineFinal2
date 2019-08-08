@@ -6,7 +6,7 @@
       <ConnectionProperties>
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
-      </ConnectionProperties>
+      </ConnectionProperties>se
       <rd:DataSourceID>1a32e2aa-3eae-4d26-afb2-5f2119d7bb07</rd:DataSourceID>
     </DataSource>
   </DataSources>
@@ -3177,6 +3177,7 @@ IIf(First(Fields!pdv_br.Value, "DSPodaciTvrtke")="","","VAT no. : " &amp; First(
         <ColumnSpacing>0.13cm</ColumnSpacing>
         <Style />
       </Page>
+
   <ReportParameters>
     <ReportParameter Name="MPCHeader">
       <DataType>String</DataType>

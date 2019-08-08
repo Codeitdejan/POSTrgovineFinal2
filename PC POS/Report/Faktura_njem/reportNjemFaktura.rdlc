@@ -3000,7 +3000,7 @@ IIf(First(Fields!pdv_br.Value, "DSPodaciTvrtke")="","","VAT no. : " &amp; First(
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>adresa</rd:DefaultName>
-              <Top>1.40724cm</Top>
+              <Top>1.37196cm</Top>
               <Left>9.94708cm</Left>
               <Height>6.2699cm</Height>
               <Width>10.80791cm</Width>
