@@ -151,6 +151,34 @@ VALUES
                 txtIznos.Focus();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        private void Obrisi()
+        {
+            if (dgv.CurrentRow.Cells["dokument"].Value.ToString() == "PROMET BLAGAJNE")
+            {
+                MessageBox.Show("Nije moguće brisanje prometa blagajne.", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            if (MessageBox.Show("Jeste li sigurni da želite obrisati odabrani izvještaj?", "Potvrda", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                try
+                {
+                    string sql = $"DELETE FROM blagajnicki_izvjestaj WHERE id = {dgv.CurrentRow.Cells["id"].Value.ToString()}";
+                    classSQL.delete(sql);
+                    MessageBox.Show("Obrisano.");
+                    PopuniDataGrid();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
         public void PopuniDataGrid()
         {
             string filter = string.Format(@"WHERE cast(datum as date) >= '{0}' AND cast(datum as date) <= '{1}'",
@@ -284,6 +312,11 @@ dgv.Rows[e.RowIndex].Cells["id"].FormattedValue.ToString());
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnObrisi_Click(object sender, EventArgs e)
+        {
+            Obrisi();
         }
     }
 }

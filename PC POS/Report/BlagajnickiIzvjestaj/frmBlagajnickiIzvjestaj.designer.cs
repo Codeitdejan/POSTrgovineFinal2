@@ -27,8 +27,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBlagajnickiIzvjestaj));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnUtrzak = new System.Windows.Forms.Button();
             this.btnPolog = new System.Windows.Forms.Button();
             this.btnUcitaj = new System.Windows.Forms.Button();
@@ -61,6 +61,7 @@
             this.txtPartnerNaziv = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnObrisi = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -125,7 +126,7 @@
             this.btnUcitaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnUcitaj.ForeColor = System.Drawing.Color.Black;
             this.btnUcitaj.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnUcitaj.Location = new System.Drawing.Point(907, 69);
+            this.btnUcitaj.Location = new System.Drawing.Point(1032, 69);
             this.btnUcitaj.Name = "btnUcitaj";
             this.btnUcitaj.Size = new System.Drawing.Size(62, 49);
             this.btnUcitaj.TabIndex = 2;
@@ -153,7 +154,8 @@
             this.dgv.Location = new System.Drawing.Point(12, 166);
             this.dgv.Name = "dgv";
             this.dgv.RowHeadersVisible = false;
-            this.dgv.Size = new System.Drawing.Size(1082, 360);
+            this.dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv.Size = new System.Drawing.Size(1082, 341);
             this.dgv.TabIndex = 14;
             this.dgv.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellEndEdit_1);
             // 
@@ -179,10 +181,10 @@
             // Uplaceno
             // 
             this.Uplaceno.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle1.Format = "N2";
-            dataGridViewCellStyle1.NullValue = null;
-            this.Uplaceno.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle7.Format = "N2";
+            dataGridViewCellStyle7.NullValue = null;
+            this.Uplaceno.DefaultCellStyle = dataGridViewCellStyle7;
             this.Uplaceno.HeaderText = "Uplaceno";
             this.Uplaceno.Name = "Uplaceno";
             this.Uplaceno.Width = 120;
@@ -190,9 +192,9 @@
             // izdatak
             // 
             this.izdatak.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle2.Format = "N2";
-            this.izdatak.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle8.Format = "N2";
+            this.izdatak.DefaultCellStyle = dataGridViewCellStyle8;
             this.izdatak.HeaderText = "Izdatak";
             this.izdatak.Name = "izdatak";
             this.izdatak.Width = 120;
@@ -237,7 +239,7 @@
             this.btnSpremi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnSpremi.ForeColor = System.Drawing.Color.Black;
             this.btnSpremi.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnSpremi.Location = new System.Drawing.Point(615, 111);
+            this.btnSpremi.Location = new System.Drawing.Point(582, 111);
             this.btnSpremi.Name = "btnSpremi";
             this.btnSpremi.Size = new System.Drawing.Size(72, 49);
             this.btnSpremi.TabIndex = 13;
@@ -271,7 +273,7 @@
             // 
             this.odDatuma.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.odDatuma.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.odDatuma.Location = new System.Drawing.Point(781, 69);
+            this.odDatuma.Location = new System.Drawing.Point(906, 69);
             this.odDatuma.Name = "odDatuma";
             this.odDatuma.Size = new System.Drawing.Size(120, 20);
             this.odDatuma.TabIndex = 0;
@@ -280,7 +282,7 @@
             // 
             this.doDatuma.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.doDatuma.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.doDatuma.Location = new System.Drawing.Point(781, 98);
+            this.doDatuma.Location = new System.Drawing.Point(906, 98);
             this.doDatuma.Name = "doDatuma";
             this.doDatuma.Size = new System.Drawing.Size(120, 20);
             this.doDatuma.TabIndex = 1;
@@ -291,7 +293,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label1.Location = new System.Drawing.Point(749, 71);
+            this.label1.Location = new System.Drawing.Point(874, 71);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(29, 17);
             this.label1.TabIndex = 20;
@@ -303,7 +305,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label2.Location = new System.Drawing.Point(749, 100);
+            this.label2.Location = new System.Drawing.Point(874, 100);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(29, 17);
             this.label2.TabIndex = 21;
@@ -315,7 +317,7 @@
             this.lblUplaceno.AutoSize = true;
             this.lblUplaceno.BackColor = System.Drawing.Color.Transparent;
             this.lblUplaceno.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblUplaceno.Location = new System.Drawing.Point(26, 545);
+            this.lblUplaceno.Location = new System.Drawing.Point(9, 510);
             this.lblUplaceno.Name = "lblUplaceno";
             this.lblUplaceno.Size = new System.Drawing.Size(104, 17);
             this.lblUplaceno.TabIndex = 22;
@@ -327,7 +329,7 @@
             this.lblIzdatak.AutoSize = true;
             this.lblIzdatak.BackColor = System.Drawing.Color.Transparent;
             this.lblIzdatak.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblIzdatak.Location = new System.Drawing.Point(195, 545);
+            this.lblIzdatak.Location = new System.Drawing.Point(231, 510);
             this.lblIzdatak.Name = "lblIzdatak";
             this.lblIzdatak.Size = new System.Drawing.Size(89, 17);
             this.lblIzdatak.TabIndex = 23;
@@ -510,12 +512,36 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnObrisi
+            // 
+            this.btnObrisi.BackColor = System.Drawing.Color.Transparent;
+            this.btnObrisi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnObrisi.BackgroundImage")));
+            this.btnObrisi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnObrisi.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnObrisi.FlatAppearance.BorderColor = System.Drawing.Color.LightSlateGray;
+            this.btnObrisi.FlatAppearance.BorderSize = 0;
+            this.btnObrisi.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.btnObrisi.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnObrisi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnObrisi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnObrisi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnObrisi.ForeColor = System.Drawing.Color.Black;
+            this.btnObrisi.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnObrisi.Location = new System.Drawing.Point(660, 111);
+            this.btnObrisi.Name = "btnObrisi";
+            this.btnObrisi.Size = new System.Drawing.Size(72, 49);
+            this.btnObrisi.TabIndex = 165;
+            this.btnObrisi.Text = "Obriši";
+            this.btnObrisi.UseVisualStyleBackColor = false;
+            this.btnObrisi.Click += new System.EventHandler(this.btnObrisi_Click);
+            // 
             // frmBlagajnickiIzvjestaj
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateGray;
             this.ClientSize = new System.Drawing.Size(1106, 574);
+            this.Controls.Add(this.btnObrisi);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtPartnerNaziv);
@@ -591,5 +617,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn izdatak;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnObrisi;
     }
 }
