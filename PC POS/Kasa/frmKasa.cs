@@ -2438,16 +2438,7 @@ and rp.id_skladiste = '{1}';", sifra, Properties.Settings.Default.idSkladiste);
 
         private void btnTrazi_Click(object sender, EventArgs e)
         {
-            frmRobaTrazi roba = new frmRobaTrazi();
-            roba.Dock = DockStyle.Fill;
-            roba.WindowState = FormWindowState.Maximized;
-            roba.Show();
-
-            if (Properties.Settings.Default.id_roba != "")
-            {
-                txtUnos.Text = Properties.Settings.Default.id_roba;
-                txtUnos.Select();
-            }
+            Trazi();
         }
 
         //private void button1_Click(object sender, EventArgs e)
@@ -2770,52 +2761,60 @@ and rp.id_skladiste = '{1}';", sifra, Properties.Settings.Default.idSkladiste);
             }
         }
 
-        private void KeyDownEvent(KeyEventArgs e)
+        private void Trazi()
         {
-                if (e.KeyCode == Keys.Enter)
+            
+            //provjeri_cijenu(txtUnos.Text);
+            DataGridViewRow row = this.dgv.RowTemplate;
+            row.DefaultCellStyle.BackColor = Color.Bisque;
+            row.Height = 40;
+
+            txtUnos.Text = txtUnos.Text.Trim();
+            if (txtUnos.Text == "")
             {
-                e.SuppressKeyPress = true;
-                //provjeri_cijenu(txtUnos.Text);
-                DataGridViewRow row = this.dgv.RowTemplate;
-                row.DefaultCellStyle.BackColor = Color.Bisque;
-                row.Height = 40;
+                frmRobaTrazi roba = new frmRobaTrazi();
+                roba.MdiParent = this.MdiParent;
+                roba.Dock = DockStyle.Fill;
+                roba.ShowDialog();
 
-                txtUnos.Text = txtUnos.Text.Trim();
-                if (txtUnos.Text == "")
+                if (Properties.Settings.Default.id_roba != "")
                 {
-                    frmRobaTrazi roba = new frmRobaTrazi();
-                    roba.ShowDialog();
+                    txtUnos.Text = Properties.Settings.Default.id_roba;
+                    //CBskladiste.SelectedValue = Convert.ToInt32(Properties.Settings.Default.idSkladiste);
+                    //vecSelektiran = false;
+                    txtUnos.Select();
 
-                    if (Properties.Settings.Default.id_roba != "")
-                    {
-                        txtUnos.Text = Properties.Settings.Default.id_roba;
-                        //CBskladiste.SelectedValue = Convert.ToInt32(Properties.Settings.Default.idSkladiste);
-                        //vecSelektiran = false;
-                        txtUnos.Select();
+                    //vecSelektiran = false;
 
-                        //vecSelektiran = false;
-
-                        CBskladiste.SelectedValue = Properties.Settings.Default.idSkladiste;
-                    }
-                    else
-                    {
-                        return;
-                    }
+                    CBskladiste.SelectedValue = Properties.Settings.Default.idSkladiste;
                 }
                 else
                 {
-                    Properties.Settings.Default.idSkladiste = CBskladiste.SelectedValue.ToString();
-                    //vecSelektiran = false;
+                    return;
                 }
+            }
+            else
+            {
+                Properties.Settings.Default.idSkladiste = CBskladiste.SelectedValue.ToString();
+                //vecSelektiran = false;
+            }
 
-                string idSkladiste = Properties.Settings.Default.idSkladiste;
+            string idSkladiste = Properties.Settings.Default.idSkladiste;
 
-                string sifra = CheckEan(txtUnos.Text) ?? txtUnos.Text;
+            string sifra = CheckEan(txtUnos.Text) ?? txtUnos.Text;
 
-                if (Util.Korisno.ProvijeriIUpozoriAkoNemaNaSkladistu(sifra, Properties.Settings.Default.idSkladiste, DSpostavke.Tables[0]))
-                    SetRoba(sifra);
+            if (Util.Korisno.ProvijeriIUpozoriAkoNemaNaSkladistu(sifra, Properties.Settings.Default.idSkladiste, DSpostavke.Tables[0]))
+                SetRoba(sifra);
 
-                return;
+            return;
+        }
+
+        private void KeyDownEvent(KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                Trazi();
             }
             else if (e.KeyCode == Keys.F1)
             {

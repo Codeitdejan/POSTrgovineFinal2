@@ -14058,3 +14058,22 @@ Code: 42601
    at Npgsql.NpgsqlCommand.ExecuteNonQuery() in C:\projects\Npgsql2\src\Npgsql\NpgsqlCommand.cs:line 512
    at PCPOS.classSQL.insert(String sql) in C:\Users\Marko Vrban\Documents\POSTrgovineFinal\Code-iT Trgovine -7519\PC POS\classSQL.cs:line 142
 **************************************************************
+
+**************************************************************
+DATUM:7.8.2019. 12:32:16, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+SELECT postavi_kolicinu_sql_funkcija_prema_sifri('CodeiT-odrzavanje'1.1.2019. 0:00:00'') AS odgovor; 
+Npgsql.NpgsqlException:
+syntax error at or near "1.1"
+Severity: ERROR
+Code: 42601
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext() in C:\projects\Npgsql2\src\Npgsql\NpgsqlState.cs:line 850
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject() in C:\projects\Npgsql2\src\Npgsql\NpgsqlDataReader.cs:line 1173
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription() in C:\projects\Npgsql2\src\Npgsql\NpgsqlDataReader.cs:line 1191
+   at Npgsql.ForwardsOnlyDataReader.NextResult() in C:\projects\Npgsql2\src\Npgsql\NpgsqlDataReader.cs:line 1377
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError) in C:\projects\Npgsql2\src\Npgsql\NpgsqlDataReader.cs:line 1040
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb) in C:\projects\Npgsql2\src\Npgsql\NpgsqlCommand.cs:line 609
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery() in C:\projects\Npgsql2\src\Npgsql\NpgsqlCommand.cs:line 512
+   at PCPOS.classSQL.insert(String sql) in C:\Users\Toni\Desktop\POSTrgovineFinal2v2\PC POS\classSQL.cs:line 142
+**************************************************************
