@@ -1952,9 +1952,13 @@ where b.id_stavka = a.id_stavka;";
                 classSQL.Setings_Update("ALTER TABLE podaci_tvrtka ADD COLUMN servis_text ntext");
             }
 
+            if (DTcompact.Select("table_name = 'podaci_tvrtka' and column_name = 'naziv_djelatnosti'").Length == 0)
+            {
+                classSQL.Setings_Update("alter table podaci_tvrtka add column naziv_djelatnosti nvarchar(150) default '';");
+            }
             if (DTcompact.Select("table_name = 'podaci_tvrtka' and column_name = 'sifra_djelatnosti'").Length == 0)
             {
-                classSQL.Setings_Update("alter table podaci_tvrtka add column sifra_djelatnosti nvarchar(150) default '';");
+                classSQL.Setings_Update("alter table podaci_tvrtka add column sifra_djelatnosti nvarchar(150) default '';");              
                 classSQL.Setings_Update("alter table podaci_tvrtka add column adresa_prebivalista nvarchar(500) default '';");
             }
         }
@@ -2999,6 +3003,22 @@ alter table racuni add column avio_maks_tezina_polijetanja numeric(15,6) default
                     string sql = "ALTER TABLE podaci_tvrtka ADD COLUMN direktor character varying";
                     classSQL.update(sql);
                     sql = "update podaci_tvrtka set direktor = (select vl from podaci_tvrtka);";
+                    classSQL.update(sql);
+                }
+                catch
+                {
+                }
+            }
+
+            a = dt.Select("table_name = 'podaci_tvrtka' and column_name = 'naziv_djelatnosti'");
+
+            if (a.Length == 0)
+            {
+                try
+                {
+                    string sql = "ALTER TABLE podaci_tvrtka ADD COLUMN naziv_djelatnosti character varying";
+                    classSQL.update(sql);
+                    sql = "update podaci_tvrtka set naziv_djelatnosti = '';";
                     classSQL.update(sql);
                 }
                 catch

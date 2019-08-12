@@ -199,6 +199,7 @@ namespace PCPOS
             this.robaNaKomisijiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rekapitulacijaRadnihNalogaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rUCRazlikaUCijeniToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.knjigaPlačenihRačunaKPRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.servisToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.noviServisToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.sviServisiToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -246,20 +247,20 @@ namespace PCPOS
             this.popisDogađajaZaPartnereToolStripMenuItem1});
             this.tsmSifarnici.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.tsmSifarnici.Name = "tsmSifarnici";
-            this.tsmSifarnici.Size = new System.Drawing.Size(74, 26);
+            this.tsmSifarnici.Size = new System.Drawing.Size(92, 33);
             this.tsmSifarnici.Text = "Šifarnici";
             // 
             // unosToolStripMenuItem
             // 
             this.unosToolStripMenuItem.Name = "unosToolStripMenuItem";
-            this.unosToolStripMenuItem.Size = new System.Drawing.Size(260, 24);
+            this.unosToolStripMenuItem.Size = new System.Drawing.Size(320, 30);
             this.unosToolStripMenuItem.Text = "Partneri";
             this.unosToolStripMenuItem.Click += new System.EventHandler(this.unosToolStripMenuItem_Click);
             // 
             // robauslugeToolStripMenuItem
             // 
             this.robauslugeToolStripMenuItem.Name = "robauslugeToolStripMenuItem";
-            this.robauslugeToolStripMenuItem.Size = new System.Drawing.Size(260, 24);
+            this.robauslugeToolStripMenuItem.Size = new System.Drawing.Size(320, 30);
             this.robauslugeToolStripMenuItem.Text = "Roba / usluge";
             this.robauslugeToolStripMenuItem.Click += new System.EventHandler(this.robauslugeToolStripMenuItem_Click);
             // 
@@ -269,119 +270,119 @@ namespace PCPOS
             this.unosNovogGradaToolStripMenuItem,
             this.pregledGradovaToolStripMenuItem});
             this.gradoviToolStripMenuItem.Name = "gradoviToolStripMenuItem";
-            this.gradoviToolStripMenuItem.Size = new System.Drawing.Size(260, 24);
+            this.gradoviToolStripMenuItem.Size = new System.Drawing.Size(320, 30);
             this.gradoviToolStripMenuItem.Text = "Gradovi";
             this.gradoviToolStripMenuItem.Click += new System.EventHandler(this.gradoviToolStripMenuItem_Click);
             // 
             // unosNovogGradaToolStripMenuItem
             // 
             this.unosNovogGradaToolStripMenuItem.Name = "unosNovogGradaToolStripMenuItem";
-            this.unosNovogGradaToolStripMenuItem.Size = new System.Drawing.Size(200, 24);
+            this.unosNovogGradaToolStripMenuItem.Size = new System.Drawing.Size(245, 30);
             this.unosNovogGradaToolStripMenuItem.Text = "Unos novog grada";
             this.unosNovogGradaToolStripMenuItem.Click += new System.EventHandler(this.unosNovogGradaToolStripMenuItem_Click);
             // 
             // pregledGradovaToolStripMenuItem
             // 
             this.pregledGradovaToolStripMenuItem.Name = "pregledGradovaToolStripMenuItem";
-            this.pregledGradovaToolStripMenuItem.Size = new System.Drawing.Size(200, 24);
+            this.pregledGradovaToolStripMenuItem.Size = new System.Drawing.Size(245, 30);
             this.pregledGradovaToolStripMenuItem.Text = "Pregled gradova";
             this.pregledGradovaToolStripMenuItem.Click += new System.EventHandler(this.pregledGradovaToolStripMenuItem_Click);
             // 
             // skladištaToolStripMenuItem
             // 
             this.skladištaToolStripMenuItem.Name = "skladištaToolStripMenuItem";
-            this.skladištaToolStripMenuItem.Size = new System.Drawing.Size(260, 24);
+            this.skladištaToolStripMenuItem.Size = new System.Drawing.Size(320, 30);
             this.skladištaToolStripMenuItem.Text = "Skladišta";
             this.skladištaToolStripMenuItem.Click += new System.EventHandler(this.skladištaToolStripMenuItem_Click);
             // 
             // blagajneToolStripMenuItem
             // 
             this.blagajneToolStripMenuItem.Name = "blagajneToolStripMenuItem";
-            this.blagajneToolStripMenuItem.Size = new System.Drawing.Size(260, 24);
+            this.blagajneToolStripMenuItem.Size = new System.Drawing.Size(320, 30);
             this.blagajneToolStripMenuItem.Text = "Blagajne";
             this.blagajneToolStripMenuItem.Click += new System.EventHandler(this.blagajneToolStripMenuItem_Click);
             // 
             // dučaniToolStripMenuItem
             // 
             this.dučaniToolStripMenuItem.Name = "dučaniToolStripMenuItem";
-            this.dučaniToolStripMenuItem.Size = new System.Drawing.Size(260, 24);
+            this.dučaniToolStripMenuItem.Size = new System.Drawing.Size(320, 30);
             this.dučaniToolStripMenuItem.Text = "Dućani";
             this.dučaniToolStripMenuItem.Click += new System.EventHandler(this.dučaniToolStripMenuItem_Click);
             // 
             // zaposleniciToolStripMenuItem
             // 
             this.zaposleniciToolStripMenuItem.Name = "zaposleniciToolStripMenuItem";
-            this.zaposleniciToolStripMenuItem.Size = new System.Drawing.Size(260, 24);
+            this.zaposleniciToolStripMenuItem.Size = new System.Drawing.Size(320, 30);
             this.zaposleniciToolStripMenuItem.Text = "Zaposlenici";
             this.zaposleniciToolStripMenuItem.Click += new System.EventHandler(this.zaposleniciToolStripMenuItem_Click);
             // 
             // zemljeToolStripMenuItem
             // 
             this.zemljeToolStripMenuItem.Name = "zemljeToolStripMenuItem";
-            this.zemljeToolStripMenuItem.Size = new System.Drawing.Size(260, 24);
+            this.zemljeToolStripMenuItem.Size = new System.Drawing.Size(320, 30);
             this.zemljeToolStripMenuItem.Text = "Države";
             this.zemljeToolStripMenuItem.Click += new System.EventHandler(this.zemljeToolStripMenuItem_Click);
             // 
             // žiroRačuniToolStripMenuItem
             // 
             this.žiroRačuniToolStripMenuItem.Name = "žiroRačuniToolStripMenuItem";
-            this.žiroRačuniToolStripMenuItem.Size = new System.Drawing.Size(260, 24);
+            this.žiroRačuniToolStripMenuItem.Size = new System.Drawing.Size(320, 30);
             this.žiroRačuniToolStripMenuItem.Text = "Žiro računi";
             this.žiroRačuniToolStripMenuItem.Click += new System.EventHandler(this.žiroRačuniToolStripMenuItem_Click);
             // 
             // proizviđaćiToolStripMenuItem
             // 
             this.proizviđaćiToolStripMenuItem.Name = "proizviđaćiToolStripMenuItem";
-            this.proizviđaćiToolStripMenuItem.Size = new System.Drawing.Size(260, 24);
+            this.proizviđaćiToolStripMenuItem.Size = new System.Drawing.Size(320, 30);
             this.proizviđaćiToolStripMenuItem.Text = "Proizvođači";
             this.proizviđaćiToolStripMenuItem.Click += new System.EventHandler(this.proizviđaćiToolStripMenuItem_Click);
             // 
             // grupeProizvodaToolStripMenuItem
             // 
             this.grupeProizvodaToolStripMenuItem.Name = "grupeProizvodaToolStripMenuItem";
-            this.grupeProizvodaToolStripMenuItem.Size = new System.Drawing.Size(260, 24);
+            this.grupeProizvodaToolStripMenuItem.Size = new System.Drawing.Size(320, 30);
             this.grupeProizvodaToolStripMenuItem.Text = "Grupe proizvoda";
             this.grupeProizvodaToolStripMenuItem.Click += new System.EventHandler(this.grupeProizvodaToolStripMenuItem_Click);
             // 
             // stopePorezaToolStripMenuItem
             // 
             this.stopePorezaToolStripMenuItem.Name = "stopePorezaToolStripMenuItem";
-            this.stopePorezaToolStripMenuItem.Size = new System.Drawing.Size(260, 24);
+            this.stopePorezaToolStripMenuItem.Size = new System.Drawing.Size(320, 30);
             this.stopePorezaToolStripMenuItem.Text = "Stope poreza";
             this.stopePorezaToolStripMenuItem.Click += new System.EventHandler(this.stopePorezaToolStripMenuItem_Click);
             // 
             // načiniPlaćanjaToolStripMenuItem
             // 
             this.načiniPlaćanjaToolStripMenuItem.Name = "načiniPlaćanjaToolStripMenuItem";
-            this.načiniPlaćanjaToolStripMenuItem.Size = new System.Drawing.Size(260, 24);
+            this.načiniPlaćanjaToolStripMenuItem.Size = new System.Drawing.Size(320, 30);
             this.načiniPlaćanjaToolStripMenuItem.Text = "Načini plaćanja";
             this.načiniPlaćanjaToolStripMenuItem.Click += new System.EventHandler(this.načiniPlaćanjaToolStripMenuItem_Click);
             // 
             // valuteToolStripMenuItem
             // 
             this.valuteToolStripMenuItem.Name = "valuteToolStripMenuItem";
-            this.valuteToolStripMenuItem.Size = new System.Drawing.Size(260, 24);
+            this.valuteToolStripMenuItem.Size = new System.Drawing.Size(320, 30);
             this.valuteToolStripMenuItem.Text = "Valute";
             this.valuteToolStripMenuItem.Click += new System.EventHandler(this.valuteToolStripMenuItem_Click);
             // 
             // podgrupaToolStripMenuItem
             // 
             this.podgrupaToolStripMenuItem.Name = "podgrupaToolStripMenuItem";
-            this.podgrupaToolStripMenuItem.Size = new System.Drawing.Size(260, 24);
+            this.podgrupaToolStripMenuItem.Size = new System.Drawing.Size(320, 30);
             this.podgrupaToolStripMenuItem.Text = "Podgrupa";
             this.podgrupaToolStripMenuItem.Click += new System.EventHandler(this.podgrupaToolStripMenuItem_Click);
             // 
             // uvozIzProgramaToolStripMenuItem
             // 
             this.uvozIzProgramaToolStripMenuItem.Name = "uvozIzProgramaToolStripMenuItem";
-            this.uvozIzProgramaToolStripMenuItem.Size = new System.Drawing.Size(260, 24);
+            this.uvozIzProgramaToolStripMenuItem.Size = new System.Drawing.Size(320, 30);
             this.uvozIzProgramaToolStripMenuItem.Text = "Uvoz u program";
             this.uvozIzProgramaToolStripMenuItem.Click += new System.EventHandler(this.uvozIzProgramaToolStripMenuItem_Click);
             // 
             // izvozUProgramToolStripMenuItem
             // 
             this.izvozUProgramToolStripMenuItem.Name = "izvozUProgramToolStripMenuItem";
-            this.izvozUProgramToolStripMenuItem.Size = new System.Drawing.Size(260, 24);
+            this.izvozUProgramToolStripMenuItem.Size = new System.Drawing.Size(320, 30);
             this.izvozUProgramToolStripMenuItem.Text = "Izvoz iz programa";
             this.izvozUProgramToolStripMenuItem.Click += new System.EventHandler(this.izvozUProgramToolStripMenuItem_Click);
             // 
@@ -398,7 +399,7 @@ namespace PCPOS
             this.afroditaToolStripMenuItem,
             this.robotToolStripMenuItem});
             this.uvozOdPartneraToolStripMenuItem.Name = "uvozOdPartneraToolStripMenuItem";
-            this.uvozOdPartneraToolStripMenuItem.Size = new System.Drawing.Size(260, 24);
+            this.uvozOdPartneraToolStripMenuItem.Size = new System.Drawing.Size(320, 30);
             this.uvozOdPartneraToolStripMenuItem.Text = "Uvoz od partnera";
             this.uvozOdPartneraToolStripMenuItem.Visible = false;
             this.uvozOdPartneraToolStripMenuItem.Click += new System.EventHandler(this.uvozOdPartneraToolStripMenuItem_Click);
@@ -406,77 +407,77 @@ namespace PCPOS
             // xplorerToolStripMenuItem
             // 
             this.xplorerToolStripMenuItem.Name = "xplorerToolStripMenuItem";
-            this.xplorerToolStripMenuItem.Size = new System.Drawing.Size(172, 24);
+            this.xplorerToolStripMenuItem.Size = new System.Drawing.Size(209, 30);
             this.xplorerToolStripMenuItem.Text = "Xplorer";
             this.xplorerToolStripMenuItem.Click += new System.EventHandler(this.xplorerToolStripMenuItem_Click);
             // 
             // dobarPartnerToolStripMenuItem
             // 
             this.dobarPartnerToolStripMenuItem.Name = "dobarPartnerToolStripMenuItem";
-            this.dobarPartnerToolStripMenuItem.Size = new System.Drawing.Size(172, 24);
+            this.dobarPartnerToolStripMenuItem.Size = new System.Drawing.Size(209, 30);
             this.dobarPartnerToolStripMenuItem.Text = "Dobar partner";
             this.dobarPartnerToolStripMenuItem.Click += new System.EventHandler(this.dobarPartnerToolStripMenuItem_Click);
             // 
             // bioBioToolStripMenuItem
             // 
             this.bioBioToolStripMenuItem.Name = "bioBioToolStripMenuItem";
-            this.bioBioToolStripMenuItem.Size = new System.Drawing.Size(172, 24);
+            this.bioBioToolStripMenuItem.Size = new System.Drawing.Size(209, 30);
             this.bioBioToolStripMenuItem.Text = "BioBio";
             this.bioBioToolStripMenuItem.Click += new System.EventHandler(this.bioBioToolStripMenuItem_Click);
             // 
             // školskaKnjigaToolStripMenuItem
             // 
             this.školskaKnjigaToolStripMenuItem.Name = "školskaKnjigaToolStripMenuItem";
-            this.školskaKnjigaToolStripMenuItem.Size = new System.Drawing.Size(172, 24);
+            this.školskaKnjigaToolStripMenuItem.Size = new System.Drawing.Size(209, 30);
             this.školskaKnjigaToolStripMenuItem.Text = "Školska knjiga";
             this.školskaKnjigaToolStripMenuItem.Click += new System.EventHandler(this.školskaKnjigaToolStripMenuItem_Click);
             // 
             // tradexcoToolStripMenuItem
             // 
             this.tradexcoToolStripMenuItem.Name = "tradexcoToolStripMenuItem";
-            this.tradexcoToolStripMenuItem.Size = new System.Drawing.Size(172, 24);
+            this.tradexcoToolStripMenuItem.Size = new System.Drawing.Size(209, 30);
             this.tradexcoToolStripMenuItem.Text = "Tradexco";
             this.tradexcoToolStripMenuItem.Click += new System.EventHandler(this.tradexcoToolStripMenuItem_Click);
             // 
             // nirdToolStripMenuItem
             // 
             this.nirdToolStripMenuItem.Name = "nirdToolStripMenuItem";
-            this.nirdToolStripMenuItem.Size = new System.Drawing.Size(172, 24);
+            this.nirdToolStripMenuItem.Size = new System.Drawing.Size(209, 30);
             this.nirdToolStripMenuItem.Text = "Nird";
             this.nirdToolStripMenuItem.Click += new System.EventHandler(this.nirdToolStripMenuItem_Click);
             // 
             // fokusTekstilToolStripMenuItem
             // 
             this.fokusTekstilToolStripMenuItem.Name = "fokusTekstilToolStripMenuItem";
-            this.fokusTekstilToolStripMenuItem.Size = new System.Drawing.Size(172, 24);
+            this.fokusTekstilToolStripMenuItem.Size = new System.Drawing.Size(209, 30);
             this.fokusTekstilToolStripMenuItem.Text = "Fokus Tekstil";
             this.fokusTekstilToolStripMenuItem.Click += new System.EventHandler(this.fokusTekstilToolStripMenuItem_Click);
             // 
             // afroditaToolStripMenuItem
             // 
             this.afroditaToolStripMenuItem.Name = "afroditaToolStripMenuItem";
-            this.afroditaToolStripMenuItem.Size = new System.Drawing.Size(172, 24);
+            this.afroditaToolStripMenuItem.Size = new System.Drawing.Size(209, 30);
             this.afroditaToolStripMenuItem.Text = "Afrodita";
             this.afroditaToolStripMenuItem.Click += new System.EventHandler(this.afroditaToolStripMenuItem_Click);
             // 
             // robotToolStripMenuItem
             // 
             this.robotToolStripMenuItem.Name = "robotToolStripMenuItem";
-            this.robotToolStripMenuItem.Size = new System.Drawing.Size(172, 24);
+            this.robotToolStripMenuItem.Size = new System.Drawing.Size(209, 30);
             this.robotToolStripMenuItem.Text = "Robot";
             this.robotToolStripMenuItem.Click += new System.EventHandler(this.robotToolStripMenuItem_Click);
             // 
             // popisArtikalaToolStripMenuItem
             // 
             this.popisArtikalaToolStripMenuItem.Name = "popisArtikalaToolStripMenuItem";
-            this.popisArtikalaToolStripMenuItem.Size = new System.Drawing.Size(260, 24);
+            this.popisArtikalaToolStripMenuItem.Size = new System.Drawing.Size(320, 30);
             this.popisArtikalaToolStripMenuItem.Text = "Cjenik artikala i usluga";
             this.popisArtikalaToolStripMenuItem.Click += new System.EventHandler(this.popisArtikalaToolStripMenuItem_Click);
             // 
             // popisDogađajaZaPartnereToolStripMenuItem1
             // 
             this.popisDogađajaZaPartnereToolStripMenuItem1.Name = "popisDogađajaZaPartnereToolStripMenuItem1";
-            this.popisDogađajaZaPartnereToolStripMenuItem1.Size = new System.Drawing.Size(260, 24);
+            this.popisDogađajaZaPartnereToolStripMenuItem1.Size = new System.Drawing.Size(320, 30);
             this.popisDogađajaZaPartnereToolStripMenuItem1.Text = "Popis događaja za partnere";
             this.popisDogađajaZaPartnereToolStripMenuItem1.Click += new System.EventHandler(this.popisDogađajaZaPartnereToolStripMenuItem1_Click);
             // 
@@ -509,7 +510,7 @@ namespace PCPOS
             this.knjigaPopisaToolStripMenuItem});
             this.robnoToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.robnoToolStripMenuItem.Name = "robnoToolStripMenuItem";
-            this.robnoToolStripMenuItem.Size = new System.Drawing.Size(65, 26);
+            this.robnoToolStripMenuItem.Size = new System.Drawing.Size(78, 33);
             this.robnoToolStripMenuItem.Text = "Robno";
             // 
             // zapisnikOPromjeniCijeneToolStripMenuItem
@@ -518,20 +519,20 @@ namespace PCPOS
             this.zapisnikOPromjeniCijeneToolStripMenuItem1,
             this.sviZapisniciOPromjeniCijeneToolStripMenuItem});
             this.zapisnikOPromjeniCijeneToolStripMenuItem.Name = "zapisnikOPromjeniCijeneToolStripMenuItem";
-            this.zapisnikOPromjeniCijeneToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
+            this.zapisnikOPromjeniCijeneToolStripMenuItem.Size = new System.Drawing.Size(312, 30);
             this.zapisnikOPromjeniCijeneToolStripMenuItem.Text = "Zapisnik o promjeni cijene";
             // 
             // zapisnikOPromjeniCijeneToolStripMenuItem1
             // 
             this.zapisnikOPromjeniCijeneToolStripMenuItem1.Name = "zapisnikOPromjeniCijeneToolStripMenuItem1";
-            this.zapisnikOPromjeniCijeneToolStripMenuItem1.Size = new System.Drawing.Size(280, 24);
+            this.zapisnikOPromjeniCijeneToolStripMenuItem1.Size = new System.Drawing.Size(346, 30);
             this.zapisnikOPromjeniCijeneToolStripMenuItem1.Text = "Zapisnik o promjeni cijene";
             this.zapisnikOPromjeniCijeneToolStripMenuItem1.Click += new System.EventHandler(this.zapisnikOPromjeniCijeneToolStripMenuItem1_Click);
             // 
             // sviZapisniciOPromjeniCijeneToolStripMenuItem
             // 
             this.sviZapisniciOPromjeniCijeneToolStripMenuItem.Name = "sviZapisniciOPromjeniCijeneToolStripMenuItem";
-            this.sviZapisniciOPromjeniCijeneToolStripMenuItem.Size = new System.Drawing.Size(280, 24);
+            this.sviZapisniciOPromjeniCijeneToolStripMenuItem.Size = new System.Drawing.Size(346, 30);
             this.sviZapisniciOPromjeniCijeneToolStripMenuItem.Text = "Svi Zapisnici o promjeni cijene";
             this.sviZapisniciOPromjeniCijeneToolStripMenuItem.Click += new System.EventHandler(this.sviZapisniciOPromjeniCijeneToolStripMenuItem_Click);
             // 
@@ -541,20 +542,20 @@ namespace PCPOS
             this.novaKalkulacijaToolStripMenuItem,
             this.sveKalkulacijeToolStripMenuItem1});
             this.kalkulacijeToolStripMenuItem.Name = "kalkulacijeToolStripMenuItem";
-            this.kalkulacijeToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
+            this.kalkulacijeToolStripMenuItem.Size = new System.Drawing.Size(312, 30);
             this.kalkulacijeToolStripMenuItem.Text = "Kalkulacije";
             // 
             // novaKalkulacijaToolStripMenuItem
             // 
             this.novaKalkulacijaToolStripMenuItem.Name = "novaKalkulacijaToolStripMenuItem";
-            this.novaKalkulacijaToolStripMenuItem.Size = new System.Drawing.Size(186, 24);
+            this.novaKalkulacijaToolStripMenuItem.Size = new System.Drawing.Size(227, 30);
             this.novaKalkulacijaToolStripMenuItem.Text = "Nova kalkulacija";
             this.novaKalkulacijaToolStripMenuItem.Click += new System.EventHandler(this.kalkulacijaToolStripMenuItem_Click);
             // 
             // sveKalkulacijeToolStripMenuItem1
             // 
             this.sveKalkulacijeToolStripMenuItem1.Name = "sveKalkulacijeToolStripMenuItem1";
-            this.sveKalkulacijeToolStripMenuItem1.Size = new System.Drawing.Size(186, 24);
+            this.sveKalkulacijeToolStripMenuItem1.Size = new System.Drawing.Size(227, 30);
             this.sveKalkulacijeToolStripMenuItem1.Text = "Sve kalkulacije";
             this.sveKalkulacijeToolStripMenuItem1.Click += new System.EventHandler(this.sveKalkulacijeToolStripMenuItem_Click);
             // 
@@ -565,27 +566,27 @@ namespace PCPOS
             this.sveInventureToolStripMenuItem,
             this.postaviToolStripMenuItem});
             this.inventuraToolStripMenuItem.Name = "inventuraToolStripMenuItem";
-            this.inventuraToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
+            this.inventuraToolStripMenuItem.Size = new System.Drawing.Size(312, 30);
             this.inventuraToolStripMenuItem.Text = "Inventura";
             // 
             // unosInventureToolStripMenuItem1
             // 
             this.unosInventureToolStripMenuItem1.Name = "unosInventureToolStripMenuItem1";
-            this.unosInventureToolStripMenuItem1.Size = new System.Drawing.Size(250, 24);
+            this.unosInventureToolStripMenuItem1.Size = new System.Drawing.Size(311, 30);
             this.unosInventureToolStripMenuItem1.Text = "Unos inventure";
             this.unosInventureToolStripMenuItem1.Click += new System.EventHandler(this.unosInventureToolStripMenuItem_Click);
             // 
             // sveInventureToolStripMenuItem
             // 
             this.sveInventureToolStripMenuItem.Name = "sveInventureToolStripMenuItem";
-            this.sveInventureToolStripMenuItem.Size = new System.Drawing.Size(250, 24);
+            this.sveInventureToolStripMenuItem.Size = new System.Drawing.Size(311, 30);
             this.sveInventureToolStripMenuItem.Text = "Sve inventure";
             this.sveInventureToolStripMenuItem.Click += new System.EventHandler(this.sveInventureToolStripMenuItem_Click);
             // 
             // postaviToolStripMenuItem
             // 
             this.postaviToolStripMenuItem.Name = "postaviToolStripMenuItem";
-            this.postaviToolStripMenuItem.Size = new System.Drawing.Size(250, 24);
+            this.postaviToolStripMenuItem.Size = new System.Drawing.Size(311, 30);
             this.postaviToolStripMenuItem.Text = "Postavi stanje po inventuri";
             this.postaviToolStripMenuItem.Click += new System.EventHandler(this.postaviToolStripMenuItem_Click);
             // 
@@ -596,27 +597,27 @@ namespace PCPOS
             this.karticaSkladištaToolStripMenuItem2,
             this.karticaRobeNaTuđenSkladištuToolStripMenuItem});
             this.karticaToolStripMenuItem.Name = "karticaToolStripMenuItem";
-            this.karticaToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
+            this.karticaToolStripMenuItem.Size = new System.Drawing.Size(312, 30);
             this.karticaToolStripMenuItem.Text = "Kartica";
             // 
             // karticaRobeToolStripMenuItem
             // 
             this.karticaRobeToolStripMenuItem.Name = "karticaRobeToolStripMenuItem";
-            this.karticaRobeToolStripMenuItem.Size = new System.Drawing.Size(282, 24);
+            this.karticaRobeToolStripMenuItem.Size = new System.Drawing.Size(350, 30);
             this.karticaRobeToolStripMenuItem.Text = "Kartica robe";
             this.karticaRobeToolStripMenuItem.Click += new System.EventHandler(this.karticaSkladištaToolStripMenuItem_Click);
             // 
             // karticaSkladištaToolStripMenuItem2
             // 
             this.karticaSkladištaToolStripMenuItem2.Name = "karticaSkladištaToolStripMenuItem2";
-            this.karticaSkladištaToolStripMenuItem2.Size = new System.Drawing.Size(282, 24);
+            this.karticaSkladištaToolStripMenuItem2.Size = new System.Drawing.Size(350, 30);
             this.karticaSkladištaToolStripMenuItem2.Text = "Kartica skladišta";
             this.karticaSkladištaToolStripMenuItem2.Click += new System.EventHandler(this.karticaSkladištaToolStripMenuItem1_Click);
             // 
             // karticaRobeNaTuđenSkladištuToolStripMenuItem
             // 
             this.karticaRobeNaTuđenSkladištuToolStripMenuItem.Name = "karticaRobeNaTuđenSkladištuToolStripMenuItem";
-            this.karticaRobeNaTuđenSkladištuToolStripMenuItem.Size = new System.Drawing.Size(282, 24);
+            this.karticaRobeNaTuđenSkladištuToolStripMenuItem.Size = new System.Drawing.Size(350, 30);
             this.karticaRobeNaTuđenSkladištuToolStripMenuItem.Text = "Kartica robe na tuđen skladištu";
             this.karticaRobeNaTuđenSkladištuToolStripMenuItem.Visible = false;
             this.karticaRobeNaTuđenSkladištuToolStripMenuItem.Click += new System.EventHandler(this.karticaRobeNaTuđenSkladištuToolStripMenuItem_Click);
@@ -628,27 +629,27 @@ namespace PCPOS
             this.sveFaktureToolStripMenuItem1,
             this.robuPreuzeoToolStripMenuItem});
             this.fakturaToolStripMenuItem1.Name = "fakturaToolStripMenuItem1";
-            this.fakturaToolStripMenuItem1.Size = new System.Drawing.Size(253, 24);
+            this.fakturaToolStripMenuItem1.Size = new System.Drawing.Size(312, 30);
             this.fakturaToolStripMenuItem1.Text = "Faktura";
             // 
             // novaFakturaToolStripMenuItem1
             // 
             this.novaFakturaToolStripMenuItem1.Name = "novaFakturaToolStripMenuItem1";
-            this.novaFakturaToolStripMenuItem1.Size = new System.Drawing.Size(180, 24);
+            this.novaFakturaToolStripMenuItem1.Size = new System.Drawing.Size(207, 30);
             this.novaFakturaToolStripMenuItem1.Text = "Nova faktura";
             this.novaFakturaToolStripMenuItem1.Click += new System.EventHandler(this.novaFakturaToolStripMenuItem_Click);
             // 
             // sveFaktureToolStripMenuItem1
             // 
             this.sveFaktureToolStripMenuItem1.Name = "sveFaktureToolStripMenuItem1";
-            this.sveFaktureToolStripMenuItem1.Size = new System.Drawing.Size(180, 24);
+            this.sveFaktureToolStripMenuItem1.Size = new System.Drawing.Size(207, 30);
             this.sveFaktureToolStripMenuItem1.Text = "Sve fakture";
             this.sveFaktureToolStripMenuItem1.Click += new System.EventHandler(this.sveFaktureToolStripMenuItem_Click);
             // 
             // robuPreuzeoToolStripMenuItem
             // 
             this.robuPreuzeoToolStripMenuItem.Name = "robuPreuzeoToolStripMenuItem";
-            this.robuPreuzeoToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.robuPreuzeoToolStripMenuItem.Size = new System.Drawing.Size(207, 30);
             this.robuPreuzeoToolStripMenuItem.Text = "Robu preuzeo";
             this.robuPreuzeoToolStripMenuItem.Click += new System.EventHandler(this.robuPreuzeoToolStripMenuItem_Click);
             // 
@@ -658,20 +659,20 @@ namespace PCPOS
             this.novaFakturaToolStripMenuItem,
             this.sveFaktureToolStripMenuItem});
             this.fakturaBezRobeToolStripMenuItem.Name = "fakturaBezRobeToolStripMenuItem";
-            this.fakturaBezRobeToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
+            this.fakturaBezRobeToolStripMenuItem.Size = new System.Drawing.Size(312, 30);
             this.fakturaBezRobeToolStripMenuItem.Text = "Faktura bez robe";
             // 
             // novaFakturaToolStripMenuItem
             // 
             this.novaFakturaToolStripMenuItem.Name = "novaFakturaToolStripMenuItem";
-            this.novaFakturaToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.novaFakturaToolStripMenuItem.Size = new System.Drawing.Size(198, 30);
             this.novaFakturaToolStripMenuItem.Text = "Nova faktura";
             this.novaFakturaToolStripMenuItem.Click += new System.EventHandler(this.novaFakturaToolStripMenuItem_Click_1);
             // 
             // sveFaktureToolStripMenuItem
             // 
             this.sveFaktureToolStripMenuItem.Name = "sveFaktureToolStripMenuItem";
-            this.sveFaktureToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.sveFaktureToolStripMenuItem.Size = new System.Drawing.Size(198, 30);
             this.sveFaktureToolStripMenuItem.Text = "Sve fakture";
             this.sveFaktureToolStripMenuItem.Click += new System.EventHandler(this.sveFaktureToolStripMenuItem_Click_1);
             // 
@@ -681,20 +682,20 @@ namespace PCPOS
             this.računZaPredujamToolStripMenuItem,
             this.sviRačuniZaPredujamToolStripMenuItem});
             this.računZaAvansToolStripMenuItem.Name = "računZaAvansToolStripMenuItem";
-            this.računZaAvansToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
+            this.računZaAvansToolStripMenuItem.Size = new System.Drawing.Size(312, 30);
             this.računZaAvansToolStripMenuItem.Text = "Račun za predujam";
             // 
             // računZaPredujamToolStripMenuItem
             // 
             this.računZaPredujamToolStripMenuItem.Name = "računZaPredujamToolStripMenuItem";
-            this.računZaPredujamToolStripMenuItem.Size = new System.Drawing.Size(228, 24);
+            this.računZaPredujamToolStripMenuItem.Size = new System.Drawing.Size(282, 30);
             this.računZaPredujamToolStripMenuItem.Text = "Račun za predujam";
             this.računZaPredujamToolStripMenuItem.Click += new System.EventHandler(this.računZaPredujamToolStripMenuItem_Click);
             // 
             // sviRačuniZaPredujamToolStripMenuItem
             // 
             this.sviRačuniZaPredujamToolStripMenuItem.Name = "sviRačuniZaPredujamToolStripMenuItem";
-            this.sviRačuniZaPredujamToolStripMenuItem.Size = new System.Drawing.Size(228, 24);
+            this.sviRačuniZaPredujamToolStripMenuItem.Size = new System.Drawing.Size(282, 30);
             this.sviRačuniZaPredujamToolStripMenuItem.Text = "Svi računi za predujam";
             this.sviRačuniZaPredujamToolStripMenuItem.Click += new System.EventHandler(this.sviRačuniZaPredujamToolStripMenuItem_Click);
             // 
@@ -704,20 +705,20 @@ namespace PCPOS
             this.novaPonudaToolStripMenuItem1,
             this.svePonudeToolStripMenuItem});
             this.ponudeToolStripMenuItem.Name = "ponudeToolStripMenuItem";
-            this.ponudeToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
+            this.ponudeToolStripMenuItem.Size = new System.Drawing.Size(312, 30);
             this.ponudeToolStripMenuItem.Text = "Ponude";
             // 
             // novaPonudaToolStripMenuItem1
             // 
             this.novaPonudaToolStripMenuItem1.Name = "novaPonudaToolStripMenuItem1";
-            this.novaPonudaToolStripMenuItem1.Size = new System.Drawing.Size(180, 24);
+            this.novaPonudaToolStripMenuItem1.Size = new System.Drawing.Size(204, 30);
             this.novaPonudaToolStripMenuItem1.Text = "Nova ponuda";
             this.novaPonudaToolStripMenuItem1.Click += new System.EventHandler(this.novaPonudaToolStripMenuItem_Click);
             // 
             // svePonudeToolStripMenuItem
             // 
             this.svePonudeToolStripMenuItem.Name = "svePonudeToolStripMenuItem";
-            this.svePonudeToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.svePonudeToolStripMenuItem.Size = new System.Drawing.Size(204, 30);
             this.svePonudeToolStripMenuItem.Text = "Sve ponude";
             this.svePonudeToolStripMenuItem.Click += new System.EventHandler(this.svePonudeToolStripMenuItem1_Click);
             // 
@@ -731,48 +732,48 @@ namespace PCPOS
             this.servisToolStripMenuItem,
             this.sviServisiToolStripMenuItem});
             this.radniNalogToolStripMenuItem1.Name = "radniNalogToolStripMenuItem1";
-            this.radniNalogToolStripMenuItem1.Size = new System.Drawing.Size(253, 24);
+            this.radniNalogToolStripMenuItem1.Size = new System.Drawing.Size(312, 30);
             this.radniNalogToolStripMenuItem1.Text = "Radni nalog";
             // 
             // noviRadniNalogToolStripMenuItem1
             // 
             this.noviRadniNalogToolStripMenuItem1.Name = "noviRadniNalogToolStripMenuItem1";
-            this.noviRadniNalogToolStripMenuItem1.Size = new System.Drawing.Size(189, 24);
+            this.noviRadniNalogToolStripMenuItem1.Size = new System.Drawing.Size(231, 30);
             this.noviRadniNalogToolStripMenuItem1.Text = "Novi radni nalog";
             this.noviRadniNalogToolStripMenuItem1.Click += new System.EventHandler(this.noviRadniNalogToolStripMenuItem_Click);
             // 
             // unosNormativaToolStripMenuItem1
             // 
             this.unosNormativaToolStripMenuItem1.Name = "unosNormativaToolStripMenuItem1";
-            this.unosNormativaToolStripMenuItem1.Size = new System.Drawing.Size(189, 24);
+            this.unosNormativaToolStripMenuItem1.Size = new System.Drawing.Size(231, 30);
             this.unosNormativaToolStripMenuItem1.Text = "Svi radni nalozi";
             this.unosNormativaToolStripMenuItem1.Click += new System.EventHandler(this.sviRadniNaloziToolStripMenuItem_Click);
             // 
             // unosNormativaToolStripMenuItem2
             // 
             this.unosNormativaToolStripMenuItem2.Name = "unosNormativaToolStripMenuItem2";
-            this.unosNormativaToolStripMenuItem2.Size = new System.Drawing.Size(189, 24);
+            this.unosNormativaToolStripMenuItem2.Size = new System.Drawing.Size(231, 30);
             this.unosNormativaToolStripMenuItem2.Text = "Unos normativa";
             this.unosNormativaToolStripMenuItem2.Click += new System.EventHandler(this.unosNormativaToolStripMenuItem_Click);
             // 
             // sviNormativiToolStripMenuItem1
             // 
             this.sviNormativiToolStripMenuItem1.Name = "sviNormativiToolStripMenuItem1";
-            this.sviNormativiToolStripMenuItem1.Size = new System.Drawing.Size(189, 24);
+            this.sviNormativiToolStripMenuItem1.Size = new System.Drawing.Size(231, 30);
             this.sviNormativiToolStripMenuItem1.Text = "Svi normativi";
             this.sviNormativiToolStripMenuItem1.Click += new System.EventHandler(this.sviNormativiToolStripMenuItem_Click);
             // 
             // servisToolStripMenuItem
             // 
             this.servisToolStripMenuItem.Name = "servisToolStripMenuItem";
-            this.servisToolStripMenuItem.Size = new System.Drawing.Size(189, 24);
+            this.servisToolStripMenuItem.Size = new System.Drawing.Size(231, 30);
             this.servisToolStripMenuItem.Text = "Servis";
             this.servisToolStripMenuItem.Click += new System.EventHandler(this.servisToolStripMenuItem_Click);
             // 
             // sviServisiToolStripMenuItem
             // 
             this.sviServisiToolStripMenuItem.Name = "sviServisiToolStripMenuItem";
-            this.sviServisiToolStripMenuItem.Size = new System.Drawing.Size(189, 24);
+            this.sviServisiToolStripMenuItem.Size = new System.Drawing.Size(231, 30);
             this.sviServisiToolStripMenuItem.Text = "Svi servisi";
             this.sviServisiToolStripMenuItem.Click += new System.EventHandler(this.sviServisiToolStripMenuItem_Click);
             // 
@@ -782,20 +783,20 @@ namespace PCPOS
             this.odjavaKomisioneRobeToolStripMenuItem1,
             this.sveOdjavaKomisioneRobeToolStripMenuItem});
             this.odjavaKomisioneRobeToolStripMenuItem.Name = "odjavaKomisioneRobeToolStripMenuItem";
-            this.odjavaKomisioneRobeToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
+            this.odjavaKomisioneRobeToolStripMenuItem.Size = new System.Drawing.Size(312, 30);
             this.odjavaKomisioneRobeToolStripMenuItem.Text = "Odjava robe";
             // 
             // odjavaKomisioneRobeToolStripMenuItem1
             // 
             this.odjavaKomisioneRobeToolStripMenuItem1.Name = "odjavaKomisioneRobeToolStripMenuItem1";
-            this.odjavaKomisioneRobeToolStripMenuItem1.Size = new System.Drawing.Size(257, 24);
+            this.odjavaKomisioneRobeToolStripMenuItem1.Size = new System.Drawing.Size(315, 30);
             this.odjavaKomisioneRobeToolStripMenuItem1.Text = "Odjava komisione robe";
             this.odjavaKomisioneRobeToolStripMenuItem1.Click += new System.EventHandler(this.odjavaKomisioneRobeToolStripMenuItem1_Click);
             // 
             // sveOdjavaKomisioneRobeToolStripMenuItem
             // 
             this.sveOdjavaKomisioneRobeToolStripMenuItem.Name = "sveOdjavaKomisioneRobeToolStripMenuItem";
-            this.sveOdjavaKomisioneRobeToolStripMenuItem.Size = new System.Drawing.Size(257, 24);
+            this.sveOdjavaKomisioneRobeToolStripMenuItem.Size = new System.Drawing.Size(315, 30);
             this.sveOdjavaKomisioneRobeToolStripMenuItem.Text = "Sve odjave komisione robe";
             this.sveOdjavaKomisioneRobeToolStripMenuItem.Click += new System.EventHandler(this.sveOdjavaKomisioneRobeToolStripMenuItem_Click);
             // 
@@ -805,20 +806,20 @@ namespace PCPOS
             this.povratRobeToolStripMenuItem1,
             this.sviPovratiRobeToolStripMenuItem});
             this.povratRobeToolStripMenuItem.Name = "povratRobeToolStripMenuItem";
-            this.povratRobeToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
+            this.povratRobeToolStripMenuItem.Size = new System.Drawing.Size(312, 30);
             this.povratRobeToolStripMenuItem.Text = "Povratnica dobavljaču";
             // 
             // povratRobeToolStripMenuItem1
             // 
             this.povratRobeToolStripMenuItem1.Name = "povratRobeToolStripMenuItem1";
-            this.povratRobeToolStripMenuItem1.Size = new System.Drawing.Size(223, 24);
+            this.povratRobeToolStripMenuItem1.Size = new System.Drawing.Size(275, 30);
             this.povratRobeToolStripMenuItem1.Text = "Povratnica dobavljaču";
             this.povratRobeToolStripMenuItem1.Click += new System.EventHandler(this.povratRobeToolStripMenuItem1_Click);
             // 
             // sviPovratiRobeToolStripMenuItem
             // 
             this.sviPovratiRobeToolStripMenuItem.Name = "sviPovratiRobeToolStripMenuItem";
-            this.sviPovratiRobeToolStripMenuItem.Size = new System.Drawing.Size(223, 24);
+            this.sviPovratiRobeToolStripMenuItem.Size = new System.Drawing.Size(275, 30);
             this.sviPovratiRobeToolStripMenuItem.Text = "Svi povrati robe";
             this.sviPovratiRobeToolStripMenuItem.Click += new System.EventHandler(this.sviPovratiRobeToolStripMenuItem_Click);
             // 
@@ -828,20 +829,20 @@ namespace PCPOS
             this.noviOtpisToolStripMenuItem,
             this.sviOtpisiToolStripMenuItem});
             this.otpisRobeToolStripMenuItem.Name = "otpisRobeToolStripMenuItem";
-            this.otpisRobeToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
+            this.otpisRobeToolStripMenuItem.Size = new System.Drawing.Size(312, 30);
             this.otpisRobeToolStripMenuItem.Text = "Otpis robe";
             // 
             // noviOtpisToolStripMenuItem
             // 
             this.noviOtpisToolStripMenuItem.Name = "noviOtpisToolStripMenuItem";
-            this.noviOtpisToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.noviOtpisToolStripMenuItem.Size = new System.Drawing.Size(175, 30);
             this.noviOtpisToolStripMenuItem.Text = "Novi otpis";
             this.noviOtpisToolStripMenuItem.Click += new System.EventHandler(this.noviOtpisToolStripMenuItem_Click);
             // 
             // sviOtpisiToolStripMenuItem
             // 
             this.sviOtpisiToolStripMenuItem.Name = "sviOtpisiToolStripMenuItem";
-            this.sviOtpisiToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.sviOtpisiToolStripMenuItem.Size = new System.Drawing.Size(175, 30);
             this.sviOtpisiToolStripMenuItem.Text = "Svi otpisi";
             this.sviOtpisiToolStripMenuItem.Click += new System.EventHandler(this.sviOtpisiToolStripMenuItem_Click);
             // 
@@ -851,20 +852,20 @@ namespace PCPOS
             this.novaUlaznaFakturaToolStripMenuItem,
             this.sveUlazneFaktureToolStripMenuItem});
             this.ulazneFaktureToolStripMenuItem.Name = "ulazneFaktureToolStripMenuItem";
-            this.ulazneFaktureToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
+            this.ulazneFaktureToolStripMenuItem.Size = new System.Drawing.Size(312, 30);
             this.ulazneFaktureToolStripMenuItem.Text = "Ulazne fakture";
             // 
             // novaUlaznaFakturaToolStripMenuItem
             // 
             this.novaUlaznaFakturaToolStripMenuItem.Name = "novaUlaznaFakturaToolStripMenuItem";
-            this.novaUlaznaFakturaToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.novaUlaznaFakturaToolStripMenuItem.Size = new System.Drawing.Size(259, 30);
             this.novaUlaznaFakturaToolStripMenuItem.Text = "Nova ulazna faktura";
             this.novaUlaznaFakturaToolStripMenuItem.Click += new System.EventHandler(this.novaUlaznaFakturaToolStripMenuItem_Click);
             // 
             // sveUlazneFaktureToolStripMenuItem
             // 
             this.sveUlazneFaktureToolStripMenuItem.Name = "sveUlazneFaktureToolStripMenuItem";
-            this.sveUlazneFaktureToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.sveUlazneFaktureToolStripMenuItem.Size = new System.Drawing.Size(259, 30);
             this.sveUlazneFaktureToolStripMenuItem.Text = "Sve ulazne fakture";
             this.sveUlazneFaktureToolStripMenuItem.Click += new System.EventHandler(this.sveUlazneFaktureToolStripMenuItem_Click);
             // 
@@ -875,48 +876,48 @@ namespace PCPOS
             this.naljepniceBarcodeToolStripMenuItem,
             this.deklaracijeToolStripMenuItem});
             this.naljepniceToolStripMenuItem.Name = "naljepniceToolStripMenuItem";
-            this.naljepniceToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
+            this.naljepniceToolStripMenuItem.Size = new System.Drawing.Size(312, 30);
             this.naljepniceToolStripMenuItem.Text = "Naljepnice i deklaracije";
             // 
             // naljepniceToolStripMenuItem1
             // 
             this.naljepniceToolStripMenuItem1.Name = "naljepniceToolStripMenuItem1";
-            this.naljepniceToolStripMenuItem1.Size = new System.Drawing.Size(208, 24);
+            this.naljepniceToolStripMenuItem1.Size = new System.Drawing.Size(254, 30);
             this.naljepniceToolStripMenuItem1.Text = "Naljepnice";
             this.naljepniceToolStripMenuItem1.Click += new System.EventHandler(this.naljepniceToolStripMenuItem1_Click);
             // 
             // naljepniceBarcodeToolStripMenuItem
             // 
             this.naljepniceBarcodeToolStripMenuItem.Name = "naljepniceBarcodeToolStripMenuItem";
-            this.naljepniceBarcodeToolStripMenuItem.Size = new System.Drawing.Size(208, 24);
+            this.naljepniceBarcodeToolStripMenuItem.Size = new System.Drawing.Size(254, 30);
             this.naljepniceBarcodeToolStripMenuItem.Text = "Naljepnice Barcode";
             this.naljepniceBarcodeToolStripMenuItem.Click += new System.EventHandler(this.naljepniceBarcodeToolStripMenuItem_Click);
             // 
             // deklaracijeToolStripMenuItem
             // 
             this.deklaracijeToolStripMenuItem.Name = "deklaracijeToolStripMenuItem";
-            this.deklaracijeToolStripMenuItem.Size = new System.Drawing.Size(208, 24);
+            this.deklaracijeToolStripMenuItem.Size = new System.Drawing.Size(254, 30);
             this.deklaracijeToolStripMenuItem.Text = "Deklaracije";
             this.deklaracijeToolStripMenuItem.Click += new System.EventHandler(this.deklaracijeToolStripMenuItem_Click);
             // 
             // robniDobropisToolStripMenuItem
             // 
             this.robniDobropisToolStripMenuItem.Name = "robniDobropisToolStripMenuItem";
-            this.robniDobropisToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
+            this.robniDobropisToolStripMenuItem.Size = new System.Drawing.Size(312, 30);
             this.robniDobropisToolStripMenuItem.Text = "Robni dobropis";
             this.robniDobropisToolStripMenuItem.Click += new System.EventHandler(this.robniDobropisToolStripMenuItem_Click);
             // 
             // špranceToolStripMenuItem
             // 
             this.špranceToolStripMenuItem.Name = "špranceToolStripMenuItem";
-            this.špranceToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
+            this.špranceToolStripMenuItem.Size = new System.Drawing.Size(312, 30);
             this.špranceToolStripMenuItem.Text = "Šprance";
             this.špranceToolStripMenuItem.Click += new System.EventHandler(this.špranceToolStripMenuItem_Click);
             // 
             // početnoStanjeToolStripMenuItem1
             // 
             this.početnoStanjeToolStripMenuItem1.Name = "početnoStanjeToolStripMenuItem1";
-            this.početnoStanjeToolStripMenuItem1.Size = new System.Drawing.Size(253, 24);
+            this.početnoStanjeToolStripMenuItem1.Size = new System.Drawing.Size(312, 30);
             this.početnoStanjeToolStripMenuItem1.Text = "Početno stanje";
             this.početnoStanjeToolStripMenuItem1.Click += new System.EventHandler(this.početnoStanjeToolStripMenuItem_Click);
             // 
@@ -926,27 +927,27 @@ namespace PCPOS
             this.novaFakturaZaVanToolStripMenuItem,
             this.sveFaktureZaVanToolStripMenuItem});
             this.fakturaZaVanToolStripMenuItem.Name = "fakturaZaVanToolStripMenuItem";
-            this.fakturaZaVanToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
+            this.fakturaZaVanToolStripMenuItem.Size = new System.Drawing.Size(312, 30);
             this.fakturaZaVanToolStripMenuItem.Text = "Faktura za van";
             // 
             // novaFakturaZaVanToolStripMenuItem
             // 
             this.novaFakturaZaVanToolStripMenuItem.Name = "novaFakturaZaVanToolStripMenuItem";
-            this.novaFakturaZaVanToolStripMenuItem.Size = new System.Drawing.Size(209, 24);
+            this.novaFakturaZaVanToolStripMenuItem.Size = new System.Drawing.Size(257, 30);
             this.novaFakturaZaVanToolStripMenuItem.Text = "Nova faktura za van";
             this.novaFakturaZaVanToolStripMenuItem.Click += new System.EventHandler(this.novaFakturaZaVanToolStripMenuItem_Click);
             // 
             // sveFaktureZaVanToolStripMenuItem
             // 
             this.sveFaktureZaVanToolStripMenuItem.Name = "sveFaktureZaVanToolStripMenuItem";
-            this.sveFaktureZaVanToolStripMenuItem.Size = new System.Drawing.Size(209, 24);
+            this.sveFaktureZaVanToolStripMenuItem.Size = new System.Drawing.Size(257, 30);
             this.sveFaktureZaVanToolStripMenuItem.Text = "Sve fakture za van";
             this.sveFaktureZaVanToolStripMenuItem.Click += new System.EventHandler(this.sveFaktureZaVanToolStripMenuItem_Click);
             // 
             // održavanjeToolStripMenuItem
             // 
             this.održavanjeToolStripMenuItem.Name = "održavanjeToolStripMenuItem";
-            this.održavanjeToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
+            this.održavanjeToolStripMenuItem.Size = new System.Drawing.Size(312, 30);
             this.održavanjeToolStripMenuItem.Text = "Održavanje";
             this.održavanjeToolStripMenuItem.Visible = false;
             this.održavanjeToolStripMenuItem.Click += new System.EventHandler(this.održavanjeToolStripMenuItem_Click);
@@ -954,35 +955,35 @@ namespace PCPOS
             // promjenaCijenaKomadnoToolStripMenuItem
             // 
             this.promjenaCijenaKomadnoToolStripMenuItem.Name = "promjenaCijenaKomadnoToolStripMenuItem";
-            this.promjenaCijenaKomadnoToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
+            this.promjenaCijenaKomadnoToolStripMenuItem.Size = new System.Drawing.Size(312, 30);
             this.promjenaCijenaKomadnoToolStripMenuItem.Text = "Promjena cijena komadno";
             this.promjenaCijenaKomadnoToolStripMenuItem.Click += new System.EventHandler(this.promjenaCijenaKomadnoToolStripMenuItem_Click);
             // 
             // održavanjeProvjeraToolStripMenuItem
             // 
             this.održavanjeProvjeraToolStripMenuItem.Name = "održavanjeProvjeraToolStripMenuItem";
-            this.održavanjeProvjeraToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
+            this.održavanjeProvjeraToolStripMenuItem.Size = new System.Drawing.Size(312, 30);
             this.održavanjeProvjeraToolStripMenuItem.Text = "Održavanje provjera";
             this.održavanjeProvjeraToolStripMenuItem.Click += new System.EventHandler(this.održavanjeProvjeraToolStripMenuItem_Click);
             // 
             // skladišteFinancijskoToolStripMenuItem
             // 
             this.skladišteFinancijskoToolStripMenuItem.Name = "skladišteFinancijskoToolStripMenuItem";
-            this.skladišteFinancijskoToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
+            this.skladišteFinancijskoToolStripMenuItem.Size = new System.Drawing.Size(312, 30);
             this.skladišteFinancijskoToolStripMenuItem.Text = "Skladište financijsko";
             this.skladišteFinancijskoToolStripMenuItem.Click += new System.EventHandler(this.skladišteFinancijskoToolStripMenuItem_Click);
             // 
             // knjižnoOdobrenjeToolStripMenuItem
             // 
             this.knjižnoOdobrenjeToolStripMenuItem.Name = "knjižnoOdobrenjeToolStripMenuItem";
-            this.knjižnoOdobrenjeToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
+            this.knjižnoOdobrenjeToolStripMenuItem.Size = new System.Drawing.Size(312, 30);
             this.knjižnoOdobrenjeToolStripMenuItem.Text = "Knjižno odobrenje";
             this.knjižnoOdobrenjeToolStripMenuItem.Click += new System.EventHandler(this.knjižnoOdobrenjeToolStripMenuItem_Click);
             // 
             // knjigaPopisaToolStripMenuItem
             // 
             this.knjigaPopisaToolStripMenuItem.Name = "knjigaPopisaToolStripMenuItem";
-            this.knjigaPopisaToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
+            this.knjigaPopisaToolStripMenuItem.Size = new System.Drawing.Size(312, 30);
             this.knjigaPopisaToolStripMenuItem.Text = "Knjiga popisa";
             this.knjigaPopisaToolStripMenuItem.Click += new System.EventHandler(this.knjigaPopisaToolStripMenuItem_Click);
             // 
@@ -991,7 +992,7 @@ namespace PCPOS
             this.probaToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.probaToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.probaToolStripMenuItem.Name = "probaToolStripMenuItem";
-            this.probaToolStripMenuItem.Size = new System.Drawing.Size(60, 26);
+            this.probaToolStripMenuItem.Size = new System.Drawing.Size(74, 33);
             this.probaToolStripMenuItem.Text = "Proba";
             this.probaToolStripMenuItem.Visible = false;
             this.probaToolStripMenuItem.Click += new System.EventHandler(this.button1_Click);
@@ -1015,7 +1016,8 @@ namespace PCPOS
             this.resortToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(990, 30);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1320, 37);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -1032,7 +1034,7 @@ namespace PCPOS
             this.automatskaUskladaToolStripMenuItem});
             this.skladišniDokumentiToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.skladišniDokumentiToolStripMenuItem.Name = "skladišniDokumentiToolStripMenuItem";
-            this.skladišniDokumentiToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
+            this.skladišniDokumentiToolStripMenuItem.Size = new System.Drawing.Size(193, 33);
             this.skladišniDokumentiToolStripMenuItem.Text = "Skladišni dokumenti";
             // 
             // primkeToolStripMenuItem
@@ -1041,20 +1043,20 @@ namespace PCPOS
             this.novaPrimkaToolStripMenuItem,
             this.svePrimkeToolStripMenuItem});
             this.primkeToolStripMenuItem.Name = "primkeToolStripMenuItem";
-            this.primkeToolStripMenuItem.Size = new System.Drawing.Size(248, 24);
+            this.primkeToolStripMenuItem.Size = new System.Drawing.Size(309, 30);
             this.primkeToolStripMenuItem.Text = "Primke";
             // 
             // novaPrimkaToolStripMenuItem
             // 
             this.novaPrimkaToolStripMenuItem.Name = "novaPrimkaToolStripMenuItem";
-            this.novaPrimkaToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.novaPrimkaToolStripMenuItem.Size = new System.Drawing.Size(197, 30);
             this.novaPrimkaToolStripMenuItem.Text = "Nova primka";
             this.novaPrimkaToolStripMenuItem.Click += new System.EventHandler(this.novaPrimkaToolStripMenuItem_Click_1);
             // 
             // svePrimkeToolStripMenuItem
             // 
             this.svePrimkeToolStripMenuItem.Name = "svePrimkeToolStripMenuItem";
-            this.svePrimkeToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.svePrimkeToolStripMenuItem.Size = new System.Drawing.Size(197, 30);
             this.svePrimkeToolStripMenuItem.Text = "Sve primke";
             this.svePrimkeToolStripMenuItem.Click += new System.EventHandler(this.svePrimkeToolStripMenuItem_Click);
             // 
@@ -1064,20 +1066,20 @@ namespace PCPOS
             this.novaIzdatnicaToolStripMenuItem,
             this.sveIzdatniceToolStripMenuItem});
             this.izdatniceToolStripMenuItem.Name = "izdatniceToolStripMenuItem";
-            this.izdatniceToolStripMenuItem.Size = new System.Drawing.Size(248, 24);
+            this.izdatniceToolStripMenuItem.Size = new System.Drawing.Size(309, 30);
             this.izdatniceToolStripMenuItem.Text = "Izdatnice";
             // 
             // novaIzdatnicaToolStripMenuItem
             // 
             this.novaIzdatnicaToolStripMenuItem.Name = "novaIzdatnicaToolStripMenuItem";
-            this.novaIzdatnicaToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.novaIzdatnicaToolStripMenuItem.Size = new System.Drawing.Size(215, 30);
             this.novaIzdatnicaToolStripMenuItem.Text = "Nova izdatnica";
             this.novaIzdatnicaToolStripMenuItem.Click += new System.EventHandler(this.novaIzdatnicaToolStripMenuItem_Click);
             // 
             // sveIzdatniceToolStripMenuItem
             // 
             this.sveIzdatniceToolStripMenuItem.Name = "sveIzdatniceToolStripMenuItem";
-            this.sveIzdatniceToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.sveIzdatniceToolStripMenuItem.Size = new System.Drawing.Size(215, 30);
             this.sveIzdatniceToolStripMenuItem.Text = "Sve izdatnice";
             this.sveIzdatniceToolStripMenuItem.Click += new System.EventHandler(this.sveIzdatniceToolStripMenuItem_Click);
             // 
@@ -1087,20 +1089,20 @@ namespace PCPOS
             this.međuskladišnicaToolStripMenuItem1,
             this.sveMeđuskladišniceToolStripMenuItem});
             this.međuskladišniceToolStripMenuItem.Name = "međuskladišniceToolStripMenuItem";
-            this.međuskladišniceToolStripMenuItem.Size = new System.Drawing.Size(248, 24);
+            this.međuskladišniceToolStripMenuItem.Size = new System.Drawing.Size(309, 30);
             this.međuskladišniceToolStripMenuItem.Text = "Međuskladišnice";
             // 
             // međuskladišnicaToolStripMenuItem1
             // 
             this.međuskladišnicaToolStripMenuItem1.Name = "međuskladišnicaToolStripMenuItem1";
-            this.međuskladišnicaToolStripMenuItem1.Size = new System.Drawing.Size(214, 24);
+            this.međuskladišnicaToolStripMenuItem1.Size = new System.Drawing.Size(263, 30);
             this.međuskladišnicaToolStripMenuItem1.Text = "Međuskladišnica";
             this.međuskladišnicaToolStripMenuItem1.Click += new System.EventHandler(this.međuskladišnicaToolStripMenuItem_Click);
             // 
             // sveMeđuskladišniceToolStripMenuItem
             // 
             this.sveMeđuskladišniceToolStripMenuItem.Name = "sveMeđuskladišniceToolStripMenuItem";
-            this.sveMeđuskladišniceToolStripMenuItem.Size = new System.Drawing.Size(214, 24);
+            this.sveMeđuskladišniceToolStripMenuItem.Size = new System.Drawing.Size(263, 30);
             this.sveMeđuskladišniceToolStripMenuItem.Text = "Sve međuskladišnice";
             this.sveMeđuskladišniceToolStripMenuItem.Click += new System.EventHandler(this.sveOtpremniceToolStripMenuItem1_Click);
             // 
@@ -1112,20 +1114,20 @@ namespace PCPOS
             this.sveOtpremniceToolStripMenuItem2,
             this.sveOtpremniceNaKomisijuToolStripMenuItem});
             this.otpremniceToolStripMenuItem.Name = "otpremniceToolStripMenuItem";
-            this.otpremniceToolStripMenuItem.Size = new System.Drawing.Size(248, 24);
+            this.otpremniceToolStripMenuItem.Size = new System.Drawing.Size(309, 30);
             this.otpremniceToolStripMenuItem.Text = "Otpremnice";
             // 
             // otpremnicaToolStripMenuItem1
             // 
             this.otpremnicaToolStripMenuItem1.Name = "otpremnicaToolStripMenuItem1";
-            this.otpremnicaToolStripMenuItem1.Size = new System.Drawing.Size(260, 24);
+            this.otpremnicaToolStripMenuItem1.Size = new System.Drawing.Size(321, 30);
             this.otpremnicaToolStripMenuItem1.Text = "Otpremnica";
             this.otpremnicaToolStripMenuItem1.Click += new System.EventHandler(this.otpremnicaToolStripMenuItem_Click);
             // 
             // otpremnicaKomisijaToolStripMenuItem
             // 
             this.otpremnicaKomisijaToolStripMenuItem.Name = "otpremnicaKomisijaToolStripMenuItem";
-            this.otpremnicaKomisijaToolStripMenuItem.Size = new System.Drawing.Size(260, 24);
+            this.otpremnicaKomisijaToolStripMenuItem.Size = new System.Drawing.Size(321, 30);
             this.otpremnicaKomisijaToolStripMenuItem.Text = "Otpremnica na komisiju";
             this.otpremnicaKomisijaToolStripMenuItem.Visible = false;
             this.otpremnicaKomisijaToolStripMenuItem.Click += new System.EventHandler(this.otpremnicaNaSkladišteToolStripMenuItem_Click);
@@ -1133,14 +1135,14 @@ namespace PCPOS
             // sveOtpremniceToolStripMenuItem2
             // 
             this.sveOtpremniceToolStripMenuItem2.Name = "sveOtpremniceToolStripMenuItem2";
-            this.sveOtpremniceToolStripMenuItem2.Size = new System.Drawing.Size(260, 24);
+            this.sveOtpremniceToolStripMenuItem2.Size = new System.Drawing.Size(321, 30);
             this.sveOtpremniceToolStripMenuItem2.Text = "Sve otpremnice";
             this.sveOtpremniceToolStripMenuItem2.Click += new System.EventHandler(this.sveOtpremniceToolStripMenuItem_Click);
             // 
             // sveOtpremniceNaKomisijuToolStripMenuItem
             // 
             this.sveOtpremniceNaKomisijuToolStripMenuItem.Name = "sveOtpremniceNaKomisijuToolStripMenuItem";
-            this.sveOtpremniceNaKomisijuToolStripMenuItem.Size = new System.Drawing.Size(260, 24);
+            this.sveOtpremniceNaKomisijuToolStripMenuItem.Size = new System.Drawing.Size(321, 30);
             this.sveOtpremniceNaKomisijuToolStripMenuItem.Text = "Sve otpremnice na komisiju";
             this.sveOtpremniceNaKomisijuToolStripMenuItem.Visible = false;
             this.sveOtpremniceNaKomisijuToolStripMenuItem.Click += new System.EventHandler(this.sveOtpremniceNaKomisijuToolStripMenuItem_Click);
@@ -1148,7 +1150,7 @@ namespace PCPOS
             // rekapitulacijaToolStripMenuItem1
             // 
             this.rekapitulacijaToolStripMenuItem1.Name = "rekapitulacijaToolStripMenuItem1";
-            this.rekapitulacijaToolStripMenuItem1.Size = new System.Drawing.Size(248, 24);
+            this.rekapitulacijaToolStripMenuItem1.Size = new System.Drawing.Size(309, 30);
             this.rekapitulacijaToolStripMenuItem1.Text = "Rekapitulacija";
             this.rekapitulacijaToolStripMenuItem1.Visible = false;
             this.rekapitulacijaToolStripMenuItem1.Click += new System.EventHandler(this.rekapitulacijaToolStripMenuItem1_Click);
@@ -1156,14 +1158,14 @@ namespace PCPOS
             // rekapitulacija2015ToolStripMenuItem
             // 
             this.rekapitulacija2015ToolStripMenuItem.Name = "rekapitulacija2015ToolStripMenuItem";
-            this.rekapitulacija2015ToolStripMenuItem.Size = new System.Drawing.Size(248, 24);
+            this.rekapitulacija2015ToolStripMenuItem.Size = new System.Drawing.Size(309, 30);
             this.rekapitulacija2015ToolStripMenuItem.Text = "Rekapitulacija, Analitika";
             this.rekapitulacija2015ToolStripMenuItem.Click += new System.EventHandler(this.rekapitulacija2015ToolStripMenuItem_Click);
             // 
             // provjeraNegativnihStanjaToolStripMenuItem
             // 
             this.provjeraNegativnihStanjaToolStripMenuItem.Name = "provjeraNegativnihStanjaToolStripMenuItem";
-            this.provjeraNegativnihStanjaToolStripMenuItem.Size = new System.Drawing.Size(248, 24);
+            this.provjeraNegativnihStanjaToolStripMenuItem.Size = new System.Drawing.Size(309, 30);
             this.provjeraNegativnihStanjaToolStripMenuItem.Text = "Provjera negativnih stanja";
             this.provjeraNegativnihStanjaToolStripMenuItem.Click += new System.EventHandler(this.provjeraNegativnihStanjaToolStripMenuItem_Click);
             // 
@@ -1173,21 +1175,21 @@ namespace PCPOS
             this.automatskaUskladaToolStripMenuItem1,
             this.sveAutomatskeUskladeToolStripMenuItem});
             this.automatskaUskladaToolStripMenuItem.Name = "automatskaUskladaToolStripMenuItem";
-            this.automatskaUskladaToolStripMenuItem.Size = new System.Drawing.Size(248, 24);
+            this.automatskaUskladaToolStripMenuItem.Size = new System.Drawing.Size(309, 30);
             this.automatskaUskladaToolStripMenuItem.Text = "Automatska usklada";
             this.automatskaUskladaToolStripMenuItem.Visible = false;
             // 
             // automatskaUskladaToolStripMenuItem1
             // 
             this.automatskaUskladaToolStripMenuItem1.Name = "automatskaUskladaToolStripMenuItem1";
-            this.automatskaUskladaToolStripMenuItem1.Size = new System.Drawing.Size(236, 24);
+            this.automatskaUskladaToolStripMenuItem1.Size = new System.Drawing.Size(290, 30);
             this.automatskaUskladaToolStripMenuItem1.Text = "Automatska usklada";
             this.automatskaUskladaToolStripMenuItem1.Click += new System.EventHandler(this.automatskaUskladaToolStripMenuItem1_Click);
             // 
             // sveAutomatskeUskladeToolStripMenuItem
             // 
             this.sveAutomatskeUskladeToolStripMenuItem.Name = "sveAutomatskeUskladeToolStripMenuItem";
-            this.sveAutomatskeUskladeToolStripMenuItem.Size = new System.Drawing.Size(236, 24);
+            this.sveAutomatskeUskladeToolStripMenuItem.Size = new System.Drawing.Size(290, 30);
             this.sveAutomatskeUskladeToolStripMenuItem.Text = "Sve automatske usklade";
             this.sveAutomatskeUskladeToolStripMenuItem.Click += new System.EventHandler(this.sveAutomatskeUskladeToolStripMenuItem_Click);
             // 
@@ -1209,13 +1211,13 @@ namespace PCPOS
             this.karticaKupcaToolStripMenuItem});
             this.kasaToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.kasaToolStripMenuItem.Name = "kasaToolStripMenuItem";
-            this.kasaToolStripMenuItem.Size = new System.Drawing.Size(107, 26);
+            this.kasaToolStripMenuItem.Size = new System.Drawing.Size(132, 33);
             this.kasaToolStripMenuItem.Text = "Maloprodaja";
             // 
             // kasaToolStripMenuItem1
             // 
             this.kasaToolStripMenuItem1.Name = "kasaToolStripMenuItem1";
-            this.kasaToolStripMenuItem1.Size = new System.Drawing.Size(298, 24);
+            this.kasaToolStripMenuItem1.Size = new System.Drawing.Size(370, 30);
             this.kasaToolStripMenuItem1.Text = "Kasa";
             this.kasaToolStripMenuItem1.Click += new System.EventHandler(this.kasaToolStripMenuItem_Click);
             // 
@@ -1223,7 +1225,7 @@ namespace PCPOS
             // 
             this.promocijaToolStripMenuItem.Enabled = false;
             this.promocijaToolStripMenuItem.Name = "promocijaToolStripMenuItem";
-            this.promocijaToolStripMenuItem.Size = new System.Drawing.Size(298, 24);
+            this.promocijaToolStripMenuItem.Size = new System.Drawing.Size(370, 30);
             this.promocijaToolStripMenuItem.Text = "Promocija";
             this.promocijaToolStripMenuItem.Visible = false;
             this.promocijaToolStripMenuItem.Click += new System.EventHandler(this.promocijaToolStripMenuItem_Click);
@@ -1234,27 +1236,27 @@ namespace PCPOS
             this.noviAvansToolStripMenuItem,
             this.sviAvansiToolStripMenuItem});
             this.avansToolStripMenuItem.Name = "avansToolStripMenuItem";
-            this.avansToolStripMenuItem.Size = new System.Drawing.Size(298, 24);
+            this.avansToolStripMenuItem.Size = new System.Drawing.Size(370, 30);
             this.avansToolStripMenuItem.Text = "Avansno plaćanje";
             // 
             // noviAvansToolStripMenuItem
             // 
             this.noviAvansToolStripMenuItem.Name = "noviAvansToolStripMenuItem";
-            this.noviAvansToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.noviAvansToolStripMenuItem.Size = new System.Drawing.Size(182, 30);
             this.noviAvansToolStripMenuItem.Text = "Novi avans";
             this.noviAvansToolStripMenuItem.Click += new System.EventHandler(this.noviAvansToolStripMenuItem_Click);
             // 
             // sviAvansiToolStripMenuItem
             // 
             this.sviAvansiToolStripMenuItem.Name = "sviAvansiToolStripMenuItem";
-            this.sviAvansiToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.sviAvansiToolStripMenuItem.Size = new System.Drawing.Size(182, 30);
             this.sviAvansiToolStripMenuItem.Text = "Svi avansi";
             this.sviAvansiToolStripMenuItem.Click += new System.EventHandler(this.sviAvansiToolStripMenuItem_Click);
             // 
             // sviRačuniToolStripMenuItem
             // 
             this.sviRačuniToolStripMenuItem.Name = "sviRačuniToolStripMenuItem";
-            this.sviRačuniToolStripMenuItem.Size = new System.Drawing.Size(298, 24);
+            this.sviRačuniToolStripMenuItem.Size = new System.Drawing.Size(370, 30);
             this.sviRačuniToolStripMenuItem.Text = "Pregled svih računa";
             this.sviRačuniToolStripMenuItem.Click += new System.EventHandler(this.sviRačuniToolStripMenuItem_Click);
             // 
@@ -1266,62 +1268,62 @@ namespace PCPOS
             this.prometPoRačunimaToolStripMenuItem,
             this.prometKasePoDanimaToolStripMenuItem});
             this.ispisToolStripMenuItem.Name = "ispisToolStripMenuItem";
-            this.ispisToolStripMenuItem.Size = new System.Drawing.Size(298, 24);
+            this.ispisToolStripMenuItem.Size = new System.Drawing.Size(370, 30);
             this.ispisToolStripMenuItem.Text = "Ispis";
             // 
             // ukupniPrometToolStripMenuItem
             // 
             this.ukupniPrometToolStripMenuItem.Name = "ukupniPrometToolStripMenuItem";
-            this.ukupniPrometToolStripMenuItem.Size = new System.Drawing.Size(235, 24);
+            this.ukupniPrometToolStripMenuItem.Size = new System.Drawing.Size(288, 30);
             this.ukupniPrometToolStripMenuItem.Text = "Sveukupni promet";
             this.ukupniPrometToolStripMenuItem.Click += new System.EventHandler(this.ukupniPrometToolStripMenuItem_Click);
             // 
             // prometKaseToolStripMenuItem1
             // 
             this.prometKaseToolStripMenuItem1.Name = "prometKaseToolStripMenuItem1";
-            this.prometKaseToolStripMenuItem1.Size = new System.Drawing.Size(235, 24);
+            this.prometKaseToolStripMenuItem1.Size = new System.Drawing.Size(288, 30);
             this.prometKaseToolStripMenuItem1.Text = "Promet kase";
             this.prometKaseToolStripMenuItem1.Click += new System.EventHandler(this.prometKaseToolStripMenuItem1_Click);
             // 
             // prometPoRačunimaToolStripMenuItem
             // 
             this.prometPoRačunimaToolStripMenuItem.Name = "prometPoRačunimaToolStripMenuItem";
-            this.prometPoRačunimaToolStripMenuItem.Size = new System.Drawing.Size(235, 24);
+            this.prometPoRačunimaToolStripMenuItem.Size = new System.Drawing.Size(288, 30);
             this.prometPoRačunimaToolStripMenuItem.Text = "Promet po računima";
             this.prometPoRačunimaToolStripMenuItem.Click += new System.EventHandler(this.prometPoRačunimaToolStripMenuItem_Click);
             // 
             // prometKasePoDanimaToolStripMenuItem
             // 
             this.prometKasePoDanimaToolStripMenuItem.Name = "prometKasePoDanimaToolStripMenuItem";
-            this.prometKasePoDanimaToolStripMenuItem.Size = new System.Drawing.Size(235, 24);
+            this.prometKasePoDanimaToolStripMenuItem.Size = new System.Drawing.Size(288, 30);
             this.prometKasePoDanimaToolStripMenuItem.Text = "Promet kase po danima";
             this.prometKasePoDanimaToolStripMenuItem.Click += new System.EventHandler(this.prometKasePoDanimaToolStripMenuItem_Click);
             // 
             // neposlanaFiskalizacijaToolStripMenuItem
             // 
             this.neposlanaFiskalizacijaToolStripMenuItem.Name = "neposlanaFiskalizacijaToolStripMenuItem";
-            this.neposlanaFiskalizacijaToolStripMenuItem.Size = new System.Drawing.Size(298, 24);
+            this.neposlanaFiskalizacijaToolStripMenuItem.Size = new System.Drawing.Size(370, 30);
             this.neposlanaFiskalizacijaToolStripMenuItem.Text = "Neuspjele transakcije fiskalizacije";
             this.neposlanaFiskalizacijaToolStripMenuItem.Click += new System.EventHandler(this.neposlanaFiskalizacijaToolStripMenuItem_Click);
             // 
             // poslovniProstorToolStripMenuItem
             // 
             this.poslovniProstorToolStripMenuItem.Name = "poslovniProstorToolStripMenuItem";
-            this.poslovniProstorToolStripMenuItem.Size = new System.Drawing.Size(298, 24);
+            this.poslovniProstorToolStripMenuItem.Size = new System.Drawing.Size(370, 30);
             this.poslovniProstorToolStripMenuItem.Text = "Poslovni prostor";
             this.poslovniProstorToolStripMenuItem.Click += new System.EventHandler(this.poslovniProstorToolStripMenuItem_Click);
             // 
             // prodajaParagonToolStripMenuItem
             // 
             this.prodajaParagonToolStripMenuItem.Name = "prodajaParagonToolStripMenuItem";
-            this.prodajaParagonToolStripMenuItem.Size = new System.Drawing.Size(298, 24);
+            this.prodajaParagonToolStripMenuItem.Size = new System.Drawing.Size(370, 30);
             this.prodajaParagonToolStripMenuItem.Text = "Prodaja paragon";
             this.prodajaParagonToolStripMenuItem.Click += new System.EventHandler(this.prodajaParagonToolStripMenuItem_Click);
             // 
             // smjeneZaposlenikaToolStripMenuItem
             // 
             this.smjeneZaposlenikaToolStripMenuItem.Name = "smjeneZaposlenikaToolStripMenuItem";
-            this.smjeneZaposlenikaToolStripMenuItem.Size = new System.Drawing.Size(298, 24);
+            this.smjeneZaposlenikaToolStripMenuItem.Size = new System.Drawing.Size(370, 30);
             this.smjeneZaposlenikaToolStripMenuItem.Text = "Smjene zaposlenika";
             this.smjeneZaposlenikaToolStripMenuItem.Click += new System.EventHandler(this.smjeneZaposlenikaToolStripMenuItem_Click);
             // 
@@ -1329,27 +1331,27 @@ namespace PCPOS
             // 
             this.kontniPlanToolStripMenuItem.Enabled = false;
             this.kontniPlanToolStripMenuItem.Name = "kontniPlanToolStripMenuItem";
-            this.kontniPlanToolStripMenuItem.Size = new System.Drawing.Size(298, 24);
+            this.kontniPlanToolStripMenuItem.Size = new System.Drawing.Size(370, 30);
             this.kontniPlanToolStripMenuItem.Text = "Kontni plan";
             // 
             // poravnavanjeSkladištaToolStripMenuItem
             // 
             this.poravnavanjeSkladištaToolStripMenuItem.Name = "poravnavanjeSkladištaToolStripMenuItem";
-            this.poravnavanjeSkladištaToolStripMenuItem.Size = new System.Drawing.Size(298, 24);
+            this.poravnavanjeSkladištaToolStripMenuItem.Size = new System.Drawing.Size(370, 30);
             this.poravnavanjeSkladištaToolStripMenuItem.Text = "Poravnavanje skladišta";
             this.poravnavanjeSkladištaToolStripMenuItem.Click += new System.EventHandler(this.poravnavanjeSkladištaToolStripMenuItem_Click);
             // 
             // blagajničkiIzvještajToolStripMenuItem
             // 
             this.blagajničkiIzvještajToolStripMenuItem.Name = "blagajničkiIzvještajToolStripMenuItem";
-            this.blagajničkiIzvještajToolStripMenuItem.Size = new System.Drawing.Size(298, 24);
+            this.blagajničkiIzvještajToolStripMenuItem.Size = new System.Drawing.Size(370, 30);
             this.blagajničkiIzvještajToolStripMenuItem.Text = "Blagajnički izvještaj";
             this.blagajničkiIzvještajToolStripMenuItem.Click += new System.EventHandler(this.blagajničkiIzvještajToolStripMenuItem_Click);
             // 
             // karticaKupcaToolStripMenuItem
             // 
             this.karticaKupcaToolStripMenuItem.Name = "karticaKupcaToolStripMenuItem";
-            this.karticaKupcaToolStripMenuItem.Size = new System.Drawing.Size(298, 24);
+            this.karticaKupcaToolStripMenuItem.Size = new System.Drawing.Size(370, 30);
             this.karticaKupcaToolStripMenuItem.Text = "Kartica kupca";
             this.karticaKupcaToolStripMenuItem.Click += new System.EventHandler(this.karticaKupcaToolStripMenuItem_Click);
             // 
@@ -1364,48 +1366,48 @@ namespace PCPOS
             this.povijestKoristenjadokumenataToolStripMenuItem});
             this.postavkeToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.postavkeToolStripMenuItem.Name = "postavkeToolStripMenuItem";
-            this.postavkeToolStripMenuItem.Size = new System.Drawing.Size(78, 26);
+            this.postavkeToolStripMenuItem.Size = new System.Drawing.Size(97, 33);
             this.postavkeToolStripMenuItem.Text = "Postavke";
             // 
             // podaciOTvrtkiToolStripMenuItem
             // 
             this.podaciOTvrtkiToolStripMenuItem.Name = "podaciOTvrtkiToolStripMenuItem";
-            this.podaciOTvrtkiToolStripMenuItem.Size = new System.Drawing.Size(283, 24);
+            this.podaciOTvrtkiToolStripMenuItem.Size = new System.Drawing.Size(351, 30);
             this.podaciOTvrtkiToolStripMenuItem.Text = "Podaci o tvrtki";
             this.podaciOTvrtkiToolStripMenuItem.Click += new System.EventHandler(this.podaciOTvrtkiToolStripMenuItem_Click);
             // 
             // postavkeProgramaToolStripMenuItem
             // 
             this.postavkeProgramaToolStripMenuItem.Name = "postavkeProgramaToolStripMenuItem";
-            this.postavkeProgramaToolStripMenuItem.Size = new System.Drawing.Size(283, 24);
+            this.postavkeProgramaToolStripMenuItem.Size = new System.Drawing.Size(351, 30);
             this.postavkeProgramaToolStripMenuItem.Text = "Postavke programa";
             this.postavkeProgramaToolStripMenuItem.Click += new System.EventHandler(this.postavkeProgramaToolStripMenuItem_Click);
             // 
             // aktivnostiZaposlenikaToolStripMenuItem1
             // 
             this.aktivnostiZaposlenikaToolStripMenuItem1.Name = "aktivnostiZaposlenikaToolStripMenuItem1";
-            this.aktivnostiZaposlenikaToolStripMenuItem1.Size = new System.Drawing.Size(283, 24);
+            this.aktivnostiZaposlenikaToolStripMenuItem1.Size = new System.Drawing.Size(351, 30);
             this.aktivnostiZaposlenikaToolStripMenuItem1.Text = "Aktivnosti zaposlenika";
             this.aktivnostiZaposlenikaToolStripMenuItem1.Click += new System.EventHandler(this.aktivnostiZaposlenikaToolStripMenuItem_Click);
             // 
             // posPrinterToolStripMenuItem
             // 
             this.posPrinterToolStripMenuItem.Name = "posPrinterToolStripMenuItem";
-            this.posPrinterToolStripMenuItem.Size = new System.Drawing.Size(283, 24);
+            this.posPrinterToolStripMenuItem.Size = new System.Drawing.Size(351, 30);
             this.posPrinterToolStripMenuItem.Text = "Postavke za pos opremu";
             this.posPrinterToolStripMenuItem.Click += new System.EventHandler(this.posPrinterToolStripMenuItem_Click);
             // 
             // aktivacijaDokumenataToolStripMenuItem
             // 
             this.aktivacijaDokumenataToolStripMenuItem.Name = "aktivacijaDokumenataToolStripMenuItem";
-            this.aktivacijaDokumenataToolStripMenuItem.Size = new System.Drawing.Size(283, 24);
+            this.aktivacijaDokumenataToolStripMenuItem.Size = new System.Drawing.Size(351, 30);
             this.aktivacijaDokumenataToolStripMenuItem.Text = "Aktivacija dokumenata";
             this.aktivacijaDokumenataToolStripMenuItem.Click += new System.EventHandler(this.aktivacijaDokumenataToolStripMenuItem_Click);
             // 
             // povijestKoristenjadokumenataToolStripMenuItem
             // 
             this.povijestKoristenjadokumenataToolStripMenuItem.Name = "povijestKoristenjadokumenataToolStripMenuItem";
-            this.povijestKoristenjadokumenataToolStripMenuItem.Size = new System.Drawing.Size(283, 24);
+            this.povijestKoristenjadokumenataToolStripMenuItem.Size = new System.Drawing.Size(351, 30);
             this.povijestKoristenjadokumenataToolStripMenuItem.Text = "Povijest koristenja dokumenata";
             this.povijestKoristenjadokumenataToolStripMenuItem.Click += new System.EventHandler(this.povijestKoristenjadokumenataToolStripMenuItem_Click);
             // 
@@ -1428,51 +1430,52 @@ namespace PCPOS
             this.knjigaPrometaKPRToolStripMenuItem,
             this.robaNaKomisijiToolStripMenuItem,
             this.rekapitulacijaRadnihNalogaToolStripMenuItem,
-            this.rUCRazlikaUCijeniToolStripMenuItem});
+            this.rUCRazlikaUCijeniToolStripMenuItem,
+            this.knjigaPlačenihRačunaKPRToolStripMenuItem});
             this.izlazniRačuniToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.izlazniRačuniToolStripMenuItem.Name = "izlazniRačuniToolStripMenuItem";
-            this.izlazniRačuniToolStripMenuItem.Size = new System.Drawing.Size(138, 26);
+            this.izlazniRačuniToolStripMenuItem.Size = new System.Drawing.Size(173, 33);
             this.izlazniRačuniToolStripMenuItem.Text = "Izlazni dokumenti";
             // 
             // izlazneFaktureToolStripMenuItem
             // 
             this.izlazneFaktureToolStripMenuItem.Name = "izlazneFaktureToolStripMenuItem";
-            this.izlazneFaktureToolStripMenuItem.Size = new System.Drawing.Size(397, 24);
+            this.izlazneFaktureToolStripMenuItem.Size = new System.Drawing.Size(494, 30);
             this.izlazneFaktureToolStripMenuItem.Text = "Izlazne liste";
             this.izlazneFaktureToolStripMenuItem.Click += new System.EventHandler(this.izlazneFaktureToolStripMenuItem_Click);
             // 
             // obračunToolStripMenuItem
             // 
             this.obračunToolStripMenuItem.Name = "obračunToolStripMenuItem";
-            this.obračunToolStripMenuItem.Size = new System.Drawing.Size(397, 24);
+            this.obračunToolStripMenuItem.Size = new System.Drawing.Size(494, 30);
             this.obračunToolStripMenuItem.Text = "Obračun";
             this.obračunToolStripMenuItem.Click += new System.EventHandler(this.obračunToolStripMenuItem_Click);
             // 
             // knjigaPrimitkaIGubitkaToolStripMenuItem
             // 
             this.knjigaPrimitkaIGubitkaToolStripMenuItem.Name = "knjigaPrimitkaIGubitkaToolStripMenuItem";
-            this.knjigaPrimitkaIGubitkaToolStripMenuItem.Size = new System.Drawing.Size(397, 24);
+            this.knjigaPrimitkaIGubitkaToolStripMenuItem.Size = new System.Drawing.Size(494, 30);
             this.knjigaPrimitkaIGubitkaToolStripMenuItem.Text = "Knjiga primitka i izdatka";
             this.knjigaPrimitkaIGubitkaToolStripMenuItem.Click += new System.EventHandler(this.knjigaPrimitkaIGubitkaToolStripMenuItem_Click);
             // 
             // prometKasePoFakturamaToolStripMenuItem
             // 
             this.prometKasePoFakturamaToolStripMenuItem.Name = "prometKasePoFakturamaToolStripMenuItem";
-            this.prometKasePoFakturamaToolStripMenuItem.Size = new System.Drawing.Size(397, 24);
+            this.prometKasePoFakturamaToolStripMenuItem.Size = new System.Drawing.Size(494, 30);
             this.prometKasePoFakturamaToolStripMenuItem.Text = "Promet kase po fakturama";
             this.prometKasePoFakturamaToolStripMenuItem.Click += new System.EventHandler(this.prometKasePoFakturamaToolStripMenuItem_Click);
             // 
             // ulazIzlazRobaToolStripMenuItem
             // 
             this.ulazIzlazRobaToolStripMenuItem.Name = "ulazIzlazRobaToolStripMenuItem";
-            this.ulazIzlazRobaToolStripMenuItem.Size = new System.Drawing.Size(397, 24);
+            this.ulazIzlazRobaToolStripMenuItem.Size = new System.Drawing.Size(494, 30);
             this.ulazIzlazRobaToolStripMenuItem.Text = "Ulaz/Izlaz roba";
             this.ulazIzlazRobaToolStripMenuItem.Click += new System.EventHandler(this.ulazIzlazRobaToolStripMenuItem_Click);
             // 
             // knjigaUlazaIIzlazaToolStripMenuItem
             // 
             this.knjigaUlazaIIzlazaToolStripMenuItem.Name = "knjigaUlazaIIzlazaToolStripMenuItem";
-            this.knjigaUlazaIIzlazaToolStripMenuItem.Size = new System.Drawing.Size(397, 24);
+            this.knjigaUlazaIIzlazaToolStripMenuItem.Size = new System.Drawing.Size(494, 30);
             this.knjigaUlazaIIzlazaToolStripMenuItem.Text = "Knjiga Ulaza i Izlaza";
             this.knjigaUlazaIIzlazaToolStripMenuItem.Click += new System.EventHandler(this.knjigaUlazaIIzlazaToolStripMenuItem_Click);
             // 
@@ -1482,92 +1485,99 @@ namespace PCPOS
             this.unosPocetnogDugovanjaPartneraToolStripMenuItem,
             this.DugovanjaPartneraToolStripMenuItem});
             this.dugovanjaPremaPartnerimaToolStripMenuItem.Name = "dugovanjaPremaPartnerimaToolStripMenuItem";
-            this.dugovanjaPremaPartnerimaToolStripMenuItem.Size = new System.Drawing.Size(397, 24);
+            this.dugovanjaPremaPartnerimaToolStripMenuItem.Size = new System.Drawing.Size(494, 30);
             this.dugovanjaPremaPartnerimaToolStripMenuItem.Text = "Dugovanja partnera";
             // 
             // unosPocetnogDugovanjaPartneraToolStripMenuItem
             // 
             this.unosPocetnogDugovanjaPartneraToolStripMenuItem.Name = "unosPocetnogDugovanjaPartneraToolStripMenuItem";
-            this.unosPocetnogDugovanjaPartneraToolStripMenuItem.Size = new System.Drawing.Size(313, 24);
+            this.unosPocetnogDugovanjaPartneraToolStripMenuItem.Size = new System.Drawing.Size(389, 30);
             this.unosPocetnogDugovanjaPartneraToolStripMenuItem.Text = "Unos početnog dugovanja partnera";
             this.unosPocetnogDugovanjaPartneraToolStripMenuItem.Click += new System.EventHandler(this.unosPocetnogDugovanjaPartneraToolStripMenuItem_Click);
             // 
             // DugovanjaPartneraToolStripMenuItem
             // 
             this.DugovanjaPartneraToolStripMenuItem.Name = "DugovanjaPartneraToolStripMenuItem";
-            this.DugovanjaPartneraToolStripMenuItem.Size = new System.Drawing.Size(313, 24);
+            this.DugovanjaPartneraToolStripMenuItem.Size = new System.Drawing.Size(389, 30);
             this.DugovanjaPartneraToolStripMenuItem.Text = "Dugovanja partnera";
             this.DugovanjaPartneraToolStripMenuItem.Click += new System.EventHandler(this.DugovanjaPartneraToolStripMenuItem_Click);
             // 
             // prodajneStatistikeToolStripMenuItem
             // 
             this.prodajneStatistikeToolStripMenuItem.Name = "prodajneStatistikeToolStripMenuItem";
-            this.prodajneStatistikeToolStripMenuItem.Size = new System.Drawing.Size(397, 24);
+            this.prodajneStatistikeToolStripMenuItem.Size = new System.Drawing.Size(494, 30);
             this.prodajneStatistikeToolStripMenuItem.Text = "Prodajne statistike";
             this.prodajneStatistikeToolStripMenuItem.Click += new System.EventHandler(this.prodajneStatistikeToolStripMenuItem_Click);
             // 
             // popisKupljeneRobePremaPartneruToolStripMenuItem
             // 
             this.popisKupljeneRobePremaPartneruToolStripMenuItem.Name = "popisKupljeneRobePremaPartneruToolStripMenuItem";
-            this.popisKupljeneRobePremaPartneruToolStripMenuItem.Size = new System.Drawing.Size(397, 24);
+            this.popisKupljeneRobePremaPartneruToolStripMenuItem.Size = new System.Drawing.Size(494, 30);
             this.popisKupljeneRobePremaPartneruToolStripMenuItem.Text = "Popis kupljene robe prema partneru";
             this.popisKupljeneRobePremaPartneruToolStripMenuItem.Click += new System.EventHandler(this.popisKupljeneRobePremaPartneruToolStripMenuItem_Click);
             // 
             // popisDogađajaZaPartnereToolStripMenuItem
             // 
             this.popisDogađajaZaPartnereToolStripMenuItem.Name = "popisDogađajaZaPartnereToolStripMenuItem";
-            this.popisDogađajaZaPartnereToolStripMenuItem.Size = new System.Drawing.Size(397, 24);
+            this.popisDogađajaZaPartnereToolStripMenuItem.Size = new System.Drawing.Size(494, 30);
             this.popisDogađajaZaPartnereToolStripMenuItem.Text = "Popis događaja za partnere";
             this.popisDogađajaZaPartnereToolStripMenuItem.Click += new System.EventHandler(this.popisDogađajaZaPartnereToolStripMenuItem_Click);
             // 
             // prodajaPoArtiklimaToolStripMenuItem
             // 
             this.prodajaPoArtiklimaToolStripMenuItem.Name = "prodajaPoArtiklimaToolStripMenuItem";
-            this.prodajaPoArtiklimaToolStripMenuItem.Size = new System.Drawing.Size(397, 24);
+            this.prodajaPoArtiklimaToolStripMenuItem.Size = new System.Drawing.Size(494, 30);
             this.prodajaPoArtiklimaToolStripMenuItem.Text = "Prodaja po artiklima (beta verzija)";
             this.prodajaPoArtiklimaToolStripMenuItem.Click += new System.EventHandler(this.prodajaPoArtiklimaToolStripMenuItem_Click);
             // 
             // porezNaDohodakToolStripMenuItem
             // 
             this.porezNaDohodakToolStripMenuItem.Name = "porezNaDohodakToolStripMenuItem";
-            this.porezNaDohodakToolStripMenuItem.Size = new System.Drawing.Size(397, 24);
+            this.porezNaDohodakToolStripMenuItem.Size = new System.Drawing.Size(494, 30);
             this.porezNaDohodakToolStripMenuItem.Text = "Porez na dohodak, prirez";
             this.porezNaDohodakToolStripMenuItem.Click += new System.EventHandler(this.porezNaDohodakToolStripMenuItem_Click);
             // 
             // kronologijaPremaPartneruIRobiZaSveGodineToolStripMenuItem
             // 
             this.kronologijaPremaPartneruIRobiZaSveGodineToolStripMenuItem.Name = "kronologijaPremaPartneruIRobiZaSveGodineToolStripMenuItem";
-            this.kronologijaPremaPartneruIRobiZaSveGodineToolStripMenuItem.Size = new System.Drawing.Size(397, 24);
+            this.kronologijaPremaPartneruIRobiZaSveGodineToolStripMenuItem.Size = new System.Drawing.Size(494, 30);
             this.kronologijaPremaPartneruIRobiZaSveGodineToolStripMenuItem.Text = "Kronologija prema partneru i robi za sve godine";
             this.kronologijaPremaPartneruIRobiZaSveGodineToolStripMenuItem.Click += new System.EventHandler(this.kronologijaPremaPartneruIRobiZaSveGodineToolStripMenuItem_Click);
             // 
             // knjigaPrometaKPRToolStripMenuItem
             // 
             this.knjigaPrometaKPRToolStripMenuItem.Name = "knjigaPrometaKPRToolStripMenuItem";
-            this.knjigaPrometaKPRToolStripMenuItem.Size = new System.Drawing.Size(397, 24);
+            this.knjigaPrometaKPRToolStripMenuItem.Size = new System.Drawing.Size(494, 30);
             this.knjigaPrometaKPRToolStripMenuItem.Text = "Knjiga prometa KPR";
             this.knjigaPrometaKPRToolStripMenuItem.Click += new System.EventHandler(this.knjigaPrometaKPRToolStripMenuItem_Click);
             // 
             // robaNaKomisijiToolStripMenuItem
             // 
             this.robaNaKomisijiToolStripMenuItem.Name = "robaNaKomisijiToolStripMenuItem";
-            this.robaNaKomisijiToolStripMenuItem.Size = new System.Drawing.Size(397, 24);
+            this.robaNaKomisijiToolStripMenuItem.Size = new System.Drawing.Size(494, 30);
             this.robaNaKomisijiToolStripMenuItem.Text = "Roba na komisiji";
             this.robaNaKomisijiToolStripMenuItem.Click += new System.EventHandler(this.robaNaKomisijiToolStripMenuItem_Click);
             // 
             // rekapitulacijaRadnihNalogaToolStripMenuItem
             // 
             this.rekapitulacijaRadnihNalogaToolStripMenuItem.Name = "rekapitulacijaRadnihNalogaToolStripMenuItem";
-            this.rekapitulacijaRadnihNalogaToolStripMenuItem.Size = new System.Drawing.Size(397, 24);
+            this.rekapitulacijaRadnihNalogaToolStripMenuItem.Size = new System.Drawing.Size(494, 30);
             this.rekapitulacijaRadnihNalogaToolStripMenuItem.Text = "Rekapitulacija radnih naloga";
             this.rekapitulacijaRadnihNalogaToolStripMenuItem.Click += new System.EventHandler(this.rekapitulacijaRadnihNalogaToolStripMenuItem_Click);
             // 
             // rUCRazlikaUCijeniToolStripMenuItem
             // 
             this.rUCRazlikaUCijeniToolStripMenuItem.Name = "rUCRazlikaUCijeniToolStripMenuItem";
-            this.rUCRazlikaUCijeniToolStripMenuItem.Size = new System.Drawing.Size(397, 24);
+            this.rUCRazlikaUCijeniToolStripMenuItem.Size = new System.Drawing.Size(494, 30);
             this.rUCRazlikaUCijeniToolStripMenuItem.Text = "RUC - Razlika u cijeni";
             this.rUCRazlikaUCijeniToolStripMenuItem.Click += new System.EventHandler(this.rUCRazlikaUCijeniToolStripMenuItem_Click);
+            // 
+            // knjigaPlačenihRačunaKPRToolStripMenuItem
+            // 
+            this.knjigaPlačenihRačunaKPRToolStripMenuItem.Name = "knjigaPlačenihRačunaKPRToolStripMenuItem";
+            this.knjigaPlačenihRačunaKPRToolStripMenuItem.Size = new System.Drawing.Size(494, 30);
+            this.knjigaPlačenihRačunaKPRToolStripMenuItem.Text = "KPR - Knjiga plaćenih računa";
+            this.knjigaPlačenihRačunaKPRToolStripMenuItem.Click += new System.EventHandler(this.knjigaPlačenihRaćunaKPRToolStripMenuItem_Click);
             // 
             // servisToolStripMenuItem2
             // 
@@ -1577,27 +1587,27 @@ namespace PCPOS
             this.naljepniceToolStripMenuItem3});
             this.servisToolStripMenuItem2.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.servisToolStripMenuItem2.Name = "servisToolStripMenuItem2";
-            this.servisToolStripMenuItem2.Size = new System.Drawing.Size(59, 26);
+            this.servisToolStripMenuItem2.Size = new System.Drawing.Size(73, 33);
             this.servisToolStripMenuItem2.Text = "Servis";
             // 
             // noviServisToolStripMenuItem1
             // 
             this.noviServisToolStripMenuItem1.Name = "noviServisToolStripMenuItem1";
-            this.noviServisToolStripMenuItem1.Size = new System.Drawing.Size(149, 24);
+            this.noviServisToolStripMenuItem1.Size = new System.Drawing.Size(181, 30);
             this.noviServisToolStripMenuItem1.Text = "Novi servis";
             this.noviServisToolStripMenuItem1.Click += new System.EventHandler(this.noviServisToolStripMenuItem1_Click);
             // 
             // sviServisiToolStripMenuItem2
             // 
             this.sviServisiToolStripMenuItem2.Name = "sviServisiToolStripMenuItem2";
-            this.sviServisiToolStripMenuItem2.Size = new System.Drawing.Size(149, 24);
+            this.sviServisiToolStripMenuItem2.Size = new System.Drawing.Size(181, 30);
             this.sviServisiToolStripMenuItem2.Text = "Svi servisi";
             this.sviServisiToolStripMenuItem2.Click += new System.EventHandler(this.sviServisiToolStripMenuItem2_Click);
             // 
             // naljepniceToolStripMenuItem3
             // 
             this.naljepniceToolStripMenuItem3.Name = "naljepniceToolStripMenuItem3";
-            this.naljepniceToolStripMenuItem3.Size = new System.Drawing.Size(149, 24);
+            this.naljepniceToolStripMenuItem3.Size = new System.Drawing.Size(181, 30);
             this.naljepniceToolStripMenuItem3.Text = "Naljepnice";
             this.naljepniceToolStripMenuItem3.Click += new System.EventHandler(this.naljepniceToolStripMenuItem3_Click);
             // 
@@ -1615,69 +1625,69 @@ namespace PCPOS
             this.agencijeToolStripMenuItem});
             this.resortToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.resortToolStripMenuItem.Name = "resortToolStripMenuItem";
-            this.resortToolStripMenuItem.Size = new System.Drawing.Size(63, 26);
+            this.resortToolStripMenuItem.Size = new System.Drawing.Size(76, 33);
             this.resortToolStripMenuItem.Text = "Resort";
             // 
             // kalendarToolStripMenuItem
             // 
             this.kalendarToolStripMenuItem.Name = "kalendarToolStripMenuItem";
-            this.kalendarToolStripMenuItem.Size = new System.Drawing.Size(290, 24);
+            this.kalendarToolStripMenuItem.Size = new System.Drawing.Size(358, 30);
             this.kalendarToolStripMenuItem.Text = "Kalendar popunjenosti";
             this.kalendarToolStripMenuItem.Click += new System.EventHandler(this.KalendarToolStripMenuItem_Click);
             // 
             // sobeToolStripMenuItem
             // 
             this.sobeToolStripMenuItem.Name = "sobeToolStripMenuItem";
-            this.sobeToolStripMenuItem.Size = new System.Drawing.Size(290, 24);
+            this.sobeToolStripMenuItem.Size = new System.Drawing.Size(358, 30);
             this.sobeToolStripMenuItem.Text = "Sobe";
             this.sobeToolStripMenuItem.Click += new System.EventHandler(this.SobeToolStripMenuItem_Click);
             // 
             // vrstaUslugeToolStripMenuItem
             // 
             this.vrstaUslugeToolStripMenuItem.Name = "vrstaUslugeToolStripMenuItem";
-            this.vrstaUslugeToolStripMenuItem.Size = new System.Drawing.Size(290, 24);
+            this.vrstaUslugeToolStripMenuItem.Size = new System.Drawing.Size(358, 30);
             this.vrstaUslugeToolStripMenuItem.Text = "Vrsta usluge";
             this.vrstaUslugeToolStripMenuItem.Click += new System.EventHandler(this.vrstaUslugeToolStripMenuItem_Click);
             // 
             // boravišnaPristojbaToolStripMenuItem
             // 
             this.boravišnaPristojbaToolStripMenuItem.Name = "boravišnaPristojbaToolStripMenuItem";
-            this.boravišnaPristojbaToolStripMenuItem.Size = new System.Drawing.Size(290, 24);
+            this.boravišnaPristojbaToolStripMenuItem.Size = new System.Drawing.Size(358, 30);
             this.boravišnaPristojbaToolStripMenuItem.Text = "Boravišna pristojba";
             this.boravišnaPristojbaToolStripMenuItem.Click += new System.EventHandler(this.boravišnaPristojbaToolStripMenuItem_Click);
             // 
             // statističkiPrikazNočenjaGostijuToolStripMenuItem
             // 
             this.statističkiPrikazNočenjaGostijuToolStripMenuItem.Name = "statističkiPrikazNočenjaGostijuToolStripMenuItem";
-            this.statističkiPrikazNočenjaGostijuToolStripMenuItem.Size = new System.Drawing.Size(290, 24);
+            this.statističkiPrikazNočenjaGostijuToolStripMenuItem.Size = new System.Drawing.Size(358, 30);
             this.statističkiPrikazNočenjaGostijuToolStripMenuItem.Text = "Statistički prikaz nočenja gostiju";
             this.statističkiPrikazNočenjaGostijuToolStripMenuItem.Click += new System.EventHandler(this.statističkiPrikazNočenjaGostijuToolStripMenuItem_Click);
             // 
             // knjigaPrometaToolStripMenuItem
             // 
             this.knjigaPrometaToolStripMenuItem.Name = "knjigaPrometaToolStripMenuItem";
-            this.knjigaPrometaToolStripMenuItem.Size = new System.Drawing.Size(290, 24);
+            this.knjigaPrometaToolStripMenuItem.Size = new System.Drawing.Size(358, 30);
             this.knjigaPrometaToolStripMenuItem.Text = "Knjiga prometa";
             this.knjigaPrometaToolStripMenuItem.Click += new System.EventHandler(this.knjigaPrometaToolStripMenuItem_Click);
             // 
             // popisGostijuToolStripMenuItem
             // 
             this.popisGostijuToolStripMenuItem.Name = "popisGostijuToolStripMenuItem";
-            this.popisGostijuToolStripMenuItem.Size = new System.Drawing.Size(290, 24);
+            this.popisGostijuToolStripMenuItem.Size = new System.Drawing.Size(358, 30);
             this.popisGostijuToolStripMenuItem.Text = "Popis gostiju";
             this.popisGostijuToolStripMenuItem.Click += new System.EventHandler(this.popisGostijuToolStripMenuItem_Click);
             // 
             // ugostiteljskeOtpremniceToolStripMenuItem
             // 
             this.ugostiteljskeOtpremniceToolStripMenuItem.Name = "ugostiteljskeOtpremniceToolStripMenuItem";
-            this.ugostiteljskeOtpremniceToolStripMenuItem.Size = new System.Drawing.Size(290, 24);
+            this.ugostiteljskeOtpremniceToolStripMenuItem.Size = new System.Drawing.Size(358, 30);
             this.ugostiteljskeOtpremniceToolStripMenuItem.Text = "Ugostiteljske otpremnice";
             this.ugostiteljskeOtpremniceToolStripMenuItem.Click += new System.EventHandler(this.ugostiteljskeOtpremniceToolStripMenuItem_Click);
             // 
             // agencijeToolStripMenuItem
             // 
             this.agencijeToolStripMenuItem.Name = "agencijeToolStripMenuItem";
-            this.agencijeToolStripMenuItem.Size = new System.Drawing.Size(290, 24);
+            this.agencijeToolStripMenuItem.Size = new System.Drawing.Size(358, 30);
             this.agencijeToolStripMenuItem.Text = "Agencije";
             this.agencijeToolStripMenuItem.Click += new System.EventHandler(this.agencijeToolStripMenuItem_Click);
             // 
@@ -1704,9 +1714,9 @@ namespace PCPOS
             // 
             // frmMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(990, 572);
+            this.ClientSize = new System.Drawing.Size(1320, 704);
             this.ControlBox = false;
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -1714,6 +1724,7 @@ namespace PCPOS
             this.IsMdiContainer = true;
             this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Menu";
@@ -1912,6 +1923,7 @@ namespace PCPOS
         private ToolStripMenuItem ugostiteljskeOtpremniceToolStripMenuItem;
         private ToolStripMenuItem agencijeToolStripMenuItem;
         private ToolStripMenuItem deklaracijeToolStripMenuItem;
+        private ToolStripMenuItem knjigaPlačenihRačunaKPRToolStripMenuItem;
     }
 }
 

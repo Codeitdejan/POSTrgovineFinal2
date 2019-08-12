@@ -207,6 +207,11 @@
     <Compile Include="Dataset\DSRliste.cs">
       <DependentUpon>DSRliste.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Dataset\podaciTvrtke.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>podaciTvrtke.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Entities\Faktura.cs" />
     <Compile Include="Entities\FakturaStavke.cs" />
     <Compile Include="Entities\Gost.cs" />
@@ -861,6 +866,12 @@
     </Compile>
     <Compile Include="Report\Komisija\frmRobaNaKomisiji.Designer.cs">
       <DependentUpon>frmRobaNaKomisiji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\KnjigaPlacenihRacuna\kpr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\KnjigaPlacenihRacuna\kpr.Designer.cs">
+      <DependentUpon>kpr.cs</DependentUpon>
     </Compile>
     <Compile Include="Report\Liste\frmListeMeduskladisnicaPC.cs">
       <SubType>Form</SubType>
@@ -2741,6 +2752,7 @@
     <EmbeddedResource Include="Report\Faktura_njem\reportNjemFaktura.rdlc">
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report\KnjigaPlacenihRacuna\kpr.rdlc" />
     <EmbeddedResource Include="Report\KnjigaPrometaKPR\frmKPR2017.resx">
       <DependentUpon>frmKPR2017.cs</DependentUpon>
     </EmbeddedResource>
@@ -2753,6 +2765,9 @@
       <DependentUpon>frmRobaNaKomisiji.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report\Komisija\RobaNaKomisiji.rdlc" />
+    <EmbeddedResource Include="Report\KnjigaPlacenihRacuna\kpr.resx">
+      <DependentUpon>kpr.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Report\Liste\frmListeMeduskladisnicaPC.resx">
       <DependentUpon>frmListeMeduskladisnicaPC.cs</DependentUpon>
     </EmbeddedResource>
@@ -3839,6 +3854,17 @@
     </None>
     <None Include="Dataset\ListaUniverzalna.xss">
       <DependentUpon>ListaUniverzalna.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\podaciTvrtke.xsc">
+      <DependentUpon>podaciTvrtke.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\podaciTvrtke.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>podaciTvrtke.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\podaciTvrtke.xss">
+      <DependentUpon>podaciTvrtke.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <EmbeddedResource Include="Report\Faktura_njem\Report2.rdlc">

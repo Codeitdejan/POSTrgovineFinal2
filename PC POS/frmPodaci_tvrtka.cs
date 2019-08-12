@@ -89,6 +89,7 @@ namespace PCPOS
             txtposlovnica.Text = DTpodaci.Rows[0]["ime_poslovnice"].ToString();
             rtbKrajDokumenta.Text = DTpodaci.Rows[0]["text_bottom"].ToString();
             txtSifraDjelatnosti.Text = DTpodaci.Rows[0]["sifra_djelatnosti"].ToString();
+            txtNazivDjelatnosti.Text = DTpodaci.Rows[0]["naziv_djelatnosti"].ToString();
             txtAdresaPrebivalista.Text = DTpodaci.Rows[0]["adresa_prebivalista"].ToString();
             cbR1.SelectedValue = DTpodaci.Rows[0]["r1"].ToString();
             richTextServis.Text = DTpodaci.Rows[0]["servis_text"].ToString();
@@ -137,7 +138,8 @@ namespace PCPOS
                 " sifra_djelatnosti ='" + txtSifraDjelatnosti.Text + "'," +
                 " adresa_prebivalista ='" + txtAdresaPrebivalista.Text + "'," +
                 " r1='" + cbR1.SelectedValue + "'," +
-                " servis_text='" + richTextServis.Text + "'" +
+                " servis_text='" + richTextServis.Text + "'," +
+                " naziv_djelatnosti='" + txtNazivDjelatnosti.Text + "'"+
                 " WHERE id='1'";
 
             classSQL.Setings_Update(sql);
@@ -169,7 +171,8 @@ namespace PCPOS
                 " dodatniPodaciHeader='" + richTextBoxDodatniPodaciHeader.Text + "'," +
                 " sifra_djelatnosti ='" + txtSifraDjelatnosti.Text + "'," +
                 " adresa_prebivalista ='" + txtAdresaPrebivalista.Text + "'," +
-                " r1='" + cbR1.SelectedValue + "'" +
+                " r1='" + cbR1.SelectedValue + "'," +
+                " naziv_djelatnosti='" + txtNazivDjelatnosti.Text + "'" +
                 " WHERE id='1'";
 
             // classSQL.update(sql1);

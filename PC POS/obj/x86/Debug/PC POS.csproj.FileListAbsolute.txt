@@ -12196,3 +12196,4 @@ C:\Users\Toni\Desktop\POSTrgovineFinal2v2\PC POS\obj\x86\Debug\yo-NG\PC POS.reso
 C:\Users\Toni\Desktop\POSTrgovineFinal2v2\PC POS\obj\x86\Debug\PC POS.csproj.CopyComplete
 C:\Users\Toni\Desktop\POSTrgovineFinal2v2\PC POS\obj\x86\Debug\PC POS.exe
 C:\Users\Toni\Desktop\POSTrgovineFinal2v2\PC POS\obj\x86\Debug\PC POS.pdb
+C:\Users\Toni\Desktop\POSTrgovineFinal2v2\PC POS\obj\x86\Debug\PCPOS.Report.KPR.kpr.resources

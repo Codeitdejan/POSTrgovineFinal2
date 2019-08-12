@@ -3109,5 +3109,13 @@ namespace PCPOS
         {
 
         }
+
+        private void knjigaPlačenihRaćunaKPRToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Report.KPR.kpr form = new Report.KPR.kpr();
+            form.MdiParent = this;
+            form.Dock = DockStyle.Fill;
+            form.Show();
+        }
     }
 }
