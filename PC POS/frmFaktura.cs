@@ -227,10 +227,15 @@ namespace PCPOS
                         d.BeginEdit(true);
                         return;
                     }
+                    else
+                    {
+                        d.CurrentCell = dgw.Rows[d.CurrentRow.Index].Cells[7];
+                        d.BeginEdit(true);
+                    }
                 }
 
-                d.CurrentCell = dgw.Rows[d.CurrentRow.Index].Cells[6];
-                d.BeginEdit(true);
+                //d.CurrentCell = dgw.Rows[d.CurrentRow.Index].Cells[6];
+                //d.BeginEdit(true);
             }
             else if (d.CurrentCell.ColumnIndex == (6))
             {
@@ -4799,6 +4804,11 @@ where b.id_stavka = a.id_stavka;";
         private void BtnJson_Click(object sender, EventArgs e)
         {
             ReadJSON();
+        }
+
+        private void dgw_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
