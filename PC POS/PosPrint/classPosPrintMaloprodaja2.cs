@@ -1224,12 +1224,13 @@ WHERE id_partner = '{0}';", kupac);
             {
                 pdv = true;
             }
-
+        
             if (DTfis.Rows[0]["aktivna"].ToString() == "1")
             {
+                MessageBox.Show(Class.Postavke.id_default_blagajnik.ToString());
                 string[] fiskalizacija = Fiskalizacija.classFiskalizacija.Fiskalizacija(
                     DT.Rows[0]["oib"].ToString(),
-                    DTblagajnik.Rows[0]["oib"].ToString(),
+                    Class.Postavke.id_default_blagajnik.ToString(),
                     datum,
                     pdv,
                     Convert.ToInt32(brRac),

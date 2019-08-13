@@ -82,7 +82,9 @@ namespace PCPOS
 
         private void frmKasa_Load(object sender, EventArgs e)
         {
-
+            MessageBox.Show(Class.Postavke.id_default_blagajnik.ToString());
+            //MessageBox.Show(Class.Postavke.id_default_blagajnik.ToString());
+            MessageBox.Show(Properties.Settings.Default.id_zaposlenik.ToString()+" aaaaaaaaa");
             if (Class.Postavke.UDSGame)
             {
 
