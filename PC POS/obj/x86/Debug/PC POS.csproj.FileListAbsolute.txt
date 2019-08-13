@@ -11758,7 +11758,6 @@ C:\Users\Toni\Desktop\Code-iT Trgovine - 07082019\PC POS\obj\x86\Debug\yo-NG\PC 
 C:\Users\Toni\Desktop\Code-iT Trgovine - 07082019\PC POS\obj\x86\Debug\PC POS.csproj.CopyComplete
 C:\Users\Toni\Desktop\Code-iT Trgovine - 07082019\PC POS\obj\x86\Debug\PC POS.exe
 C:\Users\Toni\Desktop\Code-iT Trgovine - 07082019\PC POS\obj\x86\Debug\PC POS.pdb
-<<<<<<< HEAD
 D:\Projects\POSTrgovineFinal2\PC POS\bin\Debug\SqlServerTypes\x64\msvcr120.dll
 D:\Projects\POSTrgovineFinal2\PC POS\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
 D:\Projects\POSTrgovineFinal2\PC POS\bin\Debug\SqlServerTypes\x86\msvcr120.dll
@@ -12209,7 +12208,6 @@ D:\Projects\POSTrgovineFinal2\PC POS\obj\x86\Debug\PC POS.csproj.CoreCompileInpu
 D:\Projects\POSTrgovineFinal2\PC POS\obj\x86\Debug\yo-NG\PC POS.resources.dll
 D:\Projects\POSTrgovineFinal2\PC POS\obj\x86\Debug\PC POS.exe
 D:\Projects\POSTrgovineFinal2\PC POS\obj\x86\Debug\PC POS.pdb
-=======
 C:\Users\Toni\Desktop\POSTrgovineFinal2v2\PC POS\bin\Debug\SqlServerTypes\x64\msvcr120.dll
 C:\Users\Toni\Desktop\POSTrgovineFinal2v2\PC POS\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
 C:\Users\Toni\Desktop\POSTrgovineFinal2v2\PC POS\bin\Debug\SqlServerTypes\x86\msvcr120.dll
@@ -12648,8 +12646,6 @@ C:\Users\Toni\Desktop\POSTrgovineFinal2v2\PC POS\obj\x86\Debug\yo-NG\PC POS.reso
 C:\Users\Toni\Desktop\POSTrgovineFinal2v2\PC POS\obj\x86\Debug\PC POS.csproj.CopyComplete
 C:\Users\Toni\Desktop\POSTrgovineFinal2v2\PC POS\obj\x86\Debug\PC POS.exe
 C:\Users\Toni\Desktop\POSTrgovineFinal2v2\PC POS\obj\x86\Debug\PC POS.pdb
-<<<<<<< HEAD
 C:\Users\Toni\Desktop\POSTrgovineFinal2v2\PC POS\obj\x86\Debug\PCPOS.Report.KPR.kpr.resources
-=======
 >>>>>>> 10820f2f93c41fc67848c043c9820ecab4f93661
 >>>>>>> 75697a8dbe5a05b372c71e6096cb98c75893b263
