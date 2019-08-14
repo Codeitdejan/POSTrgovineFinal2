@@ -259,3 +259,12 @@ D:\Projects\POSTrgovineFinal2\PC POS Update\obj\x86\Debug\PC POS Update.csproj.G
 D:\Projects\POSTrgovineFinal2\PC POS Update\obj\x86\Debug\PC POS Update.csproj.CoreCompileInputs.cache
 D:\Projects\POSTrgovineFinal2\PC POS Update\obj\x86\Debug\PC POS Update.exe
 D:\Projects\POSTrgovineFinal2\PC POS Update\obj\x86\Debug\PC POS Update.pdb
+F:\work\CodeIT\CodeIT-Trgovine\PC POS Update\bin\Debug\PC POS Update.exe
+F:\work\CodeIT\CodeIT-Trgovine\PC POS Update\bin\Debug\PC POS Update.pdb
+F:\work\CodeIT\CodeIT-Trgovine\PC POS Update\obj\x86\Debug\PC POS Update.csprojAssemblyReference.cache
+F:\work\CodeIT\CodeIT-Trgovine\PC POS Update\obj\x86\Debug\PC_POS_Update.frmUpdate.resources
+F:\work\CodeIT\CodeIT-Trgovine\PC POS Update\obj\x86\Debug\PC_POS_Update.Properties.Resources.resources
+F:\work\CodeIT\CodeIT-Trgovine\PC POS Update\obj\x86\Debug\PC POS Update.csproj.GenerateResource.cache
+F:\work\CodeIT\CodeIT-Trgovine\PC POS Update\obj\x86\Debug\PC POS Update.csproj.CoreCompileInputs.cache
+F:\work\CodeIT\CodeIT-Trgovine\PC POS Update\obj\x86\Debug\PC POS Update.exe
+F:\work\CodeIT\CodeIT-Trgovine\PC POS Update\obj\x86\Debug\PC POS Update.pdb

@@ -82,7 +82,6 @@ namespace PCPOS
 
         private void frmKasa_Load(object sender, EventArgs e)
         {
-
             if (Class.Postavke.UDSGame)
             {
 
