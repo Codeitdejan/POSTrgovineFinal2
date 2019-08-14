@@ -20,7 +20,7 @@ namespace PCPOS.PosPrint
         private static DataTable DTpostavke = classSQL.select_settings("SELECT * FROM postavke", "postavke").Tables[0];
         private static DataTable DTrac;
         private static int RecLineChars;
-        private static DataTable DTblagajnik = classSQL.select(string.Format("SELECT ime, prezime, oib FROM zaposlenici WHERE id_zaposlenik = '{0}';", Properties.Settings.Default.id_zaposlenik), "zaposlenici").Tables[0];
+        private static DataTable DTblagajnik;
         private static DataTable DTtemp;
         private static string _1;
         private static string _2;
@@ -1218,7 +1218,8 @@ WHERE id_partner = '{0}';", kupac);
         public static string[] vratiFiskalizaciju(DataTable DTstavke, string brRac,
             string[] porez_na_potrosnju, DataTable DTOstaliPor, string iznososlobpdv,
             string iznos_marza, DataTable DTnaknade, double ukupno, string placanje, DateTime datum, bool naknadno = false)
-        {
+            {
+            DTblagajnik = classSQL.select(string.Format("SELECT ime, prezime, oib FROM zaposlenici WHERE id_zaposlenik = '{0}';", Properties.Settings.Default.id_zaposlenik), "zaposlenici").Tables[0];
             bool pdv = false;
             if (DTpostavke.Rows[0]["sustav_pdv"].ToString() == "1")
             {
@@ -1227,10 +1228,9 @@ WHERE id_partner = '{0}';", kupac);
         
             if (DTfis.Rows[0]["aktivna"].ToString() == "1")
             {
-                MessageBox.Show(Class.Postavke.id_default_blagajnik.ToString());
                 string[] fiskalizacija = Fiskalizacija.classFiskalizacija.Fiskalizacija(
                     DT.Rows[0]["oib"].ToString(),
-                    Class.Postavke.id_default_blagajnik.ToString(),
+                    DTblagajnik.Rows[0]["oib"].ToString(),
                     datum,
                     pdv,
                     Convert.ToInt32(brRac),
