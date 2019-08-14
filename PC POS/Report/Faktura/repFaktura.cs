@@ -76,6 +76,13 @@ namespace PCPOS.Report.Faktura
                 string localPath = Path.GetDirectoryName(Application.ExecutablePath);
                 root = localPath + "\\bijela.jpg";
             }
+
+            if(ImeForme == "Ponude" && Class.Postavke.vodeniZig)
+            {
+                string localPath = Path.GetDirectoryName(Application.ExecutablePath);
+                root = localPath + "\\vodeni.png";
+            }
+
             string tekst = "";
             if (DTpostavke.Rows[0]["sustav_pdv"].ToString() == "0")
             {
@@ -198,7 +205,7 @@ namespace PCPOS.Report.Faktura
 
             this.reportViewer1.RefreshReport();
         }
-
+        
         private string AkoJeStranaValuta(string sql, string valuta)
         {
             DataTable DT = classSQL.select(sql, "fakture").Tables[0];

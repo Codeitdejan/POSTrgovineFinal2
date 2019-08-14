@@ -732,6 +732,7 @@ namespace PCPOS
             DTsend.Columns.Add("id_skladiste");
             DTsend.Columns.Add("mpc");
             DTsend.Columns.Add("vpc");
+            DTsend.Columns.Add("naziv");
             DTsend.Columns.Add("nbc");
             DTsend.Columns.Add("porez");
             DTsend.Columns.Add("kolicina");
@@ -1064,24 +1065,29 @@ namespace PCPOS
             string vrati = "", sql = "";
             try
             {
-                sql = "SELECT MAX(x.brart) FROM ( " +
-                    "SELECT COALESCE(MAX(CASE WHEN LENGTH(substring(sifra, 12)) = 0 THEN 0 ELSE substring(sifra, 12)::NUMERIC end)::NUMERIC, 0) zbroj 1 AS brArt " +
-                    "FROM roba r " +
-                    "WHERE SUBSTRING(sifra, 1, 11) = '!serial" + Util.Korisno.GodinaKojaSeKoristiUbazi + "' " +
-                    "UNION " +
-                    "SELECT COALESCE(MAX(CASE WHEN LENGTH(substring(sifra_robe, 12)) = 0 THEN 0 ELSE substring(sifra_robe, 12)::NUMERIC end)::NUMERIC, 0) zbroj 1 AS brArt " +
-                    "FROM racun_stavke " +
-                    "WHERE SUBSTRING(sifra_robe, 1, 11) = '!serial" + Util.Korisno.GodinaKojaSeKoristiUbazi + "' " +
-                    ") x;";
+                /* sql = "SELECT MAX(x.brart) FROM ( " +
+                     "SELECT COALESCE(MAX(CASE WHEN LENGTH(substring(sifra, 12)) = 0 THEN 0 ELSE substring(sifra, 12)::NUMERIC end)::NUMERIC, 0) zbroj 1 AS brArt " +
+                     "FROM roba r " +
+                     "WHERE SUBSTRING(sifra, 1, 11) = '!serial" + Util.Korisno.GodinaKojaSeKoristiUbazi + "' " +
+                     "UNION " +
+                     "SELECT COALESCE(MAX(CASE WHEN LENGTH(substring(sifra_robe, 12)) = 0 THEN 0 ELSE substring(sifra_robe, 12)::NUMERIC end)::NUMERIC, 0) zbroj 1 AS brArt " +
+                     "FROM racun_stavke " +
+                     "WHERE SUBSTRING(sifra_robe, 1, 11) = '!serial" + Util.Korisno.GodinaKojaSeKoristiUbazi + "' " +
+                     ") x;";*/
+
+                sql = "select max(cast (sifra as int)) from roba";
 
                 DataTable DT = classSQL.select(sql, "roba").Tables[0];
 
                 if (DT.Rows.Count > 0)
                 {
+                    int sifra;
                     string seri = DT.Rows[0][0].ToString();
-                    vrati = "!serial" + Util.Korisno.GodinaKojaSeKoristiUbazi + DT.Rows[0][0].ToString();
+                    vrati = DT.Rows[0][0].ToString();
 
-                    sql = "INSERT INTO roba (naziv,id_grupa,jm,vpc,mpc,id_zemlja_porijekla,id_zemlja_uvoza,id_partner,id_manufacturers,sifra,ean,porez,oduzmi,nc,porez_potrosnja) " +
+                    sifra = int.Parse(vrati) + 1;
+
+                    sql = "INSERT INTO roba (naziv,id_grupa,jm,vpc,mpc,id_zemlja_porijekla,id_zemlja_uvoza,id_partner,id_manufacturers,sifra,ean,porez,oduzmi,nc,opis,jamstvo,akcija,link_za_slike,id_podgrupa) " +
                     "VALUES (" +
                     "'" + dg(row, "naziv") + "'," +
                     "'1'," +
@@ -1092,12 +1098,16 @@ namespace PCPOS
                     "'60'," +
                     "'1'," +
                     "'1'," +
-                    "'" + vrati + "'," +
-                    "'0'," +
+                    "'" + sifra + "'," +
+                    "'-1'," +
                     "'" + dg(row, "porez") + "'," +
                     "'NE'," +
                     "'0'," +
-                    "'0'" +
+                    "''," +
+                    "'0',"+
+                    "'0',"+
+                    "'',"+
+                    "0"+
                     ")";
 
                     classSQL.insert(sql);
@@ -1563,6 +1573,7 @@ namespace PCPOS
             DTsend.Columns.Add("vpc");
             DTsend.Columns.Add("nbc");
             DTsend.Columns.Add("porez");
+            DTsend.Columns.Add("naziv");
             DTsend.Columns.Add("kolicina");
             DTsend.Columns.Add("rabat");
             DTsend.Columns.Add("cijena");

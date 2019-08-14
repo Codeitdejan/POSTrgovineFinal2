@@ -85,6 +85,7 @@ namespace PCPOS
             chbAutomatskiZapisnik.Checked = Class.Postavke.automatski_zapisnik;
             chbUzmiAvanseUPrometKase.Checked = Class.Postavke.uzmi_avanse_u_promet_kase_POS;
             chbMainFormControlBox.Checked = Class.Postavke.controlBox;
+            chbVodeni.Checked = Class.Postavke.vodeniZig;
 
             chbMaloprodajaNaplataGotovinaButtonShow.Checked = Class.Postavke.maloprodaja_naplata_gotovina_button_show;
             chbMaloprodajaNaplataKarticaButtonShow.Checked = Class.Postavke.maloprodaja_naplata_kartica_button_show;
@@ -1588,6 +1589,19 @@ SET lokacija_sigurnosne_kopije ='{0}', backup_aktivnost = '{1}';", txtBackupLoka
             }
         }
 
+        private void chbVodeni_CheckedChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                string sql = string.Format("update postavke set vodeni_zig = {0};", (chbVodeni.Checked ? 1 : 0));
+                classSQL.Setings_Update(sql);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
         private void chbMaloprodajaNaplataGotovinaButtonShow_CheckedChanged(object sender, EventArgs e)
         {
             try
@@ -2280,5 +2294,7 @@ SET lokacija_sigurnosne_kopije ='{0}', backup_aktivnost = '{1}';", txtBackupLoka
         {
             this.Close();
         }
+
+
     }
 }

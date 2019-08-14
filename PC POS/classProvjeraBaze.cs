@@ -696,6 +696,19 @@ CREATE TABLE servis_status
                 classSQL.select_settings(sql, "postavke");
             }
 
+            if (DTpostavke.Columns["vodeni_zig"] == null)
+            {
+                if (Class.PodaciTvrtka.oibTvrtke == "88985647471")
+                {
+                    sql = "ALTER TABLE postavke ADD COLUMN vodeni_zig BIT DEFAULT 0;";
+                }
+                else
+                {
+                    sql = "ALTER TABLE postavke ADD COLUMN vodeni_zig BIT DEFAULT 1;";
+                }
+                classSQL.select_settings(sql, "postavke");
+            }
+
             //nbc_fakture
 
             if (DTpostavke.Columns["idKalkulacija"] == null)

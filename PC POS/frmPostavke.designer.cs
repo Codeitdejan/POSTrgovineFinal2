@@ -249,6 +249,7 @@
             this.txtApiKey = new System.Windows.Forms.TextBox();
             this.chbUseEmployees = new System.Windows.Forms.CheckBox();
             this.button5 = new System.Windows.Forms.Button();
+            this.chbVodeni = new System.Windows.Forms.CheckBox();
             this.tabPage4.SuspendLayout();
             this.groupBox13.SuspendLayout();
             this.groupBox11.SuspendLayout();
@@ -305,9 +306,10 @@
             this.tabPage4.Controls.Add(this.groupBox6);
             this.tabPage4.Controls.Add(this.groupBox1);
             this.tabPage4.Location = new System.Drawing.Point(4, 34);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(828, 385);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage4.Size = new System.Drawing.Size(1107, 483);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Ostalo";
             // 
@@ -315,9 +317,11 @@
             // 
             this.groupBox13.Controls.Add(this.label28);
             this.groupBox13.Controls.Add(this.btnPS);
-            this.groupBox13.Location = new System.Drawing.Point(11, 301);
+            this.groupBox13.Location = new System.Drawing.Point(15, 370);
+            this.groupBox13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(281, 74);
+            this.groupBox13.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox13.Size = new System.Drawing.Size(375, 91);
             this.groupBox13.TabIndex = 55;
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "Poravnanje skladišta";
@@ -325,18 +329,20 @@
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(7, 18);
+            this.label28.Location = new System.Drawing.Point(9, 22);
+            this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(142, 51);
+            this.label28.Size = new System.Drawing.Size(167, 60);
             this.label28.TabIndex = 51;
             this.label28.Text = "Za pristup ovoj stavci\r\nkontaktirajte podršku\r\nCode-iT.";
             // 
             // btnPS
             // 
             this.btnPS.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnPS.Location = new System.Drawing.Point(164, 18);
+            this.btnPS.Location = new System.Drawing.Point(219, 22);
+            this.btnPS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnPS.Name = "btnPS";
-            this.btnPS.Size = new System.Drawing.Size(102, 31);
+            this.btnPS.Size = new System.Drawing.Size(136, 38);
             this.btnPS.TabIndex = 50;
             this.btnPS.Text = "Poravnanje";
             this.btnPS.UseVisualStyleBackColor = true;
@@ -346,9 +352,11 @@
             // 
             this.groupBox11.Controls.Add(this.chbProvjeraSkladista);
             this.groupBox11.Controls.Add(this.label27);
-            this.groupBox11.Location = new System.Drawing.Point(312, 261);
+            this.groupBox11.Location = new System.Drawing.Point(416, 321);
+            this.groupBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(490, 114);
+            this.groupBox11.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox11.Size = new System.Drawing.Size(653, 140);
             this.groupBox11.TabIndex = 54;
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "Provjera skladišta";
@@ -356,9 +364,10 @@
             // chbProvjeraSkladista
             // 
             this.chbProvjeraSkladista.AutoSize = true;
-            this.chbProvjeraSkladista.Location = new System.Drawing.Point(394, 84);
+            this.chbProvjeraSkladista.Location = new System.Drawing.Point(525, 103);
+            this.chbProvjeraSkladista.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chbProvjeraSkladista.Name = "chbProvjeraSkladista";
-            this.chbProvjeraSkladista.Size = new System.Drawing.Size(84, 21);
+            this.chbProvjeraSkladista.Size = new System.Drawing.Size(99, 24);
             this.chbProvjeraSkladista.TabIndex = 2;
             this.chbProvjeraSkladista.Text = "Aktivnost";
             this.chbProvjeraSkladista.UseVisualStyleBackColor = true;
@@ -367,9 +376,10 @@
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(7, 19);
+            this.label27.Location = new System.Drawing.Point(9, 23);
+            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(463, 85);
+            this.label27.Size = new System.Drawing.Size(542, 100);
             this.label27.TabIndex = 0;
             this.label27.Text = resources.GetString("label27.Text");
             // 
@@ -379,9 +389,11 @@
             this.groupBox10.Controls.Add(this.btnPostavke);
             this.groupBox10.Controls.Add(this.label26);
             this.groupBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.groupBox10.Location = new System.Drawing.Point(312, 131);
+            this.groupBox10.Location = new System.Drawing.Point(416, 161);
+            this.groupBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(490, 124);
+            this.groupBox10.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox10.Size = new System.Drawing.Size(653, 153);
             this.groupBox10.TabIndex = 53;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Postavke sinkronizacije";
@@ -389,9 +401,10 @@
             // btnPostavke
             // 
             this.btnPostavke.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnPostavke.Location = new System.Drawing.Point(340, 77);
+            this.btnPostavke.Location = new System.Drawing.Point(453, 95);
+            this.btnPostavke.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnPostavke.Name = "btnPostavke";
-            this.btnPostavke.Size = new System.Drawing.Size(140, 36);
+            this.btnPostavke.Size = new System.Drawing.Size(187, 44);
             this.btnPostavke.TabIndex = 49;
             this.btnPostavke.Text = "Postavke";
             this.btnPostavke.UseVisualStyleBackColor = true;
@@ -400,9 +413,10 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(7, 29);
+            this.label26.Location = new System.Drawing.Point(9, 36);
+            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(466, 85);
+            this.label26.Size = new System.Drawing.Size(553, 100);
             this.label26.TabIndex = 0;
             this.label26.Text = resources.GetString("label26.Text");
             // 
@@ -412,9 +426,11 @@
             this.groupBox7.Controls.Add(this.chbOslobodenjePDVa);
             this.groupBox7.Controls.Add(this.label25);
             this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.groupBox7.Location = new System.Drawing.Point(312, 16);
+            this.groupBox7.Location = new System.Drawing.Point(416, 20);
+            this.groupBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(490, 98);
+            this.groupBox7.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox7.Size = new System.Drawing.Size(653, 121);
             this.groupBox7.TabIndex = 52;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Natpis o oslobođenju PDV-a";
@@ -422,9 +438,10 @@
             // chbOslobodenjePDVa
             // 
             this.chbOslobodenjePDVa.AutoSize = true;
-            this.chbOslobodenjePDVa.Location = new System.Drawing.Point(400, 71);
+            this.chbOslobodenjePDVa.Location = new System.Drawing.Point(533, 87);
+            this.chbOslobodenjePDVa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chbOslobodenjePDVa.Name = "chbOslobodenjePDVa";
-            this.chbOslobodenjePDVa.Size = new System.Drawing.Size(84, 21);
+            this.chbOslobodenjePDVa.Size = new System.Drawing.Size(99, 24);
             this.chbOslobodenjePDVa.TabIndex = 1;
             this.chbOslobodenjePDVa.Text = "Aktivnost";
             this.chbOslobodenjePDVa.UseVisualStyleBackColor = true;
@@ -433,9 +450,10 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(7, 29);
+            this.label25.Location = new System.Drawing.Point(9, 36);
+            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(464, 51);
+            this.label25.Size = new System.Drawing.Size(542, 60);
             this.label25.TabIndex = 0;
             this.label25.Text = "Prijenos porezne obveze prema čl. 75., st. 3b. i čl. 79. Zakona o PDV-u. \r\nKupac " +
     "će sam obračunati PDV od zadanog postotka i iskazati ga u \r\nporeznoj prijavi.";
@@ -451,9 +469,11 @@
             this.groupBox6.Controls.Add(this.txtDomenaWeb);
             this.groupBox6.Controls.Add(this.label20);
             this.groupBox6.Controls.Add(this.label21);
-            this.groupBox6.Location = new System.Drawing.Point(10, 147);
+            this.groupBox6.Location = new System.Drawing.Point(13, 181);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(282, 147);
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox6.Size = new System.Drawing.Size(376, 181);
             this.groupBox6.TabIndex = 51;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Pregled prometa na udaljenoj lokaciji";
@@ -461,34 +481,38 @@
             // chbWebActive
             // 
             this.chbWebActive.AutoSize = true;
-            this.chbWebActive.Location = new System.Drawing.Point(97, 106);
+            this.chbWebActive.Location = new System.Drawing.Point(129, 130);
+            this.chbWebActive.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chbWebActive.Name = "chbWebActive";
-            this.chbWebActive.Size = new System.Drawing.Size(15, 14);
+            this.chbWebActive.Size = new System.Drawing.Size(18, 17);
             this.chbWebActive.TabIndex = 49;
             this.chbWebActive.UseVisualStyleBackColor = true;
             // 
             // txtPasswordWeb
             // 
-            this.txtPasswordWeb.Location = new System.Drawing.Point(97, 77);
+            this.txtPasswordWeb.Location = new System.Drawing.Point(129, 95);
+            this.txtPasswordWeb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPasswordWeb.Name = "txtPasswordWeb";
             this.txtPasswordWeb.PasswordChar = '*';
-            this.txtPasswordWeb.Size = new System.Drawing.Size(170, 23);
+            this.txtPasswordWeb.Size = new System.Drawing.Size(225, 26);
             this.txtPasswordWeb.TabIndex = 45;
             // 
             // txtUsernameWeb
             // 
-            this.txtUsernameWeb.Location = new System.Drawing.Point(97, 51);
+            this.txtUsernameWeb.Location = new System.Drawing.Point(129, 63);
+            this.txtUsernameWeb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUsernameWeb.Name = "txtUsernameWeb";
             this.txtUsernameWeb.PasswordChar = '*';
-            this.txtUsernameWeb.Size = new System.Drawing.Size(170, 23);
+            this.txtUsernameWeb.Size = new System.Drawing.Size(225, 26);
             this.txtUsernameWeb.TabIndex = 45;
             // 
             // btnSpremiWeb
             // 
             this.btnSpremiWeb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnSpremiWeb.Location = new System.Drawing.Point(165, 106);
+            this.btnSpremiWeb.Location = new System.Drawing.Point(220, 130);
+            this.btnSpremiWeb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSpremiWeb.Name = "btnSpremiWeb";
-            this.btnSpremiWeb.Size = new System.Drawing.Size(102, 31);
+            this.btnSpremiWeb.Size = new System.Drawing.Size(136, 38);
             this.btnSpremiWeb.TabIndex = 48;
             this.btnSpremiWeb.Text = "Spremi";
             this.btnSpremiWeb.UseVisualStyleBackColor = true;
@@ -499,9 +523,10 @@
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label14.Location = new System.Drawing.Point(22, 103);
+            this.label14.Location = new System.Drawing.Point(29, 127);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(58, 17);
+            this.label14.Size = new System.Drawing.Size(68, 20);
             this.label14.TabIndex = 47;
             this.label14.Text = "Aktivno:";
             // 
@@ -510,17 +535,19 @@
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label19.Location = new System.Drawing.Point(22, 77);
+            this.label19.Location = new System.Drawing.Point(29, 95);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(69, 17);
+            this.label19.Size = new System.Drawing.Size(83, 20);
             this.label19.TabIndex = 47;
             this.label19.Text = "Password";
             // 
             // txtDomenaWeb
             // 
-            this.txtDomenaWeb.Location = new System.Drawing.Point(97, 25);
+            this.txtDomenaWeb.Location = new System.Drawing.Point(129, 31);
+            this.txtDomenaWeb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDomenaWeb.Name = "txtDomenaWeb";
-            this.txtDomenaWeb.Size = new System.Drawing.Size(170, 23);
+            this.txtDomenaWeb.Size = new System.Drawing.Size(225, 26);
             this.txtDomenaWeb.TabIndex = 44;
             // 
             // label20
@@ -528,9 +555,10 @@
             this.label20.AutoSize = true;
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label20.Location = new System.Drawing.Point(22, 51);
+            this.label20.Location = new System.Drawing.Point(29, 63);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(77, 17);
+            this.label20.Size = new System.Drawing.Size(91, 20);
             this.label20.TabIndex = 47;
             this.label20.Text = "Username:";
             // 
@@ -539,9 +567,10 @@
             this.label21.AutoSize = true;
             this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label21.Location = new System.Drawing.Point(22, 25);
+            this.label21.Location = new System.Drawing.Point(29, 31);
+            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(65, 17);
+            this.label21.Size = new System.Drawing.Size(77, 20);
             this.label21.TabIndex = 46;
             this.label21.Text = "Domena:";
             // 
@@ -553,9 +582,11 @@
             this.groupBox1.Controls.Add(this.rbCashBack);
             this.groupBox1.Controls.Add(this.rbBodovi);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.groupBox1.Location = new System.Drawing.Point(10, 16);
+            this.groupBox1.Location = new System.Drawing.Point(13, 20);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(282, 125);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(376, 154);
             this.groupBox1.TabIndex = 49;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nagrađivanje kupca";
@@ -564,9 +595,10 @@
             // 
             this.rbBezNagrade.AutoSize = true;
             this.rbBezNagrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.rbBezNagrade.Location = new System.Drawing.Point(25, 95);
+            this.rbBezNagrade.Location = new System.Drawing.Point(33, 117);
+            this.rbBezNagrade.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbBezNagrade.Name = "rbBezNagrade";
-            this.rbBezNagrade.Size = new System.Drawing.Size(186, 21);
+            this.rbBezNagrade.Size = new System.Drawing.Size(217, 24);
             this.rbBezNagrade.TabIndex = 45;
             this.rbBezNagrade.TabStop = true;
             this.rbBezNagrade.Text = "Bez nagrađivanja kupaca";
@@ -576,9 +608,10 @@
             // 
             this.rbPopustSlljedecakupovina.AutoSize = true;
             this.rbPopustSlljedecakupovina.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.rbPopustSlljedecakupovina.Location = new System.Drawing.Point(25, 71);
+            this.rbPopustSlljedecakupovina.Location = new System.Drawing.Point(33, 87);
+            this.rbPopustSlljedecakupovina.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbPopustSlljedecakupovina.Name = "rbPopustSlljedecakupovina";
-            this.rbPopustSlljedecakupovina.Size = new System.Drawing.Size(214, 21);
+            this.rbPopustSlljedecakupovina.Size = new System.Drawing.Size(250, 24);
             this.rbPopustSlljedecakupovina.TabIndex = 45;
             this.rbPopustSlljedecakupovina.TabStop = true;
             this.rbPopustSlljedecakupovina.Text = "Popust kod sljedeće kupovine";
@@ -588,9 +621,10 @@
             // 
             this.rbCashBack.AutoSize = true;
             this.rbCashBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.rbCashBack.Location = new System.Drawing.Point(25, 23);
+            this.rbCashBack.Location = new System.Drawing.Point(33, 28);
+            this.rbCashBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbCashBack.Name = "rbCashBack";
-            this.rbCashBack.Size = new System.Drawing.Size(92, 21);
+            this.rbCashBack.Size = new System.Drawing.Size(109, 24);
             this.rbCashBack.TabIndex = 45;
             this.rbCashBack.TabStop = true;
             this.rbCashBack.Text = "Cash back";
@@ -600,9 +634,10 @@
             // 
             this.rbBodovi.AutoSize = true;
             this.rbBodovi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.rbBodovi.Location = new System.Drawing.Point(25, 47);
+            this.rbBodovi.Location = new System.Drawing.Point(33, 58);
+            this.rbBodovi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbBodovi.Name = "rbBodovi";
-            this.rbBodovi.Size = new System.Drawing.Size(150, 21);
+            this.rbBodovi.Size = new System.Drawing.Size(173, 24);
             this.rbBodovi.TabIndex = 45;
             this.rbBodovi.TabStop = true;
             this.rbBodovi.Text = "Sakupljanje bodova";
@@ -615,9 +650,10 @@
             this.tabPage2.Controls.Add(this.groupBox3);
             this.tabPage2.Controls.Add(this.groupBox2);
             this.tabPage2.Location = new System.Drawing.Point(4, 34);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(828, 385);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Size = new System.Drawing.Size(1107, 483);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Baza podataka";
             // 
@@ -630,9 +666,11 @@
             this.groupBox8.Controls.Add(this.btnLoadBackup);
             this.groupBox8.Controls.Add(this.txtBackupLokacije);
             this.groupBox8.Controls.Add(this.label15);
-            this.groupBox8.Location = new System.Drawing.Point(18, 178);
+            this.groupBox8.Location = new System.Drawing.Point(24, 219);
+            this.groupBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(387, 126);
+            this.groupBox8.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox8.Size = new System.Drawing.Size(516, 155);
             this.groupBox8.TabIndex = 51;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Postavke za sigurnosnu kopiju baze";
@@ -640,9 +678,10 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(212, 68);
+            this.linkLabel1.Location = new System.Drawing.Point(283, 84);
+            this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(119, 17);
+            this.linkLabel1.Size = new System.Drawing.Size(141, 20);
             this.linkLabel1.TabIndex = 54;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Backup svih baza";
@@ -653,9 +692,10 @@
             this.chbBackupAktivnost.AutoSize = true;
             this.chbBackupAktivnost.Checked = true;
             this.chbBackupAktivnost.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chbBackupAktivnost.Location = new System.Drawing.Point(22, 68);
+            this.chbBackupAktivnost.Location = new System.Drawing.Point(29, 84);
+            this.chbBackupAktivnost.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chbBackupAktivnost.Name = "chbBackupAktivnost";
-            this.chbBackupAktivnost.Size = new System.Drawing.Size(84, 21);
+            this.chbBackupAktivnost.Size = new System.Drawing.Size(99, 24);
             this.chbBackupAktivnost.TabIndex = 53;
             this.chbBackupAktivnost.Text = "Aktivnost";
             this.chbBackupAktivnost.UseVisualStyleBackColor = true;
@@ -663,9 +703,10 @@
             // btnBackup
             // 
             this.btnBackup.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnBackup.Location = new System.Drawing.Point(22, 90);
+            this.btnBackup.Location = new System.Drawing.Point(29, 111);
+            this.btnBackup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBackup.Name = "btnBackup";
-            this.btnBackup.Size = new System.Drawing.Size(101, 28);
+            this.btnBackup.Size = new System.Drawing.Size(135, 34);
             this.btnBackup.TabIndex = 52;
             this.btnBackup.Text = "Backup";
             this.btnBackup.UseVisualStyleBackColor = true;
@@ -674,9 +715,10 @@
             // btnSpremiBackup
             // 
             this.btnSpremiBackup.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnSpremiBackup.Location = new System.Drawing.Point(129, 91);
+            this.btnSpremiBackup.Location = new System.Drawing.Point(172, 112);
+            this.btnSpremiBackup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSpremiBackup.Name = "btnSpremiBackup";
-            this.btnSpremiBackup.Size = new System.Drawing.Size(77, 28);
+            this.btnSpremiBackup.Size = new System.Drawing.Size(103, 34);
             this.btnSpremiBackup.TabIndex = 52;
             this.btnSpremiBackup.Text = "Spremi";
             this.btnSpremiBackup.UseVisualStyleBackColor = true;
@@ -684,9 +726,10 @@
             // 
             // btnLoadBackup
             // 
-            this.btnLoadBackup.Location = new System.Drawing.Point(331, 42);
+            this.btnLoadBackup.Location = new System.Drawing.Point(441, 52);
+            this.btnLoadBackup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLoadBackup.Name = "btnLoadBackup";
-            this.btnLoadBackup.Size = new System.Drawing.Size(28, 27);
+            this.btnLoadBackup.Size = new System.Drawing.Size(37, 33);
             this.btnLoadBackup.TabIndex = 49;
             this.btnLoadBackup.Text = "...";
             this.btnLoadBackup.UseVisualStyleBackColor = true;
@@ -694,9 +737,10 @@
             // 
             // txtBackupLokacije
             // 
-            this.txtBackupLokacije.Location = new System.Drawing.Point(22, 44);
+            this.txtBackupLokacije.Location = new System.Drawing.Point(29, 54);
+            this.txtBackupLokacije.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBackupLokacije.Name = "txtBackupLokacije";
-            this.txtBackupLokacije.Size = new System.Drawing.Size(305, 23);
+            this.txtBackupLokacije.Size = new System.Drawing.Size(405, 26);
             this.txtBackupLokacije.TabIndex = 0;
             // 
             // label15
@@ -704,9 +748,10 @@
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label15.Location = new System.Drawing.Point(19, 26);
+            this.label15.Location = new System.Drawing.Point(25, 32);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(299, 17);
+            this.label15.Size = new System.Drawing.Size(353, 20);
             this.label15.TabIndex = 43;
             this.label15.Text = "Lokacija za spremanje sigurnosne kopije baze";
             // 
@@ -717,18 +762,21 @@
             this.groupBox3.Controls.Add(this.btnKompaktnaSpremi);
             this.groupBox3.Controls.Add(this.btnKompaktnaTest);
             this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Location = new System.Drawing.Point(18, 12);
+            this.groupBox3.Location = new System.Drawing.Point(24, 15);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(387, 152);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Size = new System.Drawing.Size(516, 187);
             this.groupBox3.TabIndex = 49;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Kompaktna baza";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(310, 56);
+            this.button1.Location = new System.Drawing.Point(413, 69);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(28, 27);
+            this.button1.Size = new System.Drawing.Size(37, 33);
             this.button1.TabIndex = 49;
             this.button1.Text = "...";
             this.button1.UseVisualStyleBackColor = true;
@@ -736,17 +784,19 @@
             // 
             // txtKompaktnaPut
             // 
-            this.txtKompaktnaPut.Location = new System.Drawing.Point(33, 58);
+            this.txtKompaktnaPut.Location = new System.Drawing.Point(44, 71);
+            this.txtKompaktnaPut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtKompaktnaPut.Name = "txtKompaktnaPut";
-            this.txtKompaktnaPut.Size = new System.Drawing.Size(277, 23);
+            this.txtKompaktnaPut.Size = new System.Drawing.Size(368, 26);
             this.txtKompaktnaPut.TabIndex = 0;
             // 
             // btnKompaktnaSpremi
             // 
             this.btnKompaktnaSpremi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnKompaktnaSpremi.Location = new System.Drawing.Point(235, 93);
+            this.btnKompaktnaSpremi.Location = new System.Drawing.Point(313, 114);
+            this.btnKompaktnaSpremi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnKompaktnaSpremi.Name = "btnKompaktnaSpremi";
-            this.btnKompaktnaSpremi.Size = new System.Drawing.Size(102, 37);
+            this.btnKompaktnaSpremi.Size = new System.Drawing.Size(136, 46);
             this.btnKompaktnaSpremi.TabIndex = 48;
             this.btnKompaktnaSpremi.Text = "Spremi";
             this.btnKompaktnaSpremi.UseVisualStyleBackColor = true;
@@ -755,9 +805,10 @@
             // btnKompaktnaTest
             // 
             this.btnKompaktnaTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnKompaktnaTest.Location = new System.Drawing.Point(121, 93);
+            this.btnKompaktnaTest.Location = new System.Drawing.Point(161, 114);
+            this.btnKompaktnaTest.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnKompaktnaTest.Name = "btnKompaktnaTest";
-            this.btnKompaktnaTest.Size = new System.Drawing.Size(100, 37);
+            this.btnKompaktnaTest.Size = new System.Drawing.Size(133, 46);
             this.btnKompaktnaTest.TabIndex = 48;
             this.btnKompaktnaTest.Text = "Testiraj";
             this.btnKompaktnaTest.UseVisualStyleBackColor = true;
@@ -768,9 +819,10 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label7.Location = new System.Drawing.Point(30, 40);
+            this.label7.Location = new System.Drawing.Point(40, 49);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(88, 17);
+            this.label7.Size = new System.Drawing.Size(103, 20);
             this.label7.TabIndex = 43;
             this.label7.Text = "Put do baze:";
             // 
@@ -791,9 +843,11 @@
             this.groupBox2.Controls.Add(this.txtRemoteImeServera);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Location = new System.Drawing.Point(428, 11);
+            this.groupBox2.Location = new System.Drawing.Point(571, 14);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(367, 294);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Size = new System.Drawing.Size(489, 362);
             this.groupBox2.TabIndex = 49;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Udaljena baza";
@@ -801,9 +855,10 @@
             // btnNovaGodina
             // 
             this.btnNovaGodina.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnNovaGodina.Location = new System.Drawing.Point(79, 234);
+            this.btnNovaGodina.Location = new System.Drawing.Point(105, 288);
+            this.btnNovaGodina.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNovaGodina.Name = "btnNovaGodina";
-            this.btnNovaGodina.Size = new System.Drawing.Size(118, 37);
+            this.btnNovaGodina.Size = new System.Drawing.Size(157, 46);
             this.btnNovaGodina.TabIndex = 52;
             this.btnNovaGodina.Text = "Nova godina";
             this.btnNovaGodina.UseVisualStyleBackColor = true;
@@ -813,47 +868,53 @@
             // 
             this.cbRemoteNameDatabase.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbRemoteNameDatabase.FormattingEnabled = true;
-            this.cbRemoteNameDatabase.Location = new System.Drawing.Point(141, 133);
+            this.cbRemoteNameDatabase.Location = new System.Drawing.Point(188, 164);
+            this.cbRemoteNameDatabase.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbRemoteNameDatabase.Name = "cbRemoteNameDatabase";
-            this.cbRemoteNameDatabase.Size = new System.Drawing.Size(198, 24);
+            this.cbRemoteNameDatabase.Size = new System.Drawing.Size(263, 28);
             this.cbRemoteNameDatabase.TabIndex = 51;
             // 
             // chbActive
             // 
             this.chbActive.AutoSize = true;
-            this.chbActive.Location = new System.Drawing.Point(326, 188);
+            this.chbActive.Location = new System.Drawing.Point(435, 231);
+            this.chbActive.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chbActive.Name = "chbActive";
-            this.chbActive.Size = new System.Drawing.Size(15, 14);
+            this.chbActive.Size = new System.Drawing.Size(18, 17);
             this.chbActive.TabIndex = 49;
             this.chbActive.UseVisualStyleBackColor = true;
             // 
             // txtRemoteLozinka
             // 
-            this.txtRemoteLozinka.Location = new System.Drawing.Point(141, 160);
+            this.txtRemoteLozinka.Location = new System.Drawing.Point(188, 197);
+            this.txtRemoteLozinka.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtRemoteLozinka.Name = "txtRemoteLozinka";
-            this.txtRemoteLozinka.Size = new System.Drawing.Size(198, 23);
+            this.txtRemoteLozinka.Size = new System.Drawing.Size(263, 26);
             this.txtRemoteLozinka.TabIndex = 45;
             // 
             // txtRemotePort
             // 
-            this.txtRemotePort.Location = new System.Drawing.Point(141, 107);
+            this.txtRemotePort.Location = new System.Drawing.Point(188, 132);
+            this.txtRemotePort.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtRemotePort.Name = "txtRemotePort";
-            this.txtRemotePort.Size = new System.Drawing.Size(198, 23);
+            this.txtRemotePort.Size = new System.Drawing.Size(263, 26);
             this.txtRemotePort.TabIndex = 45;
             // 
             // txtRemoteUsername
             // 
-            this.txtRemoteUsername.Location = new System.Drawing.Point(141, 81);
+            this.txtRemoteUsername.Location = new System.Drawing.Point(188, 100);
+            this.txtRemoteUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtRemoteUsername.Name = "txtRemoteUsername";
-            this.txtRemoteUsername.Size = new System.Drawing.Size(198, 23);
+            this.txtRemoteUsername.Size = new System.Drawing.Size(263, 26);
             this.txtRemoteUsername.TabIndex = 45;
             // 
             // txtRemoteSpremi
             // 
             this.txtRemoteSpremi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtRemoteSpremi.Location = new System.Drawing.Point(263, 234);
+            this.txtRemoteSpremi.Location = new System.Drawing.Point(351, 288);
+            this.txtRemoteSpremi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtRemoteSpremi.Name = "txtRemoteSpremi";
-            this.txtRemoteSpremi.Size = new System.Drawing.Size(77, 37);
+            this.txtRemoteSpremi.Size = new System.Drawing.Size(103, 46);
             this.txtRemoteSpremi.TabIndex = 48;
             this.txtRemoteSpremi.Text = "Spremi";
             this.txtRemoteSpremi.UseVisualStyleBackColor = true;
@@ -864,9 +925,10 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label4.Location = new System.Drawing.Point(34, 187);
+            this.label4.Location = new System.Drawing.Point(45, 230);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(152, 17);
+            this.label4.Size = new System.Drawing.Size(178, 20);
             this.label4.TabIndex = 47;
             this.label4.Text = "Aktivan udaljen server:";
             // 
@@ -875,9 +937,10 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label11.Location = new System.Drawing.Point(34, 162);
+            this.label11.Location = new System.Drawing.Point(45, 199);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(61, 17);
+            this.label11.Size = new System.Drawing.Size(72, 20);
             this.label11.TabIndex = 47;
             this.label11.Text = "Lozinka:";
             // 
@@ -886,18 +949,20 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label8.Location = new System.Drawing.Point(34, 136);
+            this.label8.Location = new System.Drawing.Point(45, 167);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(89, 17);
+            this.label8.Size = new System.Drawing.Size(103, 20);
             this.label8.TabIndex = 47;
             this.label8.Text = "Godina baze";
             // 
             // txtRemoteTest
             // 
             this.txtRemoteTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtRemoteTest.Location = new System.Drawing.Point(198, 234);
+            this.txtRemoteTest.Location = new System.Drawing.Point(264, 288);
+            this.txtRemoteTest.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtRemoteTest.Name = "txtRemoteTest";
-            this.txtRemoteTest.Size = new System.Drawing.Size(63, 37);
+            this.txtRemoteTest.Size = new System.Drawing.Size(84, 46);
             this.txtRemoteTest.TabIndex = 48;
             this.txtRemoteTest.Text = "Testiraj";
             this.txtRemoteTest.UseVisualStyleBackColor = true;
@@ -908,17 +973,19 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label5.Location = new System.Drawing.Point(34, 110);
+            this.label5.Location = new System.Drawing.Point(45, 135);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(34, 17);
+            this.label5.Size = new System.Drawing.Size(40, 20);
             this.label5.TabIndex = 47;
             this.label5.Text = "Port";
             // 
             // txtRemoteImeServera
             // 
-            this.txtRemoteImeServera.Location = new System.Drawing.Point(141, 55);
+            this.txtRemoteImeServera.Location = new System.Drawing.Point(188, 68);
+            this.txtRemoteImeServera.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtRemoteImeServera.Name = "txtRemoteImeServera";
-            this.txtRemoteImeServera.Size = new System.Drawing.Size(198, 23);
+            this.txtRemoteImeServera.Size = new System.Drawing.Size(263, 26);
             this.txtRemoteImeServera.TabIndex = 44;
             // 
             // label9
@@ -926,9 +993,10 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label9.Location = new System.Drawing.Point(34, 84);
+            this.label9.Location = new System.Drawing.Point(45, 103);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(103, 17);
+            this.label9.Size = new System.Drawing.Size(124, 20);
             this.label9.TabIndex = 47;
             this.label9.Text = "Korisničko ime:";
             // 
@@ -937,15 +1005,17 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label10.Location = new System.Drawing.Point(34, 58);
+            this.label10.Location = new System.Drawing.Point(45, 71);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(86, 17);
+            this.label10.Size = new System.Drawing.Size(102, 20);
             this.label10.TabIndex = 46;
             this.label10.Text = "Ime servera:";
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.LightSlateGray;
+            this.tabPage1.Controls.Add(this.chbVodeni);
             this.tabPage1.Controls.Add(this.cbKoristiResort);
             this.tabPage1.Controls.Add(this.cmbSkladisteNormativa);
             this.tabPage1.Controls.Add(this.label54);
@@ -965,19 +1035,21 @@
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Location = new System.Drawing.Point(4, 34);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(828, 385);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Size = new System.Drawing.Size(1107, 483);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Osnovno";
             // 
             // cbKoristiResort
             // 
             this.cbKoristiResort.AutoSize = true;
-            this.cbKoristiResort.Location = new System.Drawing.Point(294, 342);
+            this.cbKoristiResort.Location = new System.Drawing.Point(392, 421);
+            this.cbKoristiResort.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbKoristiResort.Name = "cbKoristiResort";
             this.cbKoristiResort.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.cbKoristiResort.Size = new System.Drawing.Size(128, 21);
+            this.cbKoristiResort.Size = new System.Drawing.Size(153, 24);
             this.cbKoristiResort.TabIndex = 575;
             this.cbKoristiResort.Text = "Koristi RESORT";
             this.cbKoristiResort.UseVisualStyleBackColor = true;
@@ -987,9 +1059,10 @@
             this.cmbSkladisteNormativa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbSkladisteNormativa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cmbSkladisteNormativa.FormattingEnabled = true;
-            this.cmbSkladisteNormativa.Location = new System.Drawing.Point(248, 302);
+            this.cmbSkladisteNormativa.Location = new System.Drawing.Point(331, 372);
+            this.cmbSkladisteNormativa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbSkladisteNormativa.Name = "cmbSkladisteNormativa";
-            this.cmbSkladisteNormativa.Size = new System.Drawing.Size(174, 24);
+            this.cmbSkladisteNormativa.Size = new System.Drawing.Size(231, 28);
             this.cmbSkladisteNormativa.TabIndex = 574;
             // 
             // label54
@@ -997,9 +1070,10 @@
             this.label54.AutoSize = true;
             this.label54.BackColor = System.Drawing.Color.Transparent;
             this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label54.Location = new System.Drawing.Point(20, 306);
+            this.label54.Location = new System.Drawing.Point(27, 377);
+            this.label54.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(200, 17);
+            this.label54.Size = new System.Drawing.Size(236, 20);
             this.label54.TabIndex = 573;
             this.label54.Text = "Odaberite skladište normativa:";
             // 
@@ -1007,9 +1081,10 @@
             // 
             this.chbMainFormControlBox.AutoSize = true;
             this.chbMainFormControlBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.chbMainFormControlBox.Location = new System.Drawing.Point(23, 342);
+            this.chbMainFormControlBox.Location = new System.Drawing.Point(31, 421);
+            this.chbMainFormControlBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chbMainFormControlBox.Name = "chbMainFormControlBox";
-            this.chbMainFormControlBox.Size = new System.Drawing.Size(99, 21);
+            this.chbMainFormControlBox.Size = new System.Drawing.Size(119, 24);
             this.chbMainFormControlBox.TabIndex = 568;
             this.chbMainFormControlBox.Text = "Control Box";
             this.chbMainFormControlBox.UseVisualStyleBackColor = true;
@@ -1020,9 +1095,11 @@
             this.groupBox21.Controls.Add(this.label41);
             this.groupBox21.Controls.Add(this.label40);
             this.groupBox21.Controls.Add(this.txtPorezNaDohodak);
-            this.groupBox21.Location = new System.Drawing.Point(444, 208);
+            this.groupBox21.Location = new System.Drawing.Point(592, 256);
+            this.groupBox21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox21.Name = "groupBox21";
-            this.groupBox21.Size = new System.Drawing.Size(341, 100);
+            this.groupBox21.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox21.Size = new System.Drawing.Size(455, 123);
             this.groupBox21.TabIndex = 58;
             this.groupBox21.TabStop = false;
             this.groupBox21.Text = "Porez na dohodak";
@@ -1032,9 +1109,10 @@
             this.label41.AutoSize = true;
             this.label41.BackColor = System.Drawing.Color.Transparent;
             this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label41.Location = new System.Drawing.Point(6, 51);
+            this.label41.Location = new System.Drawing.Point(8, 63);
+            this.label41.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(318, 34);
+            this.label41.Size = new System.Drawing.Size(374, 40);
             this.label41.TabIndex = 57;
             this.label41.Text = "Porez na dohodak obavezno neka bude 0, \r\nosim ako se bavite otkupom sekundarnih s" +
     "irovina";
@@ -1044,17 +1122,19 @@
             this.label40.AutoSize = true;
             this.label40.BackColor = System.Drawing.Color.Transparent;
             this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label40.Location = new System.Drawing.Point(6, 31);
+            this.label40.Location = new System.Drawing.Point(8, 38);
+            this.label40.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(128, 17);
+            this.label40.Size = new System.Drawing.Size(148, 20);
             this.label40.TabIndex = 55;
             this.label40.Text = "Porez na dohodak:";
             // 
             // txtPorezNaDohodak
             // 
-            this.txtPorezNaDohodak.Location = new System.Drawing.Point(140, 28);
+            this.txtPorezNaDohodak.Location = new System.Drawing.Point(187, 34);
+            this.txtPorezNaDohodak.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPorezNaDohodak.Name = "txtPorezNaDohodak";
-            this.txtPorezNaDohodak.Size = new System.Drawing.Size(174, 23);
+            this.txtPorezNaDohodak.Size = new System.Drawing.Size(231, 26);
             this.txtPorezNaDohodak.TabIndex = 56;
             this.txtPorezNaDohodak.TextChanged += new System.EventHandler(this.txtPorezNaDohodak_TextChanged);
             // 
@@ -1063,9 +1143,10 @@
             this.cbveleprodaja.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbveleprodaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbveleprodaja.FormattingEnabled = true;
-            this.cbveleprodaja.Location = new System.Drawing.Point(248, 275);
+            this.cbveleprodaja.Location = new System.Drawing.Point(331, 338);
+            this.cbveleprodaja.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbveleprodaja.Name = "cbveleprodaja";
-            this.cbveleprodaja.Size = new System.Drawing.Size(174, 24);
+            this.cbveleprodaja.Size = new System.Drawing.Size(231, 28);
             this.cbveleprodaja.TabIndex = 54;
             // 
             // label24
@@ -1073,9 +1154,10 @@
             this.label24.AutoSize = true;
             this.label24.BackColor = System.Drawing.Color.Transparent;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label24.Location = new System.Drawing.Point(20, 279);
+            this.label24.Location = new System.Drawing.Point(27, 343);
+            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(136, 17);
+            this.label24.Size = new System.Drawing.Size(160, 20);
             this.label24.TabIndex = 53;
             this.label24.Text = "Veleprodajni sustav:";
             // 
@@ -1089,9 +1171,11 @@
             this.groupBox9.Controls.Add(this.label1);
             this.groupBox9.Controls.Add(this.label18);
             this.groupBox9.Controls.Add(this.label22);
-            this.groupBox9.Location = new System.Drawing.Point(23, 29);
+            this.groupBox9.Location = new System.Drawing.Point(31, 36);
+            this.groupBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(399, 136);
+            this.groupBox9.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox9.Size = new System.Drawing.Size(532, 167);
             this.groupBox9.TabIndex = 52;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Oznake naplatnih uređaja";
@@ -1101,9 +1185,10 @@
             this.cbKasa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbKasa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbKasa.FormattingEnabled = true;
-            this.cbKasa.Location = new System.Drawing.Point(20, 52);
+            this.cbKasa.Location = new System.Drawing.Point(27, 64);
+            this.cbKasa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbKasa.Name = "cbKasa";
-            this.cbKasa.Size = new System.Drawing.Size(174, 24);
+            this.cbKasa.Size = new System.Drawing.Size(231, 28);
             this.cbKasa.TabIndex = 44;
             // 
             // cbFaktureBR
@@ -1111,9 +1196,10 @@
             this.cbFaktureBR.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbFaktureBR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbFaktureBR.FormattingEnabled = true;
-            this.cbFaktureBR.Location = new System.Drawing.Point(210, 100);
+            this.cbFaktureBR.Location = new System.Drawing.Point(280, 123);
+            this.cbFaktureBR.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbFaktureBR.Name = "cbFaktureBR";
-            this.cbFaktureBR.Size = new System.Drawing.Size(174, 24);
+            this.cbFaktureBR.Size = new System.Drawing.Size(231, 28);
             this.cbFaktureBR.TabIndex = 44;
             // 
             // cbFaktureNP
@@ -1121,9 +1207,10 @@
             this.cbFaktureNP.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbFaktureNP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbFaktureNP.FormattingEnabled = true;
-            this.cbFaktureNP.Location = new System.Drawing.Point(210, 52);
+            this.cbFaktureNP.Location = new System.Drawing.Point(280, 64);
+            this.cbFaktureNP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbFaktureNP.Name = "cbFaktureNP";
-            this.cbFaktureNP.Size = new System.Drawing.Size(174, 24);
+            this.cbFaktureNP.Size = new System.Drawing.Size(231, 28);
             this.cbFaktureNP.TabIndex = 44;
             // 
             // cbAvansNP
@@ -1131,9 +1218,10 @@
             this.cbAvansNP.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbAvansNP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbAvansNP.FormattingEnabled = true;
-            this.cbAvansNP.Location = new System.Drawing.Point(20, 100);
+            this.cbAvansNP.Location = new System.Drawing.Point(27, 123);
+            this.cbAvansNP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbAvansNP.Name = "cbAvansNP";
-            this.cbAvansNP.Size = new System.Drawing.Size(174, 24);
+            this.cbAvansNP.Size = new System.Drawing.Size(231, 28);
             this.cbAvansNP.TabIndex = 44;
             // 
             // label23
@@ -1141,9 +1229,10 @@
             this.label23.AutoSize = true;
             this.label23.BackColor = System.Drawing.Color.Transparent;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label23.Location = new System.Drawing.Point(207, 81);
+            this.label23.Location = new System.Drawing.Point(276, 100);
+            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(120, 17);
+            this.label23.Size = new System.Drawing.Size(140, 20);
             this.label23.TabIndex = 42;
             this.label23.Text = "Faktura bez robe:";
             // 
@@ -1152,9 +1241,10 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label1.Location = new System.Drawing.Point(17, 33);
+            this.label1.Location = new System.Drawing.Point(23, 41);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 17);
+            this.label1.Size = new System.Drawing.Size(105, 20);
             this.label1.TabIndex = 42;
             this.label1.Text = "Maloprodaja:";
             // 
@@ -1163,9 +1253,10 @@
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label18.Location = new System.Drawing.Point(207, 33);
+            this.label18.Location = new System.Drawing.Point(276, 41);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(60, 17);
+            this.label18.Size = new System.Drawing.Size(70, 20);
             this.label18.TabIndex = 42;
             this.label18.Text = "Fakture:";
             // 
@@ -1174,9 +1265,10 @@
             this.label22.AutoSize = true;
             this.label22.BackColor = System.Drawing.Color.Transparent;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label22.Location = new System.Drawing.Point(17, 81);
+            this.label22.Location = new System.Drawing.Point(23, 100);
+            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(51, 17);
+            this.label22.Size = new System.Drawing.Size(60, 20);
             this.label22.TabIndex = 42;
             this.label22.Text = "Avans:";
             // 
@@ -1187,18 +1279,21 @@
             this.groupBox5.Controls.Add(this.button3);
             this.groupBox5.Controls.Add(this.btnNadogradi);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.groupBox5.Location = new System.Drawing.Point(444, 29);
+            this.groupBox5.Location = new System.Drawing.Point(592, 36);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(341, 136);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox5.Size = new System.Drawing.Size(455, 167);
             this.groupBox5.TabIndex = 50;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Nadogradnja programa";
             // 
             // btnNadogradiBazu
             // 
-            this.btnNadogradiBazu.Location = new System.Drawing.Point(54, 60);
+            this.btnNadogradiBazu.Location = new System.Drawing.Point(72, 74);
+            this.btnNadogradiBazu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNadogradiBazu.Name = "btnNadogradiBazu";
-            this.btnNadogradiBazu.Size = new System.Drawing.Size(240, 32);
+            this.btnNadogradiBazu.Size = new System.Drawing.Size(320, 39);
             this.btnNadogradiBazu.TabIndex = 5;
             this.btnNadogradiBazu.Text = "Nadogradi bazu";
             this.btnNadogradiBazu.UseVisualStyleBackColor = true;
@@ -1206,9 +1301,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(54, 95);
+            this.button3.Location = new System.Drawing.Point(72, 117);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(240, 32);
+            this.button3.Size = new System.Drawing.Size(320, 39);
             this.button3.TabIndex = 3;
             this.button3.Text = "Povijest promjena";
             this.button3.UseVisualStyleBackColor = true;
@@ -1216,9 +1312,10 @@
             // 
             // btnNadogradi
             // 
-            this.btnNadogradi.Location = new System.Drawing.Point(54, 25);
+            this.btnNadogradi.Location = new System.Drawing.Point(72, 31);
+            this.btnNadogradi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNadogradi.Name = "btnNadogradi";
-            this.btnNadogradi.Size = new System.Drawing.Size(240, 32);
+            this.btnNadogradi.Size = new System.Drawing.Size(320, 39);
             this.btnNadogradi.TabIndex = 2;
             this.btnNadogradi.Text = "Nadogradi program";
             this.btnNadogradi.UseVisualStyleBackColor = true;
@@ -1227,9 +1324,10 @@
             // btnSpremi
             // 
             this.btnSpremi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnSpremi.Location = new System.Drawing.Point(444, 318);
+            this.btnSpremi.Location = new System.Drawing.Point(592, 391);
+            this.btnSpremi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSpremi.Name = "btnSpremi";
-            this.btnSpremi.Size = new System.Drawing.Size(341, 37);
+            this.btnSpremi.Size = new System.Drawing.Size(455, 46);
             this.btnSpremi.TabIndex = 47;
             this.btnSpremi.Text = "Spremi";
             this.btnSpremi.UseVisualStyleBackColor = true;
@@ -1240,9 +1338,10 @@
             this.cbSustavPDV.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSustavPDV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbSustavPDV.FormattingEnabled = true;
-            this.cbSustavPDV.Location = new System.Drawing.Point(248, 249);
+            this.cbSustavPDV.Location = new System.Drawing.Point(331, 306);
+            this.cbSustavPDV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbSustavPDV.Name = "cbSustavPDV";
-            this.cbSustavPDV.Size = new System.Drawing.Size(174, 24);
+            this.cbSustavPDV.Size = new System.Drawing.Size(231, 28);
             this.cbSustavPDV.TabIndex = 44;
             // 
             // cbBlagajnik
@@ -1250,9 +1349,10 @@
             this.cbBlagajnik.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbBlagajnik.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbBlagajnik.FormattingEnabled = true;
-            this.cbBlagajnik.Location = new System.Drawing.Point(248, 223);
+            this.cbBlagajnik.Location = new System.Drawing.Point(331, 274);
+            this.cbBlagajnik.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbBlagajnik.Name = "cbBlagajnik";
-            this.cbBlagajnik.Size = new System.Drawing.Size(174, 24);
+            this.cbBlagajnik.Size = new System.Drawing.Size(231, 28);
             this.cbBlagajnik.TabIndex = 44;
             // 
             // label6
@@ -1260,9 +1360,10 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label6.Location = new System.Drawing.Point(20, 175);
+            this.label6.Location = new System.Drawing.Point(27, 215);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(152, 17);
+            this.label6.Size = new System.Drawing.Size(178, 20);
             this.label6.TabIndex = 42;
             this.label6.Text = "Odaberite ime dućana:";
             // 
@@ -1271,9 +1372,10 @@
             this.cbSkladiste.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSkladiste.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbSkladiste.FormattingEnabled = true;
-            this.cbSkladiste.Location = new System.Drawing.Point(248, 197);
+            this.cbSkladiste.Location = new System.Drawing.Point(331, 242);
+            this.cbSkladiste.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbSkladiste.Name = "cbSkladiste";
-            this.cbSkladiste.Size = new System.Drawing.Size(174, 24);
+            this.cbSkladiste.Size = new System.Drawing.Size(231, 28);
             this.cbSkladiste.TabIndex = 44;
             // 
             // label13
@@ -1281,9 +1383,10 @@
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label13.Location = new System.Drawing.Point(20, 253);
+            this.label13.Location = new System.Drawing.Point(27, 311);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(177, 17);
+            this.label13.Size = new System.Drawing.Size(210, 20);
             this.label13.TabIndex = 42;
             this.label13.Text = "Tvrtka je u sustavu PDV-a:";
             // 
@@ -1292,9 +1395,10 @@
             this.cbDucan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbDucan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbDucan.FormattingEnabled = true;
-            this.cbDucan.Location = new System.Drawing.Point(248, 171);
+            this.cbDucan.Location = new System.Drawing.Point(331, 210);
+            this.cbDucan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbDucan.Name = "cbDucan";
-            this.cbDucan.Size = new System.Drawing.Size(174, 24);
+            this.cbDucan.Size = new System.Drawing.Size(231, 28);
             this.cbDucan.TabIndex = 44;
             this.cbDucan.SelectionChangeCommitted += new System.EventHandler(this.cbDucan_SelectionChangeCommitted);
             // 
@@ -1303,9 +1407,10 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label3.Location = new System.Drawing.Point(20, 227);
+            this.label3.Location = new System.Drawing.Point(27, 279);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(202, 17);
+            this.label3.Size = new System.Drawing.Size(234, 20);
             this.label3.TabIndex = 42;
             this.label3.Text = "Odaberite zadanog blagajnika:";
             // 
@@ -1314,9 +1419,10 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label2.Location = new System.Drawing.Point(20, 201);
+            this.label2.Location = new System.Drawing.Point(27, 247);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(216, 17);
+            this.label2.Size = new System.Drawing.Size(254, 20);
             this.label2.TabIndex = 42;
             this.label2.Text = "Odaberite skladište maloprodaje:";
             // 
@@ -1338,10 +1444,11 @@
             this.tabSkladiste.Controls.Add(this.tabUdsGame);
             this.tabSkladiste.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.tabSkladiste.ItemSize = new System.Drawing.Size(70, 30);
-            this.tabSkladiste.Location = new System.Drawing.Point(-2, 1);
+            this.tabSkladiste.Location = new System.Drawing.Point(-3, 1);
+            this.tabSkladiste.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabSkladiste.Name = "tabSkladiste";
             this.tabSkladiste.SelectedIndex = 0;
-            this.tabSkladiste.Size = new System.Drawing.Size(836, 423);
+            this.tabSkladiste.Size = new System.Drawing.Size(1115, 521);
             this.tabSkladiste.TabIndex = 47;
             // 
             // tabPage3
@@ -1349,9 +1456,10 @@
             this.tabPage3.BackColor = System.Drawing.Color.LightSlateGray;
             this.tabPage3.Controls.Add(this.groupBox4);
             this.tabPage3.Location = new System.Drawing.Point(4, 34);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(828, 385);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage3.Size = new System.Drawing.Size(1107, 483);
             this.tabPage3.TabIndex = 4;
             this.tabPage3.Text = "Fiskalizacija";
             // 
@@ -1373,9 +1481,11 @@
             this.groupBox4.Controls.Add(this.label16);
             this.groupBox4.Controls.Add(this.label17);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.groupBox4.Location = new System.Drawing.Point(10, 15);
+            this.groupBox4.Location = new System.Drawing.Point(13, 18);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(792, 360);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Size = new System.Drawing.Size(1056, 443);
             this.groupBox4.TabIndex = 50;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Fiskalizacija";
@@ -1384,9 +1494,10 @@
             // 
             this.chbDozvoli_fikaliranje_0_kn.AutoSize = true;
             this.chbDozvoli_fikaliranje_0_kn.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.chbDozvoli_fikaliranje_0_kn.Location = new System.Drawing.Point(524, 145);
+            this.chbDozvoli_fikaliranje_0_kn.Location = new System.Drawing.Point(699, 178);
+            this.chbDozvoli_fikaliranje_0_kn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chbDozvoli_fikaliranje_0_kn.Name = "chbDozvoli_fikaliranje_0_kn";
-            this.chbDozvoli_fikaliranje_0_kn.Size = new System.Drawing.Size(179, 21);
+            this.chbDozvoli_fikaliranje_0_kn.Size = new System.Drawing.Size(213, 24);
             this.chbDozvoli_fikaliranje_0_kn.TabIndex = 82;
             this.chbDozvoli_fikaliranje_0_kn.Text = "Dozvoli fikaliranje s 0 kn";
             this.chbDozvoli_fikaliranje_0_kn.UseVisualStyleBackColor = true;
@@ -1396,9 +1507,10 @@
             this.chbTestFisklaizacija.AutoCheck = false;
             this.chbTestFisklaizacija.AutoSize = true;
             this.chbTestFisklaizacija.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.chbTestFisklaizacija.Location = new System.Drawing.Point(541, 46);
+            this.chbTestFisklaizacija.Location = new System.Drawing.Point(721, 57);
+            this.chbTestFisklaizacija.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chbTestFisklaizacija.Name = "chbTestFisklaizacija";
-            this.chbTestFisklaizacija.Size = new System.Drawing.Size(162, 21);
+            this.chbTestFisklaizacija.Size = new System.Drawing.Size(195, 24);
             this.chbTestFisklaizacija.TabIndex = 81;
             this.chbTestFisklaizacija.Text = "TEST FISKALIZACIJA";
             this.chbTestFisklaizacija.UseVisualStyleBackColor = true;
@@ -1407,9 +1519,10 @@
             // chbPrikazObavijestiZaFiskaliziranjeFakture
             // 
             this.chbPrikazObavijestiZaFiskaliziranjeFakture.AutoSize = true;
-            this.chbPrikazObavijestiZaFiskaliziranjeFakture.Location = new System.Drawing.Point(293, 95);
+            this.chbPrikazObavijestiZaFiskaliziranjeFakture.Location = new System.Drawing.Point(391, 117);
+            this.chbPrikazObavijestiZaFiskaliziranjeFakture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chbPrikazObavijestiZaFiskaliziranjeFakture.Name = "chbPrikazObavijestiZaFiskaliziranjeFakture";
-            this.chbPrikazObavijestiZaFiskaliziranjeFakture.Size = new System.Drawing.Size(15, 14);
+            this.chbPrikazObavijestiZaFiskaliziranjeFakture.Size = new System.Drawing.Size(18, 17);
             this.chbPrikazObavijestiZaFiskaliziranjeFakture.TabIndex = 80;
             this.chbPrikazObavijestiZaFiskaliziranjeFakture.UseVisualStyleBackColor = true;
             // 
@@ -1418,18 +1531,20 @@
             this.label48.AutoSize = true;
             this.label48.BackColor = System.Drawing.Color.Transparent;
             this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label48.Location = new System.Drawing.Point(25, 93);
+            this.label48.Location = new System.Drawing.Point(33, 114);
+            this.label48.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(262, 17);
+            this.label48.Size = new System.Drawing.Size(313, 20);
             this.label48.TabIndex = 79;
             this.label48.Text = "Prikaz obavijesti za fiskaliziranje fakture:";
             // 
             // chbFiskalizacijaIskljucena
             // 
             this.chbFiskalizacijaIskljucena.AutoSize = true;
-            this.chbFiskalizacijaIskljucena.Location = new System.Drawing.Point(369, 75);
+            this.chbFiskalizacijaIskljucena.Location = new System.Drawing.Point(492, 92);
+            this.chbFiskalizacijaIskljucena.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chbFiskalizacijaIskljucena.Name = "chbFiskalizacijaIskljucena";
-            this.chbFiskalizacijaIskljucena.Size = new System.Drawing.Size(15, 14);
+            this.chbFiskalizacijaIskljucena.Size = new System.Drawing.Size(18, 17);
             this.chbFiskalizacijaIskljucena.TabIndex = 78;
             this.chbFiskalizacijaIskljucena.UseVisualStyleBackColor = true;
             this.chbFiskalizacijaIskljucena.CheckedChanged += new System.EventHandler(this.chbFiskalizacijaIskljucena_CheckedChanged);
@@ -1439,18 +1554,20 @@
             this.label43.AutoSize = true;
             this.label43.BackColor = System.Drawing.Color.Transparent;
             this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label43.Location = new System.Drawing.Point(25, 72);
+            this.label43.Location = new System.Drawing.Point(33, 89);
+            this.label43.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(340, 17);
+            this.label43.Size = new System.Drawing.Size(407, 20);
             this.label43.TabIndex = 77;
             this.label43.Text = "Obavijesti korisnika ako mu je fiskalizacija isključena:";
             // 
             // btnSpremiPromjeneZaFiskal
             // 
             this.btnSpremiPromjeneZaFiskal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnSpremiPromjeneZaFiskal.Location = new System.Drawing.Point(601, 316);
+            this.btnSpremiPromjeneZaFiskal.Location = new System.Drawing.Point(801, 389);
+            this.btnSpremiPromjeneZaFiskal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSpremiPromjeneZaFiskal.Name = "btnSpremiPromjeneZaFiskal";
-            this.btnSpremiPromjeneZaFiskal.Size = new System.Drawing.Size(185, 38);
+            this.btnSpremiPromjeneZaFiskal.Size = new System.Drawing.Size(247, 47);
             this.btnSpremiPromjeneZaFiskal.TabIndex = 76;
             this.btnSpremiPromjeneZaFiskal.Text = "Spremi promjene";
             this.btnSpremiPromjeneZaFiskal.UseVisualStyleBackColor = true;
@@ -1464,18 +1581,21 @@
             this.groupBox12.Controls.Add(this.txtPutanjaZaCert);
             this.groupBox12.Controls.Add(this.label30);
             this.groupBox12.Controls.Add(this.label29);
-            this.groupBox12.Location = new System.Drawing.Point(18, 171);
+            this.groupBox12.Location = new System.Drawing.Point(24, 210);
+            this.groupBox12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(754, 139);
+            this.groupBox12.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox12.Size = new System.Drawing.Size(1005, 171);
             this.groupBox12.TabIndex = 75;
             this.groupBox12.TabStop = false;
             this.groupBox12.Text = "Certifikat iz datoteke";
             // 
             // btnTrazi
             // 
-            this.btnTrazi.Location = new System.Drawing.Point(669, 69);
+            this.btnTrazi.Location = new System.Drawing.Point(892, 85);
+            this.btnTrazi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTrazi.Name = "btnTrazi";
-            this.btnTrazi.Size = new System.Drawing.Size(75, 27);
+            this.btnTrazi.Size = new System.Drawing.Size(100, 33);
             this.btnTrazi.TabIndex = 71;
             this.btnTrazi.Text = "Traži";
             this.btnTrazi.UseVisualStyleBackColor = true;
@@ -1483,9 +1603,10 @@
             // 
             // txtLozinkaZaCert
             // 
-            this.txtLozinkaZaCert.Location = new System.Drawing.Point(161, 96);
+            this.txtLozinkaZaCert.Location = new System.Drawing.Point(215, 118);
+            this.txtLozinkaZaCert.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtLozinkaZaCert.Name = "txtLozinkaZaCert";
-            this.txtLozinkaZaCert.Size = new System.Drawing.Size(505, 23);
+            this.txtLozinkaZaCert.Size = new System.Drawing.Size(672, 26);
             this.txtLozinkaZaCert.TabIndex = 69;
             // 
             // label31
@@ -1493,17 +1614,19 @@
             this.label31.AutoSize = true;
             this.label31.BackColor = System.Drawing.Color.Transparent;
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label31.Location = new System.Drawing.Point(13, 99);
+            this.label31.Location = new System.Drawing.Point(17, 122);
+            this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(126, 17);
+            this.label31.Size = new System.Drawing.Size(150, 20);
             this.label31.TabIndex = 70;
             this.label31.Text = "Lozinka certifikata:";
             // 
             // txtPutanjaZaCert
             // 
-            this.txtPutanjaZaCert.Location = new System.Drawing.Point(161, 71);
+            this.txtPutanjaZaCert.Location = new System.Drawing.Point(215, 87);
+            this.txtPutanjaZaCert.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPutanjaZaCert.Name = "txtPutanjaZaCert";
-            this.txtPutanjaZaCert.Size = new System.Drawing.Size(505, 23);
+            this.txtPutanjaZaCert.Size = new System.Drawing.Size(672, 26);
             this.txtPutanjaZaCert.TabIndex = 69;
             // 
             // label30
@@ -1511,18 +1634,20 @@
             this.label30.AutoSize = true;
             this.label30.BackColor = System.Drawing.Color.Transparent;
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label30.Location = new System.Drawing.Point(13, 74);
+            this.label30.Location = new System.Drawing.Point(17, 91);
+            this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(145, 17);
+            this.label30.Size = new System.Drawing.Size(171, 20);
             this.label30.TabIndex = 70;
             this.label30.Text = "Putanja do certifikata:";
             // 
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(7, 32);
+            this.label29.Location = new System.Drawing.Point(9, 39);
+            this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(590, 17);
+            this.label29.Size = new System.Drawing.Size(699, 20);
             this.label29.TabIndex = 0;
             this.label29.Text = "Ovaj dio popunjavate samo ako se Vaš certifikat ne nalazi u Microsoft Management " +
     "Console.";
@@ -1532,17 +1657,19 @@
             this.cbOznakaFiskal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbOznakaFiskal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbOznakaFiskal.FormattingEnabled = true;
-            this.cbOznakaFiskal.Location = new System.Drawing.Point(150, 143);
+            this.cbOznakaFiskal.Location = new System.Drawing.Point(200, 176);
+            this.cbOznakaFiskal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbOznakaFiskal.Name = "cbOznakaFiskal";
-            this.cbOznakaFiskal.Size = new System.Drawing.Size(183, 24);
+            this.cbOznakaFiskal.Size = new System.Drawing.Size(243, 28);
             this.cbOznakaFiskal.TabIndex = 50;
             // 
             // chbFiskal
             // 
             this.chbFiskal.AutoSize = true;
-            this.chbFiskal.Location = new System.Drawing.Point(175, 53);
+            this.chbFiskal.Location = new System.Drawing.Point(233, 65);
+            this.chbFiskal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chbFiskal.Name = "chbFiskal";
-            this.chbFiskal.Size = new System.Drawing.Size(15, 14);
+            this.chbFiskal.Size = new System.Drawing.Size(18, 17);
             this.chbFiskal.TabIndex = 72;
             this.chbFiskal.UseVisualStyleBackColor = true;
             // 
@@ -1551,17 +1678,19 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label12.Location = new System.Drawing.Point(25, 50);
+            this.label12.Location = new System.Drawing.Point(33, 62);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(144, 17);
+            this.label12.Size = new System.Drawing.Size(174, 20);
             this.label12.TabIndex = 70;
             this.label12.Text = "Aktivnost fiskalizacije:";
             // 
             // txtNazivCertifikata
             // 
-            this.txtNazivCertifikata.Location = new System.Drawing.Point(150, 117);
+            this.txtNazivCertifikata.Location = new System.Drawing.Point(200, 144);
+            this.txtNazivCertifikata.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNazivCertifikata.Name = "txtNazivCertifikata";
-            this.txtNazivCertifikata.Size = new System.Drawing.Size(183, 23);
+            this.txtNazivCertifikata.Size = new System.Drawing.Size(243, 26);
             this.txtNazivCertifikata.TabIndex = 66;
             // 
             // label16
@@ -1569,9 +1698,10 @@
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label16.Location = new System.Drawing.Point(25, 145);
+            this.label16.Location = new System.Drawing.Point(33, 178);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(127, 17);
+            this.label16.Size = new System.Drawing.Size(151, 20);
             this.label16.TabIndex = 69;
             this.label16.Text = "Oznaka slijednosti:";
             // 
@@ -1580,9 +1710,10 @@
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label17.Location = new System.Drawing.Point(25, 120);
+            this.label17.Location = new System.Drawing.Point(33, 148);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(112, 17);
+            this.label17.Size = new System.Drawing.Size(134, 20);
             this.label17.TabIndex = 68;
             this.label17.Text = "Naziv certifikata:";
             // 
@@ -1597,17 +1728,19 @@
             this.tabPage5.Controls.Add(this.groupBox15);
             this.tabPage5.Controls.Add(this.groupBox14);
             this.tabPage5.Location = new System.Drawing.Point(4, 34);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(828, 385);
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage5.Size = new System.Drawing.Size(1107, 483);
             this.tabPage5.TabIndex = 5;
             this.tabPage5.Text = "Skladište";
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(614, 271);
+            this.button4.Location = new System.Drawing.Point(819, 334);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(55, 36);
+            this.button4.Size = new System.Drawing.Size(73, 44);
             this.button4.TabIndex = 62;
             this.button4.Text = "Test";
             this.button4.UseVisualStyleBackColor = true;
@@ -1618,9 +1751,11 @@
             // 
             this.groupBox20.Controls.Add(this.label39);
             this.groupBox20.Controls.Add(this.btnBrisiIsteArtikle);
-            this.groupBox20.Location = new System.Drawing.Point(312, 264);
+            this.groupBox20.Location = new System.Drawing.Point(416, 325);
+            this.groupBox20.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox20.Name = "groupBox20";
-            this.groupBox20.Size = new System.Drawing.Size(296, 101);
+            this.groupBox20.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox20.Size = new System.Drawing.Size(395, 124);
             this.groupBox20.TabIndex = 61;
             this.groupBox20.TabStop = false;
             this.groupBox20.Text = "OBRIŠI DUPLE ARTIKLE";
@@ -1628,17 +1763,19 @@
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(7, 23);
+            this.label39.Location = new System.Drawing.Point(9, 28);
+            this.label39.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(230, 34);
+            this.label39.Size = new System.Drawing.Size(274, 40);
             this.label39.TabIndex = 0;
             this.label39.Text = "Ova funkcija briše artikle koji su sa \r\nistom šifrom na istom skladištu.\r\n";
             // 
             // btnBrisiIsteArtikle
             // 
-            this.btnBrisiIsteArtikle.Location = new System.Drawing.Point(10, 71);
+            this.btnBrisiIsteArtikle.Location = new System.Drawing.Point(13, 87);
+            this.btnBrisiIsteArtikle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBrisiIsteArtikle.Name = "btnBrisiIsteArtikle";
-            this.btnBrisiIsteArtikle.Size = new System.Drawing.Size(280, 27);
+            this.btnBrisiIsteArtikle.Size = new System.Drawing.Size(373, 33);
             this.btnBrisiIsteArtikle.TabIndex = 56;
             this.btnBrisiIsteArtikle.Text = "Obriši artikle";
             this.btnBrisiIsteArtikle.UseVisualStyleBackColor = true;
@@ -1648,9 +1785,11 @@
             // 
             this.groupBox19.Controls.Add(this.label38);
             this.groupBox19.Controls.Add(this.btnObrisiArtikle);
-            this.groupBox19.Location = new System.Drawing.Point(10, 264);
+            this.groupBox19.Location = new System.Drawing.Point(13, 325);
+            this.groupBox19.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox19.Name = "groupBox19";
-            this.groupBox19.Size = new System.Drawing.Size(296, 101);
+            this.groupBox19.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox19.Size = new System.Drawing.Size(395, 124);
             this.groupBox19.TabIndex = 60;
             this.groupBox19.TabStop = false;
             this.groupBox19.Text = "OBRIŠI NEAKTIVNE ARTIKLE";
@@ -1658,17 +1797,19 @@
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(7, 23);
+            this.label38.Location = new System.Drawing.Point(9, 28);
+            this.label38.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(267, 34);
+            this.label38.Size = new System.Drawing.Size(318, 40);
             this.label38.TabIndex = 0;
             this.label38.Text = "Ova funkcija briše sve artikle koji se nisu \r\nkoristili u tekučoj godini.\r\n";
             // 
             // btnObrisiArtikle
             // 
-            this.btnObrisiArtikle.Location = new System.Drawing.Point(10, 71);
+            this.btnObrisiArtikle.Location = new System.Drawing.Point(13, 87);
+            this.btnObrisiArtikle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnObrisiArtikle.Name = "btnObrisiArtikle";
-            this.btnObrisiArtikle.Size = new System.Drawing.Size(280, 27);
+            this.btnObrisiArtikle.Size = new System.Drawing.Size(373, 33);
             this.btnObrisiArtikle.TabIndex = 56;
             this.btnObrisiArtikle.Text = "Obriši artikle";
             this.btnObrisiArtikle.UseVisualStyleBackColor = true;
@@ -1678,9 +1819,11 @@
             // 
             this.groupBox18.Controls.Add(this.label37);
             this.groupBox18.Controls.Add(this.btnPostaviNabavneCijene);
-            this.groupBox18.Location = new System.Drawing.Point(506, 125);
+            this.groupBox18.Location = new System.Drawing.Point(675, 154);
+            this.groupBox18.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox18.Name = "groupBox18";
-            this.groupBox18.Size = new System.Drawing.Size(296, 133);
+            this.groupBox18.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox18.Size = new System.Drawing.Size(395, 164);
             this.groupBox18.TabIndex = 59;
             this.groupBox18.TabStop = false;
             this.groupBox18.Text = "Nabavne cijene";
@@ -1688,18 +1831,20 @@
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(7, 19);
+            this.label37.Location = new System.Drawing.Point(9, 23);
+            this.label37.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(240, 68);
+            this.label37.Size = new System.Drawing.Size(285, 80);
             this.label37.TabIndex = 0;
             this.label37.Text = "Nakon izmjenjivanja kalkulacija može\r\ndoći do promjene nabavnih cijena.\r\nOva funk" +
     "cija služi za provjeru \r\nnabavnih cijena.";
             // 
             // btnPostaviNabavneCijene
             // 
-            this.btnPostaviNabavneCijene.Location = new System.Drawing.Point(10, 95);
+            this.btnPostaviNabavneCijene.Location = new System.Drawing.Point(13, 117);
+            this.btnPostaviNabavneCijene.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnPostaviNabavneCijene.Name = "btnPostaviNabavneCijene";
-            this.btnPostaviNabavneCijene.Size = new System.Drawing.Size(280, 27);
+            this.btnPostaviNabavneCijene.Size = new System.Drawing.Size(373, 33);
             this.btnPostaviNabavneCijene.TabIndex = 56;
             this.btnPostaviNabavneCijene.Text = "Postavi važeće nabavne cijene";
             this.btnPostaviNabavneCijene.UseVisualStyleBackColor = true;
@@ -1710,9 +1855,11 @@
             this.groupBox16.Controls.Add(this.label35);
             this.groupBox16.Controls.Add(this.txtArhiviraniFajlovi);
             this.groupBox16.Controls.Add(this.label34);
-            this.groupBox16.Location = new System.Drawing.Point(10, 124);
+            this.groupBox16.Location = new System.Drawing.Point(13, 153);
+            this.groupBox16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox16.Name = "groupBox16";
-            this.groupBox16.Size = new System.Drawing.Size(490, 134);
+            this.groupBox16.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox16.Size = new System.Drawing.Size(653, 165);
             this.groupBox16.TabIndex = 58;
             this.groupBox16.TabStop = false;
             this.groupBox16.Text = "Poveznica na skenirani dokumenat";
@@ -1722,26 +1869,29 @@
             this.label35.AutoSize = true;
             this.label35.BackColor = System.Drawing.Color.Transparent;
             this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label35.Location = new System.Drawing.Point(6, 85);
+            this.label35.Location = new System.Drawing.Point(8, 105);
+            this.label35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(195, 17);
+            this.label35.Size = new System.Drawing.Size(228, 20);
             this.label35.TabIndex = 46;
             this.label35.Text = "Putanja do arhiviranih fajlova:";
             // 
             // txtArhiviraniFajlovi
             // 
-            this.txtArhiviraniFajlovi.Location = new System.Drawing.Point(6, 103);
+            this.txtArhiviraniFajlovi.Location = new System.Drawing.Point(8, 127);
+            this.txtArhiviraniFajlovi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtArhiviraniFajlovi.Name = "txtArhiviraniFajlovi";
-            this.txtArhiviraniFajlovi.Size = new System.Drawing.Size(478, 23);
+            this.txtArhiviraniFajlovi.Size = new System.Drawing.Size(636, 26);
             this.txtArhiviraniFajlovi.TabIndex = 45;
             this.txtArhiviraniFajlovi.TextChanged += new System.EventHandler(this.txtArhiviraniFajlovi_TextChanged);
             // 
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(7, 19);
+            this.label34.Location = new System.Drawing.Point(9, 23);
+            this.label34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(365, 51);
+            this.label34.Size = new System.Drawing.Size(429, 60);
             this.label34.TabIndex = 0;
             this.label34.Text = "Ova funkcija omugučavga da sve ulazne račune možete \r\nskenirati i povezati iste s" +
     "a orginalnim ulaznim računom \r\n(kalkulacijom, ulaznom fakturom). ";
@@ -1750,9 +1900,11 @@
             // 
             this.groupBox15.Controls.Add(this.label33);
             this.groupBox15.Controls.Add(this.button2);
-            this.groupBox15.Location = new System.Drawing.Point(506, 6);
+            this.groupBox15.Location = new System.Drawing.Point(675, 7);
+            this.groupBox15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox15.Name = "groupBox15";
-            this.groupBox15.Size = new System.Drawing.Size(296, 101);
+            this.groupBox15.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox15.Size = new System.Drawing.Size(395, 124);
             this.groupBox15.TabIndex = 57;
             this.groupBox15.TabStop = false;
             this.groupBox15.Text = "UFA";
@@ -1760,18 +1912,20 @@
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(7, 19);
+            this.label33.Location = new System.Drawing.Point(9, 23);
+            this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(270, 51);
+            this.label33.Size = new System.Drawing.Size(319, 60);
             this.label33.TabIndex = 0;
             this.label33.Text = "Ova funkcija prebacuje sve ulazne \r\nfakture u noviji format. Za više informacija\r" +
     "\nnazovite Code-iT.";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(10, 71);
+            this.button2.Location = new System.Drawing.Point(13, 87);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(280, 27);
+            this.button2.Size = new System.Drawing.Size(373, 33);
             this.button2.TabIndex = 56;
             this.button2.Text = "Postavi vrijednosti u noviju UFA";
             this.button2.UseVisualStyleBackColor = true;
@@ -1782,9 +1936,11 @@
             this.groupBox14.Controls.Add(this.chbNemaNaSkl);
             this.groupBox14.Controls.Add(this.chbProgramskoSkladiste);
             this.groupBox14.Controls.Add(this.label32);
-            this.groupBox14.Location = new System.Drawing.Point(10, 6);
+            this.groupBox14.Location = new System.Drawing.Point(13, 7);
+            this.groupBox14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox14.Name = "groupBox14";
-            this.groupBox14.Size = new System.Drawing.Size(490, 101);
+            this.groupBox14.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox14.Size = new System.Drawing.Size(653, 124);
             this.groupBox14.TabIndex = 55;
             this.groupBox14.TabStop = false;
             this.groupBox14.Text = "Oduzimanje sa skladišta";
@@ -1792,9 +1948,10 @@
             // chbNemaNaSkl
             // 
             this.chbNemaNaSkl.AutoSize = true;
-            this.chbNemaNaSkl.Location = new System.Drawing.Point(142, 61);
+            this.chbNemaNaSkl.Location = new System.Drawing.Point(189, 75);
+            this.chbNemaNaSkl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chbNemaNaSkl.Name = "chbNemaNaSkl";
-            this.chbNemaNaSkl.Size = new System.Drawing.Size(327, 21);
+            this.chbNemaNaSkl.Size = new System.Drawing.Size(385, 24);
             this.chbNemaNaSkl.TabIndex = 3;
             this.chbNemaNaSkl.Text = "Upozori korisnika ako artikla nema na skladištu.";
             this.chbNemaNaSkl.UseVisualStyleBackColor = true;
@@ -1803,9 +1960,10 @@
             // chbProgramskoSkladiste
             // 
             this.chbProgramskoSkladiste.AutoSize = true;
-            this.chbProgramskoSkladiste.Location = new System.Drawing.Point(10, 62);
+            this.chbProgramskoSkladiste.Location = new System.Drawing.Point(13, 76);
+            this.chbProgramskoSkladiste.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chbProgramskoSkladiste.Name = "chbProgramskoSkladiste";
-            this.chbProgramskoSkladiste.Size = new System.Drawing.Size(84, 21);
+            this.chbProgramskoSkladiste.Size = new System.Drawing.Size(99, 24);
             this.chbProgramskoSkladiste.TabIndex = 2;
             this.chbProgramskoSkladiste.Text = "Aktivnost";
             this.chbProgramskoSkladiste.UseVisualStyleBackColor = true;
@@ -1814,9 +1972,10 @@
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(7, 19);
+            this.label32.Location = new System.Drawing.Point(9, 23);
+            this.label32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(431, 34);
+            this.label32.Size = new System.Drawing.Size(508, 40);
             this.label32.TabIndex = 0;
             this.label32.Text = "Ova postavka izračunava skladište prema ulaznima ili izlaznima \r\ndokumentima. Ovo" +
     " je najtočnije izračunavanje količine na skladištu.";
@@ -1833,9 +1992,10 @@
             this.tabIzvjestaji.Controls.Add(this.groupBox17);
             this.tabIzvjestaji.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tabIzvjestaji.Location = new System.Drawing.Point(4, 34);
+            this.tabIzvjestaji.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabIzvjestaji.Name = "tabIzvjestaji";
-            this.tabIzvjestaji.Padding = new System.Windows.Forms.Padding(3);
-            this.tabIzvjestaji.Size = new System.Drawing.Size(828, 385);
+            this.tabIzvjestaji.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabIzvjestaji.Size = new System.Drawing.Size(1107, 483);
             this.tabIzvjestaji.TabIndex = 6;
             this.tabIzvjestaji.Text = "Izvještaji";
             // 
@@ -1843,9 +2003,10 @@
             // 
             this.chbUzmiRabatUOdjaviKomisije.AutoSize = true;
             this.chbUzmiRabatUOdjaviKomisije.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.chbUzmiRabatUOdjaviKomisije.Location = new System.Drawing.Point(249, 168);
+            this.chbUzmiRabatUOdjaviKomisije.Location = new System.Drawing.Point(332, 207);
+            this.chbUzmiRabatUOdjaviKomisije.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chbUzmiRabatUOdjaviKomisije.Name = "chbUzmiRabatUOdjaviKomisije";
-            this.chbUzmiRabatUOdjaviKomisije.Size = new System.Drawing.Size(251, 21);
+            this.chbUzmiRabatUOdjaviKomisije.Size = new System.Drawing.Size(297, 24);
             this.chbUzmiRabatUOdjaviKomisije.TabIndex = 62;
             this.chbUzmiRabatUOdjaviKomisije.Text = "Uzmi rabat u Odjavi komisione robe";
             this.chbUzmiRabatUOdjaviKomisije.UseVisualStyleBackColor = true;
@@ -1855,9 +2016,10 @@
             // 
             this.chbUzmiAvanseUPrometKase.AutoSize = true;
             this.chbUzmiAvanseUPrometKase.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.chbUzmiAvanseUPrometKase.Location = new System.Drawing.Point(150, 263);
+            this.chbUzmiAvanseUPrometKase.Location = new System.Drawing.Point(200, 324);
+            this.chbUzmiAvanseUPrometKase.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chbUzmiAvanseUPrometKase.Name = "chbUzmiAvanseUPrometKase";
-            this.chbUzmiAvanseUPrometKase.Size = new System.Drawing.Size(255, 21);
+            this.chbUzmiAvanseUPrometKase.Size = new System.Drawing.Size(302, 24);
             this.chbUzmiAvanseUPrometKase.TabIndex = 61;
             this.chbUzmiAvanseUPrometKase.Text = "Uzmi avanse u promet kase na POS";
             this.chbUzmiAvanseUPrometKase.UseVisualStyleBackColor = true;
@@ -1867,9 +2029,10 @@
             // 
             this.chbPovratnaNaknada.AutoSize = true;
             this.chbPovratnaNaknada.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.chbPovratnaNaknada.Location = new System.Drawing.Point(20, 263);
+            this.chbPovratnaNaknada.Location = new System.Drawing.Point(27, 324);
+            this.chbPovratnaNaknada.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chbPovratnaNaknada.Name = "chbPovratnaNaknada";
-            this.chbPovratnaNaknada.Size = new System.Drawing.Size(58, 21);
+            this.chbPovratnaNaknada.Size = new System.Drawing.Size(69, 24);
             this.chbPovratnaNaknada.TabIndex = 60;
             this.chbPovratnaNaknada.Text = " N P ";
             this.chbPovratnaNaknada.UseVisualStyleBackColor = true;
@@ -1879,9 +2042,11 @@
             // 
             this.groupBox28.Controls.Add(this.label52);
             this.groupBox28.Controls.Add(this.cmbVrstaFakture);
-            this.groupBox28.Location = new System.Drawing.Point(10, 195);
+            this.groupBox28.Location = new System.Drawing.Point(13, 240);
+            this.groupBox28.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox28.Name = "groupBox28";
-            this.groupBox28.Size = new System.Drawing.Size(490, 62);
+            this.groupBox28.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox28.Size = new System.Drawing.Size(653, 76);
             this.groupBox28.TabIndex = 59;
             this.groupBox28.TabStop = false;
             this.groupBox28.Text = "Odabir ispisa fakture";
@@ -1889,9 +2054,10 @@
             // label52
             // 
             this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(10, 23);
+            this.label52.Location = new System.Drawing.Point(13, 28);
+            this.label52.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(103, 17);
+            this.label52.Size = new System.Drawing.Size(120, 20);
             this.label52.TabIndex = 1;
             this.label52.Text = "Odabir fakture:";
             // 
@@ -1899,9 +2065,10 @@
             // 
             this.cmbVrstaFakture.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbVrstaFakture.FormattingEnabled = true;
-            this.cmbVrstaFakture.Location = new System.Drawing.Point(140, 20);
+            this.cmbVrstaFakture.Location = new System.Drawing.Point(187, 25);
+            this.cmbVrstaFakture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbVrstaFakture.Name = "cmbVrstaFakture";
-            this.cmbVrstaFakture.Size = new System.Drawing.Size(174, 24);
+            this.cmbVrstaFakture.Size = new System.Drawing.Size(231, 28);
             this.cmbVrstaFakture.TabIndex = 0;
             this.cmbVrstaFakture.SelectionChangeCommitted += new System.EventHandler(this.cmbVrstaFakture_SelectionChangeCommitted);
             // 
@@ -1909,9 +2076,10 @@
             // 
             this.chbRucnoUpisivanjeKarticeKupca.AutoSize = true;
             this.chbRucnoUpisivanjeKarticeKupca.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.chbRucnoUpisivanjeKarticeKupca.Location = new System.Drawing.Point(10, 168);
+            this.chbRucnoUpisivanjeKarticeKupca.Location = new System.Drawing.Point(13, 207);
+            this.chbRucnoUpisivanjeKarticeKupca.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chbRucnoUpisivanjeKarticeKupca.Name = "chbRucnoUpisivanjeKarticeKupca";
-            this.chbRucnoUpisivanjeKarticeKupca.Size = new System.Drawing.Size(223, 21);
+            this.chbRucnoUpisivanjeKarticeKupca.Size = new System.Drawing.Size(262, 24);
             this.chbRucnoUpisivanjeKarticeKupca.TabIndex = 58;
             this.chbRucnoUpisivanjeKarticeKupca.Text = "Ručno upisivanje kartice kupca";
             this.chbRucnoUpisivanjeKarticeKupca.UseVisualStyleBackColor = true;
@@ -1921,9 +2089,11 @@
             // 
             this.groupBox26.Controls.Add(this.label49);
             this.groupBox26.Controls.Add(this.cmbVrstaKalkulacije);
-            this.groupBox26.Location = new System.Drawing.Point(10, 100);
+            this.groupBox26.Location = new System.Drawing.Point(13, 123);
+            this.groupBox26.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox26.Name = "groupBox26";
-            this.groupBox26.Size = new System.Drawing.Size(490, 62);
+            this.groupBox26.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox26.Size = new System.Drawing.Size(653, 76);
             this.groupBox26.TabIndex = 57;
             this.groupBox26.TabStop = false;
             this.groupBox26.Text = "Odabir ispisa kalkulacije";
@@ -1931,9 +2101,10 @@
             // label49
             // 
             this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(10, 23);
+            this.label49.Location = new System.Drawing.Point(13, 28);
+            this.label49.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(124, 17);
+            this.label49.Size = new System.Drawing.Size(146, 20);
             this.label49.TabIndex = 1;
             this.label49.Text = "Odabir kalkulacije:";
             // 
@@ -1941,9 +2112,10 @@
             // 
             this.cmbVrstaKalkulacije.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbVrstaKalkulacije.FormattingEnabled = true;
-            this.cmbVrstaKalkulacije.Location = new System.Drawing.Point(140, 20);
+            this.cmbVrstaKalkulacije.Location = new System.Drawing.Point(187, 25);
+            this.cmbVrstaKalkulacije.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbVrstaKalkulacije.Name = "cmbVrstaKalkulacije";
-            this.cmbVrstaKalkulacije.Size = new System.Drawing.Size(174, 24);
+            this.cmbVrstaKalkulacije.Size = new System.Drawing.Size(231, 28);
             this.cmbVrstaKalkulacije.TabIndex = 0;
             this.cmbVrstaKalkulacije.SelectionChangeCommitted += new System.EventHandler(this.cmbVrstaKalkulacije_SelectionChangeCommitted);
             // 
@@ -1951,9 +2123,11 @@
             // 
             this.groupBox17.Controls.Add(this.chbIspisPartneraAktivnost);
             this.groupBox17.Controls.Add(this.label36);
-            this.groupBox17.Location = new System.Drawing.Point(10, 6);
+            this.groupBox17.Location = new System.Drawing.Point(13, 7);
+            this.groupBox17.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox17.Name = "groupBox17";
-            this.groupBox17.Size = new System.Drawing.Size(490, 88);
+            this.groupBox17.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox17.Size = new System.Drawing.Size(653, 108);
             this.groupBox17.TabIndex = 56;
             this.groupBox17.TabStop = false;
             this.groupBox17.Text = "Ispis partnera na izvještaju";
@@ -1961,9 +2135,10 @@
             // chbIspisPartneraAktivnost
             // 
             this.chbIspisPartneraAktivnost.AutoSize = true;
-            this.chbIspisPartneraAktivnost.Location = new System.Drawing.Point(10, 59);
+            this.chbIspisPartneraAktivnost.Location = new System.Drawing.Point(13, 73);
+            this.chbIspisPartneraAktivnost.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chbIspisPartneraAktivnost.Name = "chbIspisPartneraAktivnost";
-            this.chbIspisPartneraAktivnost.Size = new System.Drawing.Size(84, 21);
+            this.chbIspisPartneraAktivnost.Size = new System.Drawing.Size(99, 24);
             this.chbIspisPartneraAktivnost.TabIndex = 2;
             this.chbIspisPartneraAktivnost.Text = "Aktivnost";
             this.chbIspisPartneraAktivnost.UseVisualStyleBackColor = true;
@@ -1972,9 +2147,10 @@
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(7, 19);
+            this.label36.Location = new System.Drawing.Point(9, 23);
+            this.label36.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(425, 34);
+            this.label36.Size = new System.Drawing.Size(504, 40);
             this.label36.TabIndex = 0;
             this.label36.Text = "Ova postavka omogučava da prije ispisa dokumenta\r\nprogram nudi mogučnost bez ispi" +
     "sa partnera i sa ispisom partnera";
@@ -1985,9 +2161,10 @@
             this.tabPage6.Controls.Add(this.groupBox22);
             this.tabPage6.Controls.Add(this.groupBox25);
             this.tabPage6.Location = new System.Drawing.Point(4, 34);
+            this.tabPage6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(828, 385);
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage6.Size = new System.Drawing.Size(1107, 483);
             this.tabPage6.TabIndex = 7;
             this.tabPage6.Text = "Sinkronizacija";
             // 
@@ -2001,9 +2178,11 @@
             this.groupBox22.Controls.Add(this.txtLozinkaZaWebAktivaciju);
             this.groupBox22.Controls.Add(this.chbAktiviranaWebSyn);
             this.groupBox22.Controls.Add(this.label45);
-            this.groupBox22.Location = new System.Drawing.Point(10, 6);
+            this.groupBox22.Location = new System.Drawing.Point(13, 7);
+            this.groupBox22.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox22.Name = "groupBox22";
-            this.groupBox22.Size = new System.Drawing.Size(393, 195);
+            this.groupBox22.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox22.Size = new System.Drawing.Size(524, 240);
             this.groupBox22.TabIndex = 53;
             this.groupBox22.TabStop = false;
             this.groupBox22.Text = "Sinkronizacija sa web sučeljem";
@@ -2011,18 +2190,20 @@
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(6, 137);
+            this.label42.Location = new System.Drawing.Point(8, 169);
+            this.label42.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(65, 17);
+            this.label42.Size = new System.Drawing.Size(77, 20);
             this.label42.TabIndex = 56;
             this.label42.Text = "Domena:";
             this.label42.Visible = false;
             // 
             // txtDomena
             // 
-            this.txtDomena.Location = new System.Drawing.Point(73, 134);
+            this.txtDomena.Location = new System.Drawing.Point(97, 165);
+            this.txtDomena.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDomena.Name = "txtDomena";
-            this.txtDomena.Size = new System.Drawing.Size(311, 23);
+            this.txtDomena.Size = new System.Drawing.Size(413, 26);
             this.txtDomena.TabIndex = 55;
             this.txtDomena.Visible = false;
             this.txtDomena.TextChanged += new System.EventHandler(this.txtDomena_TextChanged);
@@ -2031,9 +2212,10 @@
             // 
             this.btnBrisiSve.Enabled = false;
             this.btnBrisiSve.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnBrisiSve.Location = new System.Drawing.Point(281, 163);
+            this.btnBrisiSve.Location = new System.Drawing.Point(375, 201);
+            this.btnBrisiSve.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBrisiSve.Name = "btnBrisiSve";
-            this.btnBrisiSve.Size = new System.Drawing.Size(103, 26);
+            this.btnBrisiSve.Size = new System.Drawing.Size(137, 32);
             this.btnBrisiSve.TabIndex = 54;
             this.btnBrisiSve.Text = "Obriši sve";
             this.btnBrisiSve.UseVisualStyleBackColor = true;
@@ -2043,9 +2225,10 @@
             // 
             this.btnPosaljiNaWeb.Enabled = false;
             this.btnPosaljiNaWeb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnPosaljiNaWeb.Location = new System.Drawing.Point(119, 163);
+            this.btnPosaljiNaWeb.Location = new System.Drawing.Point(159, 201);
+            this.btnPosaljiNaWeb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnPosaljiNaWeb.Name = "btnPosaljiNaWeb";
-            this.btnPosaljiNaWeb.Size = new System.Drawing.Size(156, 26);
+            this.btnPosaljiNaWeb.Size = new System.Drawing.Size(208, 32);
             this.btnPosaljiNaWeb.TabIndex = 53;
             this.btnPosaljiNaWeb.Text = "Pošalji sve na web";
             this.btnPosaljiNaWeb.UseVisualStyleBackColor = true;
@@ -2054,18 +2237,20 @@
             // label44
             // 
             this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(6, 112);
+            this.label44.Location = new System.Drawing.Point(8, 138);
+            this.label44.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(61, 17);
+            this.label44.Size = new System.Drawing.Size(72, 20);
             this.label44.TabIndex = 52;
             this.label44.Text = "Lozinka:";
             // 
             // txtLozinkaZaWebAktivaciju
             // 
-            this.txtLozinkaZaWebAktivaciju.Location = new System.Drawing.Point(73, 109);
+            this.txtLozinkaZaWebAktivaciju.Location = new System.Drawing.Point(97, 134);
+            this.txtLozinkaZaWebAktivaciju.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtLozinkaZaWebAktivaciju.Name = "txtLozinkaZaWebAktivaciju";
             this.txtLozinkaZaWebAktivaciju.PasswordChar = '*';
-            this.txtLozinkaZaWebAktivaciju.Size = new System.Drawing.Size(311, 23);
+            this.txtLozinkaZaWebAktivaciju.Size = new System.Drawing.Size(413, 26);
             this.txtLozinkaZaWebAktivaciju.TabIndex = 51;
             this.txtLozinkaZaWebAktivaciju.TextChanged += new System.EventHandler(this.txtLozinkaZaWebAktivaciju_TextChanged);
             // 
@@ -2073,9 +2258,10 @@
             // 
             this.chbAktiviranaWebSyn.AutoSize = true;
             this.chbAktiviranaWebSyn.Enabled = false;
-            this.chbAktiviranaWebSyn.Location = new System.Drawing.Point(10, 166);
+            this.chbAktiviranaWebSyn.Location = new System.Drawing.Point(13, 204);
+            this.chbAktiviranaWebSyn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chbAktiviranaWebSyn.Name = "chbAktiviranaWebSyn";
-            this.chbAktiviranaWebSyn.Size = new System.Drawing.Size(89, 21);
+            this.chbAktiviranaWebSyn.Size = new System.Drawing.Size(104, 24);
             this.chbAktiviranaWebSyn.TabIndex = 50;
             this.chbAktiviranaWebSyn.Text = "Aktivirano";
             this.chbAktiviranaWebSyn.UseVisualStyleBackColor = true;
@@ -2086,9 +2272,10 @@
             this.label45.AutoSize = true;
             this.label45.BackColor = System.Drawing.Color.Transparent;
             this.label45.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label45.Location = new System.Drawing.Point(3, 19);
+            this.label45.Location = new System.Drawing.Point(4, 23);
+            this.label45.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(388, 68);
+            this.label45.Size = new System.Drawing.Size(459, 80);
             this.label45.TabIndex = 49;
             this.label45.Text = resources.GetString("label45.Text");
             // 
@@ -2102,9 +2289,11 @@
             this.groupBox25.Controls.Add(this.lblCentralaPoslovnica);
             this.groupBox25.Controls.Add(this.chbCentralaAktivno);
             this.groupBox25.Controls.Add(this.label51);
-            this.groupBox25.Location = new System.Drawing.Point(409, 6);
+            this.groupBox25.Location = new System.Drawing.Point(545, 7);
+            this.groupBox25.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox25.Name = "groupBox25";
-            this.groupBox25.Size = new System.Drawing.Size(393, 195);
+            this.groupBox25.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox25.Size = new System.Drawing.Size(524, 240);
             this.groupBox25.TabIndex = 56;
             this.groupBox25.TabStop = false;
             this.groupBox25.Text = "Sinkronizacija sa centralom";
@@ -2113,9 +2302,10 @@
             // 
             this.chbIsCentrala.AutoSize = true;
             this.chbIsCentrala.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.chbIsCentrala.Location = new System.Drawing.Point(205, 166);
+            this.chbIsCentrala.Location = new System.Drawing.Point(273, 204);
+            this.chbIsCentrala.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chbIsCentrala.Name = "chbIsCentrala";
-            this.chbIsCentrala.Size = new System.Drawing.Size(101, 21);
+            this.chbIsCentrala.Size = new System.Drawing.Size(119, 24);
             this.chbIsCentrala.TabIndex = 57;
             this.chbIsCentrala.Text = "Je centrala:";
             this.chbIsCentrala.UseVisualStyleBackColor = true;
@@ -2124,26 +2314,29 @@
             // label50
             // 
             this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(27, 112);
+            this.label50.Location = new System.Drawing.Point(36, 138);
+            this.label50.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(61, 17);
+            this.label50.Size = new System.Drawing.Size(72, 20);
             this.label50.TabIndex = 56;
             this.label50.Text = "Lozinka:";
             // 
             // txtCentralaLozinka
             // 
-            this.txtCentralaLozinka.Location = new System.Drawing.Point(94, 109);
+            this.txtCentralaLozinka.Location = new System.Drawing.Point(125, 134);
+            this.txtCentralaLozinka.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCentralaLozinka.Name = "txtCentralaLozinka";
             this.txtCentralaLozinka.PasswordChar = '*';
-            this.txtCentralaLozinka.Size = new System.Drawing.Size(293, 23);
+            this.txtCentralaLozinka.Size = new System.Drawing.Size(389, 26);
             this.txtCentralaLozinka.TabIndex = 55;
             this.txtCentralaLozinka.TextChanged += new System.EventHandler(this.txtCentralaLozinka_TextChanged);
             // 
             // btnCentralaSkladista
             // 
-            this.btnCentralaSkladista.Location = new System.Drawing.Point(312, 132);
+            this.btnCentralaSkladista.Location = new System.Drawing.Point(416, 162);
+            this.btnCentralaSkladista.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCentralaSkladista.Name = "btnCentralaSkladista";
-            this.btnCentralaSkladista.Size = new System.Drawing.Size(75, 26);
+            this.btnCentralaSkladista.Size = new System.Drawing.Size(100, 32);
             this.btnCentralaSkladista.TabIndex = 54;
             this.btnCentralaSkladista.Text = "Skladišta";
             this.btnCentralaSkladista.UseVisualStyleBackColor = true;
@@ -2151,27 +2344,30 @@
             // 
             // txtCentralaPoslovnica
             // 
-            this.txtCentralaPoslovnica.Location = new System.Drawing.Point(94, 134);
+            this.txtCentralaPoslovnica.Location = new System.Drawing.Point(125, 165);
+            this.txtCentralaPoslovnica.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCentralaPoslovnica.Name = "txtCentralaPoslovnica";
-            this.txtCentralaPoslovnica.Size = new System.Drawing.Size(212, 23);
+            this.txtCentralaPoslovnica.Size = new System.Drawing.Size(281, 26);
             this.txtCentralaPoslovnica.TabIndex = 52;
             this.txtCentralaPoslovnica.TextChanged += new System.EventHandler(this.txtCentralaPoslovnica_TextChanged);
             // 
             // lblCentralaPoslovnica
             // 
             this.lblCentralaPoslovnica.AutoSize = true;
-            this.lblCentralaPoslovnica.Location = new System.Drawing.Point(8, 137);
+            this.lblCentralaPoslovnica.Location = new System.Drawing.Point(11, 169);
+            this.lblCentralaPoslovnica.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCentralaPoslovnica.Name = "lblCentralaPoslovnica";
-            this.lblCentralaPoslovnica.Size = new System.Drawing.Size(80, 17);
+            this.lblCentralaPoslovnica.Size = new System.Drawing.Size(95, 20);
             this.lblCentralaPoslovnica.TabIndex = 51;
             this.lblCentralaPoslovnica.Text = "Poslovnica:";
             // 
             // chbCentralaAktivno
             // 
             this.chbCentralaAktivno.AutoSize = true;
-            this.chbCentralaAktivno.Location = new System.Drawing.Point(6, 166);
+            this.chbCentralaAktivno.Location = new System.Drawing.Point(8, 204);
+            this.chbCentralaAktivno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chbCentralaAktivno.Name = "chbCentralaAktivno";
-            this.chbCentralaAktivno.Size = new System.Drawing.Size(89, 21);
+            this.chbCentralaAktivno.Size = new System.Drawing.Size(104, 24);
             this.chbCentralaAktivno.TabIndex = 50;
             this.chbCentralaAktivno.Text = "Aktivirano";
             this.chbCentralaAktivno.UseVisualStyleBackColor = true;
@@ -2181,9 +2377,10 @@
             // 
             this.label51.BackColor = System.Drawing.Color.Transparent;
             this.label51.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label51.Location = new System.Drawing.Point(3, 19);
+            this.label51.Location = new System.Drawing.Point(4, 23);
+            this.label51.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(387, 68);
+            this.label51.Size = new System.Drawing.Size(516, 84);
             this.label51.TabIndex = 49;
             this.label51.Text = "Ova opcija omogućava da preuzimate kalkulacije iz centralne poslovnice. \r\nOvu fun" +
     "kcionalnost aktiviraju djelatnici iz Code-iT.";
@@ -2193,9 +2390,10 @@
             this.tabPage7.BackColor = System.Drawing.Color.LightSlateGray;
             this.tabPage7.Controls.Add(this.groupBox23);
             this.tabPage7.Location = new System.Drawing.Point(4, 34);
+            this.tabPage7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(828, 385);
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage7.Size = new System.Drawing.Size(1107, 483);
             this.tabPage7.TabIndex = 8;
             this.tabPage7.Text = "Vaga";
             // 
@@ -2207,18 +2405,21 @@
             this.groupBox23.Controls.Add(this.label46);
             this.groupBox23.Controls.Add(this.cmbSerialPortName);
             this.groupBox23.Controls.Add(this.chkVaga);
-            this.groupBox23.Location = new System.Drawing.Point(10, 6);
+            this.groupBox23.Location = new System.Drawing.Point(13, 7);
+            this.groupBox23.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox23.Name = "groupBox23";
-            this.groupBox23.Size = new System.Drawing.Size(407, 177);
+            this.groupBox23.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox23.Size = new System.Drawing.Size(543, 218);
             this.groupBox23.TabIndex = 54;
             this.groupBox23.TabStop = false;
             this.groupBox23.Text = "Postavke za ";
             // 
             // btnVagaSave
             // 
-            this.btnVagaSave.Location = new System.Drawing.Point(305, 145);
+            this.btnVagaSave.Location = new System.Drawing.Point(407, 178);
+            this.btnVagaSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnVagaSave.Name = "btnVagaSave";
-            this.btnVagaSave.Size = new System.Drawing.Size(96, 26);
+            this.btnVagaSave.Size = new System.Drawing.Size(128, 32);
             this.btnVagaSave.TabIndex = 56;
             this.btnVagaSave.Text = "Spremi";
             this.btnVagaSave.UseVisualStyleBackColor = true;
@@ -2228,26 +2429,29 @@
             // 
             this.cmbSerialPortBaudRate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbSerialPortBaudRate.FormattingEnabled = true;
-            this.cmbSerialPortBaudRate.Location = new System.Drawing.Point(106, 78);
+            this.cmbSerialPortBaudRate.Location = new System.Drawing.Point(141, 96);
+            this.cmbSerialPortBaudRate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbSerialPortBaudRate.Name = "cmbSerialPortBaudRate";
-            this.cmbSerialPortBaudRate.Size = new System.Drawing.Size(121, 24);
+            this.cmbSerialPortBaudRate.Size = new System.Drawing.Size(160, 28);
             this.cmbSerialPortBaudRate.TabIndex = 5;
             // 
             // label47
             // 
             this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(10, 81);
+            this.label47.Location = new System.Drawing.Point(13, 100);
+            this.label47.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(74, 17);
+            this.label47.Size = new System.Drawing.Size(87, 20);
             this.label47.TabIndex = 4;
             this.label47.Text = "Baud rate:";
             // 
             // label46
             // 
             this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(7, 50);
+            this.label46.Location = new System.Drawing.Point(9, 62);
+            this.label46.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(84, 17);
+            this.label46.Size = new System.Drawing.Size(99, 20);
             this.label46.TabIndex = 3;
             this.label46.Text = "Naziv porta:";
             // 
@@ -2255,17 +2459,19 @@
             // 
             this.cmbSerialPortName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbSerialPortName.FormattingEnabled = true;
-            this.cmbSerialPortName.Location = new System.Drawing.Point(106, 47);
+            this.cmbSerialPortName.Location = new System.Drawing.Point(141, 58);
+            this.cmbSerialPortName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbSerialPortName.Name = "cmbSerialPortName";
-            this.cmbSerialPortName.Size = new System.Drawing.Size(121, 24);
+            this.cmbSerialPortName.Size = new System.Drawing.Size(160, 28);
             this.cmbSerialPortName.TabIndex = 2;
             // 
             // chkVaga
             // 
             this.chkVaga.AutoSize = true;
-            this.chkVaga.Location = new System.Drawing.Point(6, 22);
+            this.chkVaga.Location = new System.Drawing.Point(8, 27);
+            this.chkVaga.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkVaga.Name = "chkVaga";
-            this.chkVaga.Size = new System.Drawing.Size(60, 21);
+            this.chkVaga.Size = new System.Drawing.Size(69, 24);
             this.chkVaga.TabIndex = 1;
             this.chkVaga.Text = "Vaga";
             this.chkVaga.UseVisualStyleBackColor = true;
@@ -2282,18 +2488,20 @@
             this.tabPage8.Controls.Add(this.groupBox27);
             this.tabPage8.Controls.Add(this.groupBox24);
             this.tabPage8.Location = new System.Drawing.Point(4, 34);
+            this.tabPage8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(828, 385);
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage8.Size = new System.Drawing.Size(1107, 483);
             this.tabPage8.TabIndex = 9;
             this.tabPage8.Text = "Roba";
             // 
             // chbProdajaAutomobila
             // 
             this.chbProdajaAutomobila.AutoSize = true;
-            this.chbProdajaAutomobila.Location = new System.Drawing.Point(351, 278);
+            this.chbProdajaAutomobila.Location = new System.Drawing.Point(468, 342);
+            this.chbProdajaAutomobila.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chbProdajaAutomobila.Name = "chbProdajaAutomobila";
-            this.chbProdajaAutomobila.Size = new System.Drawing.Size(149, 21);
+            this.chbProdajaAutomobila.Size = new System.Drawing.Size(174, 24);
             this.chbProdajaAutomobila.TabIndex = 64;
             this.chbProdajaAutomobila.Text = "Prodaja automobila";
             this.chbProdajaAutomobila.UseVisualStyleBackColor = true;
@@ -2302,9 +2510,10 @@
             // chbMaloprodajaNaplataKarticaButtonShow
             // 
             this.chbMaloprodajaNaplataKarticaButtonShow.AutoSize = true;
-            this.chbMaloprodajaNaplataKarticaButtonShow.Location = new System.Drawing.Point(17, 332);
+            this.chbMaloprodajaNaplataKarticaButtonShow.Location = new System.Drawing.Point(23, 409);
+            this.chbMaloprodajaNaplataKarticaButtonShow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chbMaloprodajaNaplataKarticaButtonShow.Name = "chbMaloprodajaNaplataKarticaButtonShow";
-            this.chbMaloprodajaNaplataKarticaButtonShow.Size = new System.Drawing.Size(263, 21);
+            this.chbMaloprodajaNaplataKarticaButtonShow.Size = new System.Drawing.Size(312, 24);
             this.chbMaloprodajaNaplataKarticaButtonShow.TabIndex = 63;
             this.chbMaloprodajaNaplataKarticaButtonShow.Text = "Koristi naplatu karticom u maloprodaji";
             this.chbMaloprodajaNaplataKarticaButtonShow.UseVisualStyleBackColor = true;
@@ -2313,9 +2522,10 @@
             // chbMaloprodajaNaplataGotovinaButtonShow
             // 
             this.chbMaloprodajaNaplataGotovinaButtonShow.AutoSize = true;
-            this.chbMaloprodajaNaplataGotovinaButtonShow.Location = new System.Drawing.Point(17, 305);
+            this.chbMaloprodajaNaplataGotovinaButtonShow.Location = new System.Drawing.Point(23, 375);
+            this.chbMaloprodajaNaplataGotovinaButtonShow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chbMaloprodajaNaplataGotovinaButtonShow.Name = "chbMaloprodajaNaplataGotovinaButtonShow";
-            this.chbMaloprodajaNaplataGotovinaButtonShow.Size = new System.Drawing.Size(275, 21);
+            this.chbMaloprodajaNaplataGotovinaButtonShow.Size = new System.Drawing.Size(324, 24);
             this.chbMaloprodajaNaplataGotovinaButtonShow.TabIndex = 62;
             this.chbMaloprodajaNaplataGotovinaButtonShow.Text = "Koristi naplatu gotovinom u maloprodaji";
             this.chbMaloprodajaNaplataGotovinaButtonShow.UseVisualStyleBackColor = true;
@@ -2324,9 +2534,10 @@
             // chbAutomatskiZapisnik
             // 
             this.chbAutomatskiZapisnik.AutoSize = true;
-            this.chbAutomatskiZapisnik.Location = new System.Drawing.Point(17, 278);
+            this.chbAutomatskiZapisnik.Location = new System.Drawing.Point(23, 342);
+            this.chbAutomatskiZapisnik.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chbAutomatskiZapisnik.Name = "chbAutomatskiZapisnik";
-            this.chbAutomatskiZapisnik.Size = new System.Drawing.Size(195, 21);
+            this.chbAutomatskiZapisnik.Size = new System.Drawing.Size(232, 24);
             this.chbAutomatskiZapisnik.TabIndex = 61;
             this.chbAutomatskiZapisnik.Text = "Kreiraj automatski zapisnik";
             this.chbAutomatskiZapisnik.UseVisualStyleBackColor = true;
@@ -2337,18 +2548,21 @@
             this.groupBox30.Controls.Add(this.txtSakrijFormuZaProdajuUMinus);
             this.groupBox30.Controls.Add(this.label53);
             this.groupBox30.Controls.Add(this.chbSakrijFormuZaProdajuUMinus);
-            this.groupBox30.Location = new System.Drawing.Point(351, 68);
+            this.groupBox30.Location = new System.Drawing.Point(468, 84);
+            this.groupBox30.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox30.Name = "groupBox30";
-            this.groupBox30.Size = new System.Drawing.Size(268, 204);
+            this.groupBox30.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox30.Size = new System.Drawing.Size(357, 251);
             this.groupBox30.TabIndex = 60;
             this.groupBox30.TabStop = false;
             this.groupBox30.Text = "Sakrij formu za prodaju u minus";
             // 
             // txtSakrijFormuZaProdajuUMinus
             // 
-            this.txtSakrijFormuZaProdajuUMinus.Location = new System.Drawing.Point(73, 23);
+            this.txtSakrijFormuZaProdajuUMinus.Location = new System.Drawing.Point(97, 28);
+            this.txtSakrijFormuZaProdajuUMinus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSakrijFormuZaProdajuUMinus.Name = "txtSakrijFormuZaProdajuUMinus";
-            this.txtSakrijFormuZaProdajuUMinus.Size = new System.Drawing.Size(160, 23);
+            this.txtSakrijFormuZaProdajuUMinus.Size = new System.Drawing.Size(212, 26);
             this.txtSakrijFormuZaProdajuUMinus.TabIndex = 2;
             this.txtSakrijFormuZaProdajuUMinus.UseSystemPasswordChar = true;
             this.txtSakrijFormuZaProdajuUMinus.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSakrijFormuZaProdajuUMinus_KeyPress);
@@ -2356,18 +2570,20 @@
             // label53
             // 
             this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(6, 26);
+            this.label53.Location = new System.Drawing.Point(8, 32);
+            this.label53.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(61, 17);
+            this.label53.Size = new System.Drawing.Size(72, 20);
             this.label53.TabIndex = 4;
             this.label53.Text = "Lozinka:";
             // 
             // chbSakrijFormuZaProdajuUMinus
             // 
             this.chbSakrijFormuZaProdajuUMinus.AutoSize = true;
-            this.chbSakrijFormuZaProdajuUMinus.Location = new System.Drawing.Point(9, 52);
+            this.chbSakrijFormuZaProdajuUMinus.Location = new System.Drawing.Point(12, 64);
+            this.chbSakrijFormuZaProdajuUMinus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chbSakrijFormuZaProdajuUMinus.Name = "chbSakrijFormuZaProdajuUMinus";
-            this.chbSakrijFormuZaProdajuUMinus.Size = new System.Drawing.Size(226, 21);
+            this.chbSakrijFormuZaProdajuUMinus.Size = new System.Drawing.Size(268, 24);
             this.chbSakrijFormuZaProdajuUMinus.TabIndex = 3;
             this.chbSakrijFormuZaProdajuUMinus.Text = "Sakrij formu za prodaju u minus";
             this.chbSakrijFormuZaProdajuUMinus.UseVisualStyleBackColor = true;
@@ -2377,9 +2593,11 @@
             // groupBox29
             // 
             this.groupBox29.Controls.Add(this.chbKolicinaUMinus);
-            this.groupBox29.Location = new System.Drawing.Point(351, 6);
+            this.groupBox29.Location = new System.Drawing.Point(468, 7);
+            this.groupBox29.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox29.Name = "groupBox29";
-            this.groupBox29.Size = new System.Drawing.Size(268, 56);
+            this.groupBox29.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox29.Size = new System.Drawing.Size(357, 69);
             this.groupBox29.TabIndex = 59;
             this.groupBox29.TabStop = false;
             this.groupBox29.Text = "Količina u minus kod maloprodaje";
@@ -2387,9 +2605,10 @@
             // chbKolicinaUMinus
             // 
             this.chbKolicinaUMinus.AutoSize = true;
-            this.chbKolicinaUMinus.Location = new System.Drawing.Point(6, 23);
+            this.chbKolicinaUMinus.Location = new System.Drawing.Point(8, 28);
+            this.chbKolicinaUMinus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chbKolicinaUMinus.Name = "chbKolicinaUMinus";
-            this.chbKolicinaUMinus.Size = new System.Drawing.Size(177, 21);
+            this.chbKolicinaUMinus.Size = new System.Drawing.Size(212, 24);
             this.chbKolicinaUMinus.TabIndex = 1;
             this.chbKolicinaUMinus.Text = "Dozvoli količinu u minus";
             this.chbKolicinaUMinus.UseVisualStyleBackColor = true;
@@ -2398,9 +2617,11 @@
             // groupBox27
             // 
             this.groupBox27.Controls.Add(this.clbKoristiSkladista);
-            this.groupBox27.Location = new System.Drawing.Point(10, 68);
+            this.groupBox27.Location = new System.Drawing.Point(13, 84);
+            this.groupBox27.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox27.Name = "groupBox27";
-            this.groupBox27.Size = new System.Drawing.Size(335, 204);
+            this.groupBox27.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox27.Size = new System.Drawing.Size(447, 251);
             this.groupBox27.TabIndex = 56;
             this.groupBox27.TabStop = false;
             this.groupBox27.Text = "Koristi samo odabrana skladišta";
@@ -2410,18 +2631,21 @@
             this.clbKoristiSkladista.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.clbKoristiSkladista.CheckOnClick = true;
             this.clbKoristiSkladista.FormattingEnabled = true;
-            this.clbKoristiSkladista.Location = new System.Drawing.Point(7, 23);
+            this.clbKoristiSkladista.Location = new System.Drawing.Point(9, 28);
+            this.clbKoristiSkladista.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.clbKoristiSkladista.Name = "clbKoristiSkladista";
-            this.clbKoristiSkladista.Size = new System.Drawing.Size(322, 162);
+            this.clbKoristiSkladista.Size = new System.Drawing.Size(429, 189);
             this.clbKoristiSkladista.TabIndex = 0;
             this.clbKoristiSkladista.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.clbKoristiSkladista_ItemCheck);
             // 
             // groupBox24
             // 
             this.groupBox24.Controls.Add(this.chbZabraniPromjeneCijena);
-            this.groupBox24.Location = new System.Drawing.Point(10, 6);
+            this.groupBox24.Location = new System.Drawing.Point(13, 7);
+            this.groupBox24.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox24.Name = "groupBox24";
-            this.groupBox24.Size = new System.Drawing.Size(335, 56);
+            this.groupBox24.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox24.Size = new System.Drawing.Size(447, 69);
             this.groupBox24.TabIndex = 55;
             this.groupBox24.TabStop = false;
             this.groupBox24.Text = "Promjena cijena kod robe i usluge";
@@ -2429,9 +2653,10 @@
             // chbZabraniPromjeneCijena
             // 
             this.chbZabraniPromjeneCijena.AutoSize = true;
-            this.chbZabraniPromjeneCijena.Location = new System.Drawing.Point(7, 23);
+            this.chbZabraniPromjeneCijena.Location = new System.Drawing.Point(9, 28);
+            this.chbZabraniPromjeneCijena.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chbZabraniPromjeneCijena.Name = "chbZabraniPromjeneCijena";
-            this.chbZabraniPromjeneCijena.Size = new System.Drawing.Size(164, 21);
+            this.chbZabraniPromjeneCijena.Size = new System.Drawing.Size(191, 24);
             this.chbZabraniPromjeneCijena.TabIndex = 0;
             this.chbZabraniPromjeneCijena.Text = "Zabrani promje cijena";
             this.chbZabraniPromjeneCijena.UseVisualStyleBackColor = true;
@@ -2444,9 +2669,10 @@
             this.tabPage9.Controls.Add(this.chbMedjuskladisnicaSProizvodjackomCijenom);
             this.tabPage9.Controls.Add(this.chbSNBC);
             this.tabPage9.Location = new System.Drawing.Point(4, 34);
+            this.tabPage9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(828, 385);
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage9.Size = new System.Drawing.Size(1107, 483);
             this.tabPage9.TabIndex = 10;
             this.tabPage9.Text = "Proizvodnja";
             // 
@@ -2454,9 +2680,10 @@
             // 
             this.chbNormativSProizvodjackomCijenom.AutoSize = true;
             this.chbNormativSProizvodjackomCijenom.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.chbNormativSProizvodjackomCijenom.Location = new System.Drawing.Point(10, 60);
+            this.chbNormativSProizvodjackomCijenom.Location = new System.Drawing.Point(13, 74);
+            this.chbNormativSProizvodjackomCijenom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chbNormativSProizvodjackomCijenom.Name = "chbNormativSProizvodjackomCijenom";
-            this.chbNormativSProizvodjackomCijenom.Size = new System.Drawing.Size(245, 21);
+            this.chbNormativSProizvodjackomCijenom.Size = new System.Drawing.Size(292, 24);
             this.chbNormativSProizvodjackomCijenom.TabIndex = 568;
             this.chbNormativSProizvodjackomCijenom.Text = "Normativ s proizvođačkom cijenom";
             this.chbNormativSProizvodjackomCijenom.UseVisualStyleBackColor = true;
@@ -2466,9 +2693,10 @@
             // 
             this.chbMedjuskladisnicaSProizvodjackomCijenom.AutoSize = true;
             this.chbMedjuskladisnicaSProizvodjackomCijenom.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.chbMedjuskladisnicaSProizvodjackomCijenom.Location = new System.Drawing.Point(10, 33);
+            this.chbMedjuskladisnicaSProizvodjackomCijenom.Location = new System.Drawing.Point(13, 41);
+            this.chbMedjuskladisnicaSProizvodjackomCijenom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chbMedjuskladisnicaSProizvodjackomCijenom.Name = "chbMedjuskladisnicaSProizvodjackomCijenom";
-            this.chbMedjuskladisnicaSProizvodjackomCijenom.Size = new System.Drawing.Size(293, 21);
+            this.chbMedjuskladisnicaSProizvodjackomCijenom.Size = new System.Drawing.Size(349, 24);
             this.chbMedjuskladisnicaSProizvodjackomCijenom.TabIndex = 567;
             this.chbMedjuskladisnicaSProizvodjackomCijenom.Text = "Međuskladišnica s proizvođačkom cijenom";
             this.chbMedjuskladisnicaSProizvodjackomCijenom.UseVisualStyleBackColor = true;
@@ -2478,9 +2706,10 @@
             // 
             this.chbSNBC.AutoSize = true;
             this.chbSNBC.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.chbSNBC.Location = new System.Drawing.Point(10, 6);
+            this.chbSNBC.Location = new System.Drawing.Point(13, 7);
+            this.chbSNBC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chbSNBC.Name = "chbSNBC";
-            this.chbSNBC.Size = new System.Drawing.Size(245, 21);
+            this.chbSNBC.Size = new System.Drawing.Size(290, 24);
             this.chbSNBC.TabIndex = 566;
             this.chbSNBC.Text = "Izradi fakturu s nabavnim cijenama";
             this.chbSNBC.UseVisualStyleBackColor = true;
@@ -2492,9 +2721,10 @@
             this.tabUdsGame.Controls.Add(this.groupBox32);
             this.tabUdsGame.Controls.Add(this.groupBox31);
             this.tabUdsGame.Location = new System.Drawing.Point(4, 34);
+            this.tabUdsGame.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabUdsGame.Name = "tabUdsGame";
-            this.tabUdsGame.Padding = new System.Windows.Forms.Padding(3);
-            this.tabUdsGame.Size = new System.Drawing.Size(828, 385);
+            this.tabUdsGame.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabUdsGame.Size = new System.Drawing.Size(1107, 483);
             this.tabUdsGame.TabIndex = 11;
             this.tabUdsGame.Text = "Vanjski programi";
             // 
@@ -2515,18 +2745,21 @@
             this.groupBox32.Controls.Add(this.label56);
             this.groupBox32.Controls.Add(this.label55);
             this.groupBox32.Controls.Add(this.cbMinimax);
-            this.groupBox32.Location = new System.Drawing.Point(409, 9);
+            this.groupBox32.Location = new System.Drawing.Point(545, 11);
+            this.groupBox32.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox32.Name = "groupBox32";
-            this.groupBox32.Size = new System.Drawing.Size(393, 325);
+            this.groupBox32.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox32.Size = new System.Drawing.Size(524, 400);
             this.groupBox32.TabIndex = 9;
             this.groupBox32.TabStop = false;
             this.groupBox32.Text = "Minimax";
             // 
             // btnUpdateStatus
             // 
-            this.btnUpdateStatus.Location = new System.Drawing.Point(62, 279);
+            this.btnUpdateStatus.Location = new System.Drawing.Point(83, 343);
+            this.btnUpdateStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnUpdateStatus.Name = "btnUpdateStatus";
-            this.btnUpdateStatus.Size = new System.Drawing.Size(281, 31);
+            this.btnUpdateStatus.Size = new System.Drawing.Size(375, 38);
             this.btnUpdateStatus.TabIndex = 14;
             this.btnUpdateStatus.Text = "Update status";
             this.btnUpdateStatus.UseVisualStyleBackColor = true;
@@ -2535,9 +2768,10 @@
             // 
             // btnSendInvoice
             // 
-            this.btnSendInvoice.Location = new System.Drawing.Point(62, 243);
+            this.btnSendInvoice.Location = new System.Drawing.Point(83, 299);
+            this.btnSendInvoice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSendInvoice.Name = "btnSendInvoice";
-            this.btnSendInvoice.Size = new System.Drawing.Size(281, 30);
+            this.btnSendInvoice.Size = new System.Drawing.Size(375, 37);
             this.btnSendInvoice.TabIndex = 13;
             this.btnSendInvoice.Text = "Send Invoice";
             this.btnSendInvoice.UseVisualStyleBackColor = true;
@@ -2548,17 +2782,19 @@
             // 
             this.cbCurrency.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCurrency.FormattingEnabled = true;
-            this.cbCurrency.Location = new System.Drawing.Point(238, 210);
+            this.cbCurrency.Location = new System.Drawing.Point(317, 258);
+            this.cbCurrency.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbCurrency.Name = "cbCurrency";
-            this.cbCurrency.Size = new System.Drawing.Size(105, 24);
+            this.cbCurrency.Size = new System.Drawing.Size(139, 28);
             this.cbCurrency.TabIndex = 12;
             this.cbCurrency.Visible = false;
             // 
             // btnUpdateRoba
             // 
-            this.btnUpdateRoba.Location = new System.Drawing.Point(62, 207);
+            this.btnUpdateRoba.Location = new System.Drawing.Point(83, 255);
+            this.btnUpdateRoba.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnUpdateRoba.Name = "btnUpdateRoba";
-            this.btnUpdateRoba.Size = new System.Drawing.Size(170, 30);
+            this.btnUpdateRoba.Size = new System.Drawing.Size(227, 37);
             this.btnUpdateRoba.TabIndex = 11;
             this.btnUpdateRoba.Text = "Update roba";
             this.btnUpdateRoba.UseVisualStyleBackColor = true;
@@ -2567,9 +2803,10 @@
             // 
             // btnUpdatePartners
             // 
-            this.btnUpdatePartners.Location = new System.Drawing.Point(62, 171);
+            this.btnUpdatePartners.Location = new System.Drawing.Point(83, 210);
+            this.btnUpdatePartners.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnUpdatePartners.Name = "btnUpdatePartners";
-            this.btnUpdatePartners.Size = new System.Drawing.Size(281, 30);
+            this.btnUpdatePartners.Size = new System.Drawing.Size(375, 37);
             this.btnUpdatePartners.TabIndex = 10;
             this.btnUpdatePartners.Text = "Update partners";
             this.btnUpdatePartners.UseVisualStyleBackColor = true;
@@ -2578,9 +2815,10 @@
             // 
             // btnSendRequest
             // 
-            this.btnSendRequest.Location = new System.Drawing.Point(62, 137);
+            this.btnSendRequest.Location = new System.Drawing.Point(83, 169);
+            this.btnSendRequest.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSendRequest.Name = "btnSendRequest";
-            this.btnSendRequest.Size = new System.Drawing.Size(281, 28);
+            this.btnSendRequest.Size = new System.Drawing.Size(375, 34);
             this.btnSendRequest.TabIndex = 9;
             this.btnSendRequest.Text = "Send Request";
             this.btnSendRequest.UseVisualStyleBackColor = true;
@@ -2589,74 +2827,83 @@
             // 
             // tbClientSecret
             // 
-            this.tbClientSecret.Location = new System.Drawing.Point(119, 103);
+            this.tbClientSecret.Location = new System.Drawing.Point(159, 127);
+            this.tbClientSecret.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbClientSecret.Name = "tbClientSecret";
-            this.tbClientSecret.Size = new System.Drawing.Size(258, 23);
+            this.tbClientSecret.Size = new System.Drawing.Size(343, 26);
             this.tbClientSecret.TabIndex = 8;
             // 
             // tbClientId
             // 
-            this.tbClientId.Location = new System.Drawing.Point(119, 76);
+            this.tbClientId.Location = new System.Drawing.Point(159, 94);
+            this.tbClientId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbClientId.Name = "tbClientId";
-            this.tbClientId.Size = new System.Drawing.Size(258, 23);
+            this.tbClientId.Size = new System.Drawing.Size(343, 26);
             this.tbClientId.TabIndex = 7;
             // 
             // tbPassword
             // 
-            this.tbPassword.Location = new System.Drawing.Point(119, 49);
+            this.tbPassword.Location = new System.Drawing.Point(159, 60);
+            this.tbPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbPassword.Name = "tbPassword";
-            this.tbPassword.Size = new System.Drawing.Size(258, 23);
+            this.tbPassword.Size = new System.Drawing.Size(343, 26);
             this.tbPassword.TabIndex = 6;
             // 
             // tbUsername
             // 
-            this.tbUsername.Location = new System.Drawing.Point(119, 22);
+            this.tbUsername.Location = new System.Drawing.Point(159, 27);
+            this.tbUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbUsername.Name = "tbUsername";
-            this.tbUsername.Size = new System.Drawing.Size(258, 23);
+            this.tbUsername.Size = new System.Drawing.Size(343, 26);
             this.tbUsername.TabIndex = 5;
             // 
             // label58
             // 
             this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(23, 106);
+            this.label58.Location = new System.Drawing.Point(31, 130);
+            this.label58.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(94, 17);
+            this.label58.Size = new System.Drawing.Size(114, 20);
             this.label58.TabIndex = 4;
             this.label58.Text = "Client secret :";
             // 
             // label57
             // 
             this.label57.AutoSize = true;
-            this.label57.Location = new System.Drawing.Point(49, 79);
+            this.label57.Location = new System.Drawing.Point(65, 97);
+            this.label57.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(68, 17);
+            this.label57.Size = new System.Drawing.Size(84, 20);
             this.label57.TabIndex = 3;
             this.label57.Text = "Client ID :";
             // 
             // label56
             // 
             this.label56.AutoSize = true;
-            this.label56.Location = new System.Drawing.Point(52, 52);
+            this.label56.Location = new System.Drawing.Point(69, 64);
+            this.label56.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(65, 17);
+            this.label56.Size = new System.Drawing.Size(77, 20);
             this.label56.TabIndex = 2;
             this.label56.Text = "Lozinka :";
             // 
             // label55
             // 
             this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(10, 25);
+            this.label55.Location = new System.Drawing.Point(13, 31);
+            this.label55.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(107, 17);
+            this.label55.Size = new System.Drawing.Size(129, 20);
             this.label55.TabIndex = 1;
             this.label55.Text = "Korisničko ime :";
             // 
             // cbMinimax
             // 
             this.cbMinimax.AutoSize = true;
-            this.cbMinimax.Location = new System.Drawing.Point(62, 3);
+            this.cbMinimax.Location = new System.Drawing.Point(83, 4);
+            this.cbMinimax.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbMinimax.Name = "cbMinimax";
-            this.cbMinimax.Size = new System.Drawing.Size(15, 14);
+            this.cbMinimax.Size = new System.Drawing.Size(18, 17);
             this.cbMinimax.TabIndex = 0;
             this.cbMinimax.UseVisualStyleBackColor = true;
             // 
@@ -2666,9 +2913,11 @@
             this.groupBox31.Controls.Add(this.lblApiKey);
             this.groupBox31.Controls.Add(this.txtApiKey);
             this.groupBox31.Controls.Add(this.chbUseEmployees);
-            this.groupBox31.Location = new System.Drawing.Point(10, 9);
+            this.groupBox31.Location = new System.Drawing.Point(13, 11);
+            this.groupBox31.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox31.Name = "groupBox31";
-            this.groupBox31.Size = new System.Drawing.Size(393, 100);
+            this.groupBox31.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox31.Size = new System.Drawing.Size(524, 123);
             this.groupBox31.TabIndex = 8;
             this.groupBox31.TabStop = false;
             this.groupBox31.Text = "UDS";
@@ -2677,9 +2926,10 @@
             // 
             this.chbUseUdsGame.AutoSize = true;
             this.chbUseUdsGame.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.chbUseUdsGame.Location = new System.Drawing.Point(41, 3);
+            this.chbUseUdsGame.Location = new System.Drawing.Point(55, 4);
+            this.chbUseUdsGame.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chbUseUdsGame.Name = "chbUseUdsGame";
-            this.chbUseUdsGame.Size = new System.Drawing.Size(15, 14);
+            this.chbUseUdsGame.Size = new System.Drawing.Size(18, 17);
             this.chbUseUdsGame.TabIndex = 4;
             this.chbUseUdsGame.UseVisualStyleBackColor = true;
             this.chbUseUdsGame.Visible = false;
@@ -2688,18 +2938,20 @@
             // lblApiKey
             // 
             this.lblApiKey.AutoSize = true;
-            this.lblApiKey.Location = new System.Drawing.Point(7, 31);
+            this.lblApiKey.Location = new System.Drawing.Point(9, 38);
+            this.lblApiKey.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblApiKey.Name = "lblApiKey";
-            this.lblApiKey.Size = new System.Drawing.Size(60, 17);
+            this.lblApiKey.Size = new System.Drawing.Size(71, 20);
             this.lblApiKey.TabIndex = 5;
             this.lblApiKey.Text = "Api Key:";
             this.lblApiKey.Visible = false;
             // 
             // txtApiKey
             // 
-            this.txtApiKey.Location = new System.Drawing.Point(67, 28);
+            this.txtApiKey.Location = new System.Drawing.Point(89, 34);
+            this.txtApiKey.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtApiKey.Name = "txtApiKey";
-            this.txtApiKey.Size = new System.Drawing.Size(295, 23);
+            this.txtApiKey.Size = new System.Drawing.Size(392, 26);
             this.txtApiKey.TabIndex = 6;
             this.txtApiKey.Visible = false;
             this.txtApiKey.TextChanged += new System.EventHandler(this.txtApiKey_TextChanged);
@@ -2708,9 +2960,10 @@
             // 
             this.chbUseEmployees.AutoSize = true;
             this.chbUseEmployees.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.chbUseEmployees.Location = new System.Drawing.Point(5, 64);
+            this.chbUseEmployees.Location = new System.Drawing.Point(7, 79);
+            this.chbUseEmployees.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chbUseEmployees.Name = "chbUseEmployees";
-            this.chbUseEmployees.Size = new System.Drawing.Size(130, 21);
+            this.chbUseEmployees.Size = new System.Drawing.Size(154, 24);
             this.chbUseEmployees.TabIndex = 7;
             this.chbUseEmployees.Text = "Koristi djelatnike";
             this.chbUseEmployees.UseVisualStyleBackColor = true;
@@ -2723,24 +2976,39 @@
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button5.Image = global::PCPOS.Properties.Resources.Actions_application_exit_icon;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(855, 12);
+            this.button5.Location = new System.Drawing.Point(1140, 15);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(120, 40);
+            this.button5.Size = new System.Drawing.Size(160, 49);
             this.button5.TabIndex = 48;
             this.button5.Text = "Izlaz      ";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // chbVodeni
+            // 
+            this.chbVodeni.AutoSize = true;
+            this.chbVodeni.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.chbVodeni.Location = new System.Drawing.Point(31, 451);
+            this.chbVodeni.Margin = new System.Windows.Forms.Padding(4);
+            this.chbVodeni.Name = "chbVodeni";
+            this.chbVodeni.Size = new System.Drawing.Size(237, 24);
+            this.chbVodeni.TabIndex = 576;
+            this.chbVodeni.Text = "Dodaj vodeni žig na ponudu";
+            this.chbVodeni.UseVisualStyleBackColor = true;
+            this.chbVodeni.CheckedChanged += new System.EventHandler(this.chbVodeni_CheckedChanged);
+            // 
             // frmPostavke
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateGray;
-            this.ClientSize = new System.Drawing.Size(997, 422);
+            this.ClientSize = new System.Drawing.Size(1329, 519);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.tabSkladiste);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmPostavke";
@@ -3052,5 +3320,6 @@
         private System.Windows.Forms.Button btnUpdateStatus;
         private System.Windows.Forms.CheckBox cbKoristiResort;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.CheckBox chbVodeni;
     }
 }

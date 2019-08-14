@@ -192,6 +192,7 @@ namespace PCPOS.Class
 
         public static bool upozoriIskljucenuFiskalizaciju { get; set; }
         public static bool useVaga { get; set; }
+
         public static string comPort { get; set; }
         public static int baudRate { get; set; }
         public static bool robaZabraniMijenjanjeCijena { get; set; }
@@ -242,6 +243,7 @@ namespace PCPOS.Class
 
         public static bool proizvodnjaMeduskladisnicaPC { get; internal set; }
         public static bool controlBox { get; internal set; }
+        public static bool vodeniZig { get; internal set; }
 
         private static bool _maloprodaja_naplata_gotovina_button_show = true;
         public static bool maloprodaja_naplata_gotovina_button_show { get { return _maloprodaja_naplata_gotovina_button_show; } }
@@ -428,6 +430,11 @@ namespace PCPOS.Class
                     if (ds.Tables[0].Columns.Contains("control_box"))
                     {
                         controlBox = Convert.ToBoolean(dr["control_box"]);
+                    }
+
+                    if (ds.Tables[0].Columns.Contains("vodeni_zig"))
+                    {
+                        vodeniZig = Convert.ToBoolean(dr["vodeni_zig"]);
                     }
 
                     if (ds.Tables[0].Columns.Contains("maloprodaja_naplata_gotovina_button_show"))

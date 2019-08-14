@@ -14077,3 +14077,79 @@ Code: 42601
    at Npgsql.NpgsqlCommand.ExecuteNonQuery() in C:\projects\Npgsql2\src\Npgsql\NpgsqlCommand.cs:line 512
    at PCPOS.classSQL.insert(String sql) in C:\Users\Toni\Desktop\POSTrgovineFinal2v2\PC POS\classSQL.cs:line 142
 **************************************************************
+
+**************************************************************
+DATUM:13.8.2019. 11:50:43, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO racuni (broj_racuna,id_kupac,datum_racuna,id_ducan,id_kasa,id_blagajnik,gotovina,kartice,ukupno_gotovina,ukupno_kartice,broj_kartice_cashback,broj_kartice_bodovi,br_sa_prethodnog_racuna,ukupno,storno,dobiveno_gotovina,ukupno_virman,napomena,nacin_placanja,ukupno_ostalo,ukupno_povratna_naknada,ukupno_mpc,ukupno_vpc,ukupno_mpc_rabat,ukupno_rabat,ukupno_osnovica,ukupno_porez) VALUES ('240','0','2019-08-13 11:50:42','1','1','1','1','0','1','0','','','','1','NE','1,00','0,00','','G','0','0.00','1.00','1.000','1.00','0.00','1.00','0.00'); INSERT INTO racun_stavke (broj_racuna,sifra_robe,id_skladiste,mpc,porez,kolicina,rabat,vpc,nbc,porez_potrosnja,naziv,povratna_naknada,povratna_naknada_izn,rabat_izn,mpc_rabat,ukupno_rabat,ukupno_vpc,ukupno_mpc,ukupno_mpc_rabat,ukupno_porez,ukupno_osnovica,id_ducan,id_kasa,porez_na_dohodak,prirez,porez_na_dohodak_iznos,prirez_iznos) VALUES ('240','!serial20194','0','1,00','0','1,00','0,00','1.000','0','0','0','0','0.00','1.00','0.00','1.000','1.00','1.00','0.00','1.00','1','1','0','0','0','0'); 
+Npgsql.NpgsqlException:
+INSERT has more target columns than expressions
+Severity: ERROR
+Code: 42601
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext() in C:\projects\Npgsql2\src\Npgsql\NpgsqlState.cs:line 850
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject() in C:\projects\Npgsql2\src\Npgsql\NpgsqlDataReader.cs:line 1173
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription() in C:\projects\Npgsql2\src\Npgsql\NpgsqlDataReader.cs:line 1191
+   at Npgsql.ForwardsOnlyDataReader.NextResult() in C:\projects\Npgsql2\src\Npgsql\NpgsqlDataReader.cs:line 1377
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError) in C:\projects\Npgsql2\src\Npgsql\NpgsqlDataReader.cs:line 1040
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb) in C:\projects\Npgsql2\src\Npgsql\NpgsqlCommand.cs:line 609
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery() in C:\projects\Npgsql2\src\Npgsql\NpgsqlCommand.cs:line 512
+   at PCPOS.classSQL.transaction(String sql) in C:\Users\Toni\Desktop\POSTrgovineFinal2v2\PC POS\classSQL.cs:line 369
+**************************************************************
+
+**************************************************************
+DATUM:13.8.2019. 14:08:31, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO roba (naziv,id_grupa,jm,vpc,mpc,id_zemlja_porijekla,id_zemlja_uvoza,id_partner,id_manufacturers,sifra,ean,porez,oduzmi,nc,opis,jamstvo,akcija,link_za_slike,id_podgruba) VALUES ('o','1','kom','1.000','1,00','60','60','1','1','13','-1','0','NE','0','''0''0''''0')
+Npgsql.NpgsqlException:
+column "id_podgruba" of relation "roba" does not exist
+Severity: ERROR
+Code: 42703
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext() in C:\projects\Npgsql2\src\Npgsql\NpgsqlState.cs:line 850
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject() in C:\projects\Npgsql2\src\Npgsql\NpgsqlDataReader.cs:line 1173
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription() in C:\projects\Npgsql2\src\Npgsql\NpgsqlDataReader.cs:line 1191
+   at Npgsql.ForwardsOnlyDataReader.NextResult() in C:\projects\Npgsql2\src\Npgsql\NpgsqlDataReader.cs:line 1377
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError) in C:\projects\Npgsql2\src\Npgsql\NpgsqlDataReader.cs:line 1040
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb) in C:\projects\Npgsql2\src\Npgsql\NpgsqlCommand.cs:line 609
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery() in C:\projects\Npgsql2\src\Npgsql\NpgsqlCommand.cs:line 512
+   at PCPOS.classSQL.insert(String sql) in C:\Users\Toni\Desktop\POSTrgovineFinal2v2\PC POS\classSQL.cs:line 142
+**************************************************************
+
+**************************************************************
+DATUM:13.8.2019. 14:12:06, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO roba (naziv,id_grupa,jm,vpc,mpc,id_zemlja_porijekla,id_zemlja_uvoza,id_partner,id_manufacturers,sifra,ean,porez,oduzmi,nc,opis,jamstvo,akcija,link_za_slike,id_podgruba) VALUES ('aaaa','1','kom','22.000','22,00','60','60','1','1','13','-1','0','NE','0','','0','0','','0')
+Npgsql.NpgsqlException:
+column "id_podgruba" of relation "roba" does not exist
+Severity: ERROR
+Code: 42703
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext() in C:\projects\Npgsql2\src\Npgsql\NpgsqlState.cs:line 850
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject() in C:\projects\Npgsql2\src\Npgsql\NpgsqlDataReader.cs:line 1173
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription() in C:\projects\Npgsql2\src\Npgsql\NpgsqlDataReader.cs:line 1191
+   at Npgsql.ForwardsOnlyDataReader.NextResult() in C:\projects\Npgsql2\src\Npgsql\NpgsqlDataReader.cs:line 1377
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError) in C:\projects\Npgsql2\src\Npgsql\NpgsqlDataReader.cs:line 1040
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb) in C:\projects\Npgsql2\src\Npgsql\NpgsqlCommand.cs:line 609
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery() in C:\projects\Npgsql2\src\Npgsql\NpgsqlCommand.cs:line 512
+   at PCPOS.classSQL.insert(String sql) in C:\Users\Toni\Desktop\POSTrgovineFinal2v2\PC POS\classSQL.cs:line 142
+**************************************************************
+
+**************************************************************
+DATUM:13.8.2019. 14:13:02, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO roba (naziv,id_grupa,jm,vpc,mpc,id_zemlja_porijekla,id_zemlja_uvoza,id_partner,id_manufacturers,sifra,ean,porez,oduzmi,nc,opis,jamstvo,akcija,link_za_slike,id_podgruba) VALUES ('aaa','1','kom','1.000','1,00','60','60','1','1','13','-1','0','NE','0','','0','0','','0')
+Npgsql.NpgsqlException:
+column "id_podgruba" of relation "roba" does not exist
+Severity: ERROR
+Code: 42703
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext() in C:\projects\Npgsql2\src\Npgsql\NpgsqlState.cs:line 850
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject() in C:\projects\Npgsql2\src\Npgsql\NpgsqlDataReader.cs:line 1173
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription() in C:\projects\Npgsql2\src\Npgsql\NpgsqlDataReader.cs:line 1191
+   at Npgsql.ForwardsOnlyDataReader.NextResult() in C:\projects\Npgsql2\src\Npgsql\NpgsqlDataReader.cs:line 1377
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError) in C:\projects\Npgsql2\src\Npgsql\NpgsqlDataReader.cs:line 1040
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb) in C:\projects\Npgsql2\src\Npgsql\NpgsqlCommand.cs:line 609
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery() in C:\projects\Npgsql2\src\Npgsql\NpgsqlCommand.cs:line 512
+   at PCPOS.classSQL.insert(String sql) in C:\Users\Toni\Desktop\POSTrgovineFinal2v2\PC POS\classSQL.cs:line 142
+**************************************************************
