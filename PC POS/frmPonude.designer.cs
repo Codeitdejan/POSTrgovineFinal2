@@ -914,7 +914,7 @@
             this.dgw.RowLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgw_RowLeave);
             this.dgw.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dgw_KeyDown);
             // 
-<<<<<<< HEAD
+
             // br
             // 
             this.br.FillWeight = 50F;
@@ -1037,8 +1037,7 @@
             this.porez_potrosnja.Name = "porez_potrosnja";
             this.porez_potrosnja.Visible = false;
             // 
-=======
->>>>>>> 1d8ad751a2f4a26ed066dd89f4b6aa91030871a9
+
             // lblNaDan
             // 
             this.lblNaDan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
