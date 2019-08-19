@@ -14401,3 +14401,47 @@ Code: 42601
    at PCPOS.classSQL.insert(String sql) in F:\work\CodeIT\CodeIT-Trgovine\PC POS\classSQL.cs:line 142
 >>>>>>> b02d6ba99ca20be45cd646c6eacfd10cf5edf442
 **************************************************************
+
+**************************************************************
+DATUM:14.8.2019. 11:37:16, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+select max(cast (sifra as int)) from roba
+Npgsql.NpgsqlException:
+invalid input syntax for integer: "Code-iT-All-in-one"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext() in C:\projects\Npgsql2\src\Npgsql\NpgsqlState.cs:line 850
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject() in C:\projects\Npgsql2\src\Npgsql\NpgsqlDataReader.cs:line 1173
+   at Npgsql.ForwardsOnlyDataReader.GetNextRow(Boolean clearPending) in C:\projects\Npgsql2\src\Npgsql\NpgsqlDataReader.cs:line 1271
+   at Npgsql.ForwardsOnlyDataReader.Read() in C:\projects\Npgsql2\src\Npgsql\NpgsqlDataReader.cs:line 1394
+   at System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   at System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   at System.Data.Common.DataAdapter.Fill(DataSet dataSet, String srcTable, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at PCPOS.classSQL.select(String sql, String table, Boolean caffe) in C:\Users\Toni\Desktop\POSTrgovineFinal2v2\PC POS\classSQL.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:14.8.2019. 11:39:11, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+select max(cast (sifra as int)) from roba
+Npgsql.NpgsqlException:
+invalid input syntax for integer: "Code-iT-All-in-one"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext() in C:\projects\Npgsql2\src\Npgsql\NpgsqlState.cs:line 850
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject() in C:\projects\Npgsql2\src\Npgsql\NpgsqlDataReader.cs:line 1173
+   at Npgsql.ForwardsOnlyDataReader.GetNextRow(Boolean clearPending) in C:\projects\Npgsql2\src\Npgsql\NpgsqlDataReader.cs:line 1271
+   at Npgsql.ForwardsOnlyDataReader.Read() in C:\projects\Npgsql2\src\Npgsql\NpgsqlDataReader.cs:line 1394
+   at System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   at System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   at System.Data.Common.DataAdapter.Fill(DataSet dataSet, String srcTable, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at PCPOS.classSQL.select(String sql, String table, Boolean caffe) in C:\Users\Toni\Desktop\POSTrgovineFinal2v2\PC POS\classSQL.cs:line 59
+**************************************************************
