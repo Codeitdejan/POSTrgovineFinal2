@@ -39,6 +39,7 @@ namespace PCPOS
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
             Class.PodaciTvrtka.GetPodaciTvrtke();
             Properties.Settings.Default.verzija_programa = 2.892m;
             Util.Korisno.RadimSinkronizaciju = false;
@@ -153,9 +154,9 @@ namespace PCPOS
             {
                 File.Delete("code");
             }
-
+            /*
             string[] machineNames = new string[] { "POWER-RAC", "DEJANVIBOVIC", "PCI3" };
-
+            
             if (Array.IndexOf(machineNames, System.Environment.MachineName) < 0)
             {
                 if (!File.Exists("code") || !File.Exists("name"))
@@ -194,12 +195,12 @@ namespace PCPOS
                                     }
                                 }
                             }
-
-                           /* frmRegistracija2017 CR = new frmRegistracija2017();
+                           
+                           frmRegistracija2017 CR = new frmRegistracija2017();
                             CR.broj = newBroj;
                             CR.productKey = ns;
                             CR.MainForm = this;
-                            CR.ShowDialog();*/
+                            CR.ShowDialog();
                         }
                         else
                         {
@@ -216,9 +217,9 @@ namespace PCPOS
                     }
                 }
             }
-
+            */
             provjeraStart();
-
+            
             provjeri_filove_za_backup();
 
             foreach (Control c in this.Controls)
@@ -227,8 +228,8 @@ namespace PCPOS
                     c.BackColor = System.Drawing.Color.FromArgb(((byte)(40)), ((byte)(109)), ((byte)(135)));
             }
 
-            //OstaleFunkcije.DSaktivnosDok = classSQL.select_settings("SELECT * FROM aktivnost_podataka", "aktivnost_podataka").Tables[0];
-
+            OstaleFunkcije.DSaktivnosDok = classSQL.select_settings("SELECT * FROM aktivnost_podataka", "aktivnost_podataka").Tables[0];
+            
             EnableDisableDocuments();
 
             //tu treba provjeriti tečaj
@@ -786,7 +787,6 @@ namespace PCPOS
             //{
             //    Directory.CreateDirectory(putanja_za_backup);
             //}
-
             if (!Directory.Exists(Class.Postavke.lokacija_sigurnosne_kopije))
             {
                 Directory.CreateDirectory(Class.Postavke.lokacija_sigurnosne_kopije);
@@ -806,6 +806,7 @@ namespace PCPOS
             System.Diagnostics.Process.Start(pathForPostgresqlDump, sql);
 
             timer1.Stop();
+            
         }
 
         private void ProvjeraNadogradnjeSNajnovijimPromjenama()

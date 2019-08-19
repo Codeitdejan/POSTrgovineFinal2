@@ -14403,6 +14403,7 @@ Code: 42601
 **************************************************************
 
 **************************************************************
+<<<<<<< HEAD
 DATUM:19.8.2019. 7:21:29, FORMA: RemoteDB
 LINIJA KODA:65
 GREŠKA:
@@ -14445,6 +14446,9 @@ Code: 22P02
 
 **************************************************************
 DATUM:19.8.2019. 7:29:58, FORMA: RemoteDB
+=======
+DATUM:14.8.2019. 11:37:16, FORMA: RemoteDB
+>>>>>>> 1d8ad751a2f4a26ed066dd89f4b6aa91030871a9
 LINIJA KODA:65
 GREŠKA:
 select max(cast (sifra as int)) from roba
@@ -14466,7 +14470,11 @@ Code: 22P02
 **************************************************************
 
 **************************************************************
+<<<<<<< HEAD
 DATUM:19.8.2019. 7:39:20, FORMA: RemoteDB
+=======
+DATUM:14.8.2019. 11:39:11, FORMA: RemoteDB
+>>>>>>> 1d8ad751a2f4a26ed066dd89f4b6aa91030871a9
 LINIJA KODA:65
 GREŠKA:
 select max(cast (sifra as int)) from roba
@@ -14486,6 +14494,7 @@ Code: 22P02
    at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
    at PCPOS.classSQL.select(String sql, String table, Boolean caffe) in C:\Users\Toni\Desktop\POSTrgovineFinal2v2\PC POS\classSQL.cs:line 59
 **************************************************************
+<<<<<<< HEAD
 
 **************************************************************
 DATUM:19.8.2019. 11:36:52, FORMA: RemoteDB
@@ -14510,3 +14519,5 @@ Code: 22P02
    at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
    at PCPOS.classSQL.select(String sql, String table, Boolean caffe) in C:\Users\Toni\Desktop\POSTrgovineFinal2v2\PC POS\classSQL.cs:line 59
 **************************************************************
+=======
+>>>>>>> 1d8ad751a2f4a26ed066dd89f4b6aa91030871a9
