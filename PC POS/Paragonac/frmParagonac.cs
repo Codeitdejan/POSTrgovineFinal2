@@ -1086,6 +1086,7 @@ namespace PCPOS
                     vrati = DT.Rows[0][0].ToString();
 
                     sifra = int.Parse(vrati) + 1;
+                    vrati = sifra.ToString();
 
                     sql = "INSERT INTO roba (naziv,id_grupa,jm,vpc,mpc,id_zemlja_porijekla,id_zemlja_uvoza,id_partner,id_manufacturers,sifra,ean,porez,oduzmi,nc,opis,jamstvo,akcija,link_za_slike,id_podgrupa) " +
                     "VALUES (" +

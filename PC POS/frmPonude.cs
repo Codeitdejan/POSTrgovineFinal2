@@ -14,7 +14,7 @@ namespace PCPOS
         {
             InitializeComponent();
         }
-
+        private int indexKolicina = 5;
         private DataTable DTRoba = new DataTable();
         private DataSet DS_Skladiste = new DataSet();
         private DataSet DS_ZiroRacun = new DataSet();
@@ -126,69 +126,74 @@ namespace PCPOS
         {
             if (d.Rows.Count < 1)
                 return;
-            int row = d.CurrentRow.Index;
-            if (dgw.Rows[row].Cells[1].FormattedValue.ToString() != "Ručno")
+            if (d.CurrentCell.ColumnIndex == 2)
             {
-                if (d.CurrentCell.ColumnIndex == 3)
-                {
-                    d.CurrentCell = dgw.Rows[d.CurrentRow.Index].Cells[5];
-                    d.BeginEdit(true);
-                }
-                else if (d.CurrentCell.ColumnIndex == 5)
-                {
-                    d.CurrentCell = dgw.Rows[d.CurrentRow.Index].Cells[8];
-                    d.BeginEdit(true);
-                }
-                else if (d.CurrentCell.ColumnIndex == 8)
-                {
-                    d.CurrentCell = dgw.Rows[d.CurrentRow.Index].Cells[9];
-                    d.BeginEdit(true);
-                }
-                else if (d.CurrentCell.ColumnIndex == 9)
-                {
-                    int curent = d.CurrentRow.Index;
-                    txtSifra_robe.Text = "";
-                    txtSifra_robe.Focus();
-                }
+                d.CurrentCell = dgw.Rows[d.CurrentRow.Index].Cells[5];
+                d.BeginEdit(true);
             }
-            else
+            else if (d.CurrentCell.ColumnIndex == 3)
             {
-                if (d.CurrentCell.ColumnIndex == 2)
-                {
-                    d.CurrentCell = dgw.Rows[d.CurrentRow.Index].Cells[3];
-                    d.BeginEdit(true);
-                }
-                else if (d.CurrentCell.ColumnIndex == 3)
-                {
-                    d.CurrentCell = dgw.Rows[d.CurrentRow.Index].Cells[4];
-                    d.BeginEdit(true);
-                }
-                else if (d.CurrentCell.ColumnIndex == 4)
-                {
-                    d.CurrentCell = dgw.Rows[d.CurrentRow.Index].Cells[5];
-                    d.BeginEdit(true);
-                }
-                else if (d.CurrentCell.ColumnIndex == 5)
-                {
-                    d.CurrentCell = dgw.Rows[d.CurrentRow.Index].Cells[6];
-                    d.BeginEdit(true);
-                }
-                else if (d.CurrentCell.ColumnIndex == 6)
-                {
-                    d.CurrentCell = dgw.Rows[d.CurrentRow.Index].Cells[8];
-                    d.BeginEdit(true);
-                }
-                else if (d.CurrentCell.ColumnIndex == 8)
-                {
-                    d.CurrentCell = dgw.Rows[d.CurrentRow.Index].Cells[9];
-                    d.BeginEdit(true);
-                }
-                else if (d.CurrentCell.ColumnIndex == 9)
-                {
-                    int curent = d.CurrentRow.Index;
-                    txtSifra_robe.Text = "";
-                    txtSifra_robe.Focus();
-                }
+                d.CurrentCell = dgw.Rows[d.CurrentRow.Index].Cells[5];
+                d.BeginEdit(true);
+            }
+            else if (d.CurrentCell.ColumnIndex == 4)
+            {
+                d.CurrentCell = dgw.Rows[d.CurrentRow.Index].Cells[5];
+                d.BeginEdit(true);
+            }
+            else if (d.CurrentCell.ColumnIndex == 5)
+            {
+                d.CurrentCell = dgw.Rows[d.CurrentRow.Index].Cells[6];
+                d.BeginEdit(true);
+            }
+            
+            else if (d.CurrentCell.ColumnIndex == (6))
+            {
+                d.CurrentCell = dgw.Rows[d.CurrentRow.Index].Cells[8];
+                d.BeginEdit(true);
+            }
+
+            else if (d.CurrentCell.ColumnIndex == (7))
+            {
+                d.CurrentCell = dgw.Rows[d.CurrentRow.Index].Cells[8];
+                d.BeginEdit(true);
+            }
+            else if (d.CurrentCell.ColumnIndex == 8)
+            {
+                d.CurrentCell = dgw.Rows[d.CurrentRow.Index].Cells[9];
+                d.BeginEdit(true);
+            }
+            else if (d.CurrentCell.ColumnIndex == 9)
+            {
+                d.CurrentCell = dgw.Rows[d.CurrentRow.Index].Cells[10];
+                d.BeginEdit(true);
+            }
+            else if (d.CurrentCell.ColumnIndex == 10)
+            {
+                d.CurrentCell = dgw.Rows[d.CurrentRow.Index].Cells[11];
+                d.BeginEdit(true);
+            }
+            else if (d.CurrentCell.ColumnIndex == 11)
+            {
+                d.CurrentCell = dgw.Rows[d.CurrentRow.Index].Cells[12];
+                d.BeginEdit(true);
+            }
+            else if (d.CurrentCell.ColumnIndex == 12)
+            {
+                d.CurrentCell = dgw.Rows[d.CurrentRow.Index].Cells[13];
+                d.BeginEdit(true);
+            }
+            else if (d.CurrentCell.ColumnIndex == 13)
+            {
+                int curent = d.CurrentRow.Index;
+                txtSifra_robe.Text = "";
+                txtSifra_robe.Focus();
+            }
+            else if (d.CurrentCell.ColumnIndex == 14)
+            {
+                int curent = d.CurrentRow.Index;
+                txtSifra_robe.Text = "";
+                txtSifra_robe.Focus();
             }
         }
 
@@ -2568,9 +2573,25 @@ namespace PCPOS
 
         private void label9_Click(object sender, EventArgs e)
         {
+            string vrati;
+            int sifra, br=1;
+            string sql = "select max(cast (sifra as int)) from roba";
+            DataTable DT = classSQL.select(sql, "roba").Tables[0];
             preuzetoSWeba = false;
-
-            dgw.Rows.Add("", "Ručno", "", prvo_skladiste, "kom", "0", "25", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "NE", "0");
+            if (DT.Rows.Count > 0)
+            {
+                vrati = DT.Rows[0][0].ToString();
+                for (int i = 0; i < dgw.Rows.Count; i++)
+                {
+                    br = i + 1;
+                }
+                sifra = int.Parse(vrati) + br;
+                dgw.Rows.Add("", sifra, "", prvo_skladiste, "kom", "0", "25", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "NE", "0");
+            }
+            else
+            {
+                dgw.Rows.Add("", "Ručno", "", prvo_skladiste, "kom", "0", "25", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "NE", "0");
+            }
             RedniBroj();
             dgw.Select();
             dgw.CurrentCell = dgw.Rows[dgw.Rows.Count - 1].Cells[2];
@@ -2616,5 +2637,47 @@ namespace PCPOS
         private void txtSifra_robe_TextChanged(object sender, EventArgs e)
         {
         }
+
+        private void dgw_RowLeave(object sender, DataGridViewCellEventArgs e)
+        {
+            var a = dgw.CurrentRow.Cells["sifra"].Value.ToString();
+
+            string sql = "select * from roba where sifra = '"+a+"'";
+            DataTable DT = classSQL.select(sql, "roba").Tables[0];
+
+            if (DT.Rows.Count == 0)
+            {
+                string[] arrRoba = new string[5];
+                arrRoba[0] = dgw.CurrentRow.Cells["sifra"].Value.ToString();
+                arrRoba[1] = dgw.CurrentRow.Cells["naziv"].Value.ToString();
+                arrRoba[2] = dgw.CurrentRow.Cells["porez"].Value.ToString();
+                arrRoba[3] = dgw.CurrentRow.Cells["vpc"].Value.ToString();
+                arrRoba[4] = dgw.CurrentRow.Cells["oduzmi"].Value.ToString();
+
+                UmetniStavkuAkoNePostoji(arrRoba);
+            }
+        }
+
+        private void dgw_KeyDown(object sender, KeyEventArgs e)
+        {
+            int icolumn = dgw.CurrentCell.ColumnIndex;
+            int irow = dgw.CurrentCell.RowIndex;
+
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                if (icolumn == dgw.Columns.Count - 1)
+                {
+                    dgw.Rows.Add();
+                    dgw.CurrentCell = dgw[0, irow + 1];
+                }
+                else
+                {
+                    dgw.CurrentCell = dgw[icolumn + 1, irow];
+                }
+            }
+        }
+
+
     }
 }

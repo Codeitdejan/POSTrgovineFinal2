@@ -3332,7 +3332,7 @@ where b.id_stavka = a.id_stavka;";
         {
             if (e.KeyCode == Keys.Enter)
             {
-                DataTable DT = classSQL.select("SELECT broj_ponude FROM ponude WHERE godina_ponude='" + nuGodinaPonude.Value.ToString() + "' AND broj_ponude='" + txtBrojPonude.Text + "'", "ponude").Tables[0];
+                DataTable DT = classSQL.select("SELECT broj_ponude FROM ponude WHERE broj_ponude='" + txtBrojPonude.Text + "'", "ponude").Tables[0];
                 deleteFields();
                 if (DT.Rows.Count == 0)
                 {
@@ -3419,7 +3419,7 @@ where b.id_stavka = a.id_stavka;";
                 //a ne povratna naknada upisana u fakturi
                 try
                 {
-                    dgw.Rows[br].Cells["povratna_naknada"].Value = DSFS.Rows[i]["povratna_naknada"].ToString();
+                    //dgw.Rows[br].Cells["povratna_naknada"].Value = DSFS.Rows[i]["povratna_naknada"].ToString();
                 }
                 catch
                 {
