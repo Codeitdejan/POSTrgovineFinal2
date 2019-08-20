@@ -14521,3 +14521,24 @@ Code: 22P02
 **************************************************************
 =======
 >>>>>>> 1d8ad751a2f4a26ed066dd89f4b6aa91030871a9
+
+**************************************************************
+DATUM:20.8.2019. 13:53:06, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+SELECT SUM(ukupno) AS [ukupno],SUM(ukupno_gotovina-(ukupno_karticezbrojukupno_gotovina-ukupno)) AS [gotovina],SUM(ukupno_kartice) AS [kartice],SUM(ukupno_virman) AS [virman] FROM racuni  WHERE datum_racuna>'2019-08-20 0:00:00' AND datum_racuna<'2019-08-21 0:00:00' AND id_ducan=1 AND id_kasa=1
+Npgsql.NpgsqlException:
+database "pod2019" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext() in C:\projects\Npgsql2\src\Npgsql\NpgsqlState.cs:line 693
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum) in C:\projects\Npgsql2\src\Npgsql\NpgsqlState.cs:line 326
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context) in C:\projects\Npgsql2\src\Npgsql\NpgsqlConnectedState.cs:line 52
+   at Npgsql.NpgsqlConnector.Open() in C:\projects\Npgsql2\src\Npgsql\NpgsqlConnector.cs:line 707
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection) in C:\projects\Npgsql2\src\Npgsql\NpgsqlConnectorPool.cs:line 447
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection) in C:\projects\Npgsql2\src\Npgsql\NpgsqlConnectorPool.cs:line 252
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnector(NpgsqlConnection Connection) in C:\projects\Npgsql2\src\Npgsql\NpgsqlConnectorPool.cs:line 197
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection) in C:\projects\Npgsql2\src\Npgsql\NpgsqlConnectorPool.cs:line 181
+   at Npgsql.NpgsqlConnection.Open() in C:\projects\Npgsql2\src\Npgsql\NpgsqlConnection.cs:line 536
+   at PCPOS.classSQL.select(String sql, String table, Boolean caffe) in F:\work\CodeIT\CodeIT-Trgovine\PC POS\classSQL.cs:line 51
+**************************************************************
