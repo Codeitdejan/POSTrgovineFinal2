@@ -130,19 +130,21 @@
             // 
             this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox3.Location = new System.Drawing.Point(298, 576);
+            this.textBox3.Location = new System.Drawing.Point(397, 709);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(155, 23);
+            this.textBox3.Size = new System.Drawing.Size(205, 26);
             this.textBox3.TabIndex = 15;
             this.textBox3.Text = "PDV:";
             // 
             // txtSifra_robe
             // 
             this.txtSifra_robe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtSifra_robe.Location = new System.Drawing.Point(13, 402);
+            this.txtSifra_robe.Location = new System.Drawing.Point(17, 495);
+            this.txtSifra_robe.Margin = new System.Windows.Forms.Padding(4);
             this.txtSifra_robe.Name = "txtSifra_robe";
-            this.txtSifra_robe.Size = new System.Drawing.Size(181, 26);
+            this.txtSifra_robe.Size = new System.Drawing.Size(240, 30);
             this.txtSifra_robe.TabIndex = 10;
             this.txtSifra_robe.TextChanged += new System.EventHandler(this.txtSifra_robe_TextChanged);
             this.txtSifra_robe.Enter += new System.EventHandler(this.TRENUTNI_Enter);
@@ -153,10 +155,11 @@
             // 
             this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox2.Location = new System.Drawing.Point(459, 576);
+            this.textBox2.Location = new System.Drawing.Point(612, 709);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(189, 23);
+            this.textBox2.Size = new System.Drawing.Size(251, 26);
             this.textBox2.TabIndex = 16;
             this.textBox2.Text = "Bez PDV-a:";
             // 
@@ -164,10 +167,11 @@
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox1.Location = new System.Drawing.Point(654, 576);
+            this.textBox1.Location = new System.Drawing.Point(872, 709);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(349, 23);
+            this.textBox1.Size = new System.Drawing.Size(464, 26);
             this.textBox1.TabIndex = 17;
             this.textBox1.Text = "Ukupno sa PDV-om:";
             // 
@@ -223,18 +227,21 @@
             this.groupBox2.Controls.Add(this.txtSifraFakturirati);
             this.groupBox2.Controls.Add(this.txtModel);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBox2.Location = new System.Drawing.Point(12, 113);
+            this.groupBox2.Location = new System.Drawing.Point(16, 139);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(991, 269);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Size = new System.Drawing.Size(1321, 331);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             // 
             // chbPonudaNbc
             // 
             this.chbPonudaNbc.AutoSize = true;
-            this.chbPonudaNbc.Location = new System.Drawing.Point(846, 103);
+            this.chbPonudaNbc.Location = new System.Drawing.Point(1128, 127);
+            this.chbPonudaNbc.Margin = new System.Windows.Forms.Padding(4);
             this.chbPonudaNbc.Name = "chbPonudaNbc";
-            this.chbPonudaNbc.Size = new System.Drawing.Size(120, 21);
+            this.chbPonudaNbc.Size = new System.Drawing.Size(142, 24);
             this.chbPonudaNbc.TabIndex = 45;
             this.chbPonudaNbc.Text = "Ponuda u NBC";
             this.chbPonudaNbc.UseVisualStyleBackColor = true;
@@ -243,9 +250,10 @@
             // cbStavkeValuta
             // 
             this.cbStavkeValuta.AutoSize = true;
-            this.cbStavkeValuta.Location = new System.Drawing.Point(679, 130);
+            this.cbStavkeValuta.Location = new System.Drawing.Point(905, 160);
+            this.cbStavkeValuta.Margin = new System.Windows.Forms.Padding(4);
             this.cbStavkeValuta.Name = "cbStavkeValuta";
-            this.cbStavkeValuta.Size = new System.Drawing.Size(192, 21);
+            this.cbStavkeValuta.Size = new System.Drawing.Size(225, 24);
             this.cbStavkeValuta.TabIndex = 44;
             this.cbStavkeValuta.Text = "Stavke su upisane u valuti";
             this.cbStavkeValuta.UseVisualStyleBackColor = true;
@@ -255,9 +263,10 @@
             this.chbObracunPdv.AutoSize = true;
             this.chbObracunPdv.Checked = true;
             this.chbObracunPdv.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chbObracunPdv.Location = new System.Drawing.Point(679, 103);
+            this.chbObracunPdv.Location = new System.Drawing.Point(905, 127);
+            this.chbObracunPdv.Margin = new System.Windows.Forms.Padding(4);
             this.chbObracunPdv.Name = "chbObracunPdv";
-            this.chbObracunPdv.Size = new System.Drawing.Size(125, 21);
+            this.chbObracunPdv.Size = new System.Drawing.Size(148, 24);
             this.chbObracunPdv.TabIndex = 43;
             this.chbObracunPdv.Text = "Obračunaj PDV";
             this.chbObracunPdv.UseVisualStyleBackColor = true;
@@ -265,11 +274,12 @@
             // 
             // rtbNapomena
             // 
-            this.rtbNapomena.Location = new System.Drawing.Point(441, 159);
+            this.rtbNapomena.Location = new System.Drawing.Point(588, 196);
+            this.rtbNapomena.Margin = new System.Windows.Forms.Padding(4);
             this.rtbNapomena.Multiline = true;
             this.rtbNapomena.Name = "rtbNapomena";
             this.rtbNapomena.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.rtbNapomena.Size = new System.Drawing.Size(529, 97);
+            this.rtbNapomena.Size = new System.Drawing.Size(704, 118);
             this.rtbNapomena.TabIndex = 34;
             this.rtbNapomena.Enter += new System.EventHandler(this.TRENUTNI_Enter);
             this.rtbNapomena.KeyDown += new System.Windows.Forms.KeyEventHandler(this.rtbNapomena_KeyDown_1);
@@ -277,9 +287,10 @@
             // 
             // btnPartner1
             // 
-            this.btnPartner1.Location = new System.Drawing.Point(167, 54);
+            this.btnPartner1.Location = new System.Drawing.Point(223, 66);
+            this.btnPartner1.Margin = new System.Windows.Forms.Padding(4);
             this.btnPartner1.Name = "btnPartner1";
-            this.btnPartner1.Size = new System.Drawing.Size(28, 26);
+            this.btnPartner1.Size = new System.Drawing.Size(37, 32);
             this.btnPartner1.TabIndex = 6;
             this.btnPartner1.Text = "...";
             this.btnPartner1.UseVisualStyleBackColor = true;
@@ -287,18 +298,20 @@
             // 
             // btnNarKupca
             // 
-            this.btnNarKupca.Location = new System.Drawing.Point(938, 21);
+            this.btnNarKupca.Location = new System.Drawing.Point(1251, 26);
+            this.btnNarKupca.Margin = new System.Windows.Forms.Padding(4);
             this.btnNarKupca.Name = "btnNarKupca";
-            this.btnNarKupca.Size = new System.Drawing.Size(28, 25);
+            this.btnNarKupca.Size = new System.Drawing.Size(37, 31);
             this.btnNarKupca.TabIndex = 38;
             this.btnNarKupca.Text = "...";
             this.btnNarKupca.UseVisualStyleBackColor = true;
             // 
             // btnPartner
             // 
-            this.btnPartner.Location = new System.Drawing.Point(167, 29);
+            this.btnPartner.Location = new System.Drawing.Point(223, 36);
+            this.btnPartner.Margin = new System.Windows.Forms.Padding(4);
             this.btnPartner.Name = "btnPartner";
-            this.btnPartner.Size = new System.Drawing.Size(28, 26);
+            this.btnPartner.Size = new System.Drawing.Size(37, 32);
             this.btnPartner.TabIndex = 2;
             this.btnPartner.Text = "...";
             this.btnPartner.UseVisualStyleBackColor = true;
@@ -311,9 +324,10 @@
             this.cbNacinPlacanja.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbNacinPlacanja.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbNacinPlacanja.FormattingEnabled = true;
-            this.cbNacinPlacanja.Location = new System.Drawing.Point(488, 49);
+            this.cbNacinPlacanja.Location = new System.Drawing.Point(651, 60);
+            this.cbNacinPlacanja.Margin = new System.Windows.Forms.Padding(4);
             this.cbNacinPlacanja.Name = "cbNacinPlacanja";
-            this.cbNacinPlacanja.Size = new System.Drawing.Size(164, 24);
+            this.cbNacinPlacanja.Size = new System.Drawing.Size(217, 28);
             this.cbNacinPlacanja.TabIndex = 26;
             this.cbNacinPlacanja.SelectedIndexChanged += new System.EventHandler(this.cbNacinPlacanja_SelectedIndexChanged);
             this.cbNacinPlacanja.Enter += new System.EventHandler(this.TRENUTNI_Enter);
@@ -327,9 +341,10 @@
             this.cbVD.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbVD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbVD.FormattingEnabled = true;
-            this.cbVD.Location = new System.Drawing.Point(114, 80);
+            this.cbVD.Location = new System.Drawing.Point(152, 98);
+            this.cbVD.Margin = new System.Windows.Forms.Padding(4);
             this.cbVD.Name = "cbVD";
-            this.cbVD.Size = new System.Drawing.Size(208, 24);
+            this.cbVD.Size = new System.Drawing.Size(276, 28);
             this.cbVD.TabIndex = 9;
             this.cbVD.Enter += new System.EventHandler(this.TRENUTNI_Enter);
             this.cbVD.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cbVD_KeyDown);
@@ -342,9 +357,10 @@
             this.cbZiroRacun.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbZiroRacun.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbZiroRacun.FormattingEnabled = true;
-            this.cbZiroRacun.Location = new System.Drawing.Point(442, 76);
+            this.cbZiroRacun.Location = new System.Drawing.Point(589, 94);
+            this.cbZiroRacun.Margin = new System.Windows.Forms.Padding(4);
             this.cbZiroRacun.Name = "cbZiroRacun";
-            this.cbZiroRacun.Size = new System.Drawing.Size(210, 24);
+            this.cbZiroRacun.Size = new System.Drawing.Size(279, 28);
             this.cbZiroRacun.TabIndex = 28;
             this.cbZiroRacun.Enter += new System.EventHandler(this.TRENUTNI_Enter);
             this.cbZiroRacun.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cbZiroRacun_KeyDown);
@@ -357,9 +373,10 @@
             this.cbNarKupca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbNarKupca.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbNarKupca.FormattingEnabled = true;
-            this.cbNarKupca.Location = new System.Drawing.Point(810, 21);
+            this.cbNarKupca.Location = new System.Drawing.Point(1080, 26);
+            this.cbNarKupca.Margin = new System.Windows.Forms.Padding(4);
             this.cbNarKupca.Name = "cbNarKupca";
-            this.cbNarKupca.Size = new System.Drawing.Size(128, 24);
+            this.cbNarKupca.Size = new System.Drawing.Size(169, 28);
             this.cbNarKupca.TabIndex = 37;
             this.cbNarKupca.Enter += new System.EventHandler(this.TRENUTNI_Enter);
             this.cbNarKupca.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cbNarKupca_KeyDown);
@@ -372,9 +389,10 @@
             this.cbOtprema.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbOtprema.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbOtprema.FormattingEnabled = true;
-            this.cbOtprema.Location = new System.Drawing.Point(756, 73);
+            this.cbOtprema.Location = new System.Drawing.Point(1008, 90);
+            this.cbOtprema.Margin = new System.Windows.Forms.Padding(4);
             this.cbOtprema.Name = "cbOtprema";
-            this.cbOtprema.Size = new System.Drawing.Size(210, 24);
+            this.cbOtprema.Size = new System.Drawing.Size(279, 28);
             this.cbOtprema.TabIndex = 42;
             this.cbOtprema.Enter += new System.EventHandler(this.TRENUTNI_Enter);
             this.cbOtprema.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtOtprema_KeyDown);
@@ -387,9 +405,10 @@
             this.cbValuta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbValuta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbValuta.FormattingEnabled = true;
-            this.cbValuta.Location = new System.Drawing.Point(442, 103);
+            this.cbValuta.Location = new System.Drawing.Point(589, 127);
+            this.cbValuta.Margin = new System.Windows.Forms.Padding(4);
             this.cbValuta.Name = "cbValuta";
-            this.cbValuta.Size = new System.Drawing.Size(210, 24);
+            this.cbValuta.Size = new System.Drawing.Size(279, 28);
             this.cbValuta.TabIndex = 30;
             this.cbValuta.Enter += new System.EventHandler(this.TRENUTNI_Enter);
             this.cbValuta.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cbValuta_KeyDown);
@@ -402,9 +421,10 @@
             this.cbKomercijalist.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbKomercijalist.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbKomercijalist.FormattingEnabled = true;
-            this.cbKomercijalist.Location = new System.Drawing.Point(114, 207);
+            this.cbKomercijalist.Location = new System.Drawing.Point(152, 255);
+            this.cbKomercijalist.Margin = new System.Windows.Forms.Padding(4);
             this.cbKomercijalist.Name = "cbKomercijalist";
-            this.cbKomercijalist.Size = new System.Drawing.Size(208, 24);
+            this.cbKomercijalist.Size = new System.Drawing.Size(276, 28);
             this.cbKomercijalist.TabIndex = 19;
             this.cbKomercijalist.Enter += new System.EventHandler(this.TRENUTNI_Enter);
             this.cbKomercijalist.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cbKomercijalist_KeyDown);
@@ -417,9 +437,10 @@
             this.cbIzjava.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbIzjava.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbIzjava.FormattingEnabled = true;
-            this.cbIzjava.Location = new System.Drawing.Point(114, 181);
+            this.cbIzjava.Location = new System.Drawing.Point(152, 223);
+            this.cbIzjava.Margin = new System.Windows.Forms.Padding(4);
             this.cbIzjava.Name = "cbIzjava";
-            this.cbIzjava.Size = new System.Drawing.Size(208, 24);
+            this.cbIzjava.Size = new System.Drawing.Size(276, 28);
             this.cbIzjava.TabIndex = 17;
             this.cbIzjava.Enter += new System.EventHandler(this.TRENUTNI_Enter);
             this.cbIzjava.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cbIzjava_KeyDown);
@@ -428,9 +449,10 @@
             // dtpDanaValuta
             // 
             this.dtpDanaValuta.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.dtpDanaValuta.Location = new System.Drawing.Point(114, 156);
+            this.dtpDanaValuta.Location = new System.Drawing.Point(152, 192);
+            this.dtpDanaValuta.Margin = new System.Windows.Forms.Padding(4);
             this.dtpDanaValuta.Name = "dtpDanaValuta";
-            this.dtpDanaValuta.Size = new System.Drawing.Size(208, 23);
+            this.dtpDanaValuta.Size = new System.Drawing.Size(276, 26);
             this.dtpDanaValuta.TabIndex = 15;
             this.dtpDanaValuta.Enter += new System.EventHandler(this.TRENUTNI_Enter);
             this.dtpDanaValuta.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dtpDanaValuta_KeyDown);
@@ -440,9 +462,10 @@
             // 
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Location = new System.Drawing.Point(10, 234);
+            this.label13.Location = new System.Drawing.Point(13, 288);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(54, 17);
+            this.label13.Size = new System.Drawing.Size(64, 20);
             this.label13.TabIndex = 20;
             this.label13.Text = "Izradio:";
             // 
@@ -450,18 +473,20 @@
             // 
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Location = new System.Drawing.Point(10, 209);
+            this.label12.Location = new System.Drawing.Point(13, 257);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(99, 17);
+            this.label12.Size = new System.Drawing.Size(120, 20);
             this.label12.TabIndex = 18;
             this.label12.Text = "Komercijalista:";
             // 
             // dtpDatum
             // 
             this.dtpDatum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.dtpDatum.Location = new System.Drawing.Point(114, 106);
+            this.dtpDatum.Location = new System.Drawing.Point(152, 130);
+            this.dtpDatum.Margin = new System.Windows.Forms.Padding(4);
             this.dtpDatum.Name = "dtpDatum";
-            this.dtpDatum.Size = new System.Drawing.Size(208, 23);
+            this.dtpDatum.Size = new System.Drawing.Size(276, 26);
             this.dtpDatum.TabIndex = 11;
             this.dtpDatum.Enter += new System.EventHandler(this.TRENUTNI_Enter);
             this.dtpDatum.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dtpDatum_KeyDown);
@@ -471,9 +496,10 @@
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Location = new System.Drawing.Point(10, 184);
+            this.label11.Location = new System.Drawing.Point(13, 226);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(48, 17);
+            this.label11.Size = new System.Drawing.Size(57, 20);
             this.label11.TabIndex = 16;
             this.label11.Text = "Izjava:";
             // 
@@ -481,9 +507,10 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Location = new System.Drawing.Point(354, 158);
+            this.label8.Location = new System.Drawing.Point(472, 194);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(81, 17);
+            this.label8.Size = new System.Drawing.Size(94, 20);
             this.label8.TabIndex = 33;
             this.label8.Text = "Napomena:";
             // 
@@ -491,9 +518,10 @@
             // 
             this.label20.AutoSize = true;
             this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Location = new System.Drawing.Point(353, 133);
+            this.label20.Location = new System.Drawing.Point(471, 164);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(47, 17);
+            this.label20.Size = new System.Drawing.Size(55, 20);
             this.label20.TabIndex = 31;
             this.label20.Text = "Tečaj:";
             // 
@@ -501,9 +529,10 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Location = new System.Drawing.Point(10, 159);
+            this.label7.Location = new System.Drawing.Point(13, 196);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 17);
+            this.label7.Size = new System.Drawing.Size(84, 20);
             this.label7.TabIndex = 14;
             this.label7.Text = "Vrijedi do:";
             // 
@@ -511,9 +540,10 @@
             // 
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Location = new System.Drawing.Point(354, 106);
+            this.label19.Location = new System.Drawing.Point(472, 130);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(52, 17);
+            this.label19.Size = new System.Drawing.Size(61, 20);
             this.label19.TabIndex = 29;
             this.label19.Text = "Valuta:";
             // 
@@ -521,9 +551,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(10, 134);
+            this.label6.Location = new System.Drawing.Point(13, 165);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(46, 17);
+            this.label6.Size = new System.Drawing.Size(54, 20);
             this.label6.TabIndex = 12;
             this.label6.Text = "Dana:";
             // 
@@ -531,9 +562,10 @@
             // 
             this.label24.AutoSize = true;
             this.label24.BackColor = System.Drawing.Color.Transparent;
-            this.label24.Location = new System.Drawing.Point(676, 76);
+            this.label24.Location = new System.Drawing.Point(901, 94);
+            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(67, 17);
+            this.label24.Size = new System.Drawing.Size(79, 20);
             this.label24.TabIndex = 41;
             this.label24.Text = "Otprema:";
             // 
@@ -541,9 +573,10 @@
             // 
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Location = new System.Drawing.Point(9, 84);
+            this.label17.Location = new System.Drawing.Point(12, 103);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(72, 17);
+            this.label17.Size = new System.Drawing.Size(84, 20);
             this.label17.TabIndex = 8;
             this.label17.Text = "Vrsta dok.";
             // 
@@ -551,9 +584,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(10, 109);
+            this.label4.Location = new System.Drawing.Point(13, 134);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 17);
+            this.label4.Size = new System.Drawing.Size(64, 20);
             this.label4.TabIndex = 10;
             this.label4.Text = "Datum:";
             // 
@@ -561,9 +595,10 @@
             // 
             this.label23.AutoSize = true;
             this.label23.BackColor = System.Drawing.Color.Transparent;
-            this.label23.Location = new System.Drawing.Point(676, 50);
+            this.label23.Location = new System.Drawing.Point(901, 62);
+            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(79, 17);
+            this.label23.Size = new System.Drawing.Size(92, 20);
             this.label23.TabIndex = 39;
             this.label23.Text = "Nar.Kupca:";
             // 
@@ -571,9 +606,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(353, 79);
+            this.label3.Location = new System.Drawing.Point(471, 97);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 17);
+            this.label3.Size = new System.Drawing.Size(89, 20);
             this.label3.TabIndex = 27;
             this.label3.Text = "Žiro račun:";
             // 
@@ -581,9 +617,10 @@
             // 
             this.label22.AutoSize = true;
             this.label22.BackColor = System.Drawing.Color.Transparent;
-            this.label22.Location = new System.Drawing.Point(676, 24);
+            this.label22.Location = new System.Drawing.Point(901, 30);
+            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(79, 17);
+            this.label22.Size = new System.Drawing.Size(92, 20);
             this.label22.TabIndex = 35;
             this.label22.Text = "Nar.Kupca:";
             // 
@@ -591,9 +628,10 @@
             // 
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Location = new System.Drawing.Point(353, 53);
+            this.label15.Location = new System.Drawing.Point(471, 65);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(82, 17);
+            this.label15.Size = new System.Drawing.Size(97, 20);
             this.label15.TabIndex = 24;
             this.label15.Text = "Način plać.:";
             // 
@@ -601,9 +639,10 @@
             // 
             this.label28.AutoSize = true;
             this.label28.BackColor = System.Drawing.Color.Transparent;
-            this.label28.Location = new System.Drawing.Point(10, 34);
+            this.label28.Location = new System.Drawing.Point(13, 42);
+            this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(70, 17);
+            this.label28.Size = new System.Drawing.Size(82, 20);
             this.label28.TabIndex = 0;
             this.label28.Text = "Odredište";
             // 
@@ -611,9 +650,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(10, 59);
+            this.label2.Location = new System.Drawing.Point(13, 73);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 17);
+            this.label2.Size = new System.Drawing.Size(89, 20);
             this.label2.TabIndex = 4;
             this.label2.Text = "Fakturirati:";
             // 
@@ -621,36 +661,40 @@
             // 
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Location = new System.Drawing.Point(354, 30);
+            this.label14.Location = new System.Drawing.Point(472, 37);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(50, 17);
+            this.label14.Size = new System.Drawing.Size(59, 20);
             this.label14.TabIndex = 22;
             this.label14.Text = "Model:";
             // 
             // txtIzradio
             // 
             this.txtIzradio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtIzradio.Location = new System.Drawing.Point(114, 233);
+            this.txtIzradio.Location = new System.Drawing.Point(152, 287);
+            this.txtIzradio.Margin = new System.Windows.Forms.Padding(4);
             this.txtIzradio.Name = "txtIzradio";
             this.txtIzradio.ReadOnly = true;
-            this.txtIzradio.Size = new System.Drawing.Size(208, 23);
+            this.txtIzradio.Size = new System.Drawing.Size(276, 26);
             this.txtIzradio.TabIndex = 21;
             // 
             // txtTecaj
             // 
             this.txtTecaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtTecaj.Location = new System.Drawing.Point(442, 130);
+            this.txtTecaj.Location = new System.Drawing.Point(589, 160);
+            this.txtTecaj.Margin = new System.Windows.Forms.Padding(4);
             this.txtTecaj.Name = "txtTecaj";
-            this.txtTecaj.Size = new System.Drawing.Size(210, 22);
+            this.txtTecaj.Size = new System.Drawing.Size(279, 26);
             this.txtTecaj.TabIndex = 32;
             this.txtTecaj.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtTecaj_KeyDown);
             // 
             // txtDana
             // 
             this.txtDana.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtDana.Location = new System.Drawing.Point(114, 131);
+            this.txtDana.Location = new System.Drawing.Point(152, 161);
+            this.txtDana.Margin = new System.Windows.Forms.Padding(4);
             this.txtDana.Name = "txtDana";
-            this.txtDana.Size = new System.Drawing.Size(208, 23);
+            this.txtDana.Size = new System.Drawing.Size(276, 26);
             this.txtDana.TabIndex = 13;
             this.txtDana.Text = "0";
             this.txtDana.Enter += new System.EventHandler(this.TRENUTNI_Enter);
@@ -661,9 +705,10 @@
             // txtNarKupca1
             // 
             this.txtNarKupca1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtNarKupca1.Location = new System.Drawing.Point(756, 48);
+            this.txtNarKupca1.Location = new System.Drawing.Point(1008, 59);
+            this.txtNarKupca1.Margin = new System.Windows.Forms.Padding(4);
             this.txtNarKupca1.Name = "txtNarKupca1";
-            this.txtNarKupca1.Size = new System.Drawing.Size(210, 22);
+            this.txtNarKupca1.Size = new System.Drawing.Size(279, 26);
             this.txtNarKupca1.TabIndex = 40;
             this.txtNarKupca1.Enter += new System.EventHandler(this.TRENUTNI_Enter);
             this.txtNarKupca1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtNarKupca1_KeyDown);
@@ -672,9 +717,10 @@
             // txtSifraNarKupca
             // 
             this.txtSifraNarKupca.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtSifraNarKupca.Location = new System.Drawing.Point(756, 21);
+            this.txtSifraNarKupca.Location = new System.Drawing.Point(1008, 26);
+            this.txtSifraNarKupca.Margin = new System.Windows.Forms.Padding(4);
             this.txtSifraNarKupca.Name = "txtSifraNarKupca";
-            this.txtSifraNarKupca.Size = new System.Drawing.Size(53, 24);
+            this.txtSifraNarKupca.Size = new System.Drawing.Size(69, 28);
             this.txtSifraNarKupca.TabIndex = 36;
             this.txtSifraNarKupca.Enter += new System.EventHandler(this.TRENUTNI_Enter);
             this.txtSifraNarKupca.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSifraNarKupca_KeyDown);
@@ -684,9 +730,10 @@
             // txtSifraNacinPlacanja
             // 
             this.txtSifraNacinPlacanja.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtSifraNacinPlacanja.Location = new System.Drawing.Point(442, 49);
+            this.txtSifraNacinPlacanja.Location = new System.Drawing.Point(589, 60);
+            this.txtSifraNacinPlacanja.Margin = new System.Windows.Forms.Padding(4);
             this.txtSifraNacinPlacanja.Name = "txtSifraNacinPlacanja";
-            this.txtSifraNacinPlacanja.Size = new System.Drawing.Size(44, 24);
+            this.txtSifraNacinPlacanja.Size = new System.Drawing.Size(57, 28);
             this.txtSifraNacinPlacanja.TabIndex = 25;
             this.txtSifraNacinPlacanja.Enter += new System.EventHandler(this.TRENUTNI_Enter);
             this.txtSifraNacinPlacanja.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSifraNacinPlacanja_KeyDown);
@@ -696,27 +743,30 @@
             // txtPartnerNaziv
             // 
             this.txtPartnerNaziv.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtPartnerNaziv.Location = new System.Drawing.Point(195, 30);
+            this.txtPartnerNaziv.Location = new System.Drawing.Point(260, 37);
+            this.txtPartnerNaziv.Margin = new System.Windows.Forms.Padding(4);
             this.txtPartnerNaziv.Name = "txtPartnerNaziv";
             this.txtPartnerNaziv.ReadOnly = true;
-            this.txtPartnerNaziv.Size = new System.Drawing.Size(127, 23);
+            this.txtPartnerNaziv.Size = new System.Drawing.Size(168, 26);
             this.txtPartnerNaziv.TabIndex = 3;
             // 
             // txtPartnerNaziv1
             // 
             this.txtPartnerNaziv1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtPartnerNaziv1.Location = new System.Drawing.Point(195, 55);
+            this.txtPartnerNaziv1.Location = new System.Drawing.Point(260, 68);
+            this.txtPartnerNaziv1.Margin = new System.Windows.Forms.Padding(4);
             this.txtPartnerNaziv1.Name = "txtPartnerNaziv1";
             this.txtPartnerNaziv1.ReadOnly = true;
-            this.txtPartnerNaziv1.Size = new System.Drawing.Size(127, 23);
+            this.txtPartnerNaziv1.Size = new System.Drawing.Size(168, 26);
             this.txtPartnerNaziv1.TabIndex = 7;
             // 
             // txtSifraOdrediste
             // 
             this.txtSifraOdrediste.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtSifraOdrediste.Location = new System.Drawing.Point(114, 30);
+            this.txtSifraOdrediste.Location = new System.Drawing.Point(152, 37);
+            this.txtSifraOdrediste.Margin = new System.Windows.Forms.Padding(4);
             this.txtSifraOdrediste.Name = "txtSifraOdrediste";
-            this.txtSifraOdrediste.Size = new System.Drawing.Size(53, 24);
+            this.txtSifraOdrediste.Size = new System.Drawing.Size(69, 28);
             this.txtSifraOdrediste.TabIndex = 1;
             this.txtSifraOdrediste.Enter += new System.EventHandler(this.TRENUTNI_Enter);
             this.txtSifraOdrediste.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSifraOdrediste_KeyDown);
@@ -726,9 +776,10 @@
             // txtSifraFakturirati
             // 
             this.txtSifraFakturirati.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtSifraFakturirati.Location = new System.Drawing.Point(114, 55);
+            this.txtSifraFakturirati.Location = new System.Drawing.Point(152, 68);
+            this.txtSifraFakturirati.Margin = new System.Windows.Forms.Padding(4);
             this.txtSifraFakturirati.Name = "txtSifraFakturirati";
-            this.txtSifraFakturirati.Size = new System.Drawing.Size(53, 24);
+            this.txtSifraFakturirati.Size = new System.Drawing.Size(69, 28);
             this.txtSifraFakturirati.TabIndex = 5;
             this.txtSifraFakturirati.Enter += new System.EventHandler(this.TRENUTNI_Enter);
             this.txtSifraFakturirati.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSifraFakturirati_KeyDown);
@@ -738,9 +789,10 @@
             // txtModel
             // 
             this.txtModel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtModel.Location = new System.Drawing.Point(442, 24);
+            this.txtModel.Location = new System.Drawing.Point(589, 30);
+            this.txtModel.Margin = new System.Windows.Forms.Padding(4);
             this.txtModel.Name = "txtModel";
-            this.txtModel.Size = new System.Drawing.Size(210, 22);
+            this.txtModel.Size = new System.Drawing.Size(279, 26);
             this.txtModel.TabIndex = 23;
             this.txtModel.Enter += new System.EventHandler(this.TRENUTNI_Enter);
             this.txtModel.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtModel_KeyDown);
@@ -755,9 +807,11 @@
             this.groupBox1.Controls.Add(this.ttxBrojPonude);
             this.groupBox1.Controls.Add(this.nmGodinaPonude);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 58);
+            this.groupBox1.Location = new System.Drawing.Point(16, 71);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(991, 49);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(1321, 60);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             // 
@@ -767,18 +821,20 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(13, 21);
+            this.label1.Location = new System.Drawing.Point(17, 26);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 17);
+            this.label1.Size = new System.Drawing.Size(116, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Broj ponude:";
             // 
             // ttxBrojPonude
             // 
             this.ttxBrojPonude.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.ttxBrojPonude.Location = new System.Drawing.Point(117, 15);
+            this.ttxBrojPonude.Location = new System.Drawing.Point(156, 18);
+            this.ttxBrojPonude.Margin = new System.Windows.Forms.Padding(4);
             this.ttxBrojPonude.Name = "ttxBrojPonude";
-            this.ttxBrojPonude.Size = new System.Drawing.Size(77, 26);
+            this.ttxBrojPonude.Size = new System.Drawing.Size(101, 30);
             this.ttxBrojPonude.TabIndex = 1;
             this.ttxBrojPonude.Enter += new System.EventHandler(this.TRENUTNI_Enter);
             this.ttxBrojPonude.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ttxBrojPonude_KeyDown);
@@ -787,9 +843,10 @@
             // nmGodinaPonude
             // 
             this.nmGodinaPonude.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.nmGodinaPonude.Location = new System.Drawing.Point(195, 15);
+            this.nmGodinaPonude.Location = new System.Drawing.Point(260, 18);
+            this.nmGodinaPonude.Margin = new System.Windows.Forms.Padding(4);
             this.nmGodinaPonude.Name = "nmGodinaPonude";
-            this.nmGodinaPonude.Size = new System.Drawing.Size(82, 26);
+            this.nmGodinaPonude.Size = new System.Drawing.Size(109, 30);
             this.nmGodinaPonude.TabIndex = 2;
             this.nmGodinaPonude.Enter += new System.EventHandler(this.TRENUTNI_Enter);
             this.nmGodinaPonude.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ttxBrojPonude_KeyDown);
@@ -844,25 +901,153 @@
             this.dgw.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgw.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgw.GridColor = System.Drawing.Color.Gainsboro;
-            this.dgw.Location = new System.Drawing.Point(11, 436);
+            this.dgw.Location = new System.Drawing.Point(15, 537);
+            this.dgw.Margin = new System.Windows.Forms.Padding(4);
             this.dgw.MultiSelect = false;
             this.dgw.Name = "dgw";
             this.dgw.RowHeadersWidth = 30;
             this.dgw.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgw.Size = new System.Drawing.Size(992, 134);
+            this.dgw.Size = new System.Drawing.Size(1323, 165);
             this.dgw.TabIndex = 13;
             this.dgw.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgw_CellClick);
             this.dgw.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgw_CellEndEdit);
+            this.dgw.RowLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgw_RowLeave);
+            this.dgw.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dgw_KeyDown);
             // 
+
+            // br
+            // 
+            this.br.FillWeight = 50F;
+            this.br.HeaderText = "Br.";
+            this.br.Name = "br";
+            // 
+            // sifra
+            // 
+            this.sifra.FillWeight = 61.10954F;
+            this.sifra.HeaderText = "Šifra";
+            this.sifra.Name = "sifra";
+            // 
+            // naziv
+            // 
+            this.naziv.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.naziv.FillWeight = 61.10954F;
+            this.naziv.HeaderText = "Naziv robe ili usluge";
+            this.naziv.MinimumWidth = 130;
+            this.naziv.Name = "naziv";
+            // 
+            // skladiste
+            // 
+            this.skladiste.DataPropertyName = "sifra";
+            this.skladiste.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.skladiste.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.skladiste.HeaderText = "Skladište";
+            this.skladiste.Name = "skladiste";
+            // 
+            // jmj
+            // 
+            this.jmj.HeaderText = "JMJ";
+            this.jmj.Name = "jmj";
+            // 
+            // kolicina
+            // 
+            this.kolicina.FillWeight = 61.10954F;
+            this.kolicina.HeaderText = "Količina";
+            this.kolicina.Name = "kolicina";
+            // 
+            // porez
+            // 
+            this.porez.HeaderText = "Porez";
+            this.porez.Name = "porez";
+            // 
+            // porezZaIzracun
+            // 
+            this.porezZaIzracun.HeaderText = "porezZaIzracun";
+            this.porezZaIzracun.Name = "porezZaIzracun";
+            this.porezZaIzracun.Visible = false;
+            // 
+            // mpc
+            // 
+            this.mpc.HeaderText = "MPC";
+            this.mpc.Name = "mpc";
+            // 
+            // rabat
+            // 
+            this.rabat.FillWeight = 61.10954F;
+            this.rabat.HeaderText = "Rabat%";
+            this.rabat.Name = "rabat";
+            // 
+            // rabat_iznos
+            // 
+            this.rabat_iznos.HeaderText = "Rabat iznos";
+            this.rabat_iznos.Name = "rabat_iznos";
+            this.rabat_iznos.ReadOnly = true;
+            // 
+            // cijena_bez_pdva
+            // 
+            this.cijena_bez_pdva.FillWeight = 120F;
+            this.cijena_bez_pdva.HeaderText = "Cijena bez pdv-a";
+            this.cijena_bez_pdva.Name = "cijena_bez_pdva";
+            this.cijena_bez_pdva.ReadOnly = true;
+            // 
+            // iznos_bez_pdva
+            // 
+            this.iznos_bez_pdva.FillWeight = 120F;
+            this.iznos_bez_pdva.HeaderText = "Iznos bez pdv-a";
+            this.iznos_bez_pdva.Name = "iznos_bez_pdva";
+            this.iznos_bez_pdva.ReadOnly = true;
+            // 
+            // iznos_ukupno
+            // 
+            this.iznos_ukupno.HeaderText = "Iznos ukupno";
+            this.iznos_ukupno.Name = "iznos_ukupno";
+            this.iznos_ukupno.ReadOnly = true;
+            // 
+            // vpc
+            // 
+            this.vpc.HeaderText = "VPC";
+            this.vpc.Name = "vpc";
+            // 
+            // nc
+            // 
+            this.nc.HeaderText = "nc";
+            this.nc.Name = "nc";
+            this.nc.Visible = false;
+            // 
+            // id_stavka
+            // 
+            this.id_stavka.HeaderText = "id_stavka";
+            this.id_stavka.Name = "id_stavka";
+            this.id_stavka.Visible = false;
+            // 
+            // id_roba_prodaja
+            // 
+            this.id_roba_prodaja.HeaderText = "id_roba_prodaja";
+            this.id_roba_prodaja.Name = "id_roba_prodaja";
+            this.id_roba_prodaja.Visible = false;
+            // 
+            // oduzmi
+            // 
+            this.oduzmi.HeaderText = "oduzmi";
+            this.oduzmi.Name = "oduzmi";
+            this.oduzmi.Visible = false;
+            // 
+            // porez_potrosnja
+            // 
+            this.porez_potrosnja.HeaderText = "porez_potrosnja";
+            this.porez_potrosnja.Name = "porez_potrosnja";
+            this.porez_potrosnja.Visible = false;
+            // 
+
             // lblNaDan
             // 
             this.lblNaDan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblNaDan.AutoSize = true;
             this.lblNaDan.BackColor = System.Drawing.Color.Transparent;
             this.lblNaDan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblNaDan.Location = new System.Drawing.Point(12, 584);
+            this.lblNaDan.Location = new System.Drawing.Point(16, 719);
+            this.lblNaDan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNaDan.Name = "lblNaDan";
-            this.lblNaDan.Size = new System.Drawing.Size(0, 13);
+            this.lblNaDan.Size = new System.Drawing.Size(0, 17);
             this.lblNaDan.TabIndex = 14;
             // 
             // btnOpenRoba
@@ -870,9 +1055,10 @@
             this.btnOpenRoba.BackColor = System.Drawing.Color.Transparent;
             this.btnOpenRoba.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOpenRoba.Image = global::PCPOS.Properties.Resources._1059;
-            this.btnOpenRoba.Location = new System.Drawing.Point(198, 398);
+            this.btnOpenRoba.Location = new System.Drawing.Point(264, 490);
+            this.btnOpenRoba.Margin = new System.Windows.Forms.Padding(4);
             this.btnOpenRoba.Name = "btnOpenRoba";
-            this.btnOpenRoba.Size = new System.Drawing.Size(39, 31);
+            this.btnOpenRoba.Size = new System.Drawing.Size(52, 38);
             this.btnOpenRoba.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnOpenRoba.TabIndex = 34;
             this.btnOpenRoba.TabStop = false;
@@ -884,9 +1070,10 @@
             this.btnObrisi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnObrisi.Image = global::PCPOS.Properties.Resources.Close;
             this.btnObrisi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnObrisi.Location = new System.Drawing.Point(868, 400);
+            this.btnObrisi.Location = new System.Drawing.Point(1157, 492);
+            this.btnObrisi.Margin = new System.Windows.Forms.Padding(4);
             this.btnObrisi.Name = "btnObrisi";
-            this.btnObrisi.Size = new System.Drawing.Size(135, 30);
+            this.btnObrisi.Size = new System.Drawing.Size(180, 37);
             this.btnObrisi.TabIndex = 12;
             this.btnObrisi.Text = "   Obriši stavku";
             this.btnObrisi.UseVisualStyleBackColor = true;
@@ -897,9 +1084,10 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label5.Location = new System.Drawing.Point(12, 385);
+            this.label5.Location = new System.Drawing.Point(16, 474);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(74, 16);
+            this.label5.Size = new System.Drawing.Size(88, 20);
             this.label5.TabIndex = 9;
             this.label5.Text = "Šifra artikla";
             // 
@@ -909,9 +1097,10 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button1.Image = global::PCPOS.Properties.Resources.Actions_application_exit_icon;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(883, 12);
+            this.button1.Location = new System.Drawing.Point(1177, 15);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 40);
+            this.button1.Size = new System.Drawing.Size(160, 49);
             this.button1.TabIndex = 6;
             this.button1.Text = "Izlaz      ";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -924,9 +1113,10 @@
             this.btnDeleteAllFaktura.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnDeleteAllFaktura.Image = global::PCPOS.Properties.Resources.Recyclebin_Empty;
             this.btnDeleteAllFaktura.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDeleteAllFaktura.Location = new System.Drawing.Point(556, 12);
+            this.btnDeleteAllFaktura.Location = new System.Drawing.Point(741, 15);
+            this.btnDeleteAllFaktura.Margin = new System.Windows.Forms.Padding(4);
             this.btnDeleteAllFaktura.Name = "btnDeleteAllFaktura";
-            this.btnDeleteAllFaktura.Size = new System.Drawing.Size(130, 40);
+            this.btnDeleteAllFaktura.Size = new System.Drawing.Size(173, 49);
             this.btnDeleteAllFaktura.TabIndex = 4;
             this.btnDeleteAllFaktura.Text = "Obriši ponudu";
             this.btnDeleteAllFaktura.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -938,9 +1128,10 @@
             this.btnSveFakture.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnSveFakture.Image = global::PCPOS.Properties.Resources._10591;
             this.btnSveFakture.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSveFakture.Location = new System.Drawing.Point(420, 12);
+            this.btnSveFakture.Location = new System.Drawing.Point(560, 15);
+            this.btnSveFakture.Margin = new System.Windows.Forms.Padding(4);
             this.btnSveFakture.Name = "btnSveFakture";
-            this.btnSveFakture.Size = new System.Drawing.Size(130, 40);
+            this.btnSveFakture.Size = new System.Drawing.Size(173, 49);
             this.btnSveFakture.TabIndex = 3;
             this.btnSveFakture.Text = "Sve ponude  ";
             this.btnSveFakture.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -952,9 +1143,10 @@
             this.btnNoviUnos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnNoviUnos.Image = global::PCPOS.Properties.Resources.folder_open_icon;
             this.btnNoviUnos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNoviUnos.Location = new System.Drawing.Point(12, 12);
+            this.btnNoviUnos.Location = new System.Drawing.Point(16, 15);
+            this.btnNoviUnos.Margin = new System.Windows.Forms.Padding(4);
             this.btnNoviUnos.Name = "btnNoviUnos";
-            this.btnNoviUnos.Size = new System.Drawing.Size(130, 40);
+            this.btnNoviUnos.Size = new System.Drawing.Size(173, 49);
             this.btnNoviUnos.TabIndex = 0;
             this.btnNoviUnos.Text = "Novi unos   ";
             this.btnNoviUnos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -966,9 +1158,10 @@
             this.btnOdustani.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnOdustani.Image = global::PCPOS.Properties.Resources.undo;
             this.btnOdustani.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOdustani.Location = new System.Drawing.Point(148, 12);
+            this.btnOdustani.Location = new System.Drawing.Point(197, 15);
+            this.btnOdustani.Margin = new System.Windows.Forms.Padding(4);
             this.btnOdustani.Name = "btnOdustani";
-            this.btnOdustani.Size = new System.Drawing.Size(130, 40);
+            this.btnOdustani.Size = new System.Drawing.Size(173, 49);
             this.btnOdustani.TabIndex = 1;
             this.btnOdustani.Text = "Odustani   ";
             this.btnOdustani.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -980,9 +1173,10 @@
             this.btnSpremi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnSpremi.Image = ((System.Drawing.Image)(resources.GetObject("btnSpremi.Image")));
             this.btnSpremi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSpremi.Location = new System.Drawing.Point(284, 12);
+            this.btnSpremi.Location = new System.Drawing.Point(379, 15);
+            this.btnSpremi.Margin = new System.Windows.Forms.Padding(4);
             this.btnSpremi.Name = "btnSpremi";
-            this.btnSpremi.Size = new System.Drawing.Size(130, 40);
+            this.btnSpremi.Size = new System.Drawing.Size(173, 49);
             this.btnSpremi.TabIndex = 2;
             this.btnSpremi.Text = "Spremi   ";
             this.btnSpremi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -992,9 +1186,10 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button2.Location = new System.Drawing.Point(692, 12);
+            this.button2.Location = new System.Drawing.Point(923, 15);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(117, 40);
+            this.button2.Size = new System.Drawing.Size(156, 49);
             this.button2.TabIndex = 5;
             this.button2.Text = "Pregled ponude";
             this.button2.UseVisualStyleBackColor = true;
@@ -1007,9 +1202,10 @@
             this.label9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label9.ForeColor = System.Drawing.Color.DarkRed;
-            this.label9.Location = new System.Drawing.Point(256, 407);
+            this.label9.Location = new System.Drawing.Point(341, 501);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(160, 17);
+            this.label9.Size = new System.Drawing.Size(186, 20);
             this.label9.TabIndex = 11;
             this.label9.Text = "Nova stavka (INSER)";
             this.label9.Click += new System.EventHandler(this.label9_Click);
@@ -1138,11 +1334,11 @@
             // 
             // frmPonude
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateGray;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1015, 606);
+            this.ClientSize = new System.Drawing.Size(1353, 746);
             this.ControlBox = false;
             this.Controls.Add(this.label9);
             this.Controls.Add(this.button2);
@@ -1164,6 +1360,7 @@
             this.Controls.Add(this.btnObrisi);
             this.Controls.Add(this.dgw);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmPonude";
