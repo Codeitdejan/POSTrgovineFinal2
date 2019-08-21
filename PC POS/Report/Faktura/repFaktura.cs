@@ -67,20 +67,24 @@ namespace PCPOS.Report.Faktura
                 sas = "0";
             }
             string root = "";
+            string root2 = "";
             if (DTpostavke.Rows[0]["logo"].ToString() == "1")
             {
                 root = DTpostavke.Rows[0]["logopath"].ToString();
+                string localPath = Path.GetDirectoryName(Application.ExecutablePath);
+                root2 = localPath + "\\bijela.jpg";
             }
             else
             {
                 string localPath = Path.GetDirectoryName(Application.ExecutablePath);
                 root = localPath + "\\bijela.jpg";
+                root2 = localPath + "\\bijela.jpg";
             }
 
             if((ImeForme == "Ponude" || ImeForme == "Ponuda") && Class.Postavke.vodeniZig)
             {
                 string localPath = Path.GetDirectoryName(Application.ExecutablePath);
-                root = localPath + "\\vodeni.png";
+                root2 = localPath + "\\vodeni.png";
             }
 
             string tekst = "";
@@ -199,9 +203,10 @@ namespace PCPOS.Report.Faktura
             ReportParameter p18 = new ReportParameter("avio_registracija", avio_registracija);
             ReportParameter p19 = new ReportParameter("avio_tip", avio_tip_zrakoplova);
             ReportParameter p20 = new ReportParameter("avio_tezina", avio_maks_tezina_polijetanja);
+            ReportParameter p22 = new ReportParameter("vodeni", root2);
 
             this.reportViewer1.LocalReport.EnableExternalImages = true;
-            this.reportViewer1.LocalReport.SetParameters(new ReportParameter[] { p1, p2, p3, p4, p5, p6, p8, p9, p10, p11, p18, p19, p20, p21 });
+            this.reportViewer1.LocalReport.SetParameters(new ReportParameter[] { p1, p2, p3, p4, p5, p6, p8, p9, p10, p11, p18, p19, p20, p21,p22 });
 
             this.reportViewer1.RefreshReport();
         }
