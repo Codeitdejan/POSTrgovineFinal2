@@ -17,7 +17,7 @@ namespace PCPOS
 
         public new DialogResult ShowDialog()
         {
-            DTgrid = classSQL.select("SELECT roba_prodaja.sifra AS [Šifra artikla],roba.naziv as [Naziv artikla],CAST(REPLACE(roba_prodaja.kolicina,',','.') AS numeric) as [Stanje],skladiste.skladiste as [Skladište],skladiste.id_skladiste FROM roba_prodaja LEFT JOIN roba ON roba.sifra=roba_prodaja.sifra LEFT JOIN skladiste ON roba_prodaja.id_skladiste=skladiste.id_skladiste WHERE CAST(REPLACE(roba_prodaja.kolicina,',','.') AS numeric)<0 AND roba.oduzmi='DA'", "negativno_stanje").Tables[0];
+            DTgrid = classSQL.select("SELECT roba_prodaja.sifra AS [Šifra artikla],roba.naziv as [Naziv artikla],CAST(REPLACE(roba_prodaja.kolicina,',','.') AS numeric) as [Stanje],skladiste.skladiste as [Skladište],skladiste.id_skladiste FROM roba_prodaja LEFT JOIN roba ON roba.sifra=roba_prodaja.sifra LEFT JOIN skladiste ON roba_prodaja.id_skladiste=skladiste.id_skladiste WHERE CAST(REPLACE(roba_prodaja.kolicina,',','.') AS numeric)<0", "negativno_stanje").Tables[0];
 
             if (DTgrid.Rows.Count == 0) return MessageBox.Show("Nemate artikala sa negativnim stanjem na skladištu");
             else return base.ShowDialog();
@@ -33,11 +33,11 @@ namespace PCPOS
 
         private void frmStanjeUMinusu_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = DTgrid;
-            //dataGridView1.Columns["id_skladiste"].Visible = false;
-            dataGridView1.Columns["Naziv artikla"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridView1.DataSource = classSQL.select("SELECT roba_prodaja.sifra AS [Šifra artikla],roba.naziv as [Naziv artikla],CAST(REPLACE(roba_prodaja.kolicina,',','.') AS numeric) as [Stanje],skladiste.skladiste as [Skladište],skladiste.id_skladiste FROM roba_prodaja LEFT JOIN roba ON roba.sifra=roba_prodaja.sifra LEFT JOIN skladiste ON roba_prodaja.id_skladiste=skladiste.id_skladiste WHERE CAST(REPLACE(roba_prodaja.kolicina,',','.') AS numeric)<0", "negativno_stanje").Tables[0];
+            dataGridView1.Columns["id_skladiste"].Visible = false;
+            //dataGridView1.Columns["Naziv artikla"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dataGridView1.ReadOnly = true;
-
+            dataGridView1.Refresh();
             DataTable DT_Skladiste = classSQL.select("SELECT id_skladiste,skladiste FROM skladiste", "skladiste").Tables[0];
 
             DataRow r = DT_Skladiste.NewRow();
@@ -58,9 +58,11 @@ namespace PCPOS
 
         private void cbSkladiste_SelectionChangeCommitted(object sender, EventArgs e)
         {
+            /*
             if (Convert.ToInt32(cbSkladiste.SelectedValue) != -1) DTgrid.DefaultView.RowFilter = "id_skladiste=" + cbSkladiste.SelectedValue.ToString();
             else DTgrid.DefaultView.RowFilter = "";
             dataGridView1.Select();
+            */
         }
 
         private void btnPrint_Click(object sender, EventArgs e)
