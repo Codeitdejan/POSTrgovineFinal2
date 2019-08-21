@@ -96,10 +96,7 @@ namespace PCPOS.Report.PrometiPoDanima
         //Artikli(d.ToString("dd.MM.yyyy"), dsOdDo.Tables[0].Rows[0][0].ToString(), o, p, ppnp, mpc* kol, UG, UK, UO, rabat);
         private void Artikli(string datum, string odDO, decimal osnovica, decimal pdv, decimal pnp, decimal mpc, decimal gotovina, decimal kartice, decimal ostalo, decimal rabat)
         {
-            if (kartice > 0)
-            {
-            }
-
+            
             DataRow[] dataROW = dSRliste.Tables[0].Select("sifra = '" + datum + "'");
 
             if (dataROW.Count() == 0)
@@ -134,6 +131,7 @@ namespace PCPOS.Report.PrometiPoDanima
 
         private void PrometProdajneRobe()
         {
+
             string duc = "";
             if (ducan != null)
             {
@@ -221,10 +219,12 @@ namespace PCPOS.Report.PrometiPoDanima
                 DTpdvN.Clear();
             }
 
-            int oo = DT.Rows.Count;
-
+            //int oo = DT.Rows.Count;
+            string date = DateTime.Now.AddDays(1).ToString("dd.MM.yyyy");
+            int zadnji=0;
             foreach (DataRow row in DT.Rows)
             {
+                zadnji++;
                 kol = Convert.ToDecimal(row["kolicina"].ToString());
                 mpc = Convert.ToDecimal(row["mpc"].ToString());
                 pnp = Convert.ToDecimal(row["porez_potrosnja"].ToString());
@@ -289,17 +289,28 @@ namespace PCPOS.Report.PrometiPoDanima
 
                 string ajjj = row["nacin_placanja"].ToString();
 
-                DateTime d = Convert.ToDateTime(row["datum_racuna"].ToString());
+                DateTime d = Convert.ToDateTime(row["datum_racuna"].ToString());               
+
                 decimal o = ((mpc * kol) - ((ppdv) + (ppnp)));
                 decimal p = ((mpc * kol) * PreracunataStopaPDV) / 100;
+                string dt = d.ToString("dd.MM.yyyy");
+                
 
+                if (dt != date||DT.Rows.Count==zadnji)
+                {
+                    date = dt;
+                
                 //TO DO: tu trebam napraviti kaj bu dobil min i max br rac
                 string sOdDo = "select coalesce(min(racuni.broj_racuna::integer)::text || ' - ' || max(racuni.broj_racuna::integer)::text, '') as oddo FROM racun_stavke" +
                 " LEFT JOIN racuni ON racuni.broj_racuna=racun_stavke.broj_racuna AND racuni.id_kasa=racun_stavke.id_kasa AND racuni.id_ducan=racun_stavke.id_ducan" +
                 " LEFT JOIN roba ON roba.sifra=racun_stavke.sifra_robe" +
                 " LEFT JOIN grupa ON grupa.id_grupa=roba.id_grupa where cast(datum_racuna as date) = '" + d.ToString("yyyy-MM-dd") + "'" + blag + duc + kas + art + gr;
                 DataSet dsOdDo = classSQL.select(sOdDo, "racuni");
+
                 Artikli(d.ToString("dd.MM.yyyy"), dsOdDo.Tables[0].Rows[0][0].ToString(), o, p, ppnp, mpc * kol, UG, UK, UO, rabat);
+                }
+
+                Artikli(d.ToString("dd.MM.yyyy"), "", o, p, ppnp, mpc * kol, UG, UK, UO, rabat);
 
                 StopePDVa(pdv, ((mpc * kol) * PreracunataStopaPDV) / 100);
                 OSNOVICA = ((mpc * kol) - ((ppdv) + (ppnp))) + OSNOVICA;
@@ -331,6 +342,7 @@ namespace PCPOS.Report.PrometiPoDanima
                         "\r\n\r\n";
                 }
             }
+
 
             p1 = new ReportParameter("datum", "Od datuma: " + datumOD.ToString("dd.MM.yyyy") + " do datuma " + datumDO.ToString("dd.MM.yyyy"));
             p2 = new ReportParameter("stope_poreza", porezi);
