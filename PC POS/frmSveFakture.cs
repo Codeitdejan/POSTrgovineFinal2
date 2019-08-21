@@ -216,6 +216,7 @@ ORDER BY fakture.date DESC
                 dgv.Columns["id_ducan"].Visible = true;
                 dgv.Columns["sifra_partnera"].Visible = false;
             }
+            dgv.Refresh();
         }
 
         private void fillDataGrid_stavke(string broj, string _id_ducan, string _id_kasa)

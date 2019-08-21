@@ -120,7 +120,7 @@
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>DSRpodaciTvrtke</rd:DataSetName>
-        <rd:SchemaPath>D:\Code - iT\Trgovine\PC POS\Dataset\DSRpodaciTvrtke.xsd</rd:SchemaPath>
+        <rd:SchemaPath>C:\Users\Toni\Desktop\POSTrgovineFinal2v2\PC POS\Dataset\DSRpodaciTvrtke.xsd</rd:SchemaPath>
         <rd:TableName>DTRpodaciTvrtke</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />
@@ -185,10 +185,18 @@
           <DataField>ean</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="povratna_naknada">
+          <DataField>povratna_naknada</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="opis">
+          <DataField>opis</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>DSRfakturaStavke</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\POWER\Desktop\PROJEKTI NE BRISATI\WINDOWS\PC POS\PC POS\Dataset\DSRfakturaStavke.xsd</rd:SchemaPath>
+        <rd:SchemaPath>C:\Users\Toni\Desktop\POSTrgovineFinal2v2\PC POS\Dataset\DSRfakturaStavke.xsd</rd:SchemaPath>
         <rd:TableName>DTfakturaStavke</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />
@@ -444,7 +452,7 @@
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
-  
+
       <Body>
         <ReportItems>
           <Image Name="Image1">
@@ -830,7 +838,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=IIF(GetChar(Fields!sifra.Value,1)="!",Fields!naziv.Value,Fields!ean.Value+" | "+Fields!sifra.Value+" | "+Fields!naziv.Value)</Value>
+                                  <Value>=IIF(GetChar(Fields!sifra.Value,1)="!"," | Ručno | "+Fields!naziv.Value+" |", IIF(Fields!opis.Value = "",(Fields!ean.Value+" | "+Fields!sifra.Value+" | "+Fields!naziv.Value +" | "),(Fields!ean.Value+" | "+Fields!sifra.Value+" | "+Fields!naziv.Value +" | "+Fields!opis.Value + " |")))</Value>
                                   <Style>
                                     <FontSize>9pt</FontSize>
                                   </Style>
@@ -853,6 +861,7 @@
                             <PaddingRight>2pt</PaddingRight>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -3295,7 +3304,6 @@ IIF(Parameters!dokumenat.Value = "PON", IIF(First(Fields!string4.Value, "DSKaktu
         <ColumnSpacing>0.13cm</ColumnSpacing>
         <Style />
       </Page>
-
   <ReportParameters>
     <ReportParameter Name="MPCHeader">
       <DataType>String</DataType>

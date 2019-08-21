@@ -12,7 +12,7 @@
   <xs:element name="DSRfakturaStavke" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSRfakturaStavke" msprop:Generator_UserDSName="DSRfakturaStavke">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="DTfakturaStavke" msprop:Generator_TableClassName="DTfakturaStavkeDataTable" msprop:Generator_TableVarName="tableDTfakturaStavke" msprop:Generator_RowChangedName="DTfakturaStavkeRowChanged" msprop:Generator_TablePropName="DTfakturaStavke" msprop:Generator_RowDeletingName="DTfakturaStavkeRowDeleting" msprop:Generator_RowChangingName="DTfakturaStavkeRowChanging" msprop:Generator_RowEvHandlerName="DTfakturaStavkeRowChangeEventHandler" msprop:Generator_RowDeletedName="DTfakturaStavkeRowDeleted" msprop:Generator_RowClassName="DTfakturaStavkeRow" msprop:Generator_UserTableName="DTfakturaStavke" msprop:Generator_RowEvArgName="DTfakturaStavkeRowChangeEvent">
+        <xs:element name="DTfakturaStavke" msprop:Generator_TableClassName="DTfakturaStavkeDataTable" msprop:Generator_TableVarName="tableDTfakturaStavke" msprop:Generator_TablePropName="DTfakturaStavke" msprop:Generator_RowDeletingName="DTfakturaStavkeRowDeleting" msprop:Generator_RowChangingName="DTfakturaStavkeRowChanging" msprop:Generator_RowEvHandlerName="DTfakturaStavkeRowChangeEventHandler" msprop:Generator_RowDeletedName="DTfakturaStavkeRowDeleted" msprop:Generator_UserTableName="DTfakturaStavke" msprop:Generator_RowChangedName="DTfakturaStavkeRowChanged" msprop:Generator_RowEvArgName="DTfakturaStavkeRowChangeEvent" msprop:Generator_RowClassName="DTfakturaStavkeRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="kolicina" msprop:Generator_ColumnVarNameInTable="columnkolicina" msprop:Generator_ColumnPropNameInRow="kolicina" msprop:Generator_ColumnPropNameInTable="kolicinaColumn" msprop:Generator_UserColumnName="kolicina" type="xs:decimal" minOccurs="0" />
@@ -29,6 +29,7 @@
               <xs:element name="jm" msprop:Generator_ColumnVarNameInTable="columnjm" msprop:Generator_ColumnPropNameInRow="jm" msprop:Generator_ColumnPropNameInTable="jmColumn" msprop:Generator_UserColumnName="jm" type="xs:string" minOccurs="0" />
               <xs:element name="ean" msprop:Generator_ColumnVarNameInTable="columnean" msprop:Generator_ColumnPropNameInRow="ean" msprop:Generator_ColumnPropNameInTable="eanColumn" msprop:Generator_UserColumnName="ean" type="xs:string" minOccurs="0" />
               <xs:element name="povratna_naknada" msprop:Generator_ColumnVarNameInTable="columnpovratna_naknada" msprop:Generator_ColumnPropNameInRow="povratna_naknada" msprop:Generator_ColumnPropNameInTable="povratna_naknadaColumn" msprop:Generator_UserColumnName="povratna_naknada" type="xs:string" minOccurs="0" />
+              <xs:element name="opis" msprop:Generator_ColumnVarNameInTable="columnopis" msprop:Generator_ColumnPropNameInRow="opis" msprop:Generator_ColumnPropNameInTable="opisColumn" msprop:Generator_UserColumnName="opis" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

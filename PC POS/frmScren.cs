@@ -562,6 +562,9 @@ namespace PCPOS
             if (ini.Read("POSTAVKE", "paragonac") == "1")
             {
                 frmParagonac p = new frmParagonac();
+                p.WindowState = FormWindowState.Maximized;
+                //p.MdiParent = this;
+                //p.Dock = DockStyle.Fill;
                 //p.MainForm = MainForm;
                 p.Show();
             }

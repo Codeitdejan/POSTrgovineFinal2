@@ -359,6 +359,7 @@ DTheader.Rows[i]["broj_avansa"].ToString(), DTheader.Rows[i]["poslovnica"].ToStr
 
                 for (int y = 0; y < DTstavke.Rows.Count; y++)
                 {
+
                     decimal nbc = Convert.ToDecimal(DTstavke.Rows[y]["nbc"].ToString());
                     decimal vpc = Convert.ToDecimal(DTstavke.Rows[y]["vpc"].ToString());
                     decimal pdv = Convert.ToDecimal(DTstavke.Rows[y]["porez"].ToString());
@@ -396,7 +397,7 @@ DTheader.Rows[i]["broj_avansa"].ToString(), DTheader.Rows[i]["poslovnica"].ToStr
                     iznos_neto = (vpc1 * kol) + iznos_neto;
                     osnovica_ukupno = (Usluga_ukupno_stavka + Roba_ukupno_stavka) / (1 + (pdv / 100));
                     ukupno = Usluga_ukupno_stavka + Roba_ukupno_stavka;
-                    pdvUkupno += ukupno * (((pdv * 100) / (pdv + 100)) / 100);
+                    pdvUkupno = ukupno - osnovica_ukupno;
 
                     decimal iznos = Math.Round((vpc1 * (pdv / 100)), 6, MidpointRounding.AwayFromZero);
                     decimal iznos2 = Math.Round((vpcSRabatom * (pdv / 100)), 6, MidpointRounding.AwayFromZero);
@@ -598,7 +599,7 @@ DTheader.Rows[i]["broj_avansa"].ToString(), DTheader.Rows[i]["poslovnica"].ToStr
                     iznos_neto = (vpc1 * kol) + iznos_neto;
                     osnovica_ukupno = mpc_rabat_uk / (1 + (pdv / 100));
                     ukupno = mpc_rabat_uk;
-                    pdv_stavka = ukupno * (((pdv * 100) / (pdv + 100)) / 100);
+                    pdv_stavka = ukupno - osnovica_ukupno;
                 }
 
                 //DTrow["datum1"] = Convert.ToDateTime(DTheader.Rows[i]["datedvo"].ToString()).ToString("dd-MM-yyyy");
@@ -757,7 +758,7 @@ WHERE racun_stavke.broj_racuna = '{0}' and racun_stavke.id_ducan = '{1}' and rac
                     iznos_neto = (vpc1 * kol) + iznos_neto;
                     osnovica_ukupno = (Usluga_ukupno_stavka + Roba_ukupno_stavka) / (1 + (pdv / 100));
                     ukupno = Usluga_ukupno_stavka + Roba_ukupno_stavka;
-                    pdvUkupno += ukupno * (((pdv * 100) / (pdv + 100)) / 100);
+                    pdv_stavka = ukupno - osnovica_ukupno;
 
                     decimal iznos = Math.Round((vpc1 * (pdv / 100)), 6, MidpointRounding.AwayFromZero);
                     decimal iznos2 = Math.Round((vpcSRabatom * (pdv / 100)), 6, MidpointRounding.AwayFromZero);
@@ -825,31 +826,31 @@ WHERE racun_stavke.broj_racuna = '{0}' and racun_stavke.id_ducan = '{1}' and rac
                         dSstope.Tables[0].Rows.Add(stopa);
                         //stopa_index++;
                     }
-
-                    DataRow DTrow = dSRliste.Tables[0].NewRow();
-                    DTrow["datum1"] = Convert.ToDateTime(DTheader.Rows[i]["datum_racuna"].ToString()).ToString("dd-MM-yyyy");
-                    DTrow["datum2"] = Convert.ToDateTime(DTheader.Rows[i]["datum_racuna"].ToString()).ToString("dd-MM-yyyy");
-                    DTrow["sifra"] = DTheader.Rows[i]["broj_racuna"].ToString();
-                    DTrow["naziv"] = DTheader.Rows[i]["id_partner"].ToString() + " " + DTheader.Rows[i]["ime_tvrtke"].ToString();
-                    DTrow["cijena1"] = Usluga_ukupno_stavka.ToString("#0.00");
-                    DTrow["cijena2"] = Roba_ukupno_stavka.ToString("#0.00");
-                    DTrow["cijena3"] = iznos_neto.ToString("#0.00");
-                    DTrow["cijena4"] = usl_bez_por.ToString("#0.00");
-                    DTrow["cijena5"] = rabat_proracun.ToString("#0.00");
-                    DTrow["cijena6"] = osnovica_ukupno.ToString("#0.00");
-                    DTrow["cijena7"] = pdv_stavka.ToString("#0.00");
-                    DTrow["cijena8"] = ukupno.ToString("#0.00");
-                    DTrow["cijena9"] = roba_bez_por.ToString("#0.00");
-
-                    DTrow["cijena12"] = usl_bez_por_rabat.ToString("#0.00");
-                    DTrow["cijena13"] = roba_bez_por_rabat.ToString("#0.00");
-                    //MessageBox.Show(DTheader.Rows[i]["broj_fakture"].ToString());
-                    dSRliste.Tables[0].Rows.Add(DTrow);
                 }
-                ReportParameter p3 = new ReportParameter("nabavna_ukupno", nbc_ukp.ToString());
-                this.reportViewer1.LocalReport.SetParameters(new ReportParameter[] { p3 });
-                SetReportParameters("Usluga bez pdv-a");
+                DataRow DTrow = dSRliste.Tables[0].NewRow();
+                DTrow["datum1"] = Convert.ToDateTime(DTheader.Rows[i]["datum_racuna"].ToString()).ToString("dd-MM-yyyy");
+                DTrow["datum2"] = Convert.ToDateTime(DTheader.Rows[i]["datum_racuna"].ToString()).ToString("dd-MM-yyyy");
+                DTrow["sifra"] = DTheader.Rows[i]["broj_racuna"].ToString();
+                DTrow["naziv"] = DTheader.Rows[i]["id_partner"].ToString() + " " + DTheader.Rows[i]["ime_tvrtke"].ToString();
+                DTrow["cijena1"] = Usluga_ukupno_stavka.ToString("#0.00");
+                DTrow["cijena2"] = Roba_ukupno_stavka.ToString("#0.00");
+                DTrow["cijena3"] = iznos_neto.ToString("#0.00");
+                DTrow["cijena4"] = usl_bez_por.ToString("#0.00");
+                DTrow["cijena5"] = rabat_proracun.ToString("#0.00");
+                DTrow["cijena6"] = osnovica_ukupno.ToString("#0.00");
+                DTrow["cijena7"] = pdv_stavka.ToString("#0.00");
+                DTrow["cijena8"] = ukupno.ToString("#0.00");
+                DTrow["cijena9"] = roba_bez_por.ToString("#0.00");
+
+                DTrow["cijena12"] = usl_bez_por_rabat.ToString("#0.00");
+                DTrow["cijena13"] = roba_bez_por_rabat.ToString("#0.00");
+                //MessageBox.Show(DTheader.Rows[i]["broj_fakture"].ToString());
+                dSRliste.Tables[0].Rows.Add(DTrow);
             }
+            ReportParameter p3 = new ReportParameter("nabavna_ukupno", nbc_ukp.ToString());
+            this.reportViewer1.LocalReport.SetParameters(new ReportParameter[] { p3 });
+            SetReportParameters("Usluga bez pdv-a");
+
         }
 
         private void ListaOtpremnice()
@@ -975,7 +976,7 @@ WHERE racun_stavke.broj_racuna = '{0}' and racun_stavke.id_ducan = '{1}' and rac
                     iznos_neto = (vpc1 * kol) + iznos_neto;
                     osnovica_ukupno = (Usluga_ukupno_stavka + Roba_ukupno_stavka) / (1 + (pdv / 100));
                     ukupno = Usluga_ukupno_stavka + Roba_ukupno_stavka;
-                    pdv_stavka = ukupno * (((pdv * 100) / (pdv + 100)) / 100);
+                    pdv_stavka = ukupno - osnovica_ukupno;
                 }
 
                 proizvodacka_cijena_ukp += ukupnoProizvodackaCijena;
@@ -1139,7 +1140,7 @@ WHERE racun_stavke.broj_racuna = '{0}' and racun_stavke.id_ducan = '{1}' and rac
                     iznos_neto = (vpc1 * kol) + iznos_neto;
                     osnovica_ukupno = (Usluga_ukupno_stavka + Roba_ukupno_stavka) / (1 + (pdv / 100));
                     ukupno = Usluga_ukupno_stavka + Roba_ukupno_stavka;
-                    pdv_stavka = ukupno * (((pdv * 100) / (pdv + 100)) / 100);
+                    pdv_stavka = ukupno - osnovica_ukupno;
 
                     //iznos_neto = (Math.Round(roba_vpc, 2) + Math.Round(usluga_vpc, 2)) + Math.Round(iznos_neto, 2);
                     //Rabat_ukupno_stavke = (iznos_neto - (Usluga_ukupno_stavka + Roba_ukupno_stavka));

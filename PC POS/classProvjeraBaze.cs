@@ -222,7 +222,7 @@ CREATE TABLE servis_status
                         prezime_ime varchar(50),
                         broj_osobne varchar(30),
                         broj_putovnice varchar(30),
-                        vrsta_pružene_usluge varchar(30),
+                        vrsta_pruzene_usluge varchar(30),
                         datum_pocetka_pruzanja_usluge timestamp without time zone,
                         datum_prestanka_pruzanja_usluge timestamp without time zone,
                         primjedba text
