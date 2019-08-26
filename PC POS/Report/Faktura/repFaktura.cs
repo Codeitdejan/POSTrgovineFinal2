@@ -67,20 +67,24 @@ namespace PCPOS.Report.Faktura
                 sas = "0";
             }
             string root = "";
+            string root2 = "";
             if (DTpostavke.Rows[0]["logo"].ToString() == "1")
             {
                 root = DTpostavke.Rows[0]["logopath"].ToString();
+                string localPath = Path.GetDirectoryName(Application.ExecutablePath);
+                root2 = localPath + "\\bijela.jpg";
             }
             else
             {
                 string localPath = Path.GetDirectoryName(Application.ExecutablePath);
                 root = localPath + "\\bijela.jpg";
+                root2 = localPath + "\\bijela.jpg";
             }
 
-            if(ImeForme == "Ponude" && Class.Postavke.vodeniZig)
+            if((ImeForme == "Ponude" || ImeForme == "Ponuda") && Class.Postavke.vodeniZig)
             {
                 string localPath = Path.GetDirectoryName(Application.ExecutablePath);
-                root = localPath + "\\vodeni.png";
+                root2 = localPath + "\\vodeni.png";
             }
 
             string tekst = "";
@@ -199,9 +203,10 @@ namespace PCPOS.Report.Faktura
             ReportParameter p18 = new ReportParameter("avio_registracija", avio_registracija);
             ReportParameter p19 = new ReportParameter("avio_tip", avio_tip_zrakoplova);
             ReportParameter p20 = new ReportParameter("avio_tezina", avio_maks_tezina_polijetanja);
+            ReportParameter p22 = new ReportParameter("vodeni", root2);
 
             this.reportViewer1.LocalReport.EnableExternalImages = true;
-            this.reportViewer1.LocalReport.SetParameters(new ReportParameter[] { p1, p2, p3, p4, p5, p6, p8, p9, p10, p11, p18, p19, p20, p21 });
+            this.reportViewer1.LocalReport.SetParameters(new ReportParameter[] { p1, p2, p3, p4, p5, p6, p8, p9, p10, p11, p18, p19, p20, p21,p22 });
 
             this.reportViewer1.RefreshReport();
         }
@@ -272,6 +277,7 @@ namespace PCPOS.Report.Faktura
                 " " + imeTablica[1] + ".porez," +
                 " " + imeTablica[1] + ".broj_racuna," +
                 " " + imeTablica[1] + ".rabat," +
+                " " + "roba.opis as opis," +
                 " " + imeTablica[1] + ".sifra_robe AS sifra," +
                 " CASE WHEN racun_stavke.naziv IS NULL OR racun_stavke.naziv = '' THEN roba.naziv ELSE racun_stavke.naziv END as naziv," + 
                 " roba.jm as jm," +
@@ -566,6 +572,7 @@ imeTablica[0], broj, poslovnica, naplatni);
                 " " + imeTablica[1] + ".broj_fakture," +
                 " " + imeTablica[1] + ".rabat," +
                 " " + imeTablica[1] + ".sifra," +
+                " " + "roba.opis as opis," +
                 " " + imeTablica[1] + ".ppmv," +
                 " CASE WHEN length(faktura_stavke.naziv) IS NULL THEN roba.naziv ELSE faktura_stavke.naziv END as naziv," +
                 //" roba.naziv as naziv," +
@@ -1094,6 +1101,7 @@ where {0}.broj_fakture = '{1}' AND {0}.id_ducan = '{2}' AND {0}.id_kasa = '{3}';
                 " " + imeTablica[1] + ".kolicina," +
                 " " + imeTablica[1] + ".vpc," +
                 " " + imeTablica[1] + ".porez," +
+                " " + "roba.opis as opis," +
                 " " + imeTablica[1] + "." + imeBrojPonude + ",";
             if (ponudaUNbc)
             {
@@ -1336,6 +1344,7 @@ where {0}.broj_fakture = '{1}' AND {0}.id_ducan = '{2}' AND {0}.id_kasa = '{3}';
                     " otpremnica_stavke.broj_otpremnice," +
                     " otpremnica_stavke.rabat," +
                     " otpremnica_stavke.sifra_robe as sifra," +
+                    " roba.opis as opis," +
                     " roba.naziv as naziv," +
                     " roba.jm as jm," +
                     " otpremnica_stavke.id_skladiste AS skladiste" +
@@ -1353,6 +1362,7 @@ where {0}.broj_fakture = '{1}' AND {0}.id_ducan = '{2}' AND {0}.id_kasa = '{3}';
                     " otpremnica_stavke.broj_otpremnice," +
                     " otpremnica_stavke.rabat," +
                     " otpremnica_stavke.sifra_robe as sifra," +
+                    " roba.opis as opis," +
                     " roba.naziv as naziv," +
                     " roba.jm as jm," +
                     " otpremnica_stavke.id_skladiste AS skladiste" +
@@ -1698,6 +1708,7 @@ where {0}.broj_fakture = '{1}' AND {0}.id_ducan = '{2}' AND {0}.id_kasa = '{3}';
                 " radni_nalog_servis_stavke.rabat," +
                 " radni_nalog_servis_stavke.sifra," +
                 " radni_nalog_servis_stavke.naziv as naziv," +
+                " roba.opis as opis," +
                 " roba.jm as jm," +
                 " radni_nalog_servis_stavke.id_skladiste AS skladiste" +
                 " FROM radni_nalog_servis_stavke" +

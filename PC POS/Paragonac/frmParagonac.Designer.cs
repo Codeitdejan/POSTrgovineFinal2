@@ -107,9 +107,10 @@
             this.lblBrojRac.BackColor = System.Drawing.Color.Transparent;
             this.lblBrojRac.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lblBrojRac.ForeColor = System.Drawing.Color.Black;
-            this.lblBrojRac.Location = new System.Drawing.Point(3, 0);
+            this.lblBrojRac.Location = new System.Drawing.Point(4, 0);
+            this.lblBrojRac.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBrojRac.Name = "lblBrojRac";
-            this.lblBrojRac.Size = new System.Drawing.Size(170, 20);
+            this.lblBrojRac.Size = new System.Drawing.Size(210, 25);
             this.lblBrojRac.TabIndex = 13;
             this.lblBrojRac.Text = "Broj računa 0002/2012";
             this.lblBrojRac.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -121,9 +122,11 @@
             this.GroupBoxUkupnoZaNaplatiti.Controls.Add(this.lblUkupno);
             this.GroupBoxUkupnoZaNaplatiti.Controls.Add(this.lblUkupnoZanemari);
             this.GroupBoxUkupnoZaNaplatiti.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.GroupBoxUkupnoZaNaplatiti.Location = new System.Drawing.Point(497, 601);
+            this.GroupBoxUkupnoZaNaplatiti.Location = new System.Drawing.Point(663, 740);
+            this.GroupBoxUkupnoZaNaplatiti.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GroupBoxUkupnoZaNaplatiti.Name = "GroupBoxUkupnoZaNaplatiti";
-            this.GroupBoxUkupnoZaNaplatiti.Size = new System.Drawing.Size(234, 88);
+            this.GroupBoxUkupnoZaNaplatiti.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBoxUkupnoZaNaplatiti.Size = new System.Drawing.Size(312, 108);
             this.GroupBoxUkupnoZaNaplatiti.TabIndex = 93;
             this.GroupBoxUkupnoZaNaplatiti.TabStop = false;
             this.GroupBoxUkupnoZaNaplatiti.Text = "Ukupno za naplatiti:";
@@ -133,9 +136,10 @@
             this.lblUkupno.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblUkupno.AutoSize = true;
             this.lblUkupno.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold);
-            this.lblUkupno.Location = new System.Drawing.Point(2, 33);
+            this.lblUkupno.Location = new System.Drawing.Point(3, 41);
+            this.lblUkupno.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUkupno.Name = "lblUkupno";
-            this.lblUkupno.Size = new System.Drawing.Size(163, 46);
+            this.lblUkupno.Size = new System.Drawing.Size(204, 58);
             this.lblUkupno.TabIndex = 55;
             this.lblUkupno.Text = "0,00 Kn";
             // 
@@ -144,9 +148,10 @@
             this.lblUkupnoZanemari.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblUkupnoZanemari.AutoSize = true;
             this.lblUkupnoZanemari.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblUkupnoZanemari.Location = new System.Drawing.Point(458, 574);
+            this.lblUkupnoZanemari.Location = new System.Drawing.Point(611, 706);
+            this.lblUkupnoZanemari.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUkupnoZanemari.Name = "lblUkupnoZanemari";
-            this.lblUkupnoZanemari.Size = new System.Drawing.Size(73, 31);
+            this.lblUkupnoZanemari.Size = new System.Drawing.Size(91, 39);
             this.lblUkupnoZanemari.TabIndex = 54;
             this.lblUkupnoZanemari.Text = "0 Kn";
             // 
@@ -163,9 +168,10 @@
             this.btnAlati.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSlateGray;
             this.btnAlati.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAlati.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.btnAlati.Location = new System.Drawing.Point(585, 17);
+            this.btnAlati.Location = new System.Drawing.Point(780, 21);
+            this.btnAlati.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAlati.Name = "btnAlati";
-            this.btnAlati.Size = new System.Drawing.Size(129, 96);
+            this.btnAlati.Size = new System.Drawing.Size(172, 118);
             this.btnAlati.TabIndex = 96;
             this.btnAlati.Text = "Opcije F10";
             this.btnAlati.UseVisualStyleBackColor = false;
@@ -187,9 +193,10 @@
             this.btnPartner.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSlateGray;
             this.btnPartner.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPartner.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.btnPartner.Location = new System.Drawing.Point(303, 18);
+            this.btnPartner.Location = new System.Drawing.Point(404, 22);
+            this.btnPartner.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnPartner.Name = "btnPartner";
-            this.btnPartner.Size = new System.Drawing.Size(129, 96);
+            this.btnPartner.Size = new System.Drawing.Size(172, 118);
             this.btnPartner.TabIndex = 96;
             this.btnPartner.Text = "Kupac F4";
             this.btnPartner.UseVisualStyleBackColor = false;
@@ -213,9 +220,10 @@
             this.btnOdustaniSve.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOdustaniSve.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.btnOdustaniSve.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnOdustaniSve.Location = new System.Drawing.Point(324, 608);
+            this.btnOdustaniSve.Location = new System.Drawing.Point(432, 748);
+            this.btnOdustaniSve.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnOdustaniSve.Name = "btnOdustaniSve";
-            this.btnOdustaniSve.Size = new System.Drawing.Size(140, 88);
+            this.btnOdustaniSve.Size = new System.Drawing.Size(187, 108);
             this.btnOdustaniSve.TabIndex = 96;
             this.btnOdustaniSve.Text = "Odustani F7";
             this.btnOdustaniSve.UseVisualStyleBackColor = false;
@@ -230,9 +238,10 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(747, 605);
+            this.label10.Location = new System.Drawing.Point(996, 745);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(105, 17);
+            this.label10.Size = new System.Drawing.Size(128, 21);
             this.label10.TabIndex = 1;
             this.label10.Text = "Ime partnera:";
             // 
@@ -241,10 +250,11 @@
             this.txtImePartnera.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtImePartnera.BackColor = System.Drawing.Color.White;
             this.txtImePartnera.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtImePartnera.Location = new System.Drawing.Point(750, 625);
+            this.txtImePartnera.Location = new System.Drawing.Point(1000, 769);
+            this.txtImePartnera.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtImePartnera.Name = "txtImePartnera";
             this.txtImePartnera.ReadOnly = true;
-            this.txtImePartnera.Size = new System.Drawing.Size(258, 29);
+            this.txtImePartnera.Size = new System.Drawing.Size(343, 34);
             this.txtImePartnera.TabIndex = 0;
             this.txtImePartnera.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmParagonac_KeyDown);
             // 
@@ -281,7 +291,7 @@
             this.lblLYvlasnik.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lblLYvlasnik.Location = new System.Drawing.Point(19, 91);
             this.lblLYvlasnik.Name = "lblLYvlasnik";
-            this.lblLYvlasnik.Size = new System.Drawing.Size(112, 17);
+            this.lblLYvlasnik.Size = new System.Drawing.Size(136, 21);
             this.lblLYvlasnik.TabIndex = 1;
             this.lblLYvlasnik.Text = "Podaci o vlasniku";
             // 
@@ -291,7 +301,7 @@
             this.lblLYkartica.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lblLYkartica.Location = new System.Drawing.Point(17, 35);
             this.lblLYkartica.Name = "lblLYkartica";
-            this.lblLYkartica.Size = new System.Drawing.Size(77, 17);
+            this.lblLYkartica.Size = new System.Drawing.Size(95, 21);
             this.lblLYkartica.TabIndex = 1;
             this.lblLYkartica.Text = "Broj kartice";
             // 
@@ -302,7 +312,7 @@
             this.txtPodaciOvlasnikuCB.Location = new System.Drawing.Point(20, 109);
             this.txtPodaciOvlasnikuCB.Name = "txtPodaciOvlasnikuCB";
             this.txtPodaciOvlasnikuCB.ReadOnly = true;
-            this.txtPodaciOvlasnikuCB.Size = new System.Drawing.Size(225, 27);
+            this.txtPodaciOvlasnikuCB.Size = new System.Drawing.Size(225, 32);
             this.txtPodaciOvlasnikuCB.TabIndex = 0;
             // 
             // txtBrojKarticeCB
@@ -310,7 +320,7 @@
             this.txtBrojKarticeCB.Font = new System.Drawing.Font("Tahoma", 12F);
             this.txtBrojKarticeCB.Location = new System.Drawing.Point(19, 53);
             this.txtBrojKarticeCB.Name = "txtBrojKarticeCB";
-            this.txtBrojKarticeCB.Size = new System.Drawing.Size(152, 27);
+            this.txtBrojKarticeCB.Size = new System.Drawing.Size(152, 32);
             this.txtBrojKarticeCB.TabIndex = 0;
             // 
             // panel1
@@ -334,7 +344,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(8, 37);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 17);
+            this.label4.Size = new System.Drawing.Size(97, 21);
             this.label4.TabIndex = 106;
             this.label4.Text = "Dućan: 01";
             // 
@@ -346,7 +356,7 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(8, 112);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(76, 17);
+            this.label6.Size = new System.Drawing.Size(96, 21);
             this.label6.TabIndex = 107;
             this.label6.Text = "Blagajnik:";
             // 
@@ -358,7 +368,7 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(8, 87);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 17);
+            this.label5.Size = new System.Drawing.Size(69, 21);
             this.label5.TabIndex = 105;
             this.label5.Text = "Kupac:";
             // 
@@ -370,7 +380,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(8, 62);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 17);
+            this.label3.Size = new System.Drawing.Size(84, 21);
             this.label3.TabIndex = 103;
             this.label3.Text = "Kasa: 01";
             // 
@@ -382,7 +392,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(8, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 17);
+            this.label1.Size = new System.Drawing.Size(176, 21);
             this.label1.TabIndex = 104;
             this.label1.Text = "Datum: 27.11.2010";
             // 
@@ -390,9 +400,10 @@
             // 
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(-150, 11);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(-200, 14);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(118, 252);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(157, 310);
             this.flowLayoutPanel1.TabIndex = 99;
             // 
             // gbSB
@@ -427,7 +438,7 @@
             this.label2.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label2.Location = new System.Drawing.Point(19, 91);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 17);
+            this.label2.Size = new System.Drawing.Size(136, 21);
             this.label2.TabIndex = 1;
             this.label2.Text = "Podaci o vlasniku";
             // 
@@ -437,7 +448,7 @@
             this.label7.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label7.Location = new System.Drawing.Point(17, 35);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 17);
+            this.label7.Size = new System.Drawing.Size(95, 21);
             this.label7.TabIndex = 1;
             this.label7.Text = "Broj kartice";
             // 
@@ -448,7 +459,7 @@
             this.txtPodaciOvlasnikuSB.Location = new System.Drawing.Point(20, 109);
             this.txtPodaciOvlasnikuSB.Name = "txtPodaciOvlasnikuSB";
             this.txtPodaciOvlasnikuSB.ReadOnly = true;
-            this.txtPodaciOvlasnikuSB.Size = new System.Drawing.Size(225, 27);
+            this.txtPodaciOvlasnikuSB.Size = new System.Drawing.Size(225, 32);
             this.txtPodaciOvlasnikuSB.TabIndex = 0;
             // 
             // txtBrojKarticeSB
@@ -456,7 +467,7 @@
             this.txtBrojKarticeSB.Font = new System.Drawing.Font("Tahoma", 12F);
             this.txtBrojKarticeSB.Location = new System.Drawing.Point(19, 53);
             this.txtBrojKarticeSB.Name = "txtBrojKarticeSB";
-            this.txtBrojKarticeSB.Size = new System.Drawing.Size(152, 27);
+            this.txtBrojKarticeSB.Size = new System.Drawing.Size(152, 32);
             this.txtBrojKarticeSB.TabIndex = 0;
             // 
             // gbPO
@@ -491,7 +502,7 @@
             this.label8.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label8.Location = new System.Drawing.Point(19, 91);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(112, 17);
+            this.label8.Size = new System.Drawing.Size(136, 21);
             this.label8.TabIndex = 1;
             this.label8.Text = "Podaci o vlasniku";
             // 
@@ -501,7 +512,7 @@
             this.label9.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label9.Location = new System.Drawing.Point(17, 35);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(96, 17);
+            this.label9.Size = new System.Drawing.Size(117, 21);
             this.label9.TabIndex = 1;
             this.label9.Text = "Broj sa računa";
             // 
@@ -512,7 +523,7 @@
             this.txtPodaciOvlasnikuPO.Location = new System.Drawing.Point(20, 109);
             this.txtPodaciOvlasnikuPO.Name = "txtPodaciOvlasnikuPO";
             this.txtPodaciOvlasnikuPO.ReadOnly = true;
-            this.txtPodaciOvlasnikuPO.Size = new System.Drawing.Size(225, 27);
+            this.txtPodaciOvlasnikuPO.Size = new System.Drawing.Size(225, 32);
             this.txtPodaciOvlasnikuPO.TabIndex = 0;
             // 
             // txtBrojKarticePO
@@ -520,7 +531,7 @@
             this.txtBrojKarticePO.Font = new System.Drawing.Font("Tahoma", 12F);
             this.txtBrojKarticePO.Location = new System.Drawing.Point(19, 53);
             this.txtBrojKarticePO.Name = "txtBrojKarticePO";
-            this.txtBrojKarticePO.Size = new System.Drawing.Size(152, 27);
+            this.txtBrojKarticePO.Size = new System.Drawing.Size(152, 32);
             this.txtBrojKarticePO.TabIndex = 0;
             // 
             // lblSkladiste
@@ -530,9 +541,10 @@
             this.lblSkladiste.BackColor = System.Drawing.Color.Transparent;
             this.lblSkladiste.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblSkladiste.ForeColor = System.Drawing.Color.Lime;
-            this.lblSkladiste.Location = new System.Drawing.Point(22, 581);
+            this.lblSkladiste.Location = new System.Drawing.Point(29, 715);
+            this.lblSkladiste.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSkladiste.Name = "lblSkladiste";
-            this.lblSkladiste.Size = new System.Drawing.Size(0, 20);
+            this.lblSkladiste.Size = new System.Drawing.Size(0, 25);
             this.lblSkladiste.TabIndex = 101;
             // 
             // backgroundWorkerSendToDisplay
@@ -552,9 +564,10 @@
             this.btnObrisiStavku.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSlateGray;
             this.btnObrisiStavku.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnObrisiStavku.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.btnObrisiStavku.Location = new System.Drawing.Point(444, 18);
+            this.btnObrisiStavku.Location = new System.Drawing.Point(592, 22);
+            this.btnObrisiStavku.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnObrisiStavku.Name = "btnObrisiStavku";
-            this.btnObrisiStavku.Size = new System.Drawing.Size(129, 96);
+            this.btnObrisiStavku.Size = new System.Drawing.Size(172, 118);
             this.btnObrisiStavku.TabIndex = 96;
             this.btnObrisiStavku.Text = "Obriši stavku F9";
             this.btnObrisiStavku.UseVisualStyleBackColor = false;
@@ -597,11 +610,12 @@
             this.dgv.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgv.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.dgv.GridColor = System.Drawing.Color.Gainsboro;
-            this.dgv.Location = new System.Drawing.Point(24, 161);
+            this.dgv.Location = new System.Drawing.Point(32, 198);
+            this.dgv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgv.MultiSelect = false;
             this.dgv.Name = "dgv";
             this.dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv.Size = new System.Drawing.Size(984, 417);
+            this.dgv.Size = new System.Drawing.Size(1312, 513);
             this.dgv.TabIndex = 0;
             this.dgv.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellEndEdit);
             this.dgv.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmParagonac_KeyDown);
@@ -683,9 +697,10 @@
             // 
             this.flowLayoutPanel2.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel2.Controls.Add(this.lblBrojRac);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(18, 140);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(24, 172);
+            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(696, 21);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(928, 26);
             this.flowLayoutPanel2.TabIndex = 104;
             // 
             // btnOdjava
@@ -703,9 +718,10 @@
             this.btnOdjava.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOdjava.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.btnOdjava.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOdjava.Location = new System.Drawing.Point(881, 17);
+            this.btnOdjava.Location = new System.Drawing.Point(1175, 21);
+            this.btnOdjava.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnOdjava.Name = "btnOdjava";
-            this.btnOdjava.Size = new System.Drawing.Size(127, 96);
+            this.btnOdjava.Size = new System.Drawing.Size(169, 118);
             this.btnOdjava.TabIndex = 96;
             this.btnOdjava.Text = "Odjava ESC";
             this.btnOdjava.UseVisualStyleBackColor = false;
@@ -728,9 +744,10 @@
             this.btnTrazi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTrazi.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.btnTrazi.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnTrazi.Location = new System.Drawing.Point(163, 18);
+            this.btnTrazi.Location = new System.Drawing.Point(217, 22);
+            this.btnTrazi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTrazi.Name = "btnTrazi";
-            this.btnTrazi.Size = new System.Drawing.Size(128, 95);
+            this.btnTrazi.Size = new System.Drawing.Size(171, 117);
             this.btnTrazi.TabIndex = 2;
             this.btnTrazi.Text = "Traži F3";
             this.btnTrazi.UseVisualStyleBackColor = false;
@@ -754,9 +771,10 @@
             this.btnKartica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKartica.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.btnKartica.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnKartica.Location = new System.Drawing.Point(174, 608);
+            this.btnKartica.Location = new System.Drawing.Point(232, 748);
+            this.btnKartica.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnKartica.Name = "btnKartica";
-            this.btnKartica.Size = new System.Drawing.Size(140, 88);
+            this.btnKartica.Size = new System.Drawing.Size(187, 108);
             this.btnKartica.TabIndex = 94;
             this.btnKartica.Text = "Kartica F6";
             this.btnKartica.UseVisualStyleBackColor = false;
@@ -779,9 +797,10 @@
             this.btnGotovina.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGotovina.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.btnGotovina.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnGotovina.Location = new System.Drawing.Point(25, 608);
+            this.btnGotovina.Location = new System.Drawing.Point(33, 748);
+            this.btnGotovina.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGotovina.Name = "btnGotovina";
-            this.btnGotovina.Size = new System.Drawing.Size(140, 88);
+            this.btnGotovina.Size = new System.Drawing.Size(187, 108);
             this.btnGotovina.TabIndex = 94;
             this.btnGotovina.Text = "Gotovina F5";
             this.btnGotovina.UseVisualStyleBackColor = false;
@@ -803,16 +822,17 @@
             this.btnInsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInsert.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.btnInsert.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnInsert.Location = new System.Drawing.Point(24, 17);
+            this.btnInsert.Location = new System.Drawing.Point(32, 21);
+            this.btnInsert.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(128, 95);
+            this.btnInsert.Size = new System.Drawing.Size(171, 117);
             this.btnInsert.TabIndex = 105;
             this.btnInsert.Text = "Nova stavka (INSERT)";
             this.btnInsert.UseVisualStyleBackColor = false;
             this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             this.btnInsert.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmParagonac_KeyDown);
             this.btnInsert.MouseEnter += new System.EventHandler(this.pic_MouseEnter);
-            this.btnInsert.MouseHover += new System.EventHandler(this.pic_MouseLeave);
+            this.btnInsert.MouseLeave += new System.EventHandler(this.pic_MouseLeave);
             // 
             // btnPregledRacuna
             // 
@@ -827,9 +847,10 @@
             this.btnPregledRacuna.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSlateGray;
             this.btnPregledRacuna.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPregledRacuna.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.btnPregledRacuna.Location = new System.Drawing.Point(740, 17);
+            this.btnPregledRacuna.Location = new System.Drawing.Point(987, 21);
+            this.btnPregledRacuna.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnPregledRacuna.Name = "btnPregledRacuna";
-            this.btnPregledRacuna.Size = new System.Drawing.Size(116, 95);
+            this.btnPregledRacuna.Size = new System.Drawing.Size(155, 117);
             this.btnPregledRacuna.TabIndex = 107;
             this.btnPregledRacuna.Text = "Pregledaj račun";
             this.btnPregledRacuna.UseVisualStyleBackColor = false;
@@ -852,9 +873,10 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button1.Location = new System.Drawing.Point(869, 119);
+            this.button1.Location = new System.Drawing.Point(1159, 146);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 35);
+            this.button1.Size = new System.Drawing.Size(187, 43);
             this.button1.TabIndex = 108;
             this.button1.Text = "Brzi unos klijenta";
             this.button1.UseVisualStyleBackColor = false;
@@ -862,10 +884,10 @@
             // 
             // frmParagonac
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSlateGray;
-            this.ClientSize = new System.Drawing.Size(1006, 680);
+            this.ClientSize = new System.Drawing.Size(1363, 884);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnPregledRacuna);
             this.Controls.Add(this.btnInsert);
@@ -885,9 +907,10 @@
             this.Controls.Add(this.GroupBoxUkupnoZaNaplatiti);
             this.Controls.Add(this.dgv);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(1022, 718);
+            this.MinimumSize = new System.Drawing.Size(1363, 884);
             this.Name = "frmParagonac";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Paragonac prodaja";

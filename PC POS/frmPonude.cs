@@ -1173,7 +1173,7 @@ namespace PCPOS
 
             decimal _NBC = Util.Korisno.VratiNabavnuCijenu(DTRoba.Rows[0]["sifra"].ToString(), DTpostavke.Rows[0]["default_skladiste"].ToString());
 
-            dgw.Rows[br].Cells[0].Value = "1";
+            RedniBroj();
             dgw.Rows[br].Cells["sifra"].Value = DTRoba.Rows[0]["sifra"].ToString();
             dgw.Rows[br].Cells["naziv"].Value = DTRoba.Rows[0]["naziv"].ToString();
             dgw.Rows[br].Cells["jmj"].Value = DTRoba.Rows[0]["jm"].ToString();
@@ -2553,8 +2553,9 @@ namespace PCPOS
             pr.dokumenat = "PON";
             pr.ponudaUNbc = chbPonudaNbc.Checked;
             pr.broj_dokumenta = ttxBrojPonude.Text;
-            pr.ImeForme = "Faktura";
+            pr.ImeForme = "Ponuda";
             pr.ShowDialog();
+
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -2574,19 +2575,17 @@ namespace PCPOS
         private void label9_Click(object sender, EventArgs e)
         {
             string vrati;
-            int sifra, br=1;
-            string sql = "select max(cast (sifra as int)) from roba";
+            int sifra;
+            string sql = "select max(cast(substring(sifra, 8, 50) as int)) from roba where sifra LIKE '!serial%'";
+
             DataTable DT = classSQL.select(sql, "roba").Tables[0];
             preuzetoSWeba = false;
             if (DT.Rows.Count > 0)
             {
                 vrati = DT.Rows[0][0].ToString();
-                for (int i = 0; i < dgw.Rows.Count; i++)
-                {
-                    br = i + 1;
-                }
-                sifra = int.Parse(vrati) + br;
-                dgw.Rows.Add("", sifra, "", prvo_skladiste, "kom", "0", "25", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "NE", "0");
+                sifra = int.Parse(vrati) + 1;
+                vrati = "!serial" + sifra;
+                dgw.Rows.Add("", vrati, "", prvo_skladiste, "kom", "0", "25", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "NE", "0");
             }
             else
             {
@@ -2647,14 +2646,17 @@ namespace PCPOS
 
             if (DT.Rows.Count == 0)
             {
-                string[] arrRoba = new string[5];
-                arrRoba[0] = dgw.CurrentRow.Cells["sifra"].Value.ToString();
-                arrRoba[1] = dgw.CurrentRow.Cells["naziv"].Value.ToString();
-                arrRoba[2] = dgw.CurrentRow.Cells["porez"].Value.ToString();
-                arrRoba[3] = dgw.CurrentRow.Cells["vpc"].Value.ToString();
-                arrRoba[4] = dgw.CurrentRow.Cells["oduzmi"].Value.ToString();
+                string b = "";
+                if (dgw.CurrentRow.Cells["naziv"].Value.ToString() != b) {
+                    string[] arrRoba = new string[5];
+                    arrRoba[0] = dgw.CurrentRow.Cells["sifra"].Value.ToString();
+                    arrRoba[1] = dgw.CurrentRow.Cells["naziv"].Value.ToString();
+                    arrRoba[2] = dgw.CurrentRow.Cells["porez"].Value.ToString();
+                    arrRoba[3] = dgw.CurrentRow.Cells["vpc"].Value.ToString();
+                    arrRoba[4] = dgw.CurrentRow.Cells["oduzmi"].Value.ToString();
 
-                UmetniStavkuAkoNePostoji(arrRoba);
+                    UmetniStavkuAkoNePostoji(arrRoba);
+                }
             }
         }
 

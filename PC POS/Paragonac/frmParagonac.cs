@@ -1075,18 +1075,16 @@ namespace PCPOS
                      "WHERE SUBSTRING(sifra_robe, 1, 11) = '!serial" + Util.Korisno.GodinaKojaSeKoristiUbazi + "' " +
                      ") x;";*/
 
-                sql = "select max(cast (sifra as int)) from roba";
+                sql = "select max(cast(substring(sifra, 8, 50) as int)) from roba where sifra LIKE '!serial%'";
 
                 DataTable DT = classSQL.select(sql, "roba").Tables[0];
 
                 if (DT.Rows.Count > 0)
                 {
                     int sifra;
-                    string seri = DT.Rows[0][0].ToString();
                     vrati = DT.Rows[0][0].ToString();
-
                     sifra = int.Parse(vrati) + 1;
-                    vrati = sifra.ToString();
+                    vrati = "!serial" + sifra;
 
                     sql = "INSERT INTO roba (naziv,id_grupa,jm,vpc,mpc,id_zemlja_porijekla,id_zemlja_uvoza,id_partner,id_manufacturers,sifra,ean,porez,oduzmi,nc,opis,jamstvo,akcija,link_za_slike,id_podgrupa) " +
                     "VALUES (" +
@@ -1099,7 +1097,7 @@ namespace PCPOS
                     "'60'," +
                     "'1'," +
                     "'1'," +
-                    "'" + sifra + "'," +
+                    "'" + vrati + "'," +
                     "'-1'," +
                     "'" + dg(row, "porez") + "'," +
                     "'NE'," +

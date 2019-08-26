@@ -444,17 +444,18 @@
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
-  
+
       <Body>
         <ReportItems>
-          <Image Name="Image1">
+          <Image Name="Image2">
             <Source>External</Source>
-            <Value>="file:///" &amp; Parameters!path.Value</Value>
+            <Value>="file:///" &amp; Parameters!vodeni.Value</Value>
             <Sizing>Fit</Sizing>
-            <Height>12.53284cm</Height>
+            <Top>0.03528cm</Top>
+            <Height>12.55367cm</Height>
             <Width>20.5cm</Width>
             <Visibility>
-              <Hidden>=IIf(Parameters!path.Value.ToString().Length() &gt; 3, false, true)</Hidden>
+              <Hidden>=IIf(Parameters!vodeni.Value.ToString.Length &gt; 3, False, True)</Hidden>
             </Visibility>
             <Style>
               <Border>
@@ -1088,7 +1089,7 @@
             <RepeatColumnHeaders>true</RepeatColumnHeaders>
             <RepeatRowHeaders>true</RepeatRowHeaders>
             <DataSetName>DSfakturaStavke</DataSetName>
-            <Top>0.19cm</Top>
+            <Top>0.14111cm</Top>
             <Left>0.75373cm</Left>
             <Height>1.04125cm</Height>
             <Width>19.29259cm</Width>
@@ -1100,7 +1101,7 @@
             </Style>
           </Tablix>
           <Line Name="Line3">
-            <Top>1.28646cm</Top>
+            <Top>1.23757cm</Top>
             <Left>0.75373cm</Left>
             <Height>0cm</Height>
             <Width>19.3275cm</Width>
@@ -1131,7 +1132,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox7</rd:DefaultName>
-            <Top>2.35945cm</Top>
+            <Top>2.31056cm</Top>
             <Left>11.54491cm</Left>
             <Height>0.4cm</Height>
             <Width>4.40881cm</Width>
@@ -1166,7 +1167,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox8</rd:DefaultName>
-            <Top>2.85823cm</Top>
+            <Top>2.80934cm</Top>
             <Left>11.54492cm</Left>
             <Height>0.4cm</Height>
             <Width>4.4088cm</Width>
@@ -1179,7 +1180,7 @@
             </Style>
           </Textbox>
           <Line Name="Line4">
-            <Top>2.8547cm</Top>
+            <Top>2.80581cm</Top>
             <Left>11.54492cm</Left>
             <Height>0cm</Height>
             <Width>8.58926cm</Width>
@@ -1221,7 +1222,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox8</rd:DefaultName>
-            <Top>2.85823cm</Top>
+            <Top>2.80934cm</Top>
             <Left>15.98937cm</Left>
             <Height>0.4cm</Height>
             <Width>4.08341cm</Width>
@@ -1254,7 +1255,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox7</rd:DefaultName>
-            <Top>2.35945cm</Top>
+            <Top>2.31056cm</Top>
             <Left>15.95446cm</Left>
             <Height>0.4cm</Height>
             <Width>4.11832cm</Width>
@@ -1288,7 +1289,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox5</rd:DefaultName>
-            <Top>4.88862cm</Top>
+            <Top>4.83973cm</Top>
             <Left>0.75373cm</Left>
             <Height>0.4cm</Height>
             <Width>9.32258cm</Width>
@@ -1319,7 +1320,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox13</rd:DefaultName>
-            <Top>9.36487cm</Top>
+            <Top>9.31598cm</Top>
             <Left>0.62385cm</Left>
             <Height>0.4cm</Height>
             <Width>19.31904cm</Width>
@@ -1349,7 +1350,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox14</rd:DefaultName>
-            <Top>8.85904cm</Top>
+            <Top>8.81015cm</Top>
             <Left>0.62385cm</Left>
             <Height>0.4cm</Height>
             <Width>19.31904cm</Width>
@@ -1379,7 +1380,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>9.87071cm</Top>
+            <Top>9.82182cm</Top>
             <Left>0.65299cm</Left>
             <Height>0.4cm</Height>
             <Width>19.31905cm</Width>
@@ -1412,7 +1413,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>poslovnica_adresa</rd:DefaultName>
-            <Top>11.47043cm</Top>
+            <Top>11.42154cm</Top>
             <Left>0.62385cm</Left>
             <Height>0.32063cm</Height>
             <Width>9.46819cm</Width>
@@ -1448,7 +1449,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>poslovnica_adresa</rd:DefaultName>
-            <Top>11.50571cm</Top>
+            <Top>11.45682cm</Top>
             <Left>10.17146cm</Left>
             <Height>0.32063cm</Height>
             <Width>9.77144cm</Width>
@@ -1483,7 +1484,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox6</rd:DefaultName>
-            <Top>1.95945cm</Top>
+            <Top>1.91056cm</Top>
             <Left>11.54491cm</Left>
             <Height>0.4cm</Height>
             <Width>4.4088cm</Width>
@@ -1526,7 +1527,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox6</rd:DefaultName>
-            <Top>1.95945cm</Top>
+            <Top>1.91056cm</Top>
             <Left>15.98937cm</Left>
             <Height>0.4cm</Height>
             <Width>4.07495cm</Width>
@@ -1562,7 +1563,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>poslovnica_adresa</rd:DefaultName>
-            <Top>3.37112cm</Top>
+            <Top>3.32223cm</Top>
             <Left>0.76219cm</Left>
             <Height>0.4cm</Height>
             <Width>9.31412cm</Width>
@@ -1598,7 +1599,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>poslovnica_adresa</rd:DefaultName>
-            <Top>3.87695cm</Top>
+            <Top>3.82806cm</Top>
             <Left>0.76219cm</Left>
             <Height>0.4cm</Height>
             <Width>9.31412cm</Width>
@@ -1634,7 +1635,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>poslovnica_adresa</rd:DefaultName>
-            <Top>5.39445cm</Top>
+            <Top>5.34556cm</Top>
             <Left>0.75373cm</Left>
             <Height>0.42646cm</Height>
             <Width>9.32258cm</Width>
@@ -1667,7 +1668,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>poslovnica_adresa</rd:DefaultName>
-            <Top>4.38279cm</Top>
+            <Top>4.3339cm</Top>
             <Left>0.75373cm</Left>
             <Height>0.4cm</Height>
             <Width>9.32258cm</Width>
@@ -1700,7 +1701,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>poslovnica_adresa</rd:DefaultName>
-            <Top>5.92675cm</Top>
+            <Top>5.87786cm</Top>
             <Left>0.75373cm</Left>
             <Height>0.42646cm</Height>
             <Width>9.33104cm</Width>
@@ -1736,7 +1737,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>poslovnica_adresa</rd:DefaultName>
-            <Top>3.43462cm</Top>
+            <Top>3.38573cm</Top>
             <Left>11.57137cm</Left>
             <Height>0.4cm</Height>
             <Width>8.49295cm</Width>
@@ -1768,7 +1769,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox6</rd:DefaultName>
-            <Top>1.52417cm</Top>
+            <Top>1.47528cm</Top>
             <Left>11.54491cm</Left>
             <Height>0.4cm</Height>
             <Width>4.4088cm</Width>
@@ -1811,7 +1812,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox6</rd:DefaultName>
-            <Top>1.52417cm</Top>
+            <Top>1.47528cm</Top>
             <Left>15.98937cm</Left>
             <Height>0.4cm</Height>
             <Width>4.07495cm</Width>
@@ -1844,7 +1845,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox12</rd:DefaultName>
-            <Top>10.97626cm</Top>
+            <Top>10.92737cm</Top>
             <Left>0.64454cm</Left>
             <Height>0.45889cm</Height>
             <Width>19.31905cm</Width>
@@ -2164,7 +2165,7 @@
               </Textbox>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>1.52417cm</Top>
+            <Top>1.47528cm</Top>
             <Left>0.76219cm</Left>
             <Height>1.61194cm</Height>
             <Width>8.0166cm</Width>
@@ -2201,7 +2202,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox35</rd:DefaultName>
-            <Top>4.62547cm</Top>
+            <Top>4.57658cm</Top>
             <Left>10.30132cm</Left>
             <Height>1.63249cm</Height>
             <Width>9.763cm</Width>
@@ -2236,7 +2237,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox35</rd:DefaultName>
-            <Top>4.23714cm</Top>
+            <Top>4.18825cm</Top>
             <Left>17.98534cm</Left>
             <Height>0.38833cm</Height>
             <Width>2.10813cm</Width>
@@ -2271,7 +2272,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox35</rd:DefaultName>
-            <Top>4.23714cm</Top>
+            <Top>4.18825cm</Top>
             <Left>10.30132cm</Left>
             <Height>0.38833cm</Height>
             <Width>7.68402cm</Width>
@@ -2305,7 +2306,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>poslovnica_adresa</rd:DefaultName>
-            <Top>1.52417cm</Top>
+            <Top>1.47528cm</Top>
             <Left>9.18846cm</Left>
             <Height>0.4cm</Height>
             <Width>1.76804cm</Width>
@@ -2789,7 +2790,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DSPodaciTvrtke</DataSetName>
-            <Top>6.45904cm</Top>
+            <Top>6.41015cm</Top>
             <Left>0.76219cm</Left>
             <Height>2.4cm</Height>
             <Width>9.28723cm</Width>
@@ -2818,7 +2819,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox6</rd:DefaultName>
-            <Top>11.82634cm</Top>
+            <Top>11.77745cm</Top>
             <Left>0.5695cm</Left>
             <Height>0.6cm</Height>
             <Width>9.42557cm</Width>
@@ -2851,7 +2852,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox6</rd:DefaultName>
-            <Top>10.30599cm</Top>
+            <Top>10.2571cm</Top>
             <Left>0.66647cm</Left>
             <Height>0.6cm</Height>
             <Width>19.31402cm</Width>
@@ -2867,7 +2868,7 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>12.70923cm</Height>
+        <Height>12.66034cm</Height>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2907,7 +2908,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Naslov</rd:DefaultName>
-              <Top>9.77747cm</Top>
+              <Top>9.79511cm</Top>
               <Left>0.65299cm</Left>
               <Height>0.6cm</Height>
               <Width>19.3275cm</Width>
@@ -2918,6 +2919,24 @@
                 <VerticalAlign>Middle</VerticalAlign>
               </Style>
             </Textbox>
+            <Image Name="Image1">
+              <Source>External</Source>
+              <Value>="file:///" &amp; Parameters!path.Value</Value>
+              <Sizing>FitProportional</Sizing>
+              <Top>0.73527cm</Top>
+              <Left>0.65299cm</Left>
+              <Height>3.84167cm</Height>
+              <Width>8.08909cm</Width>
+              <ZIndex>1</ZIndex>
+              <Visibility>
+                <Hidden>=IIf(Parameters!path.Value.ToString().Length() &gt; 3, false, true)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Image>
             <Textbox Name="adresa">
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
@@ -2957,7 +2976,7 @@ IIf(First(Fields!dodatniPodaciHeader.Value, "DSPodaciTvrtke")="","",First(Fields
               <Left>9.9352cm</Left>
               <Height>8.45557cm</Height>
               <Width>10.14603cm</Width>
-              <ZIndex>1</ZIndex>
+              <ZIndex>2</ZIndex>
               <Visibility>
                 <Hidden>=iif(Parameters!sas.Value = "1",true,false)</Hidden>
               </Visibility>
@@ -2990,7 +3009,7 @@ IIf(First(Fields!dodatniPodaciHeader.Value, "DSPodaciTvrtke")="","",First(Fields
               <Left>0.65299cm</Left>
               <Height>0.57958cm</Height>
               <Width>19.3275cm</Width>
-              <ZIndex>2</ZIndex>
+              <ZIndex>3</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -3070,7 +3089,7 @@ IIF(Parameters!dokumenat.Value = "PON", IIF(First(Fields!string4.Value, "DSKaktu
               <Left>0.65299cm</Left>
               <Height>4.41987cm</Height>
               <Width>9.1411cm</Width>
-              <ZIndex>3</ZIndex>
+              <ZIndex>4</ZIndex>
               <Style>
                 <Border>
                   <Style>Solid</Style>
@@ -3103,7 +3122,7 @@ IIF(Parameters!dokumenat.Value = "PON", IIF(First(Fields!string4.Value, "DSKaktu
               <Left>0.75373cm</Left>
               <Height>0.7cm</Height>
               <Width>19.29259cm</Width>
-              <ZIndex>4</ZIndex>
+              <ZIndex>5</ZIndex>
               <Visibility>
                 <Hidden>=iif(Parameters!sas.Value = "1",true,false)</Hidden>
               </Visibility>
@@ -3359,6 +3378,10 @@ IIF(Parameters!dokumenat.Value = "PON", IIF(First(Fields!string4.Value, "DSKaktu
     </ReportParameter>
     <ReportParameter Name="ppmv">
       <DataType>Float</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="vodeni">
+      <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
   </ReportParameters>
