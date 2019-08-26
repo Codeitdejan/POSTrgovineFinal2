@@ -88,6 +88,7 @@
             this.txtProizvodackaCijena = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.btnBarcode = new System.Windows.Forms.Button();
+            this.importStavkiPoPosebnomExcelu = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -440,7 +441,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button1.Image = global::PCPOS.Properties.Resources.Actions_application_exit_icon;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(775, 12);
+            this.button1.Location = new System.Drawing.Point(907, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 40);
             this.button1.TabIndex = 53;
@@ -737,14 +738,27 @@
             this.btnBarcode.UseVisualStyleBackColor = true;
             this.btnBarcode.Click += new System.EventHandler(this.BtnBarcode_Click);
             // 
+            // importStavkiPoPosebnomExcelu
+            // 
+            this.importStavkiPoPosebnomExcelu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.importStavkiPoPosebnomExcelu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.importStavkiPoPosebnomExcelu.Location = new System.Drawing.Point(716, 12);
+            this.importStavkiPoPosebnomExcelu.Name = "importStavkiPoPosebnomExcelu";
+            this.importStavkiPoPosebnomExcelu.Size = new System.Drawing.Size(153, 40);
+            this.importStavkiPoPosebnomExcelu.TabIndex = 97;
+            this.importStavkiPoPosebnomExcelu.Text = "Import stavki iz excela";
+            this.importStavkiPoPosebnomExcelu.UseVisualStyleBackColor = true;
+            this.importStavkiPoPosebnomExcelu.Click += new System.EventHandler(this.importStavkiPoPosebnomExcelu_Click);
+            // 
             // frmRobaUsluge
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateGray;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(917, 565);
+            this.ClientSize = new System.Drawing.Size(1049, 565);
             this.ControlBox = false;
+            this.Controls.Add(this.importStavkiPoPosebnomExcelu);
             this.Controls.Add(this.btnBarcode);
             this.Controls.Add(this.txtProizvodackaCijena);
             this.Controls.Add(this.label21);
@@ -875,5 +889,6 @@
         private System.Windows.Forms.TextBox txtProizvodackaCijena;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Button btnBarcode;
+        private System.Windows.Forms.Button importStavkiPoPosebnomExcelu;
     }
 }

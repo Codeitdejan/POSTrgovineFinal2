@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.IO;
@@ -538,9 +539,9 @@ namespace PCPOS
                         }
                     }
 
-                string sifra= CheckEan(txtSifra_robe.Text) ?? txtSifra_robe.Text;
+                string sifra = CheckEan(txtSifra_robe.Text) ?? txtSifra_robe.Text;
                 //TBroba = classSQL.select("SELECT * FROM roba WHERE (sifra='" + txtSifra_robe.Text + @"' AND oduzmi='DA'", "roba").Tables[0];
-                TBroba = classSQL.select($"SELECT * FROM roba WHERE (sifra='{txtSifra_robe.Text}' OR sifra='{sifra}') AND oduzmi='DA'","roba").Tables[0];
+                TBroba = classSQL.select($"SELECT * FROM roba WHERE (sifra='{txtSifra_robe.Text}' OR sifra='{sifra}') AND oduzmi='DA'", "roba").Tables[0];
 
                 if (TBroba.Rows.Count > 0)
                 {
@@ -3106,6 +3107,40 @@ sifrePovratnaNaknadaUpdate.Rows[i]["id"].ToString());
 
         private void txtPPMV_Leave(object sender, EventArgs e)
         {
+        }
+
+        private void button2_Click_2(object sender, EventArgs e)
+        {
+            string name = "";
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string path = openFileDialog.FileName;
+                string connectionString = string.Format(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source={0};Extended Properties=""Excel 12.0;HDR=YES;IMEX=1;""", path);
+                OleDbConnection connection = new OleDbConnection(connectionString);
+                connection.Open();
+                DataTable dt = connection.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
+                MessageBox.Show(path);
+                if (dt != null)
+                {
+                    for (int i = 0; i < dt.Rows.Count; i++)
+                    {
+                        name = dt.Rows[i]["TABLE_NAME"].ToString();
+                    }
+                    string query = string.Format("select NAZIV,MJERA,BROJ,BAR_KOD from [{0}]", "EXPORT BBM$");
+                    OleDbDataAdapter dataAdapter = new OleDbDataAdapter(query, connectionString);
+                    DataSet DS = new DataSet();
+                    dataAdapter.Fill(DS);
+                    if (DS == null)
+                    {
+                        MessageBox.Show("Datoteka nema stavki.");
+                        return;
+                    }
+                    DataTable DT = DS.Tables[0];
+                    MessageBox.Show(DT.Rows[0]["BROJ"].ToString());
+                }
+                connection.Close();
+            }
         }
     }
 }

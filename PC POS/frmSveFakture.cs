@@ -23,8 +23,6 @@ namespace PCPOS
         private DataSet DS_Zaposlenik = new DataSet();
         private DataTable DTpostavke = new DataTable();
         private string oib_tvrtke = "";
-
-        //string[] arrOib = new string[] { "19058708438" };
         private string[] arrOib = new string[] { "19058708Pero" };
 
         public frmMenu MainFormMenu { get; set; }
@@ -41,20 +39,16 @@ namespace PCPOS
             {
                 int heigt = SystemInformation.VirtualScreen.Height;
                 this.Height = heigt - 60;
-                //this.Location = new Point((SystemInformation.VirtualScreen.Width / 2) - 505, 5);
             }
             else
             {
                 int heigt = SystemInformation.VirtualScreen.Height;
                 this.Height = heigt - 140;
-                //this.Location = new Point((SystemInformation.VirtualScreen.Width / 2) - 505, 5);
-                //System.Windows.SystemParameters.PrimaryScreenWidth
-                //SystemInformation.
             }
 
             fillCB();
             fillDataGrid();
-
+            dgv.Refresh();
             try
             {
                 if (dgv.Rows.Count >= 1)
@@ -64,16 +58,12 @@ namespace PCPOS
                     fillDataGrid_stavke(br, dgv.CurrentRow.Cells["id_ducan"].FormattedValue.ToString(), dgv.CurrentRow.Cells["id_kasa"].FormattedValue.ToString());
                 }
             }
-            catch { }
-
-            //DTpostavke = classSQL.select_settings("SELECT * FROM postavke", "postavke").Tables[0];
-
+            catch {
+            }
             if (DTpostavke.Rows[0]["on_off_postotak"].ToString() == "NE")
             {
                 txtIspisBona.Visible = false;
             }
-
-            //this.Paint += new PaintEventHandler(Form1_Paint);
         }
 
         private void Form1_Paint(object sender, PaintEventArgs e)
@@ -116,17 +106,16 @@ namespace PCPOS
 
             string top = "";
             string remote = "";
+            /*
             if (classSQL.remoteConnectionString != "")
             {
-                remote = " LIMIT 3000";
+                //remote = " LIMIT 3000";
             }
             else
             {
                 top = " TOP(3000) ";
             }
-
-            //fakture.date DESC
-
+            */
             string sql = "SELECT " + top + " fakture.broj_fakture AS [broj],id_ducan,id_kasa,fakture.id_vd AS [VD],fakture.broj_ispisa, fakture.date AS [Datum]," +
                 " fakture.datum_valute as [Datum valute],valute.ime_valute as [Ime Valute],id_nacin_placanja" +
                 ", partners.id_partner as sifra_partnera, partners.ime_tvrtke AS [Partner],fakture.ukupno as [Ukupno],fakture.storno as [Storno], partners.id_partner," +
@@ -147,16 +136,12 @@ ORDER BY fakture.date DESC
 {1}", top, remote);
 
             DSfakture = classSQL.select(sql, "fakture");
-
-            //string[] arrOib = new string[] { "19058708438" };
-
             foreach (DataRow r in DSfakture.Tables[0].Rows)
             {
                 string StatusSalda = "";
                 decimal placeno_salda_konti, ukupno_faktura;
                 decimal.TryParse(r["salda_konti_uplaceno"].ToString(), out placeno_salda_konti);
                 decimal.TryParse(r["Ukupno"].ToString(), out ukupno_faktura);
-
                 if (r["id_nacin_placanja"].ToString() == "1")
                 {
                     StatusSalda = "Plaćeno";
@@ -216,6 +201,7 @@ ORDER BY fakture.date DESC
                 dgv.Columns["id_ducan"].Visible = true;
                 dgv.Columns["sifra_partnera"].Visible = false;
             }
+            dgv.Refresh();
         }
 
         private void fillDataGrid_stavke(string broj, string _id_ducan, string _id_kasa)
@@ -345,8 +331,6 @@ ORDER BY fakture.date DESC
                 }
                 else
                 {
-                    //Properties.Settings.Default.id_partner
-
                     DataTable DSpar = classSQL.select(string.Format("SELECT id_partner FROM partners WHERE LOWER(ime_tvrtke) = '{0}';", Str), "partners").Tables[0];
                     if (DSpar.Rows.Count > 0)
                     {
@@ -415,15 +399,6 @@ ORDER BY fakture.date DESC
             {
                 top = " TOP(3000) ";
             }
-
-            //string sql = "SELECT DISTINCT " + top + " faktura_stavke.broj_fakture AS [broj],fakture.id_vd AS [VD]," +
-            //        "fakture.date AS Datum,fakture.datum_valute as [Datum valute],valute.ime_valute as [Ime Valute]" +
-            //        ",partners.ime_tvrtke AS [Partner],fakture.ukupno as [Ukupno],fakture.storno as [Storno]  " +
-            //        " FROM fakture INNER JOIN valute ON fakture.id_valuta = valute.id_valuta " +
-            //        " LEFT JOIN partners ON fakture.id_fakturirati = partners.id_partner"+
-            //        " INNER JOIN faktura_stavke ON faktura_stavke.broj_fakture = fakture.broj_fakture" + filter +
-            //        " ORDER BY fakture.date DESC" + remote;
-
             string sql = string.Format(@"SELECT DISTINCT {0} fakture.broj_fakture AS [broj], fakture.id_vd AS [VD], fakture.broj_ispisa, fakture.date AS [Datum],
 id_nacin_placanja, fakture.datum_valute as [Datum valute], valute.ime_valute as [Ime Valute], partners.ime_tvrtke AS [Partner], fakture.ukupno as [Ukupno],
 fakture.storno as [Storno], partners.id_partner, fakture.id_ducan, fakture.id_kasa,
@@ -436,9 +411,6 @@ LEFT JOIN partners ON fakture.id_odrediste = partners.id_partner
 {1}
 ORDER BY fakture.date DESC
 {2}", top, filter, remote);
-
-            //partners.id_partner as sifra_partnera
-
             DSfakture = classSQL.select(sql, "fakture");
             dgv.Rows.Clear();
 
@@ -944,6 +916,12 @@ WHERE id_partner = '{0}';", Properties.Settings.Default.id_partner), "partners")
         private void buttonPrintNjemackeFakture_Click(object sender, EventArgs e)
         {
             printaj_njemacku_formu();
+        }
+
+        private void dgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+           
         }
     }
 }
