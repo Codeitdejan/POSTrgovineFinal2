@@ -11,7 +11,7 @@ namespace PCPOS.SQL
     {
         public static bool TestCompactConnection(string path)
         {
-            string connectionString = "Data Source=pc_pos_database.sdf;Password=q1w2e3r4;Persist Security Info=True";
+            string connectionString = "Data Source=pc_pos_database.sdf;Password=q1w2e3r4;Persist Security Info=True;Pooling=false;";
             SqlCeConnection conn = new SqlCeConnection(connectionString);
             try
             {
@@ -36,7 +36,7 @@ namespace PCPOS.SQL
 
         public static string GetCompactConnectionString()
         {
-            return "Data Source=pc_pos_database.sdf;Password=q1w2e3r4;Persist Security Info=True";
+            return "Data Source=pc_pos_database.sdf;Password=q1w2e3r4;Persist Security Info=True;";
         }
 
         public static string GetRemoteConnectionString(bool caffe = false)
@@ -55,7 +55,7 @@ namespace PCPOS.SQL
                 if (DS.Tables[$"{node}"].Rows[0]["active"].ToString() == "1")
                 {
                     password = classSQL.select_settings("SELECT pass FROM postavke", "postavke").Tables[0].Rows[0][0].ToString();
-                    return "Server=" + server + ";Port=" + port + ";" + "User Id=" + username + ";Password=" + password + ";Database=" + database + ";";
+                    return "Server=" + server + ";Port=" + port + ";" + "User Id=" + username + ";Password=" + password + ";Database=" + database + ";Pooling=false;MaxPoolSize=1024;Timeout=10";
                 }
             }
             catch (Exception)

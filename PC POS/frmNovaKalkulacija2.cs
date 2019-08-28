@@ -2140,10 +2140,10 @@ CBskladiste.SelectedValue));
             ReadOnly(false);
             update = true;
 
-            string sql1 = "SELECT id_kalkulacija FROM kalkulacija WHERE godina='" + nuGodinaKalk.Value.ToString() + "' AND broj='" + id + "' AND id_skladiste='" + CBskladiste.SelectedValue + "'";
+            string sql1 = "SELECT id_kalkulacija FROM kalkulacija WHERE broj='" + id +"'";
             DT1 = classSQL.select(sql1, "kalkulacija").Tables[0];
 
-            DataTable DTKalkulacije = classSQL.select("SELECT * FROM kalkulacija WHERE broj='" + id + "' AND id_skladiste='" + skl + "'", "kalkulacija").Tables[0];
+            DataTable DTKalkulacije = classSQL.select("SELECT * FROM kalkulacija WHERE broj='" + id + "'","kalkulacija").Tables[0];
             string sql = "SELECT kalkulacija.id_skladiste,kalkulacija_stavke.kolicina,kalkulacija_stavke.fak_cijena " +
                 " ,kalkulacija_stavke.rabat,kalkulacija_stavke.prijevoz,kalkulacija_stavke.vpc,kalkulacija_stavke.carina," +
                 " kalkulacija_stavke.marza_postotak,kalkulacija_stavke.porez,kalkulacija_stavke.posebni_porez,kalkulacija_stavke.broj," +
@@ -2151,7 +2151,7 @@ CBskladiste.SelectedValue));
                 " FROM kalkulacija_stavke " +
                 " LEFT JOIN kalkulacija ON kalkulacija_stavke.broj=kalkulacija.broj AND kalkulacija_stavke.id_skladiste=kalkulacija.id_skladiste " +
                 " LEFT JOIN roba ON roba.sifra=kalkulacija_stavke.sifra" +
-                " WHERE kalkulacija_stavke.broj='" + id + "' AND kalkulacija.id_skladiste='" + skl + "'" +
+                " WHERE kalkulacija_stavke.broj='" + id + "'" +
                 " ORDER BY kalkulacija_stavke.id_stavka";
             DTstavke = classSQL.select(sql, "kalkulacija_stavke").Tables[0];
 
@@ -2168,9 +2168,9 @@ CBskladiste.SelectedValue));
             nuGodinaKalk.Text = DTKalkulacije.Rows[0]["godina"].ToString();
             cbValuta.SelectedValue = DTKalkulacije.Rows[0]["id_valuta"].ToString();
             txtValutaValuta.Text = DTKalkulacije.Rows[0]["tecaj"].ToString();
-            CBskladiste.SelectedValue = DTKalkulacije.Rows[0]["id_skladiste"].ToString();
+            //CBskladiste.SelectedValue = DTKalkulacije.Rows[0]["id_skladiste"].ToString();
             txtZaposlenik.Text = classSQL.select("SELECT ime + ' ' + prezime AS ime_prezime FROM zaposlenici WHERE id_zaposlenik='" + DTKalkulacije.Rows[0]["id_zaposlenik"].ToString() + "'", "zaposlenici").Tables[0].Rows[0][0].ToString();
-            Properties.Settings.Default.idSkladiste = DTKalkulacije.Rows[0]["id_skladiste"].ToString();
+            //Properties.Settings.Default.idSkladiste = DTKalkulacije.Rows[0]["id_skladiste"].ToString();
             Properties.Settings.Default.Save();
 
             decimal.TryParse(txtValutaValuta.Text, out GLmarza);
@@ -3108,10 +3108,13 @@ sifrePovratnaNaknadaUpdate.Rows[i]["id"].ToString());
         private void txtPPMV_Leave(object sender, EventArgs e)
         {
         }
+        #region GeneriranjeKalkulacijeIzExcela
 
-        private void button2_Click_2(object sender, EventArgs e)
+        private void UcitajPodatkeIzExcelaZaGeneriranjeKalkulacije()
         {
-            string name = "";
+            DataTable DTmdg0 = new DataTable();
+            DataTable DTmdg0_mda = new DataTable();
+            MessageBox.Show("Odaberite excel file sa nazivom mdg0.xls!");
             OpenFileDialog openFileDialog = new OpenFileDialog();
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
@@ -3119,28 +3122,95 @@ sifrePovratnaNaknadaUpdate.Rows[i]["id"].ToString());
                 string connectionString = string.Format(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source={0};Extended Properties=""Excel 12.0;HDR=YES;IMEX=1;""", path);
                 OleDbConnection connection = new OleDbConnection(connectionString);
                 connection.Open();
-                DataTable dt = connection.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
-                MessageBox.Show(path);
-                if (dt != null)
+                string query = string.Format("select SKLAD_ID,BROJ,IZNOS,KLIJENT,DATUM from [{0}]", "EXPORT BBM$");
+                OleDbDataAdapter dataAdapter = new OleDbDataAdapter(query, connectionString);
+                DataSet DS = new DataSet();
+                dataAdapter.Fill(DS);
+                if (DS == null)
                 {
-                    for (int i = 0; i < dt.Rows.Count; i++)
-                    {
-                        name = dt.Rows[i]["TABLE_NAME"].ToString();
-                    }
-                    string query = string.Format("select NAZIV,MJERA,BROJ,BAR_KOD from [{0}]", "EXPORT BBM$");
-                    OleDbDataAdapter dataAdapter = new OleDbDataAdapter(query, connectionString);
-                    DataSet DS = new DataSet();
-                    dataAdapter.Fill(DS);
-                    if (DS == null)
-                    {
-                        MessageBox.Show("Datoteka nema stavki.");
-                        return;
-                    }
-                    DataTable DT = DS.Tables[0];
-                    MessageBox.Show(DT.Rows[0]["BROJ"].ToString());
+                    MessageBox.Show("Datoteka nema stavki.");
+                    return;
                 }
+                DTmdg0 = DS.Tables[0];
+                MessageBox.Show(DTmdg0.Rows[0]["KLIJENT"].ToString());
                 connection.Close();
+                MessageBox.Show("Izvrseno!" + Environment.NewLine + " Odaberite excel file sa nazivom mdg0_mda.xls!");
             }
+            OpenFileDialog openFileDialog2 = new OpenFileDialog();
+            if (openFileDialog2.ShowDialog() == DialogResult.OK)
+            {
+                string path2 = openFileDialog2.FileName;
+                string connectionString2 = string.Format(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source={0};Extended Properties=""Excel 12.0;HDR=YES;IMEX=1;""", path2);
+                OleDbConnection connection2 = new OleDbConnection(connectionString2);
+                connection2.Open();
+                string query = string.Format("select BROJ,ARTIKL,NAB_CIJ,PRO_CIJ,KOLIKO,RABAT from [{0}]", "EXPORT BBM$");
+                OleDbDataAdapter dataAdapter = new OleDbDataAdapter(query, connectionString2);
+                DataSet DS = new DataSet();
+                dataAdapter.Fill(DS);
+                if (DS == null)
+                {
+                    MessageBox.Show("Datoteka nema stavki.");
+                    return;
+                }
+                DTmdg0_mda = DS.Tables[0];
+                MessageBox.Show(DTmdg0_mda.Rows[0]["BROJ"].ToString());
+                connection2.Close();
+            }
+            UnesiKalkulacijuIscitanuIzExcela(DTmdg0, DTmdg0_mda);
         }
+
+        private void UnesiKalkulacijuIscitanuIzExcela(DataTable dt_mdg0,DataTable dt_mdg0_mda)
+        {
+            int sljedeci_unos = int.Parse(brojKalkulacije());
+            for(int i = 0; i < dt_mdg0.Rows.Count; i++)
+            {
+                try
+                {
+                    string otpremnica_kod = dt_mdg0.Rows[i]["BROJ"].ToString() + "-" + DateTime.Now.Month.ToString() + "-" + DateTime.Now.Year.ToString();
+                    string sqlUnosKalkulacije = "INSERT INTO kalkulacija(broj,id_partner,racun,otpremnica,racun_datum,otpremnica_datum,mjesto_troska,datum," +
+                                                                        "godina,id_kalkulacija,ukupno_vpc,ukupno_mpc,tecaj,id_valuta,fakturni_iznos," +
+                                                                        "id_skladiste,id_zaposlenik,novo,editirano,trosak) values('" + sljedeci_unos + "','" +
+                                                                        dt_mdg0.Rows[i]["KLIJENT"].ToString() + "','" + otpremnica_kod + "','" + otpremnica_kod + "','" +
+                                                                        dt_mdg0.Rows[i]["DATUM"].ToString() + "','" + dt_mdg0.Rows[i]["DATUM"].ToString() + "',' ','" + dt_mdg0.Rows[i]["DATUM"] + "','" + DateTime.Now.Year.ToString() + "','" +
+                                                                        dt_mdg0.Rows[i]["BROJ"].ToString() + "','" + (Convert.ToDouble(dt_mdg0.Rows[i]["IZNOS"].ToString()) * 0.8) + "','" + dt_mdg0.Rows[i]["IZNOS"].ToString() +
+                                                                        "','1','5','" + (Convert.ToDouble(dt_mdg0.Rows[i]["IZNOS"].ToString()) * 0.8) + "','1','" + Properties.Settings.Default.id_zaposlenik + "','TRUE','FALSE','0')";
+                    classSQL.insert(sqlUnosKalkulacije);
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+                sljedeci_unos++;
+            }
+            UnesiStavkeKalkulacijeIscitaneIzExcela(dt_mdg0_mda);
+        }
+
+        private void UnesiStavkeKalkulacijeIscitaneIzExcela(DataTable dt_mdg0_mda)
+        {
+            for(int i = 0; i < dt_mdg0_mda.Rows.Count; i++)
+            {
+                try
+                {
+                    string sqlUnosStavkiKalkulacije = "INSERT INTO kalkulacija_stavke(id_stavka,kolicina,fak_cijena,rabat,prijevoz,carina,marza_postotak,porez,posebni_porez,broj,vpc,id_skladiste,id_kalkulacija) values('" +
+                                                       dt_mdg0_mda.Rows[i]["ARTIKL"].ToString() + "','" + dt_mdg0_mda.Rows[i]["KOLIKO"].ToString() + "','" +
+                                                       dt_mdg0_mda.Rows[i]["PRO_CIJ"].ToString().Replace(",", ".") + "','" +
+                                                       dt_mdg0_mda.Rows[i]["RABAT"].ToString() + "','0.00','0,00','0,00','25,00','0,00','" + dt_mdg0_mda.Rows[i]["BROJ"].ToString() + "','" +
+                                                       dt_mdg0_mda.Rows[i]["NAB_CIJ"].ToString().Replace(",", ".") + "','1','" + dt_mdg0_mda.Rows[i]["BROJ"].ToString() + "')";
+                    classSQL.insert(sqlUnosStavkiKalkulacije);
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+            }
+            MessageBox.Show("Izvrseno!");
+        }
+
+
+            private void button2_Click_2(object sender, EventArgs e)
+        {
+            UcitajPodatkeIzExcelaZaGeneriranjeKalkulacije();
+        }
+        #endregion
     }
 }

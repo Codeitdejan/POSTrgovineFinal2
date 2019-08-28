@@ -1772,7 +1772,7 @@ ALTER TABLE roba
                 connection.Close();
             }
 
-            MessageBox.Show("Zavrsen uvoz! Sljedece odaberite excel file sa nazivom art0_arc.xls!");
+            MessageBox.Show("Zavrsen uvoz!"+Environment.NewLine+"Sljedece odaberite excel file sa nazivom art0_arc.xls!");
             OpenFileDialog openFileDialog2 = new OpenFileDialog();
             if (openFileDialog2.ShowDialog() == DialogResult.OK)
             {
