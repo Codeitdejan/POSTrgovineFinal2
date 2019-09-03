@@ -277,3 +277,12 @@ C:\Users\Toni\Desktop\POSTrgovineFinal2v2\PC POS Update\obj\x86\Debug\PC POS Upd
 C:\Users\Toni\Desktop\POSTrgovineFinal2v2\PC POS Update\obj\x86\Debug\PC POS Update.csproj.CoreCompileInputs.cache
 C:\Users\Toni\Desktop\POSTrgovineFinal2v2\PC POS Update\obj\x86\Debug\PC POS Update.exe
 C:\Users\Toni\Desktop\POSTrgovineFinal2v2\PC POS Update\obj\x86\Debug\PC POS Update.pdb
+C:\Users\Korisnik\Desktop\Trgovine\PC POS Update\bin\Debug\PC POS Update.exe
+C:\Users\Korisnik\Desktop\Trgovine\PC POS Update\bin\Debug\PC POS Update.pdb
+C:\Users\Korisnik\Desktop\Trgovine\PC POS Update\obj\x86\Debug\PC POS Update.csprojAssemblyReference.cache
+C:\Users\Korisnik\Desktop\Trgovine\PC POS Update\obj\x86\Debug\PC_POS_Update.frmUpdate.resources
+C:\Users\Korisnik\Desktop\Trgovine\PC POS Update\obj\x86\Debug\PC_POS_Update.Properties.Resources.resources
+C:\Users\Korisnik\Desktop\Trgovine\PC POS Update\obj\x86\Debug\PC POS Update.csproj.GenerateResource.cache
+C:\Users\Korisnik\Desktop\Trgovine\PC POS Update\obj\x86\Debug\PC POS Update.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\Desktop\Trgovine\PC POS Update\obj\x86\Debug\PC POS Update.exe
+C:\Users\Korisnik\Desktop\Trgovine\PC POS Update\obj\x86\Debug\PC POS Update.pdb

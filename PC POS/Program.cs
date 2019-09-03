@@ -14,12 +14,12 @@ namespace PCPOS
         [STAThread]
         private static void Main(string[] args)
         {
-            DateTime endTime = Convert.ToDateTime("01.10.2019.");
+           /* DateTime endTime = Convert.ToDateTime("01.10.2019.");
             if (DateTime.Now.CompareTo(endTime) > 0)
             {
                 MessageBox.Show("Javite se tvrtci Code-iT!");
                 Environment.Exit(1);
-            }
+            }*/
             if (args.Count() > 0 && args[0] == "OtvoriKronologijuPartnera")
             {
                 frmPartnerKronologija pk = new frmPartnerKronologija();
