@@ -709,6 +709,19 @@ CREATE TABLE servis_status
                 classSQL.select_settings(sql, "postavke");
             }
 
+            if (DTpostavke.Columns["zapisnikOPromjeniCijene"] == null)
+            {
+                if (Class.PodaciTvrtka.oibTvrtke == "88985647471")
+                {
+                    sql = "ALTER TABLE postavke ADD COLUMN zapisnikOPromjeniCijene BIT DEFAULT 1;";
+                }
+                else
+                {
+                    sql = "ALTER TABLE postavke ADD COLUMN zapisnikOPromjeniCijene BIT DEFAULT 1;";
+                }
+                classSQL.select_settings(sql, "postavke");
+            }
+
             //nbc_fakture
 
             if (DTpostavke.Columns["idKalkulacija"] == null)

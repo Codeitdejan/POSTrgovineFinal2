@@ -67,18 +67,18 @@ namespace PCPOS.Report.Faktura
                 sas = "0";
             }
             string root = "";
-            string root2 = "";
+            string root2 = "0";
             if (DTpostavke.Rows[0]["logo"].ToString() == "1")
             {
                 root = DTpostavke.Rows[0]["logopath"].ToString();
                 string localPath = Path.GetDirectoryName(Application.ExecutablePath);
-                root2 = localPath + "\\bijela.jpg";
+                //root2 = localPath + "\\bijela.jpg";
             }
             else
             {
                 string localPath = Path.GetDirectoryName(Application.ExecutablePath);
                 root = localPath + "\\bijela.jpg";
-                root2 = localPath + "\\bijela.jpg";
+               // root2 = localPath + "\\bijela.jpg";
             }
 
             if((ImeForme == "Ponude" || ImeForme == "Ponuda") && Class.Postavke.vodeniZig)

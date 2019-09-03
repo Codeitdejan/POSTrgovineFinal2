@@ -169,7 +169,7 @@ namespace PCPOS
             this.tableLayoutPanel1.Controls.Add(this.monthCalendar1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.button4, 0, 5);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(9, 337);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 6;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 203F));
@@ -195,7 +195,7 @@ namespace PCPOS
             this.button4.ForeColor = System.Drawing.Color.Black;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button4.Location = new System.Drawing.Point(5, 345);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(205, 33);
             this.button4.TabIndex = 124;
@@ -247,7 +247,7 @@ namespace PCPOS
             chartArea1.Name = "ChartArea1";
             this.Chart1.ChartAreas.Add(chartArea1);
             this.Chart1.Location = new System.Drawing.Point(51, 66);
-            this.Chart1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Chart1.Margin = new System.Windows.Forms.Padding(4);
             this.Chart1.Name = "Chart1";
             this.Chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
             series1.ChartArea = "ChartArea1";
@@ -276,7 +276,7 @@ namespace PCPOS
             // 
             this.txtBrojDana.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBrojDana.Location = new System.Drawing.Point(179, 36);
-            this.txtBrojDana.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBrojDana.Margin = new System.Windows.Forms.Padding(4);
             this.txtBrojDana.Name = "txtBrojDana";
             this.txtBrojDana.Size = new System.Drawing.Size(63, 22);
             this.txtBrojDana.TabIndex = 128;
@@ -305,7 +305,7 @@ namespace PCPOS
             this.cbMaloprodaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbMaloprodaja.ForeColor = System.Drawing.Color.Black;
             this.cbMaloprodaja.Location = new System.Drawing.Point(562, 37);
-            this.cbMaloprodaja.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbMaloprodaja.Margin = new System.Windows.Forms.Padding(4);
             this.cbMaloprodaja.Name = "cbMaloprodaja";
             this.cbMaloprodaja.Size = new System.Drawing.Size(122, 24);
             this.cbMaloprodaja.TabIndex = 130;
@@ -320,7 +320,7 @@ namespace PCPOS
             this.chbFakture.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.chbFakture.ForeColor = System.Drawing.Color.Black;
             this.chbFakture.Location = new System.Drawing.Point(705, 38);
-            this.chbFakture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbFakture.Margin = new System.Windows.Forms.Padding(4);
             this.chbFakture.Name = "chbFakture";
             this.chbFakture.Size = new System.Drawing.Size(87, 24);
             this.chbFakture.TabIndex = 130;
@@ -363,7 +363,7 @@ namespace PCPOS
             this.tableLayoutPanel2.Controls.Add(this.btnPromjenaGodine, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.lblTrenutnaGodina, 0, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(13, 11);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.76878F));
@@ -385,7 +385,7 @@ namespace PCPOS
             this.btnPromjenaGodine.ForeColor = System.Drawing.Color.Black;
             this.btnPromjenaGodine.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnPromjenaGodine.Location = new System.Drawing.Point(4, 29);
-            this.btnPromjenaGodine.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPromjenaGodine.Margin = new System.Windows.Forms.Padding(4);
             this.btnPromjenaGodine.Name = "btnPromjenaGodine";
             this.btnPromjenaGodine.Size = new System.Drawing.Size(271, 30);
             this.btnPromjenaGodine.TabIndex = 145;
@@ -434,7 +434,7 @@ namespace PCPOS
             this.chbIfb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.chbIfb.ForeColor = System.Drawing.Color.Black;
             this.chbIfb.Location = new System.Drawing.Point(471, 37);
-            this.chbIfb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbIfb.Margin = new System.Windows.Forms.Padding(4);
             this.chbIfb.Name = "chbIfb";
             this.chbIfb.Size = new System.Drawing.Size(57, 24);
             this.chbIfb.TabIndex = 146;
@@ -447,7 +447,7 @@ namespace PCPOS
             this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox5.Image = global::PCPOS.Properties.Resources.Informacije;
             this.pictureBox5.Location = new System.Drawing.Point(141, 9);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(97, 71);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -463,7 +463,7 @@ namespace PCPOS
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = global::PCPOS.Properties.Resources.Podrška;
             this.pictureBox4.Location = new System.Drawing.Point(9, 118);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(99, 69);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -479,7 +479,7 @@ namespace PCPOS
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(16, 224);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(99, 81);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -504,7 +504,7 @@ namespace PCPOS
             this.button7.ForeColor = System.Drawing.Color.Black;
             this.button7.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button7.Location = new System.Drawing.Point(993, 138);
-            this.button7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button7.Margin = new System.Windows.Forms.Padding(4);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(145, 92);
             this.button7.TabIndex = 124;
@@ -527,7 +527,7 @@ namespace PCPOS
             this.button6.ForeColor = System.Drawing.Color.Black;
             this.button6.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button6.Location = new System.Drawing.Point(385, 138);
-            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(145, 92);
             this.button6.TabIndex = 124;
@@ -550,7 +550,7 @@ namespace PCPOS
             this.button5.ForeColor = System.Drawing.Color.Black;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button5.Location = new System.Drawing.Point(233, 138);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(145, 92);
             this.button5.TabIndex = 124;
@@ -573,7 +573,7 @@ namespace PCPOS
             this.button3.ForeColor = System.Drawing.Color.Black;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button3.Location = new System.Drawing.Point(841, 138);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(145, 92);
             this.button3.TabIndex = 124;
@@ -596,7 +596,7 @@ namespace PCPOS
             this.button2.ForeColor = System.Drawing.Color.Black;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button2.Location = new System.Drawing.Point(689, 138);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(145, 92);
             this.button2.TabIndex = 124;
@@ -619,7 +619,7 @@ namespace PCPOS
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button1.Location = new System.Drawing.Point(537, 138);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(145, 92);
             this.button1.TabIndex = 124;
@@ -642,7 +642,7 @@ namespace PCPOS
             this.btnMaloprodaja.ForeColor = System.Drawing.Color.Black;
             this.btnMaloprodaja.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnMaloprodaja.Location = new System.Drawing.Point(81, 138);
-            this.btnMaloprodaja.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMaloprodaja.Margin = new System.Windows.Forms.Padding(4);
             this.btnMaloprodaja.Name = "btnMaloprodaja";
             this.btnMaloprodaja.Size = new System.Drawing.Size(145, 92);
             this.btnMaloprodaja.TabIndex = 124;
@@ -655,7 +655,7 @@ namespace PCPOS
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::PCPOS.Properties.Resources.Odjava;
             this.pictureBox1.Location = new System.Drawing.Point(9, 9);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(99, 71);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -672,7 +672,7 @@ namespace PCPOS
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Location = new System.Drawing.Point(60, 101);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(1251, 163);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -684,7 +684,7 @@ namespace PCPOS
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.tableLayoutPanel2);
             this.panel1.Location = new System.Drawing.Point(245, -4);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(305, 83);
             this.panel1.TabIndex = 147;
@@ -701,7 +701,7 @@ namespace PCPOS
             this.panel2.Controls.Add(this.cbMaloprodaja);
             this.panel2.Controls.Add(this.chbFakture);
             this.panel2.Location = new System.Drawing.Point(496, 337);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(815, 388);
             this.panel2.TabIndex = 148;
@@ -734,7 +734,7 @@ namespace PCPOS
             this.btnRadniNalogServis.ForeColor = System.Drawing.Color.Black;
             this.btnRadniNalogServis.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnRadniNalogServis.Location = new System.Drawing.Point(1147, 138);
-            this.btnRadniNalogServis.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRadniNalogServis.Margin = new System.Windows.Forms.Padding(4);
             this.btnRadniNalogServis.Name = "btnRadniNalogServis";
             this.btnRadniNalogServis.Size = new System.Drawing.Size(145, 92);
             this.btnRadniNalogServis.TabIndex = 150;
@@ -774,7 +774,7 @@ namespace PCPOS
             this.Controls.Add(this.panel2);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmScren";
             this.Text = "frmScren";
             this.Load += new System.EventHandler(this.frmScren_Load);

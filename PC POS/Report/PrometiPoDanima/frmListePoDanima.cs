@@ -94,7 +94,7 @@ namespace PCPOS.Report.PrometiPoDanima
             }
         }
         //Artikli(d.ToString("dd.MM.yyyy"), dsOdDo.Tables[0].Rows[0][0].ToString(), o, p, ppnp, mpc* kol, UG, UK, UO, rabat);
-        private void Artikli(string datum, string odDO, decimal osnovica, decimal pdv, decimal pnp, decimal mpc, decimal gotovina, decimal kartice, decimal ostalo, decimal rabat)
+        private void Artikli(string datum, string odDO, decimal osnovica, decimal pdv, decimal pnp, decimal mpc, decimal gotovina, decimal kartice, decimal ostalo, decimal rabat, decimal povratna)
         {
             
             DataRow[] dataROW = dSRliste.Tables[0].Select("sifra = '" + datum + "'");
@@ -112,10 +112,12 @@ namespace PCPOS.Report.PrometiPoDanima
                 RowArtikl["cijena7"] = Math.Round(kartice, 3).ToString("#0.000"); ;
                 RowArtikl["cijena9"] = Math.Round(ostalo, 3).ToString("#0.000"); ;
                 RowArtikl["rabat1"] = Math.Round(rabat, 3).ToString("#0.000");
+                RowArtikl["povratna"] = Math.Round(povratna, 3).ToString("#0.00");
                 dSRliste.Tables[0].Rows.Add(RowArtikl);
             }
             else
             {
+                dataROW[0]["naziv"] = odDO;
                 dataROW[0]["cijena1"] = Math.Round((Convert.ToDecimal(dataROW[0]["cijena1"].ToString()) + osnovica), 3).ToString("#0.000"); ;
                 dataROW[0]["cijena2"] = Math.Round((Convert.ToDecimal(dataROW[0]["cijena2"].ToString()) + pdv), 3).ToString("#0.000"); ;
                 dataROW[0]["cijena3"] = Math.Round((Convert.ToDecimal(dataROW[0]["cijena3"].ToString()) + pnp), 3).ToString("#0.000"); ;
@@ -124,6 +126,7 @@ namespace PCPOS.Report.PrometiPoDanima
                 dataROW[0]["cijena7"] = Math.Round((Convert.ToDecimal(dataROW[0]["cijena7"].ToString()) + kartice), 3).ToString("#0.000"); ;
                 dataROW[0]["cijena9"] = Math.Round((Convert.ToDecimal(dataROW[0]["cijena9"].ToString()) + ostalo), 3).ToString("#0.000"); ;
                 dataROW[0]["rabat1"] = Math.Round((Convert.ToDecimal(dataROW[0]["rabat1"].ToString()) + rabat), 3).ToString("#0.000"); ;
+                dataROW[0]["povratna"] = Math.Round((Convert.ToDecimal(dataROW[0]["povratna"].ToString()) + povratna), 3).ToString("#0.00"); ;
             }
         }
 
@@ -170,9 +173,15 @@ namespace PCPOS.Report.PrometiPoDanima
                 " racun_stavke.porez_potrosnja," +
                 " racun_stavke.porez," +
                 " racun_stavke.rabat," +
+                " racun_stavke.ukupno_osnovica as osnovica," +
+                " racun_stavke.ukupno_mpc_rabat," +
+                " racun_stavke.ukupno_porez as ukupno_porezz," +
                 " racuni.nacin_placanja," +
                 " racuni.datum_racuna," +
                 " racuni.broj_racuna,"+
+                " racun_stavke.povratna_naknada," +
+                " racuni.ukupno_porez,"+
+                " racuni.ukupno_osnovica,"+
                 " roba.naziv" +
                 " FROM racun_stavke" +
                 " LEFT JOIN racuni ON racuni.broj_racuna=racun_stavke.broj_racuna AND racuni.id_kasa=racun_stavke.id_kasa AND racuni.id_ducan=racun_stavke.id_ducan" +
@@ -185,6 +194,10 @@ namespace PCPOS.Report.PrometiPoDanima
             decimal kol = 0;
             decimal pnp = 0;
             decimal pdv = 0;
+            decimal povratna = 0;
+            decimal porez = 0;
+            decimal ukupnoOsnovica = 0;
+            decimal ukupno_porez = 0;
             decimal mpc = 0;
             decimal rabat = 0;
             decimal pnpUKUPNO = 0;
@@ -213,6 +226,7 @@ namespace PCPOS.Report.PrometiPoDanima
                 DTpdvN.Columns.Add("iznos");
                 DTpdvN.Columns.Add("nacin");
                 DTpdvN.Columns.Add("osnovica");
+                DTpdvN.Columns.Add("povrat");
             }
             else
             {
@@ -220,8 +234,9 @@ namespace PCPOS.Report.PrometiPoDanima
             }
 
             //int oo = DT.Rows.Count;
-            string date = DateTime.Now.AddDays(1).ToString("dd.MM.yyyy");
+
             int zadnji=0;
+            string prvi = "", oddo, broj="",date="";
             foreach (DataRow row in DT.Rows)
             {
                 zadnji++;
@@ -229,8 +244,13 @@ namespace PCPOS.Report.PrometiPoDanima
                 mpc = Convert.ToDecimal(row["mpc"].ToString());
                 pnp = Convert.ToDecimal(row["porez_potrosnja"].ToString());
                 pdv = Convert.ToDecimal(row["porez"].ToString());
+                povratna = Convert.ToDecimal(row["povratna_naknada"].ToString());
+                porez = Convert.ToDecimal(row["ukupno_porez"].ToString());
+                ukupno_porez = Convert.ToDecimal(row["ukupno_porezz"].ToString());
+                ukupnoOsnovica = Convert.ToDecimal(row["osnovica"].ToString());
                 rabat = Convert.ToDecimal(row["rabat"].ToString()) / 100;
                 string brojRacuna = row["broj_racuna"].ToString();
+
 
                 if (row["sifra_robe"].ToString() == "!popustABS")
                 {
@@ -244,9 +264,11 @@ namespace PCPOS.Report.PrometiPoDanima
                 }
 
                 //Ovaj kod dobiva PDV
+                
                 decimal PreracunataStopaPDV = Convert.ToDecimal((100 * pdv) / (100 + pdv + pnp));
-                decimal ppdv = (((mpc * kol) * PreracunataStopaPDV) / 100);
-                pdvUKUPNO = ppdv + pdvUKUPNO;
+                /*decimal ppdv = (((mpc * kol) * PreracunataStopaPDV) / 100);*/
+
+                pdvUKUPNO = /*ppdv*/ porez + pdvUKUPNO;
 
                 //Ovaj kod dobiva porez na potrošnju
                 decimal PreracunataStopaPorezNaPotrosnju = Convert.ToDecimal((100 * pnp) / (100 + pdv + pnp));
@@ -262,12 +284,12 @@ namespace PCPOS.Report.PrometiPoDanima
 
                 if (row["nacin_placanja"].ToString() == "G")
                 {
-                    StopePDVaN(pdv, ppdv, "G", ((mpc * kol) - ((ppdv) + (ppnp))));
+                    StopePDVaN(pdv, ukupno_porez, "G", ukupnoOsnovica,povratna);
                     UG = (mpc * kol);
                 }
                 else if (row["nacin_placanja"].ToString() == "K")
                 {
-                    StopePDVaN(pdv, ppdv, "K", ((mpc * kol) - ((ppdv) + (ppnp))));
+                    StopePDVaN(pdv, ukupno_porez, "K", ukupnoOsnovica,povratna);
                     UK = (mpc * kol);
                 }
                 else if (row["nacin_placanja"].ToString() == "O")
@@ -289,31 +311,38 @@ namespace PCPOS.Report.PrometiPoDanima
 
                 string ajjj = row["nacin_placanja"].ToString();
 
-                DateTime d = Convert.ToDateTime(row["datum_racuna"].ToString());               
+                DateTime d = Convert.ToDateTime(row["datum_racuna"].ToString());
 
-                decimal o = ((mpc * kol) - ((ppdv) + (ppnp)));
-                decimal p = ((mpc * kol) * PreracunataStopaPDV) / 100;
                 string dt = d.ToString("dd.MM.yyyy");
                 
 
-                if (dt != date||DT.Rows.Count==zadnji)
+
+                    /*
+                    //TO DO: tu trebam napraviti kaj bu dobil min i max br rac
+                    string sOdDo = "select coalesce(min(racuni.broj_racuna::integer)::text || ' - ' || max(racuni.broj_racuna::integer)::text, '') as oddo FROM racun_stavke" +
+                    " LEFT JOIN racuni ON racuni.broj_racuna=racun_stavke.broj_racuna AND racuni.id_kasa=racun_stavke.id_kasa AND racuni.id_ducan=racun_stavke.id_ducan" +
+                    " LEFT JOIN roba ON roba.sifra=racun_stavke.sifra_robe" +
+                    " LEFT JOIN grupa ON grupa.id_grupa=roba.id_grupa where cast(datum_racuna as date) = '" + d.ToString("yyyy-MM-dd") + "'" + blag + duc + kas + art + gr;
+                    DataSet dsOdDo = classSQL.select(sOdDo, "racuni");
+                    */
+                    oddo = prvi + " - " + brojRacuna;
+
+                if (date != dt)
                 {
+                    prvi = brojRacuna;
                     date = dt;
-                
-                //TO DO: tu trebam napraviti kaj bu dobil min i max br rac
-                string sOdDo = "select coalesce(min(racuni.broj_racuna::integer)::text || ' - ' || max(racuni.broj_racuna::integer)::text, '') as oddo FROM racun_stavke" +
-                " LEFT JOIN racuni ON racuni.broj_racuna=racun_stavke.broj_racuna AND racuni.id_kasa=racun_stavke.id_kasa AND racuni.id_ducan=racun_stavke.id_ducan" +
-                " LEFT JOIN roba ON roba.sifra=racun_stavke.sifra_robe" +
-                " LEFT JOIN grupa ON grupa.id_grupa=roba.id_grupa where cast(datum_racuna as date) = '" + d.ToString("yyyy-MM-dd") + "'" + blag + duc + kas + art + gr;
-                DataSet dsOdDo = classSQL.select(sOdDo, "racuni");
-
-                Artikli(d.ToString("dd.MM.yyyy"), dsOdDo.Tables[0].Rows[0][0].ToString(), o, p, ppnp, mpc * kol, UG, UK, UO, rabat);
+                    Artikli(d.ToString("dd.MM.yyyy"), oddo, ukupnoOsnovica, ukupno_porez, ppnp, mpc * kol, UG, UK, UO, rabat, povratna);
                 }
+                else
+                {
+                    Artikli(d.ToString("dd.MM.yyyy"), oddo, ukupnoOsnovica, ukupno_porez, ppnp, mpc * kol, UG, UK, UO, rabat, povratna);
+                }
+                //Artikli(d.ToString("dd.MM.yyyy"), dsOdDo.Tables[0].Rows[0][0].ToString(), o, p, ppnp, mpc * kol, UG, UK, UO, rabat);
 
-                Artikli(d.ToString("dd.MM.yyyy"), "", o, p, ppnp, mpc * kol, UG, UK, UO, rabat);
 
-                StopePDVa(pdv, ((mpc * kol) * PreracunataStopaPDV) / 100);
-                OSNOVICA = ((mpc * kol) - ((ppdv) + (ppnp))) + OSNOVICA;
+
+                // StopePDVa(pdv, ((mpc * kol) * PreracunataStopaPDV) / 100);
+                OSNOVICA = ukupnoOsnovica + OSNOVICA;
             }
 
             string porezi = "";
@@ -325,20 +354,29 @@ namespace PCPOS.Report.PrometiPoDanima
 
                     if (DTpdvN.Rows[i]["nacin"].ToString().ToUpper() == "G")
                     {
-                        nacin_pplacanja = "GOTOVINA: ";
+                        nacin_pplacanja = "GOTOVINA ";
                     }
                     else if (DTpdvN.Rows[i]["nacin"].ToString().ToUpper() == "O")
                     {
-                        nacin_pplacanja = "OSTALO: ";
+                        nacin_pplacanja = "OSTALO ";
                     }
                     else if (DTpdvN.Rows[i]["nacin"].ToString().ToUpper() == "K")
                     {
-                        nacin_pplacanja = "KARTICE: ";
+                        nacin_pplacanja = "KARTICE ";
                     }
 
+                    decimal ispisOsnovica = Math.Round(Convert.ToDecimal(DTpdvN.Rows[i]["osnovica"].ToString()), 2, MidpointRounding.AwayFromZero);
+                    decimal ispisPorez = Math.Round(Convert.ToDecimal(DTpdvN.Rows[i]["iznos"].ToString()), 2, MidpointRounding.AwayFromZero);
+
+                    decimal iznosPovratnaNaknada = Math.Round(Convert.ToDecimal(DTpdvN.Rows[i]["povrat"].ToString()), 2, MidpointRounding.AwayFromZero);
+
+                    decimal ukupno_za_nacin_pl = ispisPorez + ispisOsnovica + iznosPovratnaNaknada;
+
                     porezi += "Način plačanja: " + nacin_pplacanja +
-                        "\r\nOsnovica " + DTpdvN.Rows[i]["stopa"].ToString() + " %: " + Math.Round(Convert.ToDecimal(DTpdvN.Rows[i]["osnovica"].ToString()), 3).ToString("#0.00") + "" +
-                        "\r\nIznos " + Math.Round(Convert.ToDecimal(DTpdvN.Rows[i]["iznos"].ToString()), 3).ToString("#0.00") +
+                        "\r\nOsnovica " + DTpdvN.Rows[i]["stopa"].ToString() + " %: " + ispisOsnovica.ToString("#0.00") + " kn" +
+                        "\r\nIznos poreza: " + ispisPorez.ToString("#0.00") + " kn" +
+                        "\r\nPovratna naknada: " + iznosPovratnaNaknada.ToString("#0.00") + " kn" +
+                        "\r\nUkupno za " + nacin_pplacanja.ToLower() + ": " + ukupno_za_nacin_pl.ToString("#0.00") + " kn" +
                         "\r\n\r\n";
                 }
             }
@@ -352,12 +390,8 @@ namespace PCPOS.Report.PrometiPoDanima
 
         private DataTable DTpdvN = new DataTable();
 
-        private void StopePDVaN(decimal pdv, decimal pdv_stavka, string nacin_P, decimal osnovica)
+        private void StopePDVaN(decimal pdv, decimal pdv_stavka, string nacin_P, decimal osnovica,decimal povrat)
         {
-            if (osnovica < 0 && Convert.ToInt16(pdv) == 0)
-            {
-            }
-
             DataRow[] dataROW = DTpdvN.Select("stopa = '" + Convert.ToInt16(pdv).ToString() + "' AND nacin='" + nacin_P + "'");
 
             if (dataROW.Count() == 0)
@@ -367,12 +401,14 @@ namespace PCPOS.Report.PrometiPoDanima
                 RowPdv["iznos"] = pdv_stavka.ToString();
                 RowPdv["nacin"] = nacin_P;
                 RowPdv["osnovica"] = osnovica;
+                RowPdv["povrat"] = povrat;
                 DTpdvN.Rows.Add(RowPdv);
             }
             else
             {
                 dataROW[0]["iznos"] = Convert.ToDecimal(dataROW[0]["iznos"].ToString()) + pdv_stavka;
                 dataROW[0]["osnovica"] = Convert.ToDecimal(dataROW[0]["osnovica"].ToString()) + osnovica;
+                dataROW[0]["povrat"] = Convert.ToDecimal(dataROW[0]["povrat"].ToString()) + povrat;
             }
         }
     }

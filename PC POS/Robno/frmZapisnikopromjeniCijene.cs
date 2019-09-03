@@ -24,6 +24,9 @@ namespace PCPOS.Robno
 
         private void frmZapisnikopromjeniCijene_Load(object sender, EventArgs e)
         {
+            if(!Class.Postavke.zapisnikOPromjeniCijene)
+            dgw.Columns[8].ReadOnly = false;
+
             EnableDisable(false);
             SetCB();
             ControlDisableEnable(1, 0, 0, 1, 0);
@@ -622,5 +625,6 @@ WHERE sifra = '{2}';",
                 dgw.Rows.RemoveAt(dgw.CurrentRow.Index);
             }
         }
+
     }
 }

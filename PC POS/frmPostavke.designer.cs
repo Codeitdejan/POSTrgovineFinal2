@@ -89,6 +89,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.chbVodeni = new System.Windows.Forms.CheckBox();
             this.cbKoristiResort = new System.Windows.Forms.CheckBox();
             this.cmbSkladisteNormativa = new System.Windows.Forms.ComboBox();
             this.label54 = new System.Windows.Forms.Label();
@@ -249,7 +250,7 @@
             this.txtApiKey = new System.Windows.Forms.TextBox();
             this.chbUseEmployees = new System.Windows.Forms.CheckBox();
             this.button5 = new System.Windows.Forms.Button();
-            this.chbVodeni = new System.Windows.Forms.CheckBox();
+            this.cbZapisnikOPromjeniCijene = new System.Windows.Forms.CheckBox();
             this.tabPage4.SuspendLayout();
             this.groupBox13.SuspendLayout();
             this.groupBox11.SuspendLayout();
@@ -306,9 +307,9 @@
             this.tabPage4.Controls.Add(this.groupBox6);
             this.tabPage4.Controls.Add(this.groupBox1);
             this.tabPage4.Location = new System.Drawing.Point(4, 34);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage4.Size = new System.Drawing.Size(1107, 483);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Ostalo";
@@ -318,9 +319,9 @@
             this.groupBox13.Controls.Add(this.label28);
             this.groupBox13.Controls.Add(this.btnPS);
             this.groupBox13.Location = new System.Drawing.Point(15, 370);
-            this.groupBox13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox13.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox13.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox13.Size = new System.Drawing.Size(375, 91);
             this.groupBox13.TabIndex = 55;
             this.groupBox13.TabStop = false;
@@ -340,7 +341,7 @@
             // 
             this.btnPS.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnPS.Location = new System.Drawing.Point(219, 22);
-            this.btnPS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPS.Margin = new System.Windows.Forms.Padding(4);
             this.btnPS.Name = "btnPS";
             this.btnPS.Size = new System.Drawing.Size(136, 38);
             this.btnPS.TabIndex = 50;
@@ -353,9 +354,9 @@
             this.groupBox11.Controls.Add(this.chbProvjeraSkladista);
             this.groupBox11.Controls.Add(this.label27);
             this.groupBox11.Location = new System.Drawing.Point(416, 321);
-            this.groupBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox11.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox11.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox11.Size = new System.Drawing.Size(653, 140);
             this.groupBox11.TabIndex = 54;
             this.groupBox11.TabStop = false;
@@ -365,7 +366,7 @@
             // 
             this.chbProvjeraSkladista.AutoSize = true;
             this.chbProvjeraSkladista.Location = new System.Drawing.Point(525, 103);
-            this.chbProvjeraSkladista.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbProvjeraSkladista.Margin = new System.Windows.Forms.Padding(4);
             this.chbProvjeraSkladista.Name = "chbProvjeraSkladista";
             this.chbProvjeraSkladista.Size = new System.Drawing.Size(99, 24);
             this.chbProvjeraSkladista.TabIndex = 2;
@@ -390,9 +391,9 @@
             this.groupBox10.Controls.Add(this.label26);
             this.groupBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.groupBox10.Location = new System.Drawing.Point(416, 161);
-            this.groupBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox10.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox10.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox10.Size = new System.Drawing.Size(653, 153);
             this.groupBox10.TabIndex = 53;
             this.groupBox10.TabStop = false;
@@ -402,7 +403,7 @@
             // 
             this.btnPostavke.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnPostavke.Location = new System.Drawing.Point(453, 95);
-            this.btnPostavke.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPostavke.Margin = new System.Windows.Forms.Padding(4);
             this.btnPostavke.Name = "btnPostavke";
             this.btnPostavke.Size = new System.Drawing.Size(187, 44);
             this.btnPostavke.TabIndex = 49;
@@ -427,9 +428,9 @@
             this.groupBox7.Controls.Add(this.label25);
             this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.groupBox7.Location = new System.Drawing.Point(416, 20);
-            this.groupBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox7.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox7.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox7.Size = new System.Drawing.Size(653, 121);
             this.groupBox7.TabIndex = 52;
             this.groupBox7.TabStop = false;
@@ -439,7 +440,7 @@
             // 
             this.chbOslobodenjePDVa.AutoSize = true;
             this.chbOslobodenjePDVa.Location = new System.Drawing.Point(533, 87);
-            this.chbOslobodenjePDVa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbOslobodenjePDVa.Margin = new System.Windows.Forms.Padding(4);
             this.chbOslobodenjePDVa.Name = "chbOslobodenjePDVa";
             this.chbOslobodenjePDVa.Size = new System.Drawing.Size(99, 24);
             this.chbOslobodenjePDVa.TabIndex = 1;
@@ -470,9 +471,9 @@
             this.groupBox6.Controls.Add(this.label20);
             this.groupBox6.Controls.Add(this.label21);
             this.groupBox6.Location = new System.Drawing.Point(13, 181);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox6.Size = new System.Drawing.Size(376, 181);
             this.groupBox6.TabIndex = 51;
             this.groupBox6.TabStop = false;
@@ -482,7 +483,7 @@
             // 
             this.chbWebActive.AutoSize = true;
             this.chbWebActive.Location = new System.Drawing.Point(129, 130);
-            this.chbWebActive.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbWebActive.Margin = new System.Windows.Forms.Padding(4);
             this.chbWebActive.Name = "chbWebActive";
             this.chbWebActive.Size = new System.Drawing.Size(18, 17);
             this.chbWebActive.TabIndex = 49;
@@ -491,7 +492,7 @@
             // txtPasswordWeb
             // 
             this.txtPasswordWeb.Location = new System.Drawing.Point(129, 95);
-            this.txtPasswordWeb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPasswordWeb.Margin = new System.Windows.Forms.Padding(4);
             this.txtPasswordWeb.Name = "txtPasswordWeb";
             this.txtPasswordWeb.PasswordChar = '*';
             this.txtPasswordWeb.Size = new System.Drawing.Size(225, 26);
@@ -500,7 +501,7 @@
             // txtUsernameWeb
             // 
             this.txtUsernameWeb.Location = new System.Drawing.Point(129, 63);
-            this.txtUsernameWeb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUsernameWeb.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsernameWeb.Name = "txtUsernameWeb";
             this.txtUsernameWeb.PasswordChar = '*';
             this.txtUsernameWeb.Size = new System.Drawing.Size(225, 26);
@@ -510,7 +511,7 @@
             // 
             this.btnSpremiWeb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnSpremiWeb.Location = new System.Drawing.Point(220, 130);
-            this.btnSpremiWeb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSpremiWeb.Margin = new System.Windows.Forms.Padding(4);
             this.btnSpremiWeb.Name = "btnSpremiWeb";
             this.btnSpremiWeb.Size = new System.Drawing.Size(136, 38);
             this.btnSpremiWeb.TabIndex = 48;
@@ -545,7 +546,7 @@
             // txtDomenaWeb
             // 
             this.txtDomenaWeb.Location = new System.Drawing.Point(129, 31);
-            this.txtDomenaWeb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDomenaWeb.Margin = new System.Windows.Forms.Padding(4);
             this.txtDomenaWeb.Name = "txtDomenaWeb";
             this.txtDomenaWeb.Size = new System.Drawing.Size(225, 26);
             this.txtDomenaWeb.TabIndex = 44;
@@ -583,9 +584,9 @@
             this.groupBox1.Controls.Add(this.rbBodovi);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.groupBox1.Location = new System.Drawing.Point(13, 20);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(376, 154);
             this.groupBox1.TabIndex = 49;
             this.groupBox1.TabStop = false;
@@ -596,7 +597,7 @@
             this.rbBezNagrade.AutoSize = true;
             this.rbBezNagrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.rbBezNagrade.Location = new System.Drawing.Point(33, 117);
-            this.rbBezNagrade.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbBezNagrade.Margin = new System.Windows.Forms.Padding(4);
             this.rbBezNagrade.Name = "rbBezNagrade";
             this.rbBezNagrade.Size = new System.Drawing.Size(217, 24);
             this.rbBezNagrade.TabIndex = 45;
@@ -609,7 +610,7 @@
             this.rbPopustSlljedecakupovina.AutoSize = true;
             this.rbPopustSlljedecakupovina.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.rbPopustSlljedecakupovina.Location = new System.Drawing.Point(33, 87);
-            this.rbPopustSlljedecakupovina.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbPopustSlljedecakupovina.Margin = new System.Windows.Forms.Padding(4);
             this.rbPopustSlljedecakupovina.Name = "rbPopustSlljedecakupovina";
             this.rbPopustSlljedecakupovina.Size = new System.Drawing.Size(250, 24);
             this.rbPopustSlljedecakupovina.TabIndex = 45;
@@ -622,7 +623,7 @@
             this.rbCashBack.AutoSize = true;
             this.rbCashBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.rbCashBack.Location = new System.Drawing.Point(33, 28);
-            this.rbCashBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbCashBack.Margin = new System.Windows.Forms.Padding(4);
             this.rbCashBack.Name = "rbCashBack";
             this.rbCashBack.Size = new System.Drawing.Size(109, 24);
             this.rbCashBack.TabIndex = 45;
@@ -635,7 +636,7 @@
             this.rbBodovi.AutoSize = true;
             this.rbBodovi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.rbBodovi.Location = new System.Drawing.Point(33, 58);
-            this.rbBodovi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbBodovi.Margin = new System.Windows.Forms.Padding(4);
             this.rbBodovi.Name = "rbBodovi";
             this.rbBodovi.Size = new System.Drawing.Size(173, 24);
             this.rbBodovi.TabIndex = 45;
@@ -650,9 +651,9 @@
             this.tabPage2.Controls.Add(this.groupBox3);
             this.tabPage2.Controls.Add(this.groupBox2);
             this.tabPage2.Location = new System.Drawing.Point(4, 34);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage2.Size = new System.Drawing.Size(1107, 483);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Baza podataka";
@@ -667,9 +668,9 @@
             this.groupBox8.Controls.Add(this.txtBackupLokacije);
             this.groupBox8.Controls.Add(this.label15);
             this.groupBox8.Location = new System.Drawing.Point(24, 219);
-            this.groupBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox8.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox8.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox8.Size = new System.Drawing.Size(516, 155);
             this.groupBox8.TabIndex = 51;
             this.groupBox8.TabStop = false;
@@ -693,7 +694,7 @@
             this.chbBackupAktivnost.Checked = true;
             this.chbBackupAktivnost.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chbBackupAktivnost.Location = new System.Drawing.Point(29, 84);
-            this.chbBackupAktivnost.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbBackupAktivnost.Margin = new System.Windows.Forms.Padding(4);
             this.chbBackupAktivnost.Name = "chbBackupAktivnost";
             this.chbBackupAktivnost.Size = new System.Drawing.Size(99, 24);
             this.chbBackupAktivnost.TabIndex = 53;
@@ -704,7 +705,7 @@
             // 
             this.btnBackup.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnBackup.Location = new System.Drawing.Point(29, 111);
-            this.btnBackup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBackup.Margin = new System.Windows.Forms.Padding(4);
             this.btnBackup.Name = "btnBackup";
             this.btnBackup.Size = new System.Drawing.Size(135, 34);
             this.btnBackup.TabIndex = 52;
@@ -716,7 +717,7 @@
             // 
             this.btnSpremiBackup.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnSpremiBackup.Location = new System.Drawing.Point(172, 112);
-            this.btnSpremiBackup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSpremiBackup.Margin = new System.Windows.Forms.Padding(4);
             this.btnSpremiBackup.Name = "btnSpremiBackup";
             this.btnSpremiBackup.Size = new System.Drawing.Size(103, 34);
             this.btnSpremiBackup.TabIndex = 52;
@@ -727,7 +728,7 @@
             // btnLoadBackup
             // 
             this.btnLoadBackup.Location = new System.Drawing.Point(441, 52);
-            this.btnLoadBackup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLoadBackup.Margin = new System.Windows.Forms.Padding(4);
             this.btnLoadBackup.Name = "btnLoadBackup";
             this.btnLoadBackup.Size = new System.Drawing.Size(37, 33);
             this.btnLoadBackup.TabIndex = 49;
@@ -738,7 +739,7 @@
             // txtBackupLokacije
             // 
             this.txtBackupLokacije.Location = new System.Drawing.Point(29, 54);
-            this.txtBackupLokacije.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBackupLokacije.Margin = new System.Windows.Forms.Padding(4);
             this.txtBackupLokacije.Name = "txtBackupLokacije";
             this.txtBackupLokacije.Size = new System.Drawing.Size(405, 26);
             this.txtBackupLokacije.TabIndex = 0;
@@ -763,9 +764,9 @@
             this.groupBox3.Controls.Add(this.btnKompaktnaTest);
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Location = new System.Drawing.Point(24, 15);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(516, 187);
             this.groupBox3.TabIndex = 49;
             this.groupBox3.TabStop = false;
@@ -774,7 +775,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(413, 69);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(37, 33);
             this.button1.TabIndex = 49;
@@ -785,7 +786,7 @@
             // txtKompaktnaPut
             // 
             this.txtKompaktnaPut.Location = new System.Drawing.Point(44, 71);
-            this.txtKompaktnaPut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtKompaktnaPut.Margin = new System.Windows.Forms.Padding(4);
             this.txtKompaktnaPut.Name = "txtKompaktnaPut";
             this.txtKompaktnaPut.Size = new System.Drawing.Size(368, 26);
             this.txtKompaktnaPut.TabIndex = 0;
@@ -794,7 +795,7 @@
             // 
             this.btnKompaktnaSpremi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnKompaktnaSpremi.Location = new System.Drawing.Point(313, 114);
-            this.btnKompaktnaSpremi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnKompaktnaSpremi.Margin = new System.Windows.Forms.Padding(4);
             this.btnKompaktnaSpremi.Name = "btnKompaktnaSpremi";
             this.btnKompaktnaSpremi.Size = new System.Drawing.Size(136, 46);
             this.btnKompaktnaSpremi.TabIndex = 48;
@@ -806,7 +807,7 @@
             // 
             this.btnKompaktnaTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnKompaktnaTest.Location = new System.Drawing.Point(161, 114);
-            this.btnKompaktnaTest.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnKompaktnaTest.Margin = new System.Windows.Forms.Padding(4);
             this.btnKompaktnaTest.Name = "btnKompaktnaTest";
             this.btnKompaktnaTest.Size = new System.Drawing.Size(133, 46);
             this.btnKompaktnaTest.TabIndex = 48;
@@ -844,9 +845,9 @@
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Location = new System.Drawing.Point(571, 14);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(489, 362);
             this.groupBox2.TabIndex = 49;
             this.groupBox2.TabStop = false;
@@ -856,7 +857,7 @@
             // 
             this.btnNovaGodina.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnNovaGodina.Location = new System.Drawing.Point(105, 288);
-            this.btnNovaGodina.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNovaGodina.Margin = new System.Windows.Forms.Padding(4);
             this.btnNovaGodina.Name = "btnNovaGodina";
             this.btnNovaGodina.Size = new System.Drawing.Size(157, 46);
             this.btnNovaGodina.TabIndex = 52;
@@ -869,7 +870,7 @@
             this.cbRemoteNameDatabase.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbRemoteNameDatabase.FormattingEnabled = true;
             this.cbRemoteNameDatabase.Location = new System.Drawing.Point(188, 164);
-            this.cbRemoteNameDatabase.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbRemoteNameDatabase.Margin = new System.Windows.Forms.Padding(4);
             this.cbRemoteNameDatabase.Name = "cbRemoteNameDatabase";
             this.cbRemoteNameDatabase.Size = new System.Drawing.Size(263, 28);
             this.cbRemoteNameDatabase.TabIndex = 51;
@@ -878,7 +879,7 @@
             // 
             this.chbActive.AutoSize = true;
             this.chbActive.Location = new System.Drawing.Point(435, 231);
-            this.chbActive.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbActive.Margin = new System.Windows.Forms.Padding(4);
             this.chbActive.Name = "chbActive";
             this.chbActive.Size = new System.Drawing.Size(18, 17);
             this.chbActive.TabIndex = 49;
@@ -887,7 +888,7 @@
             // txtRemoteLozinka
             // 
             this.txtRemoteLozinka.Location = new System.Drawing.Point(188, 197);
-            this.txtRemoteLozinka.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRemoteLozinka.Margin = new System.Windows.Forms.Padding(4);
             this.txtRemoteLozinka.Name = "txtRemoteLozinka";
             this.txtRemoteLozinka.Size = new System.Drawing.Size(263, 26);
             this.txtRemoteLozinka.TabIndex = 45;
@@ -895,7 +896,7 @@
             // txtRemotePort
             // 
             this.txtRemotePort.Location = new System.Drawing.Point(188, 132);
-            this.txtRemotePort.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRemotePort.Margin = new System.Windows.Forms.Padding(4);
             this.txtRemotePort.Name = "txtRemotePort";
             this.txtRemotePort.Size = new System.Drawing.Size(263, 26);
             this.txtRemotePort.TabIndex = 45;
@@ -903,7 +904,7 @@
             // txtRemoteUsername
             // 
             this.txtRemoteUsername.Location = new System.Drawing.Point(188, 100);
-            this.txtRemoteUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRemoteUsername.Margin = new System.Windows.Forms.Padding(4);
             this.txtRemoteUsername.Name = "txtRemoteUsername";
             this.txtRemoteUsername.Size = new System.Drawing.Size(263, 26);
             this.txtRemoteUsername.TabIndex = 45;
@@ -912,7 +913,7 @@
             // 
             this.txtRemoteSpremi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtRemoteSpremi.Location = new System.Drawing.Point(351, 288);
-            this.txtRemoteSpremi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRemoteSpremi.Margin = new System.Windows.Forms.Padding(4);
             this.txtRemoteSpremi.Name = "txtRemoteSpremi";
             this.txtRemoteSpremi.Size = new System.Drawing.Size(103, 46);
             this.txtRemoteSpremi.TabIndex = 48;
@@ -960,7 +961,7 @@
             // 
             this.txtRemoteTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtRemoteTest.Location = new System.Drawing.Point(264, 288);
-            this.txtRemoteTest.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRemoteTest.Margin = new System.Windows.Forms.Padding(4);
             this.txtRemoteTest.Name = "txtRemoteTest";
             this.txtRemoteTest.Size = new System.Drawing.Size(84, 46);
             this.txtRemoteTest.TabIndex = 48;
@@ -983,7 +984,7 @@
             // txtRemoteImeServera
             // 
             this.txtRemoteImeServera.Location = new System.Drawing.Point(188, 68);
-            this.txtRemoteImeServera.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRemoteImeServera.Margin = new System.Windows.Forms.Padding(4);
             this.txtRemoteImeServera.Name = "txtRemoteImeServera";
             this.txtRemoteImeServera.Size = new System.Drawing.Size(263, 26);
             this.txtRemoteImeServera.TabIndex = 44;
@@ -1035,18 +1036,31 @@
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Location = new System.Drawing.Point(4, 34);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage1.Size = new System.Drawing.Size(1107, 483);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Osnovno";
+            // 
+            // chbVodeni
+            // 
+            this.chbVodeni.AutoSize = true;
+            this.chbVodeni.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.chbVodeni.Location = new System.Drawing.Point(31, 451);
+            this.chbVodeni.Margin = new System.Windows.Forms.Padding(4);
+            this.chbVodeni.Name = "chbVodeni";
+            this.chbVodeni.Size = new System.Drawing.Size(237, 24);
+            this.chbVodeni.TabIndex = 576;
+            this.chbVodeni.Text = "Dodaj vodeni žig na ponudu";
+            this.chbVodeni.UseVisualStyleBackColor = true;
+            this.chbVodeni.CheckedChanged += new System.EventHandler(this.chbVodeni_CheckedChanged);
             // 
             // cbKoristiResort
             // 
             this.cbKoristiResort.AutoSize = true;
             this.cbKoristiResort.Location = new System.Drawing.Point(392, 421);
-            this.cbKoristiResort.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbKoristiResort.Margin = new System.Windows.Forms.Padding(4);
             this.cbKoristiResort.Name = "cbKoristiResort";
             this.cbKoristiResort.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.cbKoristiResort.Size = new System.Drawing.Size(153, 24);
@@ -1060,7 +1074,7 @@
             this.cmbSkladisteNormativa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cmbSkladisteNormativa.FormattingEnabled = true;
             this.cmbSkladisteNormativa.Location = new System.Drawing.Point(331, 372);
-            this.cmbSkladisteNormativa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbSkladisteNormativa.Margin = new System.Windows.Forms.Padding(4);
             this.cmbSkladisteNormativa.Name = "cmbSkladisteNormativa";
             this.cmbSkladisteNormativa.Size = new System.Drawing.Size(231, 28);
             this.cmbSkladisteNormativa.TabIndex = 574;
@@ -1082,7 +1096,7 @@
             this.chbMainFormControlBox.AutoSize = true;
             this.chbMainFormControlBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.chbMainFormControlBox.Location = new System.Drawing.Point(31, 421);
-            this.chbMainFormControlBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbMainFormControlBox.Margin = new System.Windows.Forms.Padding(4);
             this.chbMainFormControlBox.Name = "chbMainFormControlBox";
             this.chbMainFormControlBox.Size = new System.Drawing.Size(119, 24);
             this.chbMainFormControlBox.TabIndex = 568;
@@ -1096,9 +1110,9 @@
             this.groupBox21.Controls.Add(this.label40);
             this.groupBox21.Controls.Add(this.txtPorezNaDohodak);
             this.groupBox21.Location = new System.Drawing.Point(592, 256);
-            this.groupBox21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox21.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox21.Name = "groupBox21";
-            this.groupBox21.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox21.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox21.Size = new System.Drawing.Size(455, 123);
             this.groupBox21.TabIndex = 58;
             this.groupBox21.TabStop = false;
@@ -1132,7 +1146,7 @@
             // txtPorezNaDohodak
             // 
             this.txtPorezNaDohodak.Location = new System.Drawing.Point(187, 34);
-            this.txtPorezNaDohodak.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPorezNaDohodak.Margin = new System.Windows.Forms.Padding(4);
             this.txtPorezNaDohodak.Name = "txtPorezNaDohodak";
             this.txtPorezNaDohodak.Size = new System.Drawing.Size(231, 26);
             this.txtPorezNaDohodak.TabIndex = 56;
@@ -1144,7 +1158,7 @@
             this.cbveleprodaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbveleprodaja.FormattingEnabled = true;
             this.cbveleprodaja.Location = new System.Drawing.Point(331, 338);
-            this.cbveleprodaja.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbveleprodaja.Margin = new System.Windows.Forms.Padding(4);
             this.cbveleprodaja.Name = "cbveleprodaja";
             this.cbveleprodaja.Size = new System.Drawing.Size(231, 28);
             this.cbveleprodaja.TabIndex = 54;
@@ -1172,9 +1186,9 @@
             this.groupBox9.Controls.Add(this.label18);
             this.groupBox9.Controls.Add(this.label22);
             this.groupBox9.Location = new System.Drawing.Point(31, 36);
-            this.groupBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox9.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox9.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox9.Size = new System.Drawing.Size(532, 167);
             this.groupBox9.TabIndex = 52;
             this.groupBox9.TabStop = false;
@@ -1186,7 +1200,7 @@
             this.cbKasa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbKasa.FormattingEnabled = true;
             this.cbKasa.Location = new System.Drawing.Point(27, 64);
-            this.cbKasa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbKasa.Margin = new System.Windows.Forms.Padding(4);
             this.cbKasa.Name = "cbKasa";
             this.cbKasa.Size = new System.Drawing.Size(231, 28);
             this.cbKasa.TabIndex = 44;
@@ -1197,7 +1211,7 @@
             this.cbFaktureBR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbFaktureBR.FormattingEnabled = true;
             this.cbFaktureBR.Location = new System.Drawing.Point(280, 123);
-            this.cbFaktureBR.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbFaktureBR.Margin = new System.Windows.Forms.Padding(4);
             this.cbFaktureBR.Name = "cbFaktureBR";
             this.cbFaktureBR.Size = new System.Drawing.Size(231, 28);
             this.cbFaktureBR.TabIndex = 44;
@@ -1208,7 +1222,7 @@
             this.cbFaktureNP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbFaktureNP.FormattingEnabled = true;
             this.cbFaktureNP.Location = new System.Drawing.Point(280, 64);
-            this.cbFaktureNP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbFaktureNP.Margin = new System.Windows.Forms.Padding(4);
             this.cbFaktureNP.Name = "cbFaktureNP";
             this.cbFaktureNP.Size = new System.Drawing.Size(231, 28);
             this.cbFaktureNP.TabIndex = 44;
@@ -1219,7 +1233,7 @@
             this.cbAvansNP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbAvansNP.FormattingEnabled = true;
             this.cbAvansNP.Location = new System.Drawing.Point(27, 123);
-            this.cbAvansNP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbAvansNP.Margin = new System.Windows.Forms.Padding(4);
             this.cbAvansNP.Name = "cbAvansNP";
             this.cbAvansNP.Size = new System.Drawing.Size(231, 28);
             this.cbAvansNP.TabIndex = 44;
@@ -1280,9 +1294,9 @@
             this.groupBox5.Controls.Add(this.btnNadogradi);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.groupBox5.Location = new System.Drawing.Point(592, 36);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox5.Size = new System.Drawing.Size(455, 167);
             this.groupBox5.TabIndex = 50;
             this.groupBox5.TabStop = false;
@@ -1291,7 +1305,7 @@
             // btnNadogradiBazu
             // 
             this.btnNadogradiBazu.Location = new System.Drawing.Point(72, 74);
-            this.btnNadogradiBazu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNadogradiBazu.Margin = new System.Windows.Forms.Padding(4);
             this.btnNadogradiBazu.Name = "btnNadogradiBazu";
             this.btnNadogradiBazu.Size = new System.Drawing.Size(320, 39);
             this.btnNadogradiBazu.TabIndex = 5;
@@ -1302,7 +1316,7 @@
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(72, 117);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(320, 39);
             this.button3.TabIndex = 3;
@@ -1313,7 +1327,7 @@
             // btnNadogradi
             // 
             this.btnNadogradi.Location = new System.Drawing.Point(72, 31);
-            this.btnNadogradi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNadogradi.Margin = new System.Windows.Forms.Padding(4);
             this.btnNadogradi.Name = "btnNadogradi";
             this.btnNadogradi.Size = new System.Drawing.Size(320, 39);
             this.btnNadogradi.TabIndex = 2;
@@ -1325,7 +1339,7 @@
             // 
             this.btnSpremi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnSpremi.Location = new System.Drawing.Point(592, 391);
-            this.btnSpremi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSpremi.Margin = new System.Windows.Forms.Padding(4);
             this.btnSpremi.Name = "btnSpremi";
             this.btnSpremi.Size = new System.Drawing.Size(455, 46);
             this.btnSpremi.TabIndex = 47;
@@ -1339,7 +1353,7 @@
             this.cbSustavPDV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbSustavPDV.FormattingEnabled = true;
             this.cbSustavPDV.Location = new System.Drawing.Point(331, 306);
-            this.cbSustavPDV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbSustavPDV.Margin = new System.Windows.Forms.Padding(4);
             this.cbSustavPDV.Name = "cbSustavPDV";
             this.cbSustavPDV.Size = new System.Drawing.Size(231, 28);
             this.cbSustavPDV.TabIndex = 44;
@@ -1350,7 +1364,7 @@
             this.cbBlagajnik.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbBlagajnik.FormattingEnabled = true;
             this.cbBlagajnik.Location = new System.Drawing.Point(331, 274);
-            this.cbBlagajnik.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbBlagajnik.Margin = new System.Windows.Forms.Padding(4);
             this.cbBlagajnik.Name = "cbBlagajnik";
             this.cbBlagajnik.Size = new System.Drawing.Size(231, 28);
             this.cbBlagajnik.TabIndex = 44;
@@ -1373,7 +1387,7 @@
             this.cbSkladiste.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbSkladiste.FormattingEnabled = true;
             this.cbSkladiste.Location = new System.Drawing.Point(331, 242);
-            this.cbSkladiste.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbSkladiste.Margin = new System.Windows.Forms.Padding(4);
             this.cbSkladiste.Name = "cbSkladiste";
             this.cbSkladiste.Size = new System.Drawing.Size(231, 28);
             this.cbSkladiste.TabIndex = 44;
@@ -1396,7 +1410,7 @@
             this.cbDucan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbDucan.FormattingEnabled = true;
             this.cbDucan.Location = new System.Drawing.Point(331, 210);
-            this.cbDucan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbDucan.Margin = new System.Windows.Forms.Padding(4);
             this.cbDucan.Name = "cbDucan";
             this.cbDucan.Size = new System.Drawing.Size(231, 28);
             this.cbDucan.TabIndex = 44;
@@ -1445,7 +1459,7 @@
             this.tabSkladiste.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.tabSkladiste.ItemSize = new System.Drawing.Size(70, 30);
             this.tabSkladiste.Location = new System.Drawing.Point(-3, 1);
-            this.tabSkladiste.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabSkladiste.Margin = new System.Windows.Forms.Padding(4);
             this.tabSkladiste.Name = "tabSkladiste";
             this.tabSkladiste.SelectedIndex = 0;
             this.tabSkladiste.Size = new System.Drawing.Size(1115, 521);
@@ -1456,9 +1470,9 @@
             this.tabPage3.BackColor = System.Drawing.Color.LightSlateGray;
             this.tabPage3.Controls.Add(this.groupBox4);
             this.tabPage3.Location = new System.Drawing.Point(4, 34);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage3.Size = new System.Drawing.Size(1107, 483);
             this.tabPage3.TabIndex = 4;
             this.tabPage3.Text = "Fiskalizacija";
@@ -1482,9 +1496,9 @@
             this.groupBox4.Controls.Add(this.label17);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.groupBox4.Location = new System.Drawing.Point(13, 18);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox4.Size = new System.Drawing.Size(1056, 443);
             this.groupBox4.TabIndex = 50;
             this.groupBox4.TabStop = false;
@@ -1495,7 +1509,7 @@
             this.chbDozvoli_fikaliranje_0_kn.AutoSize = true;
             this.chbDozvoli_fikaliranje_0_kn.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.chbDozvoli_fikaliranje_0_kn.Location = new System.Drawing.Point(699, 178);
-            this.chbDozvoli_fikaliranje_0_kn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbDozvoli_fikaliranje_0_kn.Margin = new System.Windows.Forms.Padding(4);
             this.chbDozvoli_fikaliranje_0_kn.Name = "chbDozvoli_fikaliranje_0_kn";
             this.chbDozvoli_fikaliranje_0_kn.Size = new System.Drawing.Size(213, 24);
             this.chbDozvoli_fikaliranje_0_kn.TabIndex = 82;
@@ -1508,7 +1522,7 @@
             this.chbTestFisklaizacija.AutoSize = true;
             this.chbTestFisklaizacija.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.chbTestFisklaizacija.Location = new System.Drawing.Point(721, 57);
-            this.chbTestFisklaizacija.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbTestFisklaizacija.Margin = new System.Windows.Forms.Padding(4);
             this.chbTestFisklaizacija.Name = "chbTestFisklaizacija";
             this.chbTestFisklaizacija.Size = new System.Drawing.Size(195, 24);
             this.chbTestFisklaizacija.TabIndex = 81;
@@ -1520,7 +1534,7 @@
             // 
             this.chbPrikazObavijestiZaFiskaliziranjeFakture.AutoSize = true;
             this.chbPrikazObavijestiZaFiskaliziranjeFakture.Location = new System.Drawing.Point(391, 117);
-            this.chbPrikazObavijestiZaFiskaliziranjeFakture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbPrikazObavijestiZaFiskaliziranjeFakture.Margin = new System.Windows.Forms.Padding(4);
             this.chbPrikazObavijestiZaFiskaliziranjeFakture.Name = "chbPrikazObavijestiZaFiskaliziranjeFakture";
             this.chbPrikazObavijestiZaFiskaliziranjeFakture.Size = new System.Drawing.Size(18, 17);
             this.chbPrikazObavijestiZaFiskaliziranjeFakture.TabIndex = 80;
@@ -1542,7 +1556,7 @@
             // 
             this.chbFiskalizacijaIskljucena.AutoSize = true;
             this.chbFiskalizacijaIskljucena.Location = new System.Drawing.Point(492, 92);
-            this.chbFiskalizacijaIskljucena.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbFiskalizacijaIskljucena.Margin = new System.Windows.Forms.Padding(4);
             this.chbFiskalizacijaIskljucena.Name = "chbFiskalizacijaIskljucena";
             this.chbFiskalizacijaIskljucena.Size = new System.Drawing.Size(18, 17);
             this.chbFiskalizacijaIskljucena.TabIndex = 78;
@@ -1565,7 +1579,7 @@
             // 
             this.btnSpremiPromjeneZaFiskal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnSpremiPromjeneZaFiskal.Location = new System.Drawing.Point(801, 389);
-            this.btnSpremiPromjeneZaFiskal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSpremiPromjeneZaFiskal.Margin = new System.Windows.Forms.Padding(4);
             this.btnSpremiPromjeneZaFiskal.Name = "btnSpremiPromjeneZaFiskal";
             this.btnSpremiPromjeneZaFiskal.Size = new System.Drawing.Size(247, 47);
             this.btnSpremiPromjeneZaFiskal.TabIndex = 76;
@@ -1582,9 +1596,9 @@
             this.groupBox12.Controls.Add(this.label30);
             this.groupBox12.Controls.Add(this.label29);
             this.groupBox12.Location = new System.Drawing.Point(24, 210);
-            this.groupBox12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox12.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox12.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox12.Size = new System.Drawing.Size(1005, 171);
             this.groupBox12.TabIndex = 75;
             this.groupBox12.TabStop = false;
@@ -1593,7 +1607,7 @@
             // btnTrazi
             // 
             this.btnTrazi.Location = new System.Drawing.Point(892, 85);
-            this.btnTrazi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTrazi.Margin = new System.Windows.Forms.Padding(4);
             this.btnTrazi.Name = "btnTrazi";
             this.btnTrazi.Size = new System.Drawing.Size(100, 33);
             this.btnTrazi.TabIndex = 71;
@@ -1604,7 +1618,7 @@
             // txtLozinkaZaCert
             // 
             this.txtLozinkaZaCert.Location = new System.Drawing.Point(215, 118);
-            this.txtLozinkaZaCert.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLozinkaZaCert.Margin = new System.Windows.Forms.Padding(4);
             this.txtLozinkaZaCert.Name = "txtLozinkaZaCert";
             this.txtLozinkaZaCert.Size = new System.Drawing.Size(672, 26);
             this.txtLozinkaZaCert.TabIndex = 69;
@@ -1624,7 +1638,7 @@
             // txtPutanjaZaCert
             // 
             this.txtPutanjaZaCert.Location = new System.Drawing.Point(215, 87);
-            this.txtPutanjaZaCert.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPutanjaZaCert.Margin = new System.Windows.Forms.Padding(4);
             this.txtPutanjaZaCert.Name = "txtPutanjaZaCert";
             this.txtPutanjaZaCert.Size = new System.Drawing.Size(672, 26);
             this.txtPutanjaZaCert.TabIndex = 69;
@@ -1658,7 +1672,7 @@
             this.cbOznakaFiskal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbOznakaFiskal.FormattingEnabled = true;
             this.cbOznakaFiskal.Location = new System.Drawing.Point(200, 176);
-            this.cbOznakaFiskal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbOznakaFiskal.Margin = new System.Windows.Forms.Padding(4);
             this.cbOznakaFiskal.Name = "cbOznakaFiskal";
             this.cbOznakaFiskal.Size = new System.Drawing.Size(243, 28);
             this.cbOznakaFiskal.TabIndex = 50;
@@ -1667,7 +1681,7 @@
             // 
             this.chbFiskal.AutoSize = true;
             this.chbFiskal.Location = new System.Drawing.Point(233, 65);
-            this.chbFiskal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbFiskal.Margin = new System.Windows.Forms.Padding(4);
             this.chbFiskal.Name = "chbFiskal";
             this.chbFiskal.Size = new System.Drawing.Size(18, 17);
             this.chbFiskal.TabIndex = 72;
@@ -1688,7 +1702,7 @@
             // txtNazivCertifikata
             // 
             this.txtNazivCertifikata.Location = new System.Drawing.Point(200, 144);
-            this.txtNazivCertifikata.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNazivCertifikata.Margin = new System.Windows.Forms.Padding(4);
             this.txtNazivCertifikata.Name = "txtNazivCertifikata";
             this.txtNazivCertifikata.Size = new System.Drawing.Size(243, 26);
             this.txtNazivCertifikata.TabIndex = 66;
@@ -1728,9 +1742,9 @@
             this.tabPage5.Controls.Add(this.groupBox15);
             this.tabPage5.Controls.Add(this.groupBox14);
             this.tabPage5.Location = new System.Drawing.Point(4, 34);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage5.Size = new System.Drawing.Size(1107, 483);
             this.tabPage5.TabIndex = 5;
             this.tabPage5.Text = "Skladište";
@@ -1738,7 +1752,7 @@
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(819, 334);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(73, 44);
             this.button4.TabIndex = 62;
@@ -1752,9 +1766,9 @@
             this.groupBox20.Controls.Add(this.label39);
             this.groupBox20.Controls.Add(this.btnBrisiIsteArtikle);
             this.groupBox20.Location = new System.Drawing.Point(416, 325);
-            this.groupBox20.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox20.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox20.Name = "groupBox20";
-            this.groupBox20.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox20.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox20.Size = new System.Drawing.Size(395, 124);
             this.groupBox20.TabIndex = 61;
             this.groupBox20.TabStop = false;
@@ -1773,7 +1787,7 @@
             // btnBrisiIsteArtikle
             // 
             this.btnBrisiIsteArtikle.Location = new System.Drawing.Point(13, 87);
-            this.btnBrisiIsteArtikle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBrisiIsteArtikle.Margin = new System.Windows.Forms.Padding(4);
             this.btnBrisiIsteArtikle.Name = "btnBrisiIsteArtikle";
             this.btnBrisiIsteArtikle.Size = new System.Drawing.Size(373, 33);
             this.btnBrisiIsteArtikle.TabIndex = 56;
@@ -1786,9 +1800,9 @@
             this.groupBox19.Controls.Add(this.label38);
             this.groupBox19.Controls.Add(this.btnObrisiArtikle);
             this.groupBox19.Location = new System.Drawing.Point(13, 325);
-            this.groupBox19.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox19.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox19.Name = "groupBox19";
-            this.groupBox19.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox19.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox19.Size = new System.Drawing.Size(395, 124);
             this.groupBox19.TabIndex = 60;
             this.groupBox19.TabStop = false;
@@ -1807,7 +1821,7 @@
             // btnObrisiArtikle
             // 
             this.btnObrisiArtikle.Location = new System.Drawing.Point(13, 87);
-            this.btnObrisiArtikle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnObrisiArtikle.Margin = new System.Windows.Forms.Padding(4);
             this.btnObrisiArtikle.Name = "btnObrisiArtikle";
             this.btnObrisiArtikle.Size = new System.Drawing.Size(373, 33);
             this.btnObrisiArtikle.TabIndex = 56;
@@ -1820,9 +1834,9 @@
             this.groupBox18.Controls.Add(this.label37);
             this.groupBox18.Controls.Add(this.btnPostaviNabavneCijene);
             this.groupBox18.Location = new System.Drawing.Point(675, 154);
-            this.groupBox18.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox18.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox18.Name = "groupBox18";
-            this.groupBox18.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox18.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox18.Size = new System.Drawing.Size(395, 164);
             this.groupBox18.TabIndex = 59;
             this.groupBox18.TabStop = false;
@@ -1842,7 +1856,7 @@
             // btnPostaviNabavneCijene
             // 
             this.btnPostaviNabavneCijene.Location = new System.Drawing.Point(13, 117);
-            this.btnPostaviNabavneCijene.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPostaviNabavneCijene.Margin = new System.Windows.Forms.Padding(4);
             this.btnPostaviNabavneCijene.Name = "btnPostaviNabavneCijene";
             this.btnPostaviNabavneCijene.Size = new System.Drawing.Size(373, 33);
             this.btnPostaviNabavneCijene.TabIndex = 56;
@@ -1856,9 +1870,9 @@
             this.groupBox16.Controls.Add(this.txtArhiviraniFajlovi);
             this.groupBox16.Controls.Add(this.label34);
             this.groupBox16.Location = new System.Drawing.Point(13, 153);
-            this.groupBox16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox16.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox16.Name = "groupBox16";
-            this.groupBox16.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox16.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox16.Size = new System.Drawing.Size(653, 165);
             this.groupBox16.TabIndex = 58;
             this.groupBox16.TabStop = false;
@@ -1879,7 +1893,7 @@
             // txtArhiviraniFajlovi
             // 
             this.txtArhiviraniFajlovi.Location = new System.Drawing.Point(8, 127);
-            this.txtArhiviraniFajlovi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtArhiviraniFajlovi.Margin = new System.Windows.Forms.Padding(4);
             this.txtArhiviraniFajlovi.Name = "txtArhiviraniFajlovi";
             this.txtArhiviraniFajlovi.Size = new System.Drawing.Size(636, 26);
             this.txtArhiviraniFajlovi.TabIndex = 45;
@@ -1901,9 +1915,9 @@
             this.groupBox15.Controls.Add(this.label33);
             this.groupBox15.Controls.Add(this.button2);
             this.groupBox15.Location = new System.Drawing.Point(675, 7);
-            this.groupBox15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox15.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox15.Name = "groupBox15";
-            this.groupBox15.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox15.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox15.Size = new System.Drawing.Size(395, 124);
             this.groupBox15.TabIndex = 57;
             this.groupBox15.TabStop = false;
@@ -1923,7 +1937,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(13, 87);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(373, 33);
             this.button2.TabIndex = 56;
@@ -1937,9 +1951,9 @@
             this.groupBox14.Controls.Add(this.chbProgramskoSkladiste);
             this.groupBox14.Controls.Add(this.label32);
             this.groupBox14.Location = new System.Drawing.Point(13, 7);
-            this.groupBox14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox14.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox14.Name = "groupBox14";
-            this.groupBox14.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox14.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox14.Size = new System.Drawing.Size(653, 124);
             this.groupBox14.TabIndex = 55;
             this.groupBox14.TabStop = false;
@@ -1949,7 +1963,7 @@
             // 
             this.chbNemaNaSkl.AutoSize = true;
             this.chbNemaNaSkl.Location = new System.Drawing.Point(189, 75);
-            this.chbNemaNaSkl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbNemaNaSkl.Margin = new System.Windows.Forms.Padding(4);
             this.chbNemaNaSkl.Name = "chbNemaNaSkl";
             this.chbNemaNaSkl.Size = new System.Drawing.Size(385, 24);
             this.chbNemaNaSkl.TabIndex = 3;
@@ -1961,7 +1975,7 @@
             // 
             this.chbProgramskoSkladiste.AutoSize = true;
             this.chbProgramskoSkladiste.Location = new System.Drawing.Point(13, 76);
-            this.chbProgramskoSkladiste.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbProgramskoSkladiste.Margin = new System.Windows.Forms.Padding(4);
             this.chbProgramskoSkladiste.Name = "chbProgramskoSkladiste";
             this.chbProgramskoSkladiste.Size = new System.Drawing.Size(99, 24);
             this.chbProgramskoSkladiste.TabIndex = 2;
@@ -1992,9 +2006,9 @@
             this.tabIzvjestaji.Controls.Add(this.groupBox17);
             this.tabIzvjestaji.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tabIzvjestaji.Location = new System.Drawing.Point(4, 34);
-            this.tabIzvjestaji.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabIzvjestaji.Margin = new System.Windows.Forms.Padding(4);
             this.tabIzvjestaji.Name = "tabIzvjestaji";
-            this.tabIzvjestaji.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabIzvjestaji.Padding = new System.Windows.Forms.Padding(4);
             this.tabIzvjestaji.Size = new System.Drawing.Size(1107, 483);
             this.tabIzvjestaji.TabIndex = 6;
             this.tabIzvjestaji.Text = "Izvještaji";
@@ -2004,7 +2018,7 @@
             this.chbUzmiRabatUOdjaviKomisije.AutoSize = true;
             this.chbUzmiRabatUOdjaviKomisije.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.chbUzmiRabatUOdjaviKomisije.Location = new System.Drawing.Point(332, 207);
-            this.chbUzmiRabatUOdjaviKomisije.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbUzmiRabatUOdjaviKomisije.Margin = new System.Windows.Forms.Padding(4);
             this.chbUzmiRabatUOdjaviKomisije.Name = "chbUzmiRabatUOdjaviKomisije";
             this.chbUzmiRabatUOdjaviKomisije.Size = new System.Drawing.Size(297, 24);
             this.chbUzmiRabatUOdjaviKomisije.TabIndex = 62;
@@ -2017,7 +2031,7 @@
             this.chbUzmiAvanseUPrometKase.AutoSize = true;
             this.chbUzmiAvanseUPrometKase.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.chbUzmiAvanseUPrometKase.Location = new System.Drawing.Point(200, 324);
-            this.chbUzmiAvanseUPrometKase.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbUzmiAvanseUPrometKase.Margin = new System.Windows.Forms.Padding(4);
             this.chbUzmiAvanseUPrometKase.Name = "chbUzmiAvanseUPrometKase";
             this.chbUzmiAvanseUPrometKase.Size = new System.Drawing.Size(302, 24);
             this.chbUzmiAvanseUPrometKase.TabIndex = 61;
@@ -2030,7 +2044,7 @@
             this.chbPovratnaNaknada.AutoSize = true;
             this.chbPovratnaNaknada.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.chbPovratnaNaknada.Location = new System.Drawing.Point(27, 324);
-            this.chbPovratnaNaknada.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbPovratnaNaknada.Margin = new System.Windows.Forms.Padding(4);
             this.chbPovratnaNaknada.Name = "chbPovratnaNaknada";
             this.chbPovratnaNaknada.Size = new System.Drawing.Size(69, 24);
             this.chbPovratnaNaknada.TabIndex = 60;
@@ -2043,9 +2057,9 @@
             this.groupBox28.Controls.Add(this.label52);
             this.groupBox28.Controls.Add(this.cmbVrstaFakture);
             this.groupBox28.Location = new System.Drawing.Point(13, 240);
-            this.groupBox28.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox28.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox28.Name = "groupBox28";
-            this.groupBox28.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox28.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox28.Size = new System.Drawing.Size(653, 76);
             this.groupBox28.TabIndex = 59;
             this.groupBox28.TabStop = false;
@@ -2066,7 +2080,7 @@
             this.cmbVrstaFakture.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbVrstaFakture.FormattingEnabled = true;
             this.cmbVrstaFakture.Location = new System.Drawing.Point(187, 25);
-            this.cmbVrstaFakture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbVrstaFakture.Margin = new System.Windows.Forms.Padding(4);
             this.cmbVrstaFakture.Name = "cmbVrstaFakture";
             this.cmbVrstaFakture.Size = new System.Drawing.Size(231, 28);
             this.cmbVrstaFakture.TabIndex = 0;
@@ -2077,7 +2091,7 @@
             this.chbRucnoUpisivanjeKarticeKupca.AutoSize = true;
             this.chbRucnoUpisivanjeKarticeKupca.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.chbRucnoUpisivanjeKarticeKupca.Location = new System.Drawing.Point(13, 207);
-            this.chbRucnoUpisivanjeKarticeKupca.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbRucnoUpisivanjeKarticeKupca.Margin = new System.Windows.Forms.Padding(4);
             this.chbRucnoUpisivanjeKarticeKupca.Name = "chbRucnoUpisivanjeKarticeKupca";
             this.chbRucnoUpisivanjeKarticeKupca.Size = new System.Drawing.Size(262, 24);
             this.chbRucnoUpisivanjeKarticeKupca.TabIndex = 58;
@@ -2090,9 +2104,9 @@
             this.groupBox26.Controls.Add(this.label49);
             this.groupBox26.Controls.Add(this.cmbVrstaKalkulacije);
             this.groupBox26.Location = new System.Drawing.Point(13, 123);
-            this.groupBox26.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox26.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox26.Name = "groupBox26";
-            this.groupBox26.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox26.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox26.Size = new System.Drawing.Size(653, 76);
             this.groupBox26.TabIndex = 57;
             this.groupBox26.TabStop = false;
@@ -2113,7 +2127,7 @@
             this.cmbVrstaKalkulacije.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbVrstaKalkulacije.FormattingEnabled = true;
             this.cmbVrstaKalkulacije.Location = new System.Drawing.Point(187, 25);
-            this.cmbVrstaKalkulacije.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbVrstaKalkulacije.Margin = new System.Windows.Forms.Padding(4);
             this.cmbVrstaKalkulacije.Name = "cmbVrstaKalkulacije";
             this.cmbVrstaKalkulacije.Size = new System.Drawing.Size(231, 28);
             this.cmbVrstaKalkulacije.TabIndex = 0;
@@ -2124,9 +2138,9 @@
             this.groupBox17.Controls.Add(this.chbIspisPartneraAktivnost);
             this.groupBox17.Controls.Add(this.label36);
             this.groupBox17.Location = new System.Drawing.Point(13, 7);
-            this.groupBox17.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox17.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox17.Name = "groupBox17";
-            this.groupBox17.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox17.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox17.Size = new System.Drawing.Size(653, 108);
             this.groupBox17.TabIndex = 56;
             this.groupBox17.TabStop = false;
@@ -2136,7 +2150,7 @@
             // 
             this.chbIspisPartneraAktivnost.AutoSize = true;
             this.chbIspisPartneraAktivnost.Location = new System.Drawing.Point(13, 73);
-            this.chbIspisPartneraAktivnost.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbIspisPartneraAktivnost.Margin = new System.Windows.Forms.Padding(4);
             this.chbIspisPartneraAktivnost.Name = "chbIspisPartneraAktivnost";
             this.chbIspisPartneraAktivnost.Size = new System.Drawing.Size(99, 24);
             this.chbIspisPartneraAktivnost.TabIndex = 2;
@@ -2161,9 +2175,9 @@
             this.tabPage6.Controls.Add(this.groupBox22);
             this.tabPage6.Controls.Add(this.groupBox25);
             this.tabPage6.Location = new System.Drawing.Point(4, 34);
-            this.tabPage6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage6.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage6.Size = new System.Drawing.Size(1107, 483);
             this.tabPage6.TabIndex = 7;
             this.tabPage6.Text = "Sinkronizacija";
@@ -2179,9 +2193,9 @@
             this.groupBox22.Controls.Add(this.chbAktiviranaWebSyn);
             this.groupBox22.Controls.Add(this.label45);
             this.groupBox22.Location = new System.Drawing.Point(13, 7);
-            this.groupBox22.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox22.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox22.Name = "groupBox22";
-            this.groupBox22.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox22.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox22.Size = new System.Drawing.Size(524, 240);
             this.groupBox22.TabIndex = 53;
             this.groupBox22.TabStop = false;
@@ -2201,7 +2215,7 @@
             // txtDomena
             // 
             this.txtDomena.Location = new System.Drawing.Point(97, 165);
-            this.txtDomena.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDomena.Margin = new System.Windows.Forms.Padding(4);
             this.txtDomena.Name = "txtDomena";
             this.txtDomena.Size = new System.Drawing.Size(413, 26);
             this.txtDomena.TabIndex = 55;
@@ -2213,7 +2227,7 @@
             this.btnBrisiSve.Enabled = false;
             this.btnBrisiSve.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnBrisiSve.Location = new System.Drawing.Point(375, 201);
-            this.btnBrisiSve.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBrisiSve.Margin = new System.Windows.Forms.Padding(4);
             this.btnBrisiSve.Name = "btnBrisiSve";
             this.btnBrisiSve.Size = new System.Drawing.Size(137, 32);
             this.btnBrisiSve.TabIndex = 54;
@@ -2226,7 +2240,7 @@
             this.btnPosaljiNaWeb.Enabled = false;
             this.btnPosaljiNaWeb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnPosaljiNaWeb.Location = new System.Drawing.Point(159, 201);
-            this.btnPosaljiNaWeb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPosaljiNaWeb.Margin = new System.Windows.Forms.Padding(4);
             this.btnPosaljiNaWeb.Name = "btnPosaljiNaWeb";
             this.btnPosaljiNaWeb.Size = new System.Drawing.Size(208, 32);
             this.btnPosaljiNaWeb.TabIndex = 53;
@@ -2247,7 +2261,7 @@
             // txtLozinkaZaWebAktivaciju
             // 
             this.txtLozinkaZaWebAktivaciju.Location = new System.Drawing.Point(97, 134);
-            this.txtLozinkaZaWebAktivaciju.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLozinkaZaWebAktivaciju.Margin = new System.Windows.Forms.Padding(4);
             this.txtLozinkaZaWebAktivaciju.Name = "txtLozinkaZaWebAktivaciju";
             this.txtLozinkaZaWebAktivaciju.PasswordChar = '*';
             this.txtLozinkaZaWebAktivaciju.Size = new System.Drawing.Size(413, 26);
@@ -2259,7 +2273,7 @@
             this.chbAktiviranaWebSyn.AutoSize = true;
             this.chbAktiviranaWebSyn.Enabled = false;
             this.chbAktiviranaWebSyn.Location = new System.Drawing.Point(13, 204);
-            this.chbAktiviranaWebSyn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbAktiviranaWebSyn.Margin = new System.Windows.Forms.Padding(4);
             this.chbAktiviranaWebSyn.Name = "chbAktiviranaWebSyn";
             this.chbAktiviranaWebSyn.Size = new System.Drawing.Size(104, 24);
             this.chbAktiviranaWebSyn.TabIndex = 50;
@@ -2290,9 +2304,9 @@
             this.groupBox25.Controls.Add(this.chbCentralaAktivno);
             this.groupBox25.Controls.Add(this.label51);
             this.groupBox25.Location = new System.Drawing.Point(545, 7);
-            this.groupBox25.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox25.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox25.Name = "groupBox25";
-            this.groupBox25.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox25.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox25.Size = new System.Drawing.Size(524, 240);
             this.groupBox25.TabIndex = 56;
             this.groupBox25.TabStop = false;
@@ -2303,7 +2317,7 @@
             this.chbIsCentrala.AutoSize = true;
             this.chbIsCentrala.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.chbIsCentrala.Location = new System.Drawing.Point(273, 204);
-            this.chbIsCentrala.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbIsCentrala.Margin = new System.Windows.Forms.Padding(4);
             this.chbIsCentrala.Name = "chbIsCentrala";
             this.chbIsCentrala.Size = new System.Drawing.Size(119, 24);
             this.chbIsCentrala.TabIndex = 57;
@@ -2324,7 +2338,7 @@
             // txtCentralaLozinka
             // 
             this.txtCentralaLozinka.Location = new System.Drawing.Point(125, 134);
-            this.txtCentralaLozinka.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCentralaLozinka.Margin = new System.Windows.Forms.Padding(4);
             this.txtCentralaLozinka.Name = "txtCentralaLozinka";
             this.txtCentralaLozinka.PasswordChar = '*';
             this.txtCentralaLozinka.Size = new System.Drawing.Size(389, 26);
@@ -2334,7 +2348,7 @@
             // btnCentralaSkladista
             // 
             this.btnCentralaSkladista.Location = new System.Drawing.Point(416, 162);
-            this.btnCentralaSkladista.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCentralaSkladista.Margin = new System.Windows.Forms.Padding(4);
             this.btnCentralaSkladista.Name = "btnCentralaSkladista";
             this.btnCentralaSkladista.Size = new System.Drawing.Size(100, 32);
             this.btnCentralaSkladista.TabIndex = 54;
@@ -2345,7 +2359,7 @@
             // txtCentralaPoslovnica
             // 
             this.txtCentralaPoslovnica.Location = new System.Drawing.Point(125, 165);
-            this.txtCentralaPoslovnica.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCentralaPoslovnica.Margin = new System.Windows.Forms.Padding(4);
             this.txtCentralaPoslovnica.Name = "txtCentralaPoslovnica";
             this.txtCentralaPoslovnica.Size = new System.Drawing.Size(281, 26);
             this.txtCentralaPoslovnica.TabIndex = 52;
@@ -2365,7 +2379,7 @@
             // 
             this.chbCentralaAktivno.AutoSize = true;
             this.chbCentralaAktivno.Location = new System.Drawing.Point(8, 204);
-            this.chbCentralaAktivno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbCentralaAktivno.Margin = new System.Windows.Forms.Padding(4);
             this.chbCentralaAktivno.Name = "chbCentralaAktivno";
             this.chbCentralaAktivno.Size = new System.Drawing.Size(104, 24);
             this.chbCentralaAktivno.TabIndex = 50;
@@ -2390,9 +2404,9 @@
             this.tabPage7.BackColor = System.Drawing.Color.LightSlateGray;
             this.tabPage7.Controls.Add(this.groupBox23);
             this.tabPage7.Location = new System.Drawing.Point(4, 34);
-            this.tabPage7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage7.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage7.Size = new System.Drawing.Size(1107, 483);
             this.tabPage7.TabIndex = 8;
             this.tabPage7.Text = "Vaga";
@@ -2406,9 +2420,9 @@
             this.groupBox23.Controls.Add(this.cmbSerialPortName);
             this.groupBox23.Controls.Add(this.chkVaga);
             this.groupBox23.Location = new System.Drawing.Point(13, 7);
-            this.groupBox23.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox23.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox23.Name = "groupBox23";
-            this.groupBox23.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox23.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox23.Size = new System.Drawing.Size(543, 218);
             this.groupBox23.TabIndex = 54;
             this.groupBox23.TabStop = false;
@@ -2417,7 +2431,7 @@
             // btnVagaSave
             // 
             this.btnVagaSave.Location = new System.Drawing.Point(407, 178);
-            this.btnVagaSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnVagaSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnVagaSave.Name = "btnVagaSave";
             this.btnVagaSave.Size = new System.Drawing.Size(128, 32);
             this.btnVagaSave.TabIndex = 56;
@@ -2430,7 +2444,7 @@
             this.cmbSerialPortBaudRate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbSerialPortBaudRate.FormattingEnabled = true;
             this.cmbSerialPortBaudRate.Location = new System.Drawing.Point(141, 96);
-            this.cmbSerialPortBaudRate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbSerialPortBaudRate.Margin = new System.Windows.Forms.Padding(4);
             this.cmbSerialPortBaudRate.Name = "cmbSerialPortBaudRate";
             this.cmbSerialPortBaudRate.Size = new System.Drawing.Size(160, 28);
             this.cmbSerialPortBaudRate.TabIndex = 5;
@@ -2460,7 +2474,7 @@
             this.cmbSerialPortName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbSerialPortName.FormattingEnabled = true;
             this.cmbSerialPortName.Location = new System.Drawing.Point(141, 58);
-            this.cmbSerialPortName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbSerialPortName.Margin = new System.Windows.Forms.Padding(4);
             this.cmbSerialPortName.Name = "cmbSerialPortName";
             this.cmbSerialPortName.Size = new System.Drawing.Size(160, 28);
             this.cmbSerialPortName.TabIndex = 2;
@@ -2469,7 +2483,7 @@
             // 
             this.chkVaga.AutoSize = true;
             this.chkVaga.Location = new System.Drawing.Point(8, 27);
-            this.chkVaga.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chkVaga.Margin = new System.Windows.Forms.Padding(4);
             this.chkVaga.Name = "chkVaga";
             this.chkVaga.Size = new System.Drawing.Size(69, 24);
             this.chkVaga.TabIndex = 1;
@@ -2479,6 +2493,7 @@
             // tabPage8
             // 
             this.tabPage8.BackColor = System.Drawing.Color.LightSlateGray;
+            this.tabPage8.Controls.Add(this.cbZapisnikOPromjeniCijene);
             this.tabPage8.Controls.Add(this.chbProdajaAutomobila);
             this.tabPage8.Controls.Add(this.chbMaloprodajaNaplataKarticaButtonShow);
             this.tabPage8.Controls.Add(this.chbMaloprodajaNaplataGotovinaButtonShow);
@@ -2488,9 +2503,9 @@
             this.tabPage8.Controls.Add(this.groupBox27);
             this.tabPage8.Controls.Add(this.groupBox24);
             this.tabPage8.Location = new System.Drawing.Point(4, 34);
-            this.tabPage8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage8.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage8.Size = new System.Drawing.Size(1107, 483);
             this.tabPage8.TabIndex = 9;
             this.tabPage8.Text = "Roba";
@@ -2499,7 +2514,7 @@
             // 
             this.chbProdajaAutomobila.AutoSize = true;
             this.chbProdajaAutomobila.Location = new System.Drawing.Point(468, 342);
-            this.chbProdajaAutomobila.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbProdajaAutomobila.Margin = new System.Windows.Forms.Padding(4);
             this.chbProdajaAutomobila.Name = "chbProdajaAutomobila";
             this.chbProdajaAutomobila.Size = new System.Drawing.Size(174, 24);
             this.chbProdajaAutomobila.TabIndex = 64;
@@ -2511,7 +2526,7 @@
             // 
             this.chbMaloprodajaNaplataKarticaButtonShow.AutoSize = true;
             this.chbMaloprodajaNaplataKarticaButtonShow.Location = new System.Drawing.Point(23, 409);
-            this.chbMaloprodajaNaplataKarticaButtonShow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbMaloprodajaNaplataKarticaButtonShow.Margin = new System.Windows.Forms.Padding(4);
             this.chbMaloprodajaNaplataKarticaButtonShow.Name = "chbMaloprodajaNaplataKarticaButtonShow";
             this.chbMaloprodajaNaplataKarticaButtonShow.Size = new System.Drawing.Size(312, 24);
             this.chbMaloprodajaNaplataKarticaButtonShow.TabIndex = 63;
@@ -2523,7 +2538,7 @@
             // 
             this.chbMaloprodajaNaplataGotovinaButtonShow.AutoSize = true;
             this.chbMaloprodajaNaplataGotovinaButtonShow.Location = new System.Drawing.Point(23, 375);
-            this.chbMaloprodajaNaplataGotovinaButtonShow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbMaloprodajaNaplataGotovinaButtonShow.Margin = new System.Windows.Forms.Padding(4);
             this.chbMaloprodajaNaplataGotovinaButtonShow.Name = "chbMaloprodajaNaplataGotovinaButtonShow";
             this.chbMaloprodajaNaplataGotovinaButtonShow.Size = new System.Drawing.Size(324, 24);
             this.chbMaloprodajaNaplataGotovinaButtonShow.TabIndex = 62;
@@ -2535,7 +2550,7 @@
             // 
             this.chbAutomatskiZapisnik.AutoSize = true;
             this.chbAutomatskiZapisnik.Location = new System.Drawing.Point(23, 342);
-            this.chbAutomatskiZapisnik.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbAutomatskiZapisnik.Margin = new System.Windows.Forms.Padding(4);
             this.chbAutomatskiZapisnik.Name = "chbAutomatskiZapisnik";
             this.chbAutomatskiZapisnik.Size = new System.Drawing.Size(232, 24);
             this.chbAutomatskiZapisnik.TabIndex = 61;
@@ -2549,9 +2564,9 @@
             this.groupBox30.Controls.Add(this.label53);
             this.groupBox30.Controls.Add(this.chbSakrijFormuZaProdajuUMinus);
             this.groupBox30.Location = new System.Drawing.Point(468, 84);
-            this.groupBox30.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox30.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox30.Name = "groupBox30";
-            this.groupBox30.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox30.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox30.Size = new System.Drawing.Size(357, 251);
             this.groupBox30.TabIndex = 60;
             this.groupBox30.TabStop = false;
@@ -2560,7 +2575,7 @@
             // txtSakrijFormuZaProdajuUMinus
             // 
             this.txtSakrijFormuZaProdajuUMinus.Location = new System.Drawing.Point(97, 28);
-            this.txtSakrijFormuZaProdajuUMinus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSakrijFormuZaProdajuUMinus.Margin = new System.Windows.Forms.Padding(4);
             this.txtSakrijFormuZaProdajuUMinus.Name = "txtSakrijFormuZaProdajuUMinus";
             this.txtSakrijFormuZaProdajuUMinus.Size = new System.Drawing.Size(212, 26);
             this.txtSakrijFormuZaProdajuUMinus.TabIndex = 2;
@@ -2581,7 +2596,7 @@
             // 
             this.chbSakrijFormuZaProdajuUMinus.AutoSize = true;
             this.chbSakrijFormuZaProdajuUMinus.Location = new System.Drawing.Point(12, 64);
-            this.chbSakrijFormuZaProdajuUMinus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbSakrijFormuZaProdajuUMinus.Margin = new System.Windows.Forms.Padding(4);
             this.chbSakrijFormuZaProdajuUMinus.Name = "chbSakrijFormuZaProdajuUMinus";
             this.chbSakrijFormuZaProdajuUMinus.Size = new System.Drawing.Size(268, 24);
             this.chbSakrijFormuZaProdajuUMinus.TabIndex = 3;
@@ -2594,9 +2609,9 @@
             // 
             this.groupBox29.Controls.Add(this.chbKolicinaUMinus);
             this.groupBox29.Location = new System.Drawing.Point(468, 7);
-            this.groupBox29.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox29.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox29.Name = "groupBox29";
-            this.groupBox29.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox29.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox29.Size = new System.Drawing.Size(357, 69);
             this.groupBox29.TabIndex = 59;
             this.groupBox29.TabStop = false;
@@ -2606,7 +2621,7 @@
             // 
             this.chbKolicinaUMinus.AutoSize = true;
             this.chbKolicinaUMinus.Location = new System.Drawing.Point(8, 28);
-            this.chbKolicinaUMinus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbKolicinaUMinus.Margin = new System.Windows.Forms.Padding(4);
             this.chbKolicinaUMinus.Name = "chbKolicinaUMinus";
             this.chbKolicinaUMinus.Size = new System.Drawing.Size(212, 24);
             this.chbKolicinaUMinus.TabIndex = 1;
@@ -2618,9 +2633,9 @@
             // 
             this.groupBox27.Controls.Add(this.clbKoristiSkladista);
             this.groupBox27.Location = new System.Drawing.Point(13, 84);
-            this.groupBox27.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox27.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox27.Name = "groupBox27";
-            this.groupBox27.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox27.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox27.Size = new System.Drawing.Size(447, 251);
             this.groupBox27.TabIndex = 56;
             this.groupBox27.TabStop = false;
@@ -2632,7 +2647,7 @@
             this.clbKoristiSkladista.CheckOnClick = true;
             this.clbKoristiSkladista.FormattingEnabled = true;
             this.clbKoristiSkladista.Location = new System.Drawing.Point(9, 28);
-            this.clbKoristiSkladista.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.clbKoristiSkladista.Margin = new System.Windows.Forms.Padding(4);
             this.clbKoristiSkladista.Name = "clbKoristiSkladista";
             this.clbKoristiSkladista.Size = new System.Drawing.Size(429, 189);
             this.clbKoristiSkladista.TabIndex = 0;
@@ -2642,9 +2657,9 @@
             // 
             this.groupBox24.Controls.Add(this.chbZabraniPromjeneCijena);
             this.groupBox24.Location = new System.Drawing.Point(13, 7);
-            this.groupBox24.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox24.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox24.Name = "groupBox24";
-            this.groupBox24.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox24.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox24.Size = new System.Drawing.Size(447, 69);
             this.groupBox24.TabIndex = 55;
             this.groupBox24.TabStop = false;
@@ -2654,11 +2669,11 @@
             // 
             this.chbZabraniPromjeneCijena.AutoSize = true;
             this.chbZabraniPromjeneCijena.Location = new System.Drawing.Point(9, 28);
-            this.chbZabraniPromjeneCijena.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbZabraniPromjeneCijena.Margin = new System.Windows.Forms.Padding(4);
             this.chbZabraniPromjeneCijena.Name = "chbZabraniPromjeneCijena";
-            this.chbZabraniPromjeneCijena.Size = new System.Drawing.Size(191, 24);
+            this.chbZabraniPromjeneCijena.Size = new System.Drawing.Size(209, 24);
             this.chbZabraniPromjeneCijena.TabIndex = 0;
-            this.chbZabraniPromjeneCijena.Text = "Zabrani promje cijena";
+            this.chbZabraniPromjeneCijena.Text = "Zabrani promjenu cijena";
             this.chbZabraniPromjeneCijena.UseVisualStyleBackColor = true;
             this.chbZabraniPromjeneCijena.CheckedChanged += new System.EventHandler(this.chbZabraniPromjeneCijena_CheckedChanged);
             // 
@@ -2669,9 +2684,9 @@
             this.tabPage9.Controls.Add(this.chbMedjuskladisnicaSProizvodjackomCijenom);
             this.tabPage9.Controls.Add(this.chbSNBC);
             this.tabPage9.Location = new System.Drawing.Point(4, 34);
-            this.tabPage9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage9.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage9.Size = new System.Drawing.Size(1107, 483);
             this.tabPage9.TabIndex = 10;
             this.tabPage9.Text = "Proizvodnja";
@@ -2681,7 +2696,7 @@
             this.chbNormativSProizvodjackomCijenom.AutoSize = true;
             this.chbNormativSProizvodjackomCijenom.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.chbNormativSProizvodjackomCijenom.Location = new System.Drawing.Point(13, 74);
-            this.chbNormativSProizvodjackomCijenom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbNormativSProizvodjackomCijenom.Margin = new System.Windows.Forms.Padding(4);
             this.chbNormativSProizvodjackomCijenom.Name = "chbNormativSProizvodjackomCijenom";
             this.chbNormativSProizvodjackomCijenom.Size = new System.Drawing.Size(292, 24);
             this.chbNormativSProizvodjackomCijenom.TabIndex = 568;
@@ -2694,7 +2709,7 @@
             this.chbMedjuskladisnicaSProizvodjackomCijenom.AutoSize = true;
             this.chbMedjuskladisnicaSProizvodjackomCijenom.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.chbMedjuskladisnicaSProizvodjackomCijenom.Location = new System.Drawing.Point(13, 41);
-            this.chbMedjuskladisnicaSProizvodjackomCijenom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbMedjuskladisnicaSProizvodjackomCijenom.Margin = new System.Windows.Forms.Padding(4);
             this.chbMedjuskladisnicaSProizvodjackomCijenom.Name = "chbMedjuskladisnicaSProizvodjackomCijenom";
             this.chbMedjuskladisnicaSProizvodjackomCijenom.Size = new System.Drawing.Size(349, 24);
             this.chbMedjuskladisnicaSProizvodjackomCijenom.TabIndex = 567;
@@ -2707,7 +2722,7 @@
             this.chbSNBC.AutoSize = true;
             this.chbSNBC.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.chbSNBC.Location = new System.Drawing.Point(13, 7);
-            this.chbSNBC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbSNBC.Margin = new System.Windows.Forms.Padding(4);
             this.chbSNBC.Name = "chbSNBC";
             this.chbSNBC.Size = new System.Drawing.Size(290, 24);
             this.chbSNBC.TabIndex = 566;
@@ -2721,9 +2736,9 @@
             this.tabUdsGame.Controls.Add(this.groupBox32);
             this.tabUdsGame.Controls.Add(this.groupBox31);
             this.tabUdsGame.Location = new System.Drawing.Point(4, 34);
-            this.tabUdsGame.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabUdsGame.Margin = new System.Windows.Forms.Padding(4);
             this.tabUdsGame.Name = "tabUdsGame";
-            this.tabUdsGame.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabUdsGame.Padding = new System.Windows.Forms.Padding(4);
             this.tabUdsGame.Size = new System.Drawing.Size(1107, 483);
             this.tabUdsGame.TabIndex = 11;
             this.tabUdsGame.Text = "Vanjski programi";
@@ -2746,9 +2761,9 @@
             this.groupBox32.Controls.Add(this.label55);
             this.groupBox32.Controls.Add(this.cbMinimax);
             this.groupBox32.Location = new System.Drawing.Point(545, 11);
-            this.groupBox32.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox32.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox32.Name = "groupBox32";
-            this.groupBox32.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox32.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox32.Size = new System.Drawing.Size(524, 400);
             this.groupBox32.TabIndex = 9;
             this.groupBox32.TabStop = false;
@@ -2757,7 +2772,7 @@
             // btnUpdateStatus
             // 
             this.btnUpdateStatus.Location = new System.Drawing.Point(83, 343);
-            this.btnUpdateStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUpdateStatus.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdateStatus.Name = "btnUpdateStatus";
             this.btnUpdateStatus.Size = new System.Drawing.Size(375, 38);
             this.btnUpdateStatus.TabIndex = 14;
@@ -2769,7 +2784,7 @@
             // btnSendInvoice
             // 
             this.btnSendInvoice.Location = new System.Drawing.Point(83, 299);
-            this.btnSendInvoice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSendInvoice.Margin = new System.Windows.Forms.Padding(4);
             this.btnSendInvoice.Name = "btnSendInvoice";
             this.btnSendInvoice.Size = new System.Drawing.Size(375, 37);
             this.btnSendInvoice.TabIndex = 13;
@@ -2783,7 +2798,7 @@
             this.cbCurrency.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCurrency.FormattingEnabled = true;
             this.cbCurrency.Location = new System.Drawing.Point(317, 258);
-            this.cbCurrency.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbCurrency.Margin = new System.Windows.Forms.Padding(4);
             this.cbCurrency.Name = "cbCurrency";
             this.cbCurrency.Size = new System.Drawing.Size(139, 28);
             this.cbCurrency.TabIndex = 12;
@@ -2792,7 +2807,7 @@
             // btnUpdateRoba
             // 
             this.btnUpdateRoba.Location = new System.Drawing.Point(83, 255);
-            this.btnUpdateRoba.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUpdateRoba.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdateRoba.Name = "btnUpdateRoba";
             this.btnUpdateRoba.Size = new System.Drawing.Size(227, 37);
             this.btnUpdateRoba.TabIndex = 11;
@@ -2804,7 +2819,7 @@
             // btnUpdatePartners
             // 
             this.btnUpdatePartners.Location = new System.Drawing.Point(83, 210);
-            this.btnUpdatePartners.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUpdatePartners.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdatePartners.Name = "btnUpdatePartners";
             this.btnUpdatePartners.Size = new System.Drawing.Size(375, 37);
             this.btnUpdatePartners.TabIndex = 10;
@@ -2816,7 +2831,7 @@
             // btnSendRequest
             // 
             this.btnSendRequest.Location = new System.Drawing.Point(83, 169);
-            this.btnSendRequest.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSendRequest.Margin = new System.Windows.Forms.Padding(4);
             this.btnSendRequest.Name = "btnSendRequest";
             this.btnSendRequest.Size = new System.Drawing.Size(375, 34);
             this.btnSendRequest.TabIndex = 9;
@@ -2828,7 +2843,7 @@
             // tbClientSecret
             // 
             this.tbClientSecret.Location = new System.Drawing.Point(159, 127);
-            this.tbClientSecret.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbClientSecret.Margin = new System.Windows.Forms.Padding(4);
             this.tbClientSecret.Name = "tbClientSecret";
             this.tbClientSecret.Size = new System.Drawing.Size(343, 26);
             this.tbClientSecret.TabIndex = 8;
@@ -2836,7 +2851,7 @@
             // tbClientId
             // 
             this.tbClientId.Location = new System.Drawing.Point(159, 94);
-            this.tbClientId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbClientId.Margin = new System.Windows.Forms.Padding(4);
             this.tbClientId.Name = "tbClientId";
             this.tbClientId.Size = new System.Drawing.Size(343, 26);
             this.tbClientId.TabIndex = 7;
@@ -2844,7 +2859,7 @@
             // tbPassword
             // 
             this.tbPassword.Location = new System.Drawing.Point(159, 60);
-            this.tbPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbPassword.Margin = new System.Windows.Forms.Padding(4);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Size = new System.Drawing.Size(343, 26);
             this.tbPassword.TabIndex = 6;
@@ -2852,7 +2867,7 @@
             // tbUsername
             // 
             this.tbUsername.Location = new System.Drawing.Point(159, 27);
-            this.tbUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbUsername.Margin = new System.Windows.Forms.Padding(4);
             this.tbUsername.Name = "tbUsername";
             this.tbUsername.Size = new System.Drawing.Size(343, 26);
             this.tbUsername.TabIndex = 5;
@@ -2901,7 +2916,7 @@
             // 
             this.cbMinimax.AutoSize = true;
             this.cbMinimax.Location = new System.Drawing.Point(83, 4);
-            this.cbMinimax.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbMinimax.Margin = new System.Windows.Forms.Padding(4);
             this.cbMinimax.Name = "cbMinimax";
             this.cbMinimax.Size = new System.Drawing.Size(18, 17);
             this.cbMinimax.TabIndex = 0;
@@ -2914,9 +2929,9 @@
             this.groupBox31.Controls.Add(this.txtApiKey);
             this.groupBox31.Controls.Add(this.chbUseEmployees);
             this.groupBox31.Location = new System.Drawing.Point(13, 11);
-            this.groupBox31.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox31.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox31.Name = "groupBox31";
-            this.groupBox31.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox31.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox31.Size = new System.Drawing.Size(524, 123);
             this.groupBox31.TabIndex = 8;
             this.groupBox31.TabStop = false;
@@ -2927,7 +2942,7 @@
             this.chbUseUdsGame.AutoSize = true;
             this.chbUseUdsGame.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.chbUseUdsGame.Location = new System.Drawing.Point(55, 4);
-            this.chbUseUdsGame.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbUseUdsGame.Margin = new System.Windows.Forms.Padding(4);
             this.chbUseUdsGame.Name = "chbUseUdsGame";
             this.chbUseUdsGame.Size = new System.Drawing.Size(18, 17);
             this.chbUseUdsGame.TabIndex = 4;
@@ -2949,7 +2964,7 @@
             // txtApiKey
             // 
             this.txtApiKey.Location = new System.Drawing.Point(89, 34);
-            this.txtApiKey.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtApiKey.Margin = new System.Windows.Forms.Padding(4);
             this.txtApiKey.Name = "txtApiKey";
             this.txtApiKey.Size = new System.Drawing.Size(392, 26);
             this.txtApiKey.TabIndex = 6;
@@ -2961,7 +2976,7 @@
             this.chbUseEmployees.AutoSize = true;
             this.chbUseEmployees.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.chbUseEmployees.Location = new System.Drawing.Point(7, 79);
-            this.chbUseEmployees.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbUseEmployees.Margin = new System.Windows.Forms.Padding(4);
             this.chbUseEmployees.Name = "chbUseEmployees";
             this.chbUseEmployees.Size = new System.Drawing.Size(154, 24);
             this.chbUseEmployees.TabIndex = 7;
@@ -2977,7 +2992,7 @@
             this.button5.Image = global::PCPOS.Properties.Resources.Actions_application_exit_icon;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.Location = new System.Drawing.Point(1140, 15);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(160, 49);
             this.button5.TabIndex = 48;
@@ -2986,18 +3001,18 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // chbVodeni
+            // cbZapisnikOPromjeniCijene
             // 
-            this.chbVodeni.AutoSize = true;
-            this.chbVodeni.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.chbVodeni.Location = new System.Drawing.Point(31, 451);
-            this.chbVodeni.Margin = new System.Windows.Forms.Padding(4);
-            this.chbVodeni.Name = "chbVodeni";
-            this.chbVodeni.Size = new System.Drawing.Size(237, 24);
-            this.chbVodeni.TabIndex = 576;
-            this.chbVodeni.Text = "Dodaj vodeni žig na ponudu";
-            this.chbVodeni.UseVisualStyleBackColor = true;
-            this.chbVodeni.CheckedChanged += new System.EventHandler(this.chbVodeni_CheckedChanged);
+            this.cbZapisnikOPromjeniCijene.AutoSize = true;
+            this.cbZapisnikOPromjeniCijene.Checked = true;
+            this.cbZapisnikOPromjeniCijene.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbZapisnikOPromjeniCijene.Location = new System.Drawing.Point(23, 443);
+            this.cbZapisnikOPromjeniCijene.Name = "cbZapisnikOPromjeniCijene";
+            this.cbZapisnikOPromjeniCijene.Size = new System.Drawing.Size(393, 24);
+            this.cbZapisnikOPromjeniCijene.TabIndex = 65;
+            this.cbZapisnikOPromjeniCijene.Text = "Kreiraj zapisnik o promjeni cijene za svu količinu";
+            this.cbZapisnikOPromjeniCijene.UseVisualStyleBackColor = true;
+            this.cbZapisnikOPromjeniCijene.CheckedChanged += new System.EventHandler(this.cbZapisnikOPromjeniCijene_CheckedChanged);
             // 
             // frmPostavke
             // 
@@ -3008,7 +3023,7 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.tabSkladiste);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmPostavke";
@@ -3321,5 +3336,6 @@
         private System.Windows.Forms.CheckBox cbKoristiResort;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.CheckBox chbVodeni;
+        private System.Windows.Forms.CheckBox cbZapisnikOPromjeniCijene;
     }
 }

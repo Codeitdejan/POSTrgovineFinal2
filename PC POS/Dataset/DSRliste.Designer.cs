@@ -392,6 +392,8 @@ namespace PCPOS.Dataset {
             
             private global::System.Data.DataColumn columnstring6;
             
+            private global::System.Data.DataColumn columnpovratna;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public DTlisteDataTable() {
@@ -739,6 +741,14 @@ namespace PCPOS.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn povratnaColumn {
+                get {
+                    return this.columnpovratna;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -813,7 +823,8 @@ namespace PCPOS.Dataset {
                         string string3, 
                         string string4, 
                         string string5, 
-                        string string6) {
+                        string string6, 
+                        decimal povratna) {
                 DTlisteRow rowDTlisteRow = ((DTlisteRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         sifra,
@@ -854,7 +865,8 @@ namespace PCPOS.Dataset {
                         string3,
                         string4,
                         string5,
-                        string6};
+                        string6,
+                        povratna};
                 rowDTlisteRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDTlisteRow);
                 return rowDTlisteRow;
@@ -916,6 +928,7 @@ namespace PCPOS.Dataset {
                 this.columnstring4 = base.Columns["string4"];
                 this.columnstring5 = base.Columns["string5"];
                 this.columnstring6 = base.Columns["string6"];
+                this.columnpovratna = base.Columns["povratna"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -999,6 +1012,8 @@ namespace PCPOS.Dataset {
                 base.Columns.Add(this.columnstring5);
                 this.columnstring6 = new global::System.Data.DataColumn("string6", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnstring6);
+                this.columnpovratna = new global::System.Data.DataColumn("povratna", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnpovratna);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2152,6 +2167,22 @@ namespace PCPOS.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public decimal povratna {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableDTliste.povratnaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'povratna\' in table \'DTliste\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDTliste.povratnaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool IssifraNull() {
                 return this.IsNull(this.tableDTliste.sifraColumn);
             }
@@ -2616,6 +2647,18 @@ namespace PCPOS.Dataset {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public void Setstring6Null() {
                 this[this.tableDTliste.string6Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IspovratnaNull() {
+                return this.IsNull(this.tableDTliste.povratnaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetpovratnaNull() {
+                this[this.tableDTliste.povratnaColumn] = global::System.Convert.DBNull;
             }
         }
         

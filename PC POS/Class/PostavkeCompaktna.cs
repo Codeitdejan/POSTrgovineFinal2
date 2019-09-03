@@ -244,6 +244,7 @@ namespace PCPOS.Class
         public static bool proizvodnjaMeduskladisnicaPC { get; internal set; }
         public static bool controlBox { get; internal set; }
         public static bool vodeniZig { get; internal set; }
+        public static bool zapisnikOPromjeniCijene { get; internal set; }
 
         private static bool _maloprodaja_naplata_gotovina_button_show = true;
         public static bool maloprodaja_naplata_gotovina_button_show { get { return _maloprodaja_naplata_gotovina_button_show; } }
@@ -435,6 +436,11 @@ namespace PCPOS.Class
                     if (ds.Tables[0].Columns.Contains("vodeni_zig"))
                     {
                         vodeniZig = Convert.ToBoolean(dr["vodeni_zig"]);
+                    }
+
+                    if (ds.Tables[0].Columns.Contains("zapisnikOPromjeniCijene"))
+                    {
+                        zapisnikOPromjeniCijene = Convert.ToBoolean(dr["zapisnikOPromjeniCijene"]);
                     }
 
                     if (ds.Tables[0].Columns.Contains("maloprodaja_naplata_gotovina_button_show"))
