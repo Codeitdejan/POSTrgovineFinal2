@@ -689,7 +689,7 @@ povrNaknd);
             {
                 return;
             }
-
+            /*
             if (txtSifra.Text.Length > 2)
             {
                 if (txtSifra.Text.Substring(0, 3) == "000")
@@ -699,7 +699,7 @@ povrNaknd);
                     return;
                 }
             }
-
+            */
             string oduzimaj = "DA";
             if (Class.Dokumenti.robno != true) // OstaleFunkcije.DSaktivnosDok.Rows[0]["boolRobno"].ToString() != "1"
             {
@@ -907,6 +907,7 @@ VALUES
         {
             if (txtSifra.Text != "")
             {
+                /*
                 if (txtSifra.Text.Length > 2)
                 {
                     if (txtSifra.Text.Substring(0, 3) == "000")
@@ -915,7 +916,7 @@ VALUES
                         txtSifra.Text = "";
                         return;
                     }
-                }
+                }*/
 
                 string count = classSQL.select(string.Format("SELECT count(*) FROM roba WHERE sifra = '{0}';", txtSifra.Text), "roba").Tables[0].Rows[0][0].ToString();
 
@@ -1740,6 +1741,98 @@ ALTER TABLE roba
 
             // After the form is closed
             EanCodes = form.EanCodes;
+        }
+        #region ImportStavkiIzPosebnogExcela
+        private void popunjavanjeDataTableaPotrebnimPodacimaZaSpremanjeArtikala()
+        {
+            MessageBox.Show("Odaberite excel sa nazivom art0.xls!");
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            DataTable DTart0 = new DataTable();
+            DataTable DTart0_arc=new DataTable();
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string path = openFileDialog.FileName;
+                string connectionString = string.Format(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source={0};Extended Properties=""Excel 12.0;HDR=YES;IMEX=1;""", path);
+                OleDbConnection connection = new OleDbConnection(connectionString);
+                connection.Open();
+                DataTable dt = connection.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
+                if (dt != null)
+                {
+                    string query = string.Format("select NAZIV,MJERA,BROJ,BAR_KOD from [{0}]", "EXPORT BBM$");
+                    OleDbDataAdapter dataAdapter = new OleDbDataAdapter(query, connectionString);
+                    DataSet DS = new DataSet();
+                    dataAdapter.Fill(DS);
+                    if (DS == null)
+                    {
+                        MessageBox.Show("Datoteka nema stavki.");
+                        return;
+                    }
+                    DTart0 = DS.Tables[0];
+                }
+                connection.Close();
+            }
+
+            MessageBox.Show("Zavrsen uvoz!"+Environment.NewLine+"Sljedece odaberite excel file sa nazivom art0_arc.xls!");
+            OpenFileDialog openFileDialog2 = new OpenFileDialog();
+            if (openFileDialog2.ShowDialog() == DialogResult.OK)
+            {
+                string path2 = openFileDialog2.FileName;
+                string connectionString2 = string.Format(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source={0};Extended Properties=""Excel 12.0;HDR=YES;IMEX=1;""", path2);
+                OleDbConnection connection2 = new OleDbConnection(connectionString2);
+                connection2.Open();
+                DataTable dt2 = connection2.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
+                if (dt2 != null)
+                {
+                    string query2 = string.Format("select VP_CIJ,MP_CIJ from [{0}]", "EXPORT BBM$");
+                    OleDbDataAdapter dataAdapter = new OleDbDataAdapter(query2, connectionString2);
+                    DataSet DS2 = new DataSet();
+                    dataAdapter.Fill(DS2);
+                    if (DS2 == null)
+                    {
+                        MessageBox.Show("Datoteka nema stavki.");
+                        return;
+                    }
+                    DTart0_arc = DS2.Tables[0];
+                }
+                connection2.Close();
+            }
+            unosExcelStavkiUbazuPodataka(DTart0, DTart0_arc);
+            //MessageBox.Show(DTart0.Rows[0][0].ToString());
+            //MessageBox.Show(DTart0_arc.Rows[0][0].ToString());
+
+        }
+
+        private void unosExcelStavkiUbazuPodataka(DataTable dataTableART, DataTable dataTableART_ARC)
+        {
+            for (int i = 0; i < dataTableART.Rows.Count; i++)
+            {
+                if (dataTableART.Rows[i]["NAZIV"].ToString().Contains("`"))
+                {
+                    dataTableART.Rows[i]["NAZIV"].ToString().Replace("`", " ");
+                }
+                if (dataTableART.Rows[i]["NAZIV"].ToString().Contains("'"))
+                {
+                    dataTableART.Rows[i]["NAZIV"].ToString().Replace("'", " ");
+                }
+                string sql = "INSERT INTO roba(naziv,id_grupa,jm,vpc,mpc,id_zemlja_porijekla,id_zemlja_uvoza,id_partner," +
+                         "id_manufacturers,sifra,ean,porez,oduzmi,nc,porez_potrosnja,id_podgrupa,opis,brand,jamstvo,akcija," +
+                         "link_za_slike,novo,editirano) values('" + dataTableART.Rows[i]["NAZIV"].ToString() + "','1','" + dataTableART.Rows[i]["MJERA"].ToString() + "','" +
+                         dataTableART_ARC.Rows[i]["VP_CIJ"].ToString().Replace(",",".") + "','" + dataTableART_ARC.Rows[i]["MP_CIJ"].ToString() + "','60','60','1','1','" + dataTableART.Rows[i]["BROJ"].ToString() + "','"+dataTableART.Rows[i]["BAR_KOD"] +
+                         "','25,00','DA','0,00','0','0','1','','0','0','','TRUE','FALSE')";
+                 provjera_sql(classSQL.insert(sql));
+
+                string sql2 = "INSERT INTO roba_prodaja(id_skladiste,kolicina,nc,vpc,porez,sifra,porez_potrosnja,novo,editirano) values('1','1','" + dataTableART_ARC.Rows[i]["MP_CIJ"].ToString() + "','" +
+                            dataTableART_ARC.Rows[i]["VP_CIJ"].ToString().Replace(",", ".") + "','25','" + dataTableART.Rows[i]["BROJ"].ToString() + "','0','TRUE','FALSE')";
+                provjera_sql(classSQL.insert(sql2));         
+            }
+            MessageBox.Show("Izvrseno!");
+            
+        }
+        #endregion
+
+        private void importStavkiPoPosebnomExcelu_Click(object sender, EventArgs e)
+        {
+            popunjavanjeDataTableaPotrebnimPodacimaZaSpremanjeArtikala();
         }
     }
 }

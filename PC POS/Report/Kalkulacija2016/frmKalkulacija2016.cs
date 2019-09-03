@@ -70,7 +70,7 @@ namespace PCPOS.Report.Kalkulacija
                 filter = "povrat_robe.broj='" + broj_kalkulacije + "' AND povrat_robe.id_skladiste='" + skladiste + "';";
             }
 
-            string SustavPdv = @"select * from partners where id_partner = (select id_partner from povrat_robe where broj = '" + broj_kalkulacije + @"' and id_skladiste = '" + skladiste + "')";
+            string SustavPdv = @"select * from partners where id_partner = (select id_partner from povrat_robe where broj = '" + broj_kalkulacije + "')";
 
             DataSet dsPartner = classSQL.select(SustavPdv, "partners");
             bool partnerExist = false, uSustavuPdv = false;
@@ -389,14 +389,14 @@ WHERE " + filter + " ";
             }
 
             string sql_stavke = string.Format(@"SELECT
-                ks.sifra, ks.id_stavka AS id, r.naziv,
+                ks.sifra, ks.id_stavka AS id, r.naziv,           
                 r.jm AS jmj, ks.kolicina, ks.rabat,
                 ks.fak_cijena, ks.prijevoz, ks.carina,
                 ks.posebni_porez, ks.marza_postotak as marza, ks.vpc,
                 ks.porez AS pdv,
                 pn.iznos as povratna_naknada
                 FROM kalkulacija_stavke ks
-                LEFT JOIN roba r ON ks.sifra = r.sifra
+                LEFT JOIN roba r ON ks.id_stavka = cast(r.sifra as integer)
                 LEFT JOIN povratna_naknada pn on ks.sifra = pn.sifra
                 WHERE {0}
                 ORDER BY CAST(id_stavka AS INT) ASC;", filter1);

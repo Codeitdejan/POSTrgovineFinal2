@@ -5341,7 +5341,6 @@ where avansi.id = tm.id;";
                     }
                     catch
                     {
-                        //već postoji
                     }
                 }
 
@@ -5356,7 +5355,6 @@ where avansi.id = tm.id;";
                     }
                     catch
                     {
-                        //već postoji
                     }
                 }
 

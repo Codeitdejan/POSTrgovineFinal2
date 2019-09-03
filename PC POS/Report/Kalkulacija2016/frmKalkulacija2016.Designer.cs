@@ -103,6 +103,8 @@
             reportDataSource3.Value = this.dTkalkDtavkeBindingSource;
             reportDataSource4.Name = "dStope";
             reportDataSource4.Value = this.DTstopeBindingSource;
+            reportDataSource4.Name = "dNaziviArtiklaa";
+            reportDataSource4.Value = this.DTstopeBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource3);
